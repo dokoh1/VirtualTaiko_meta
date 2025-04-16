@@ -11,11 +11,21 @@ public enum NoteType
     None
 }
 
+public enum HitPosition
+{
+    LeftInside,
+    LeftSide,
+    RightInside,
+    Rightside,
+}
+
 [Serializable]
 public class TjaNote
 {
     public float time;
     public NoteType type;
+    public bool judged;
+    public HitPosition requiredHit;
 }
 
 public class TjaParser : MonoBehaviour
@@ -115,4 +125,5 @@ public class TjaParser : MonoBehaviour
             _   => NoteType.None
         };
     }
+    
 }
