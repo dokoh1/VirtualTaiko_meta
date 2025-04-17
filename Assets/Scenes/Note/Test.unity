@@ -363,6 +363,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tjaFile: {fileID: 4900000, guid: e07f32bd12311e846a8487af71b57dd4, type: 3}
   notes: []
+  bpm: 120
+  offset: 0
 --- !u!4 &1229767978
 Transform:
   m_ObjectHideFlags: 0
