@@ -110,18 +110,18 @@ public class NoteManager : MonoBehaviour
         switch (result)
         {
             case JudgeResult.Perfect:
-                AddScore(300);
+                AddScore(50);
                 combo++;
-                Debug.Log("🎯 판정: Perfect");
+                Debug.Log("판정: Perfect");
                 break;
             case JudgeResult.Good:
-                AddScore(100);
+                AddScore(30);
                 combo++;
-                Debug.Log("👌 판정: Good");
+                Debug.Log("판정: Good");
                 break;
             case JudgeResult.Miss:
                 combo = 0;
-                Debug.Log("❌ 판정: Miss");
+                Debug.Log("판정: Miss");
                 break;
         }
 
@@ -132,7 +132,7 @@ public class NoteManager : MonoBehaviour
     {
         _totalScore += amount;
         OnScoreChanged?.Invoke(_totalScore);
-        Debug.Log($"💯 점수 +{amount}, 현재 점수: {_totalScore}");
+        Debug.Log($"점수 +{amount}, 현재 점수: {_totalScore}");
     }
 
     private float FindRollEndTime(int startIndex)
