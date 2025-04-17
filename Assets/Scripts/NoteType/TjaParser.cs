@@ -8,15 +8,17 @@ public enum NoteType
     SmallBlue,
     BigRed,
     BigBlue,
-    None
+    YellowRollStart,
+    YellowRollEnd
 }
 
 public enum HitPosition
 {
-    LeftInside,
+    LeftFace,
+    RightFace,
     LeftSide,
-    RightInside,
     Rightside,
+    NotPlayed
 }
 
 [Serializable]
@@ -24,18 +26,20 @@ public class TjaNote
 {
     public float time;
     public NoteType type;
-    public bool judged;
+    public List<HitPosition> requiredhits = new();
+    public bool judged = false;
     public HitPosition requiredHit;
 }
 
 public class TjaParser : MonoBehaviour
 {
-    public TextAsset tjaFile; // Inspector에서 넣는 .txt 또는 .tja
-
+    public TextAsset tjaFile;
     public List<TjaNote> notes = new List<TjaNote>();
 
-    private float bpm = 120f;
-    private float offset = 0f;
+    public float bpm = 120f;
+    public float offset = 0f;
+
+    private float totalTime = 0f;
 
     void Start()
     {
@@ -53,7 +57,6 @@ public class TjaParser : MonoBehaviour
     {
         string[] lines = text.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
         bool isParsing = false;
-        int noteIndex = 0;
 
         foreach (var rawLine in lines)
         {
@@ -66,55 +69,55 @@ public class TjaParser : MonoBehaviour
                     bpm = parsedBpm;
                 }
             }
-
-            if (line.StartsWith("OFFSET:"))
+            else if (line.StartsWith("OFFSET:"))
             {
                 if (float.TryParse(line.Substring(7), out float parsedOffset))
                 {
                     offset = parsedOffset;
+                    totalTime = offset;
                 }
             }
-
-            if (line.StartsWith("#START"))
+            else if (line.StartsWith("#START"))
             {
                 isParsing = true;
-                noteIndex = 0;
                 continue;
             }
-
-            if (line.StartsWith("#END"))
+            else if (line.StartsWith("#END"))
             {
                 isParsing = false;
                 break;
             }
 
-            if (!isParsing || string.IsNullOrEmpty(line))
+            if (!isParsing || string.IsNullOrEmpty(line) || line.StartsWith("#"))
                 continue;
 
-            foreach (char c in line)
+            // 한 마디 단위 처리
+            float barDuration = (4f * 60f) / bpm;
+            int noteCount = line.Length;
+            float noteInterval = barDuration / noteCount;
+
+            for (int i = 0; i < noteCount; i++)
             {
-                float beatDuration = 60f / bpm;
-                float noteTime = offset + noteIndex * beatDuration;
+                char c = line[i];
+                NoteType? type = CharToNoteType(c);
 
-                NoteType noteType = CharToNoteType(c);
-
-                if (noteType != NoteType.None)
+                if (type.HasValue)
                 {
                     notes.Add(new TjaNote
                     {
-                        time = noteTime,
-                        type = noteType
+                        time = totalTime + (i * noteInterval),
+                        type = type.Value
                     });
                 }
-
-                noteIndex++;
             }
+
+            totalTime += barDuration;
         }
 
         Debug.Log($"총 {notes.Count}개의 노트가 로드되었습니다.");
     }
 
-    NoteType CharToNoteType(char c)
+    NoteType? CharToNoteType(char c)
     {
         return c switch
         {
@@ -122,8 +125,9 @@ public class TjaParser : MonoBehaviour
             '2' => NoteType.SmallBlue,
             '3' => NoteType.BigRed,
             '4' => NoteType.BigBlue,
-            _   => NoteType.None
+            '5' => NoteType.YellowRollStart,
+            '8' => NoteType.YellowRollEnd,
+            _   => null
         };
     }
-    
 }
