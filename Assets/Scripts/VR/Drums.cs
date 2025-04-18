@@ -43,7 +43,13 @@ public class Drums : MonoBehaviour
 
    
     // 판정 보정
-    private float delay;    
+    [Range(0, 0.2f)]
+    [SerializeField]
+    private float delay = 1f;    
+
+    private string dateSet = "notHit";
+    private bool leftHit = false;
+    private bool rightHit = false;
 
 
     
@@ -64,6 +70,11 @@ public class Drums : MonoBehaviour
         
     }
 
+    private void Update()
+    {
+        print(dateSet);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         print("true");
@@ -72,18 +83,40 @@ public class Drums : MonoBehaviour
             estimator = other.GetComponent<VelocityEstimator>();
             audioVisual();
         }
-        // //  데이터 저장
-        if(other.gameObject.layer == leftStick ^ other.gameObject.layer == rightStick)
+
+        //  데이터 저장
+        if(other.gameObject.layer == leftStick)
         {
-           print("hit");
+           leftHit = true;
+           dateSet = "leftHit";
            StartCoroutine("NotHit");
         }
-        else if(other.gameObject.layer == leftStick && other.gameObject.layer == rightStick)
+
+    
+        if(other.gameObject.layer == rightStick)
         {
-           print("two hit");
+           rightHit = true;
+           dateSet = "rightHit";
+           StartCoroutine("NotHit");
+        }
+
+
+        if(rightHit && leftHit)
+        {
+           dateSet = "dobletHit";
            StartCoroutine("NotHit");
         }
     }
+
+    IEnumerator NotHit()
+     {
+        yield return new WaitForSeconds(delay);
+        leftHit = false;
+        rightHit = false;
+        dateSet = "notHit";
+    }
+    
+    
 
     private void PlayAudio()
     {
@@ -117,9 +150,4 @@ public class Drums : MonoBehaviour
         rightControll.SendHapticImpulse(intensity *  volum, duration);
     }        
 
-     IEnumerator NotHit()
-     {
-        yield return null;
-        print("nothit");
-     }
 }
