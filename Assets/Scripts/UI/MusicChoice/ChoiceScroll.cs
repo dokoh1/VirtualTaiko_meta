@@ -9,7 +9,7 @@ namespace dokoh
 {
     public class ChoiceScroll : MonoBehaviour
     {
-        public GameObject activeChoice;
+        private ChoiceData activeChoice;
 
         [FormerlySerializedAs("choiceList")] [SerializeField]
         private List<ChoiceData> choices = new();
@@ -18,10 +18,10 @@ namespace dokoh
         
         private ChoiceAnimationData _animData;
 
-        private float _moveDistance = 85f;
-        private float _ActiveDistance = 120f;
-        private float _moveDuration = 0.5f;
-        private bool isScrolling = false;
+        private readonly float _moveDistance = 85f;
+        private readonly float _activeDistance = 120f;
+        private readonly float _moveDuration = 0.5f;
+        private bool _isScrolling;
         
         private struct ChoiceAnimationData
         {
@@ -33,44 +33,141 @@ namespace dokoh
             public float InHeight;
             public Vector2 CrownSize;
             public Vector2 BadgeSize;
+            public float ActiveDistance;
         }
-
+        
         void Start()
         {
-
+            activeChoice = choices[3];
         }
-
+        
         void Update()
         {
             // 곡 선택
+            activeChoice = choices[3];
             if (testDrumInput.testType == DrumDataType.RightFace)
-            {
-
-            }
+                DoChoice();
             // 곡 아래로
             else if (testDrumInput.testType == DrumDataType.LeftFace)
-            {
                 ScrollDown();
-            }
             // 곡 위로
             else if (testDrumInput.testType == DrumDataType.LeftSide)
-            {
-
-            }
+                ScrollUp();
         }
 
+        private void DoChoice()
+        {
+            if (activeChoice.ChoiceType == ChoiceType.Music1)
+                dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
+            else if (activeChoice.ChoiceType == ChoiceType.Music2)
+                dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
+            else if (activeChoice.ChoiceType == ChoiceType.Music3)
+                dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
+            else if (activeChoice.ChoiceType == ChoiceType.BackToMenu)
+                dokoh.System.SceneManager.LoadScene(SceneDataType.Start);
+            else if (activeChoice.ChoiceType == ChoiceType.RandomMusic)
+            {
+                int rand = Random.Range(0, 3);
+                if (rand == 0)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
+                else if (rand == 1)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
+                else if (rand == 2)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
+            }
+                
+        }
         private void ScrollDown()
         {
-            if (isScrolling)
+            if (_isScrolling)
                 return;
 
             StopAllCoroutines();
-            StartCoroutine(Process());
+            StartCoroutine(ScrollDownProcess());
         }
 
-        private IEnumerator Process()
+        private void ScrollUp()
         {
-            isScrolling = true;
+            if (_isScrolling)
+                return;
+            
+            StopAllCoroutines();
+            StartCoroutine(ScrollUpProcess());
+        }
+
+        private IEnumerator ScrollUpProcess()
+        {
+            _isScrolling = true;
+
+            Sequence sequence = DOTween.Sequence();
+            for (int i = 0; i < choices.Count; i++)
+            {
+                if (i == 4)
+                {
+                    var data = new ChoiceAnimationData
+                    {
+                        CenterHeight = 100,
+                        TopPosY = +20,
+                        TopHeight = 20,
+                        BottomHeight = 20,
+                        BottomPosY = -20,
+                        InHeight = 110,
+                        CrownSize = new Vector2(30, 30),
+                        BadgeSize = new Vector2(30, 30),
+                        ActiveDistance = 120
+                    };
+                    ApplyAnimation(sequence, choices[i], data);
+                }
+                else if (i == 3)
+                {
+                    var data = new ChoiceAnimationData
+                    {
+                        CenterHeight = 70,
+                        TopPosY = -20,
+                        TopHeight = 10,
+                        BottomHeight = 10,
+                        BottomPosY = +20,
+                        InHeight = 60,
+                        CrownSize = new Vector2(20, 20),
+                        BadgeSize = new Vector2(20, 20),
+                        ActiveDistance = 120
+                    };
+                    ApplyAnimation(sequence, choices[i], data);
+                }
+                else
+                {
+                    sequence.Join(choices[i].CardTrans
+                        .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y + _moveDistance, _moveDuration)
+                        .SetEase(Ease.InOutQuad));
+                }
+            }
+
+            bool finished = false;
+            sequence.OnComplete(() => finished = true);
+            yield return new WaitUntil(() => finished);
+
+            choices[5].ActiveFrame.SetActive(true);
+            choices[4].ActiveFrame.SetActive(false);
+
+            var bottomChoice = GetBottomChoice();
+            var topChoice = GetTopChoice();
+            
+            float bottomChoiceRectY = bottomChoice.CardTrans.anchoredPosition.y - _moveDistance;
+            
+            topChoice.CardTrans.anchoredPosition =
+                new Vector2(topChoice.CardTrans.anchoredPosition.x, bottomChoiceRectY);
+            
+            choices.Remove(topChoice);
+            choices.Add(topChoice);
+
+            choices[6].Text.text = choices[1].Text.text;
+            choices[6].ChoiceType = choices[1].ChoiceType;
+            _isScrolling = false;
+        }
+        
+        private IEnumerator ScrollDownProcess()
+        {
+            _isScrolling = true;
 
             Sequence sequence = DOTween.Sequence();
             for (int i = 0; i < choices.Count; i++)
@@ -86,47 +183,10 @@ namespace dokoh
                         BottomPosY = -20,
                         InHeight = 110,
                         CrownSize = new Vector2(30, 30),
-                        BadgeSize = new Vector2(30, 30)
+                        BadgeSize = new Vector2(30, 30),
+                        ActiveDistance = -120
                     };
                     ApplyAnimation(sequence, choices[i], data);
-                    // //Center
-                    // sequence.Join(choices[i].CenterTrans
-                    //     .DOSizeDelta(
-                    //         new Vector2(choices[i].CenterTrans.sizeDelta.x, choices[i].CenterTrans.sizeDelta.y + 30),
-                    //         _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // //Top
-                    // sequence.Join(choices[i].TopTrans
-                    //     .DOSizeDelta(new Vector2(choices[i].TopTrans.sizeDelta.x, choices[i].TopTrans.sizeDelta.y + 10),
-                    //         _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // sequence.Join(choices[i].TopTrans
-                    //     .DOAnchorPosY(choices[i].TopTrans.anchoredPosition.y + 20, _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    //
-                    // //Bottom
-                    // sequence.Join(choices[i].BottomTrans
-                    //     .DOSizeDelta(new Vector2(choices[i].BottomTrans.sizeDelta.x, 20), _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // sequence.Join(choices[i].BottomTrans
-                    //     .DOAnchorPosY(choices[i].BottomTrans.anchoredPosition.y - 20, _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // //In
-                    // sequence.Join(choices[i].InTrans
-                    //     .DOSizeDelta(new Vector2(choices[i].InTrans.sizeDelta.x, 110), _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // //Position
-                    // sequence.Join(choices[i].CardTrans
-                    //     .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y - _ActiveDistance, _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // //Decoration
-                    // sequence.Join(choices[i].CrownTrans
-                    //     .DOSizeDelta(new Vector2(30, 30), _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // sequence.Join(choices[i].BadgeTrans
-                    //     .DOSizeDelta(new Vector2(30, 30), _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-
                 }
                 else if (i == 3)
                 {
@@ -139,44 +199,10 @@ namespace dokoh
                         BottomPosY = +20,
                         InHeight = 60,
                         CrownSize = new Vector2(20, 20),
-                        BadgeSize = new Vector2(20, 20)
+                        BadgeSize = new Vector2(20, 20),
+                        ActiveDistance = -120
                     };
                     ApplyAnimation(sequence, choices[i], data);
-                    //Center
-                    // sequence.Join(choices[i].CenterTrans
-                    //     .DOSizeDelta(new Vector2(choices[i].CenterTrans.sizeDelta.x, 70), _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    //
-                    // //Top
-                    // sequence.Join(choices[i].TopTrans
-                    //     .DOSizeDelta(new Vector2(choices[i].TopTrans.sizeDelta.x, 10), _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // sequence.Join(choices[i].TopTrans
-                    //     .DOAnchorPosY(choices[i].TopTrans.anchoredPosition.y - 20, _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    //
-                    // //Bottom
-                    // sequence.Join(choices[i].BottomTrans
-                    //     .DOSizeDelta(new Vector2(choices[i].BottomTrans.sizeDelta.x, 10), _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // sequence.Join(choices[i].BottomTrans
-                    //     .DOAnchorPosY(choices[i].BottomTrans.anchoredPosition.y + 20, _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // //In
-                    // sequence.Join(choices[i].InTrans
-                    //     .DOSizeDelta(new Vector2(choices[i].InTrans.sizeDelta.x, 60), _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // //Position
-                    // sequence.Join(choices[i].CardTrans
-                    //     .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y - _ActiveDistance, _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // //Decoration
-                    // sequence.Join(choices[i].CrownTrans
-                    //     .DOSizeDelta(new Vector2(20, 20), _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
-                    // sequence.Join(choices[i].BadgeTrans
-                    //     .DOSizeDelta(new Vector2(20, 20), _moveDuration)
-                    //     .SetEase(Ease.InOutQuad));
                 }
                 else
                 {
@@ -185,7 +211,7 @@ namespace dokoh
                         .SetEase(Ease.InOutQuad));
                 }
             }
-
+            
             bool finished = false;
             sequence.OnComplete(() => finished = true);
             yield return new WaitUntil(() => finished);
@@ -203,7 +229,7 @@ namespace dokoh
 
             choices[0].Text.text = choices[5].Text.text;
             choices[0].ChoiceType = choices[5].ChoiceType;
-            isScrolling = false;
+            _isScrolling = false;
         }
         
         private void ApplyAnimation(Sequence sequence, ChoiceData choice, ChoiceAnimationData data)
@@ -231,7 +257,7 @@ namespace dokoh
                 .SetEase(Ease.InOutQuad));
 
             sequence.Join(choice.CardTrans
-                .DOAnchorPosY(choice.CardTrans.anchoredPosition.y - _ActiveDistance, _moveDuration)
+                .DOAnchorPosY(choice.CardTrans.anchoredPosition.y + data.ActiveDistance, _moveDuration)
                 .SetEase(Ease.InOutQuad));
 
             sequence.Join(choice.CrownTrans
