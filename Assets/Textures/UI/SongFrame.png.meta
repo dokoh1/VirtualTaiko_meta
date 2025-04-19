@@ -1,0 +1,6708 @@
+fileFormatVersion: 2
+guid: cfeb6ed40efce16469a523e4230b00b0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SongFrame_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4884
+        width: 6213
+        height: 782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3648c489ace71804e907893c00994cb9
+      internalID: 1984625675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_1
+      rect:
+        serializedVersion: 2
+        x: 6236
+        y: 5327
+        width: 567
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71463af96f322c247aa3be52da2a70e7
+      internalID: -623547989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_2
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 5423
+        width: 577
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3857e94a8c9af4f802c0de77572eb9
+      internalID: 1347155490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_3
+      rect:
+        serializedVersion: 2
+        x: 7473
+        y: 5065
+        width: 416
+        height: 601
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0919fe24c0f4141a313f89ec90074c
+      internalID: -914548226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_4
+      rect:
+        serializedVersion: 2
+        x: 6236
+        y: 4957
+        width: 567
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a36ee27ed923c4eb15ec6bbe891a82
+      internalID: -1828181095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_5
+      rect:
+        serializedVersion: 2
+        x: 6837
+        y: 5161
+        width: 578
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969ea0ee10210d34cb764c23ee170459
+      internalID: -1429143050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_6
+      rect:
+        serializedVersion: 2
+        x: 6841
+        y: 5061
+        width: 220
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc081fa79601104b8300ebe6b6491f8
+      internalID: -439543536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_7
+      rect:
+        serializedVersion: 2
+        x: 7088
+        y: 5096
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c761f30aac8cda7459c19581e86469a6
+      internalID: 1080757393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_8
+      rect:
+        serializedVersion: 2
+        x: 7088
+        y: 5046
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004b9ed9f515dd045b82b4a16cb757b2
+      internalID: 1361632104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_9
+      rect:
+        serializedVersion: 2
+        x: 7469
+        y: 4788
+        width: 401
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6569c89c82d96c458ac1d3724c6fe1f
+      internalID: 2003785971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_10
+      rect:
+        serializedVersion: 2
+        x: 6857
+        y: 4980
+        width: 108
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a240f0b1794ef84bbe0439dce556a4e
+      internalID: -894743421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_11
+      rect:
+        serializedVersion: 2
+        x: 6995
+        y: 4950
+        width: 47
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebba43af84a0329428d18b2c70aa8c7c
+      internalID: -447037309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_12
+      rect:
+        serializedVersion: 2
+        x: 7088
+        y: 4961
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f163238163a2f45885a925f20df309
+      internalID: -1187462461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4094
+        width: 6217
+        height: 782
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53ee11b56c900a4794a942bde9a05c8
+      internalID: 1974298369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_14
+      rect:
+        serializedVersion: 2
+        x: 6225
+        y: 4688
+        width: 643
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d07ff0f43cf1bd4f8a2903160092928
+      internalID: -759347414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_15
+      rect:
+        serializedVersion: 2
+        x: 6891
+        y: 4688
+        width: 578
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d057402c558adc04388bfbae2e073a73
+      internalID: 1032670945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_16
+      rect:
+        serializedVersion: 2
+        x: 7469
+        y: 4591
+        width: 401
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a231215703c68fe4a90eb50bc7819211
+      internalID: 1407940812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_17
+      rect:
+        serializedVersion: 2
+        x: 6225
+        y: 4422
+        width: 643
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e70bac5352c6c47883cc90d1b47d0c
+      internalID: -238999479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_18
+      rect:
+        serializedVersion: 2
+        x: 6891
+        y: 4426
+        width: 578
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead044dacebcc144bb781cb7d1ba89bb
+      internalID: 978454824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_19
+      rect:
+        serializedVersion: 2
+        x: 7473
+        y: 4341
+        width: 331
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72af199b24bc9b4384aa64ebd90755d
+      internalID: -1127636480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_20
+      rect:
+        serializedVersion: 2
+        x: 6225
+        y: 4160
+        width: 643
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb7d74d0988c3b488243a5ed770c06c
+      internalID: 1118368924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_21
+      rect:
+        serializedVersion: 2
+        x: 6895
+        y: 4283
+        width: 166
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240d5c35f31b0934b9376e7e7e4ae588
+      internalID: -1412830955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_22
+      rect:
+        serializedVersion: 2
+        x: 7080
+        y: 4360
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f59602140076574ab0af0348ba67ced
+      internalID: 982155750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_23
+      rect:
+        serializedVersion: 2
+        x: 7192
+        y: 4353
+        width: 273
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33056424bff504947a262e4c2bc0f52b
+      internalID: 488365229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_24
+      rect:
+        serializedVersion: 2
+        x: 7080
+        y: 4295
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731a7189132a09840963803c810fde42
+      internalID: 477600290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_25
+      rect:
+        serializedVersion: 2
+        x: 7188
+        y: 4276
+        width: 73
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6b7e73148cb864da6b94850b5d7f34
+      internalID: 1821162644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_26
+      rect:
+        serializedVersion: 2
+        x: 7269
+        y: 4295
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e283162802922b447a4e2568b760e64f
+      internalID: 229760126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_27
+      rect:
+        serializedVersion: 2
+        x: 7473
+        y: 4279
+        width: 366
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30679041ba203cd41a3cad68d4d5b601
+      internalID: 939665108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_28
+      rect:
+        serializedVersion: 2
+        x: 6891
+        y: 4187
+        width: 74
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba10c263087a7c49a5c52818ed5fbb4
+      internalID: 975421413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_29
+      rect:
+        serializedVersion: 2
+        x: 6988
+        y: 4191
+        width: 77
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1ee654be996144883d5c2610fc08c4
+      internalID: 1581183090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_30
+      rect:
+        serializedVersion: 2
+        x: 7076
+        y: 4233
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d79c1eab200ee242984ca929b12eb4a
+      internalID: -285755586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_31
+      rect:
+        serializedVersion: 2
+        x: 7473
+        y: 4160
+        width: 173
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b26665696c25b41b6777714c26732a
+      internalID: -1550331495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_32
+      rect:
+        serializedVersion: 2
+        x: 7080
+        y: 4183
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447f41d1d3273634caf0743b73f256e8
+      internalID: -2147290510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_33
+      rect:
+        serializedVersion: 2
+        x: 6225
+        y: 3894
+        width: 643
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b384c6332c9f3744aa937b41e57081ef
+      internalID: 1636445385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_34
+      rect:
+        serializedVersion: 2
+        x: 6884
+        y: 4087
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87564fb0f8959b047bc6de2d1e548cfa
+      internalID: 332889101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_35
+      rect:
+        serializedVersion: 2
+        x: 7011
+        y: 4087
+        width: 19
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd3b5e4197bb0149b2e5b4bb9ecf390
+      internalID: -60778266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_36
+      rect:
+        serializedVersion: 2
+        x: 7072
+        y: 4118
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138c4aaef8b98dc4ebc4c843c191336a
+      internalID: 568610552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_37
+      rect:
+        serializedVersion: 2
+        x: 7119
+        y: 4110
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3231750d28216eb4bbaa6ee6dd67b2c5
+      internalID: 1575991599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_38
+      rect:
+        serializedVersion: 2
+        x: 7473
+        y: 4110
+        width: 181
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544536d13f132564ebfa7a012299a850
+      internalID: 500940102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_39
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3694
+        width: 1009
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff9e33cb1ca3e848bd935e2b1cc062c
+      internalID: 2040127826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_40
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 3794
+        width: 951
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03406f994b4e6342a8c13d9acdd7b60
+      internalID: -431696445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_41
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 3844
+        width: 940
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fa7c95ce3b1dd45a391664bb028b33
+      internalID: -909506964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_42
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 4048
+        width: 939
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e225265274f6f243ad48ef49e740d92
+      internalID: 1589516276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_43
+      rect:
+        serializedVersion: 2
+        x: 6884
+        y: 3990
+        width: 77
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a145fc938d4bf9747bc1d5f84cbfee23
+      internalID: -247435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_44
+      rect:
+        serializedVersion: 2
+        x: 6995
+        y: 3990
+        width: 47
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085ebd122e3e993418dd8ef3c320a193
+      internalID: -841884029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_45
+      rect:
+        serializedVersion: 2
+        x: 7072
+        y: 4052
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3da66f600af5f4b8980610b9bf2a5b
+      internalID: -1900921664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_46
+      rect:
+        serializedVersion: 2
+        x: 7119
+        y: 4041
+        width: 23
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c72dcdfb08fbba41a2a7c29acad3286
+      internalID: 86098788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_47
+      rect:
+        serializedVersion: 2
+        x: 7469
+        y: 4041
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db1da10e5f0495469c061d720def0d5
+      internalID: -1852437531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_48
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 3983
+        width: 939
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cbf7245e9cce74eb03fc603107168e
+      internalID: -971840715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_49
+      rect:
+        serializedVersion: 2
+        x: 5740
+        y: 3659
+        width: 235
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37d9e51b86583d46af54374e88b06b2
+      internalID: -255080233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_50
+      rect:
+        serializedVersion: 2
+        x: 7069
+        y: 3990
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444c9d9f542894a40bad31689d2e2bbc
+      internalID: -153908816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_51
+      rect:
+        serializedVersion: 2
+        x: 7119
+        y: 3967
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506657704b013794e9eb90d6cd369867
+      internalID: 1497471359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_52
+      rect:
+        serializedVersion: 2
+        x: 7469
+        y: 3967
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c7c0335e7fde5488046ddbb407ead5
+      internalID: -430472946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_53
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 3921
+        width: 939
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69de839d28523a04ab65cc126ff563aa
+      internalID: -121311448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_54
+      rect:
+        serializedVersion: 2
+        x: 4187
+        y: 3686
+        width: 231
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79aea51b215ff3c4cbea9c56b28cbfa2
+      internalID: -22671442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_55
+      rect:
+        serializedVersion: 2
+        x: 4804
+        y: 3713
+        width: 215
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec714bc03f65a544be9db554cb237b9
+      internalID: 1117903760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_56
+      rect:
+        serializedVersion: 2
+        x: 5235
+        y: 3675
+        width: 227
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a529059706be1ca409ae70ee7ba7262e
+      internalID: 378767269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_57
+      rect:
+        serializedVersion: 2
+        x: 6891
+        y: 3894
+        width: 66
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f2a1032ed0e614aaf73fe425e22935
+      internalID: -1175542786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_58
+      rect:
+        serializedVersion: 2
+        x: 6988
+        y: 3894
+        width: 61
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affdaf21500e30d4994fcc0a112dce5b
+      internalID: 1810438715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_59
+      rect:
+        serializedVersion: 2
+        x: 7069
+        y: 3925
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8c1ea053bf3c640a0362072732f98a
+      internalID: 2128414653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_60
+      rect:
+        serializedVersion: 2
+        x: 7119
+        y: 3898
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fb3bfb5b2483049bfa6ab08044bf6b
+      internalID: -1822390386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_61
+      rect:
+        serializedVersion: 2
+        x: 7485
+        y: 3910
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8733c30a1923c49b68c572d01322e3
+      internalID: -538315908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_62
+      rect:
+        serializedVersion: 2
+        x: 6221
+        y: 3767
+        width: 270
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6efb9746b72dd84298c78ced597b2ce
+      internalID: 90436355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_63
+      rect:
+        serializedVersion: 2
+        x: 6522
+        y: 3790
+        width: 234
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501c2f2262d46b64d8efe7a156096c45
+      internalID: -1949369509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_64
+      rect:
+        serializedVersion: 2
+        x: 6791
+        y: 3798
+        width: 224
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf813c0403200064f92a086e573ad527
+      internalID: 1230689218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_65
+      rect:
+        serializedVersion: 2
+        x: 7042
+        y: 3809
+        width: 46
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d009389801e4743a5d824dc119e32d
+      internalID: 614442972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_66
+      rect:
+        serializedVersion: 2
+        x: 7095
+        y: 3821
+        width: 24
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc08ce5016c0184d926990e9bdb9b16
+      internalID: -279390276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_67
+      rect:
+        serializedVersion: 2
+        x: 7481
+        y: 3836
+        width: 46
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f694250e2f06ad4c856ae8804ebc0a2
+      internalID: 1972749075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_68
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 3717
+        width: 951
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6773de3f6455f9842a469b506b84d6f5
+      internalID: 1985350660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_69
+      rect:
+        serializedVersion: 2
+        x: 3205
+        y: 3605
+        width: 162
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde6072a055a6d24bbcc9d1e892c4696
+      internalID: 412709779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_70
+      rect:
+        serializedVersion: 2
+        x: 7095
+        y: 3752
+        width: 24
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4752adaaeaa24764ebf1e662238d454d
+      internalID: 1969537918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_71
+      rect:
+        serializedVersion: 2
+        x: 7477
+        y: 3759
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612c17ef1b15a6a46aeb4d2e682c2c56
+      internalID: -1467540217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_72
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 3397
+        width: 231
+        height: 339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc20d95c86a46214784d7a94da4444c1
+      internalID: 1735277290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_73
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 3436
+        width: 258
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21720fff984fccf4e853202569defc01
+      internalID: -608397725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_74
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 3436
+        width: 354
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b22ea075c53cd488255ff539d3cb8e
+      internalID: 1217792547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_75
+      rect:
+        serializedVersion: 2
+        x: 6213
+        y: 3652
+        width: 258
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103011cc3e764d146a6ee480363579e0
+      internalID: -1365784045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_76
+      rect:
+        serializedVersion: 2
+        x: 6487
+        y: 3663
+        width: 239
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97a8314fef093746bc533b88fd0628f
+      internalID: 720779338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_77
+      rect:
+        serializedVersion: 2
+        x: 6760
+        y: 3663
+        width: 228
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804c361dbd2ba9c4ca9f5cb5dd60c248
+      internalID: -177729630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_78
+      rect:
+        serializedVersion: 2
+        x: 7018
+        y: 3702
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d934e7af62d4243a55aaa4c62a6400
+      internalID: 656776539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_79
+      rect:
+        serializedVersion: 2
+        x: 7092
+        y: 3690
+        width: 15
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9eb02d45ffbe645ad99a4c7965ab94
+      internalID: 1842019047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_80
+      rect:
+        serializedVersion: 2
+        x: 7473
+        y: 3717
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea18e231d848f74282ec729fd503e78
+      internalID: 1756112225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_81
+      rect:
+        serializedVersion: 2
+        x: 7469
+        y: 3690
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291c4657985ac1d43b989078b10fcc7c
+      internalID: -1197246913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_82
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3440
+        width: 951
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7effc026727704bac40275866e187d
+      internalID: -2026132486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_83
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 3440
+        width: 940
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e812f6b36e9ae4ab9c7023ee678bfa
+      internalID: -2087960001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_84
+      rect:
+        serializedVersion: 2
+        x: 6213
+        y: 3632
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2c8f633a3065d48a9480a42c1f4314
+      internalID: -315627410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_85
+      rect:
+        serializedVersion: 2
+        x: 7007
+        y: 3632
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0830940b217f5824c8b24184a21c4f5c
+      internalID: -381602172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_86
+      rect:
+        serializedVersion: 2
+        x: 7065
+        y: 3644
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d84224d91f00db40a677edce6b125e1
+      internalID: -1192858446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_87
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2943
+        width: 940
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e9896b2c49dbf4387039ad04bca010
+      internalID: 1508717975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_88
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 2943
+        width: 940
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897ceb8c8e20e6445bd75a73e58ac02c
+      internalID: -1524907841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_89
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 2916
+        width: 281
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a417dcdf607c5448a48d9076759dfe
+      internalID: 660714885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_90
+      rect:
+        serializedVersion: 2
+        x: 4283
+        y: 3185
+        width: 243
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ed710c98f424e4990be7fd5bd6ec9a
+      internalID: -1108142853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_91
+      rect:
+        serializedVersion: 2
+        x: 4765
+        y: 3205
+        width: 273
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f8e4c436d0279419c81f6de03db9e0
+      internalID: -497391585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_92
+      rect:
+        serializedVersion: 2
+        x: 5220
+        y: 3297
+        width: 258
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9fbc279485a3b49a2c021bc92f56d6
+      internalID: 1699814744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_93
+      rect:
+        serializedVersion: 2
+        x: 5686
+        y: 3220
+        width: 350
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a028e0d817c33b94abe10b0c39a82638
+      internalID: -1188274534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_94
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 2947
+        width: 254
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40d170964ecbc04c8b6a65b104344da
+      internalID: -951122611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_95
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 2939
+        width: 251
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84289386327bd042a0093a45d7d420b
+      internalID: -1364517547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_96
+      rect:
+        serializedVersion: 2
+        x: 3563
+        y: 2939
+        width: 281
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f912edeb1f10c1b43a094f09947772ee
+      internalID: 1349623884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_97
+      rect:
+        serializedVersion: 2
+        x: 4792
+        y: 2692
+        width: 246
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf1647ca4cd97e4a80149d978ee9bd1
+      internalID: -1808339477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_98
+      rect:
+        serializedVersion: 2
+        x: 5574
+        y: 3031
+        width: 505
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156234a7ad4a5e744a7d1b7206969a12
+      internalID: 2124611411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_99
+      rect:
+        serializedVersion: 2
+        x: 4303
+        y: 2712
+        width: 269
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be2e7c2575f99b46bef38afe52e7f6a
+      internalID: -874532947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_100
+      rect:
+        serializedVersion: 2
+        x: 5177
+        y: 2692
+        width: 235
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b75e0fc2d63234483a215e24bc3611
+      internalID: -949795350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_101
+      rect:
+        serializedVersion: 2
+        x: 5585
+        y: 2943
+        width: 494
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525f2316e485dda4098a39cfee53dac9
+      internalID: 421859769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_102
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2446
+        width: 940
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246b6fad8bc9c484d96280660a9fba64
+      internalID: -592064613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_103
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 2697
+        width: 935
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab92cf681317894cbe54a76fe49fcbe
+      internalID: -910143217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_104
+      rect:
+        serializedVersion: 2
+        x: 5578
+        y: 2846
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ff384b50e9b6044b2e81ce0dead637
+      internalID: -1118175849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_105
+      rect:
+        serializedVersion: 2
+        x: 5697
+        y: 2843
+        width: 112
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af688f802117a54fb38c3ed6ea7af36
+      internalID: -443931310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_106
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 2465
+        width: 301
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403e5e6585ba8c642b29f2897969258a
+      internalID: 1683492065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_107
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 2442
+        width: 258
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92fc619e3fe9f0408c4177357fc0da1
+      internalID: 101691840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_108
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 2438
+        width: 293
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf6a1e1878ded148a5ac1da79b73109
+      internalID: -679827540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_109
+      rect:
+        serializedVersion: 2
+        x: 3579
+        y: 2415
+        width: 242
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e679fb5da5b435848b0446c1c9e4b6f9
+      internalID: 2055681288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_110
+      rect:
+        serializedVersion: 2
+        x: 5578
+        y: 2742
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20406124b485464e8e66842655831bf
+      internalID: 1352859127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_111
+      rect:
+        serializedVersion: 2
+        x: 5697
+        y: 2739
+        width: 112
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ab01a2936d801468bf7908fae1eaa7
+      internalID: 2142030458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_112
+      rect:
+        serializedVersion: 2
+        x: 5578
+        y: 2638
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99aa4cd2d1d45564b9c39d6689f2422d
+      internalID: 1322650015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_113
+      rect:
+        serializedVersion: 2
+        x: 5697
+        y: 2635
+        width: 112
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c375e9b92cb353449bfbaece8d6fe9c1
+      internalID: 1806901467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_114
+      rect:
+        serializedVersion: 2
+        x: 4226
+        y: 2199
+        width: 300
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273f2e6bf9e24444881ff12e8fc6591f
+      internalID: -695454723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_115
+      rect:
+        serializedVersion: 2
+        x: 5578
+        y: 2534
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d74ddf5176d454299917947061c863
+      internalID: -1410440401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_116
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2199
+        width: 940
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b4bdd336b65e448b9123648a73dd85
+      internalID: -2016787047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_117
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 2199
+        width: 940
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69848412fd9633747867f5dad99894db
+      internalID: 1449684063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_118
+      rect:
+        serializedVersion: 2
+        x: 4738
+        y: 2211
+        width: 223
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eca86d9f591f2649b9dc47bd2d0a11f
+      internalID: -284770603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_119
+      rect:
+        serializedVersion: 2
+        x: 5204
+        y: 2199
+        width: 328
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68adbd0a7415c5b4dbc4a4eb002ea628
+      internalID: -36766680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_120
+      rect:
+        serializedVersion: 2
+        x: 5578
+        y: 2430
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3782e4a087212341bba1693696181a0
+      internalID: 1091032312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_121
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 2088
+        width: 940
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d0e14166a7be041a7cac8919bc4c13
+      internalID: 877412717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_122
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 2334
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdfb741fed4f7640ba7d15321b35925
+      internalID: -1695046458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_123
+      rect:
+        serializedVersion: 2
+        x: 5578
+        y: 2326
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4c0c15351f26248b34156540f705c6
+      internalID: -1261375521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_124
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 2273
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0c9df09a4a3014b83b995c632326f9
+      internalID: 1316421832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_125
+      rect:
+        serializedVersion: 2
+        x: 5578
+        y: 2222
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92fddf413db6394ba883af8d14c8ce2
+      internalID: -1687061574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_126
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 2207
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac011430bf11df8408b8e5f0ebe91709
+      internalID: -1405826273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_127
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2088
+        width: 169
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528c8e7187115634a8618f6db30941a1
+      internalID: -56972616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_128
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 2088
+        width: 201
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44db9f2cc814f7d46bf74bfa82264747
+      internalID: 299605374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_129
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 2095
+        width: 208
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9b6cbca66c21f47913d6173eaac67c
+      internalID: 2090055018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_130
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 2092
+        width: 216
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537a0de0698100545984d7292d712100
+      internalID: -2077417916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_131
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 2103
+        width: 96
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88a1fb3b9518904ab5cd72fd0476b12
+      internalID: 1117057495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_132
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 2088
+        width: 939
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f3ec834dd175f4aba7e435dd41016b
+      internalID: -1073027951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_133
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 2095
+        width: 940
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602d76eb0384b244ab99e422376d1a68
+      internalID: -233741729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_134
+      rect:
+        serializedVersion: 2
+        x: 5077
+        y: 2095
+        width: 940
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e97640acb815444b3e37e9e6d946cd
+      internalID: 398613744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_135
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2053
+        width: 801
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2492dd4c9e9394d96fa6d812e109cf
+      internalID: -1653353789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_136
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 2068
+        width: 801
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b80d85171ca034796bfbde9000c6f3
+      internalID: 720672599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_137
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1645
+        width: 1009
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd64b323eb24c6840bfc0d0ade8c89a0
+      internalID: 1726273288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_138
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1795
+        width: 944
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93cc0c3315883148859d2cd838eeb01
+      internalID: -522106361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_139
+      rect:
+        serializedVersion: 2
+        x: 2003
+        y: 1999
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298594b97bd274c4e9236a4e06740a72
+      internalID: -1694551013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_140
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 1799
+        width: 940
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6c7d42894cb3c498a9e6511efce546
+      internalID: -116906179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_141
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1980
+        width: 939
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf0f049396410f4c8a61ba34eb0841a
+      internalID: 616183141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_142
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1999
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae6284d0da6ba74d8168a81c2b79cb6
+      internalID: -2045131114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_143
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 1953
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77784e84bcdf69d41a471e76954a9173
+      internalID: 1498161588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_144
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1918
+        width: 939
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9822e7082d2e08c4c9037e54babb008b
+      internalID: 626601488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_145
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1934
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9693cfa9bc7949146891d884b4a72069
+      internalID: 2109653323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_146
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1853
+        width: 939
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33906a59aed875e49a67f4a1b412f206
+      internalID: -1805655429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_147
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1872
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970f0c60465d89f4ab682e5f45999bb7
+      internalID: -478645409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_148
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1699
+        width: 181
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2c6766898607a4bbb5c8ab1e602963
+      internalID: 278088317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_149
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 1302
+        width: 940
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b166abe075e6b04aa92b1a4b00e743a
+      internalID: -176796249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_150
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1787
+        width: 939
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735b127d139e457478ac9d49f0a7fd72
+      internalID: -43794242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_151
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1787
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab13c43d9c7ba9740b6e2d31437c5183
+      internalID: -558424905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_152
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1664
+        width: 674
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff7a4879a9aff24faf3c00129b1e8a4
+      internalID: -251124113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_153
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1702
+        width: 96
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4415a77a1a6cf45a96db379f20fce3
+      internalID: -1655710508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_154
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1726
+        width: 939
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0376c65d3a9d04baa032466afb61e7
+      internalID: 1317962844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_155
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1726
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db14b104250d3c4a90c05c1c3ee9622
+      internalID: 263899129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_156
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 1649
+        width: 239
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d403a3979c0454243a65947c87bc6265
+      internalID: 298542943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_157
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 1645
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f930be90b67e544a8d959e8ea663d13
+      internalID: 1064722008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_158
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1660
+        width: 939
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7002b7b8aa0d704c85e14f1f391f68c
+      internalID: 1174964424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_159
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1660
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82dd4d91842395d44b3d143429cf448c
+      internalID: -1038140938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_160
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1391
+        width: 951
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7aec15b9c1f064e9c517e5f5f6a119
+      internalID: 207102067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_161
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1391
+        width: 940
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b759a3cae1b0b4b83d8892740257a4
+      internalID: -886629033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_162
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 1537
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578a463f62045a44d81a9f8cad780c8e
+      internalID: -258669580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_163
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1598
+        width: 939
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6641e4c3c41f0b64b961bddb4179fbb2
+      internalID: 449943929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_164
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1598
+        width: 940
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e1917936bbec849affc045dd48d7d7
+      internalID: 1639605190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_165
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1533
+        width: 939
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29af6a11fe439d441b6ee122dfdf3608
+      internalID: -1634655795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_166
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1533
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafbddc18c9aa13489d1827abf74e195
+      internalID: 707991868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_167
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1456
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f103f5a347aa4489281c7954207b5f
+      internalID: -234800545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_168
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1468
+        width: 939
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8314189e885b81b4295bc13adf0d07b3
+      internalID: -1668547481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_169
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1468
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de7d35f2b0ae7b4e998d8d6387470ca
+      internalID: -968914982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_170
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1375
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d82b8b204e0df4f86c266d03e47e5e
+      internalID: -255555471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_171
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1406
+        width: 939
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f823c8e1149da5e4ca34fefc5ccdbbae
+      internalID: -1612229765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_172
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1406
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378109d289a13b243a38e2cfc615d6f5
+      internalID: -1330900148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_173
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 894
+        width: 940
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1dd45a4c793b74bbb71c3e40baec6b
+      internalID: 1114291291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_174
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 894
+        width: 940
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20777f781c12ee64d8d746c4e4e22cec
+      internalID: 1116849316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_175
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1294
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e81783d5292d354bb61045ed90f7a2b
+      internalID: 298703710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_176
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1340
+        width: 939
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f68e23667d37846bcd13cdf7ad1003
+      internalID: 1049206735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_177
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1340
+        width: 940
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e078be002ab3aca4fb3cf0d0818858fc
+      internalID: -1489509657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_178
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1213
+        width: 77
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e02627b346f9e42903aa7da480700f
+      internalID: -1566772783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_179
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 805
+        width: 65
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d81d03893353840905eac160e5fd74
+      internalID: 361433915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_180
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1256
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc08f958209cc44ebfd3de7918f3e3c
+      internalID: 1912536818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_181
+      rect:
+        serializedVersion: 2
+        x: 3552
+        y: 1206
+        width: 96
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7b098ae3db0914abb747501a4354ea
+      internalID: -1898429212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_182
+      rect:
+        serializedVersion: 2
+        x: 3671
+        y: 1221
+        width: 69
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03cfd9b4ea4ee254d9bd9f878f1b5e2e
+      internalID: 2111981927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_183
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 1225
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b742735a23f71547852141983dcbb9c
+      internalID: 212137868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_184
+      rect:
+        serializedVersion: 2
+        x: 3829
+        y: 1252
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5300704cebbeb4abe5ad6819992756
+      internalID: -1781627285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_185
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1275
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f08557c4bd2ac49a5527fcf488acde
+      internalID: -608920146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_186
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1190
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3257f95c4d4fbe44d933485782e505f3
+      internalID: -1238177974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_187
+      rect:
+        serializedVersion: 2
+        x: 3671
+        y: 1144
+        width: 69
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc0f3326cbbeb54ca462c525beaed9e
+      internalID: 2144139653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_188
+      rect:
+        serializedVersion: 2
+        x: 3829
+        y: 1194
+        width: 50
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec1aa1f92e05144e843cde8d514bad6
+      internalID: -1186363430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_189
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1213
+        width: 940
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363db7b307a70a7499f9568c8ed39215
+      internalID: -1774668414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_190
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1136
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877d8c4d676f9954fa2725967817f3d6
+      internalID: -1560068382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_191
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1129
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51815f0873bc244aa397dc0b43fad45
+      internalID: -71972880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_192
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 1098
+        width: 115
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c36a477022b92a49a504b6e8e0633f4
+      internalID: 1598852517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_193
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 1144
+        width: 69
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfcb4890dab180438680641a05aec80
+      internalID: -508777126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_194
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1148
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c28c7910f5f6f4684945791f435703
+      internalID: -760882850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_195
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 1055
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956a9a4ca2df6f64a8d6134e2ca78e69
+      internalID: 1279839255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_196
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1063
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652f01b585cc88f46baf6a7a6ef28993
+      internalID: -1950782082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_197
+      rect:
+        serializedVersion: 2
+        x: 3671
+        y: 1063
+        width: 69
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23843a33143b57e43959307f85710d41
+      internalID: -1532243724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_198
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 1067
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1b93547af7b9645a9454d2c5973713
+      internalID: 957669293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_199
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1086
+        width: 940
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577404fa14cc463488daaf181ac15eb5
+      internalID: 1924350777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_200
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 975
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf48100302a5ae4aa9d2023ee8988b2
+      internalID: 1920776049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_201
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 998
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a218b1b7a0ef34480265f75dc9bfd0
+      internalID: -989832367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_202
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 994
+        width: 115
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885766301211c3b4896945dddbc11b21
+      internalID: 789204084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_203
+      rect:
+        serializedVersion: 2
+        x: 3671
+        y: 986
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c86652461d86e8498c598bbf4626bd3
+      internalID: -192232587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_204
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 986
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e19fdeff08b04746bea330ce77eeb01
+      internalID: 997129399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_205
+      rect:
+        serializedVersion: 2
+        x: 4110
+        y: 1021
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb721d2aa1dd0284c9a656f6860af85b
+      internalID: 637355122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_206
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 894
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4c9edbc42d58b4bad2a21f8f6ea64c
+      internalID: -386038764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_207
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 936
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd735558b16104d4e9c5602c339849a5
+      internalID: 1570265447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_208
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 890
+        width: 115
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa7a86475a85f241902cf9083dd15dd
+      internalID: 61096576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_209
+      rect:
+        serializedVersion: 2
+        x: 3667
+        y: 905
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d84ebb27b10f1b4c8c7b8d3f859d4df
+      internalID: -296756683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_210
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 905
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d57e42caa767b84a9188a9fa00cccab
+      internalID: 41990925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_211
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 150
+        width: 940
+        height: 740
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4765d8f9cdb4e26448b0559836e25f97
+      internalID: -432227377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_212
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 150
+        width: 940
+        height: 740
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73e10220e1f83f4bbf043140380d086
+      internalID: -1440961045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_213
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 817
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61abdb9ce9746f4da9d799a6a664e9a
+      internalID: 68967989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_214
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 871
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41e8128d5e10b840b326eb8dc091ca6
+      internalID: 797696212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_215
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 809
+        width: 73
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6987546d7a560e14bb97cf55a38da78d
+      internalID: -1986985860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_216
+      rect:
+        serializedVersion: 2
+        x: 3621
+        y: 809
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57401868edd0fd94982170b72cea4e43
+      internalID: 974932256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_217
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 809
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499b2cd89fb57964091dbf9dd2d3edd2
+      internalID: -1102526184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_218
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 809
+        width: 69
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835e20d694e03304a93a1d761e177a69
+      internalID: 1281699322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_219
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 820
+        width: 801
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1bdcf26cfa013469aa323c637db3b3
+      internalID: 1326473160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_220
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 736
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a05d845733f2ca4fb3f7f8edecf470c
+      internalID: -1174528722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_221
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 670
+        width: 674
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e60a1ad40066841b9ef6909df53d79
+      internalID: 1865882868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_222
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 759
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a408e38ce515c41afeef96898295e7
+      internalID: 1124698641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_223
+      rect:
+        serializedVersion: 2
+        x: 3713
+        y: 728
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff3546c8f5563e4497e7251226a61f9
+      internalID: -1605039672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_224
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 728
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c6cbd81baef404da083ef06863d3fc
+      internalID: 885937868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_225
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 655
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5838749c29c3be4594cb3fe88d305a3
+      internalID: 1385034002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_226
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 678
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82efbff6c1f7ca41b8420530bf4707f
+      internalID: -810611523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_227
+      rect:
+        serializedVersion: 2
+        x: 3713
+        y: 651
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6751bf58169bb964697329387103c7f8
+      internalID: 1089947350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_228
+      rect:
+        serializedVersion: 2
+        x: 3787
+        y: 647
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6405106e148ff4d80ca0cdc60695d1
+      internalID: 836136912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_229
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 574
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f9ad217ed3d2a4ca8a50f54bc60381
+      internalID: 1540284716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_230
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 535
+        width: 674
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381dca26ae16b864a9841531c27e2f92
+      internalID: 1262977915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_231
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 612
+        width: 940
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2421d00b81b5d8d498517c1c3b4c7299
+      internalID: -1252269180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_232
+      rect:
+        serializedVersion: 2
+        x: 3713
+        y: 570
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9daba50e4cf21b4fa2ef42e140553a4
+      internalID: 783695061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_233
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 597
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cefbcc98fb211498e35e2aa811a631
+      internalID: 2089017214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_234
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 497
+        width: 74
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d59dbfe37e5fc42865d10cfffc2f79
+      internalID: 865715397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_235
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 547
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205161aadcbd4c64985c8d1a0f87585b
+      internalID: 446142346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_236
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 539
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733cc7564fae4ee4f826238048c97dbf
+      internalID: 1994337032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_237
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 478
+        width: 951
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dba92a37cdafa40a0c0fd0dad9996c
+      internalID: -1982988846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_238
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 493
+        width: 929
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d81b68fef947d45aed3660235a24a7
+      internalID: 1322062800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_239
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 416
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2954d36cf00ddc146a6be0d0067a1868
+      internalID: 839412923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_240
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 358
+        width: 951
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8779ea9c99f7ac240856ac5b5a343523
+      internalID: -1713893876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_241
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 404
+        width: 929
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34b3665ce325e64c8b6cc786a9ce093
+      internalID: 2113051417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_242
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 335
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cd3d55d2ecdd949a3fb883660ded72
+      internalID: 1856437492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_243
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 297
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b0e3007a3c3714896356546d78c4ce
+      internalID: -1953588129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_244
+      rect:
+        serializedVersion: 2
+        x: 3028
+        y: 316
+        width: 508
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d3728f83a381a4eadc4c2f4e236eda
+      internalID: 1413365605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_245
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 327
+        width: 73
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b19bea9b8b98004b832900b6e3eb4c0
+      internalID: 2002331432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_246
+      rect:
+        serializedVersion: 2
+        x: 3621
+        y: 327
+        width: 69
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6299b8f44dcf03429d72cb2ca7fc466
+      internalID: 876533364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_247
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 327
+        width: 77
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c970b2ef4b6f2346aec29e99cb81e95
+      internalID: 690554931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_248
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 331
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d3e27e1159ee34792593ea97b36d06
+      internalID: -45468421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_249
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 254
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac965fc299eeaa44bed300e2ed21433
+      internalID: 1656225860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_250
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 231
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ad9998b5e54af4ca7f4f8ccfb98817
+      internalID: 659397505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_251
+      rect:
+        serializedVersion: 2
+        x: 3043
+        y: 227
+        width: 493
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c411a5cfe4d155347805d37315c3ecee
+      internalID: -1862853416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_252
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 247
+        width: 69
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be069fd0511cc7d42966a87a5bd1b061
+      internalID: -322443883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_253
+      rect:
+        serializedVersion: 2
+        x: 3621
+        y: 247
+        width: 69
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed92b3359d3c6b408f842fa363b7c8e
+      internalID: 290760667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_254
+      rect:
+        serializedVersion: 2
+        x: 3706
+        y: 247
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b0589a0c2f4b34ca33bf1f1517cbd9
+      internalID: -876359072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_255
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 250
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0684747ab1cb6149bfd6b135cd45e90
+      internalID: 31179432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_256
+      rect:
+        serializedVersion: 2
+        x: 1941
+        y: 173
+        width: 70
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048e5d0a37e51574ea73fa8e243b9858
+      internalID: -1499227481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_257
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 166
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9424a5099586f39468bf60bd0913683e
+      internalID: -1972853470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_258
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 131
+        width: 185
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676c89a1c52803a468459b1773939d1e
+      internalID: -1361975877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_259
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 127
+        width: 104
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17895da33aceb194293b9d72bb4769fc
+      internalID: -939572161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_260
+      rect:
+        serializedVersion: 2
+        x: 3351
+        y: 135
+        width: 97
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64ad2a13b020304b9666acc1b3e6703
+      internalID: -1769776631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_261
+      rect:
+        serializedVersion: 2
+        x: 3482
+        y: 135
+        width: 97
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7f3a81d29588745896c1eb37e22855
+      internalID: -2138473734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_262
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 150
+        width: 69
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c716dc3390b08594da46f00c8b4de87c
+      internalID: -605718780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_263
+      rect:
+        serializedVersion: 2
+        x: 3675
+        y: 150
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c0227fd1ea5f94d9c858f5b25b9104
+      internalID: -1501474205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_264
+      rect:
+        serializedVersion: 2
+        x: 3760
+        y: 154
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8261a83174e3140b2efe4d59ced418
+      internalID: 2145879210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_265
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 4
+        width: 855
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b8a1dc3e080144499f86c968ee381c
+      internalID: -2103534735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_266
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 15
+        width: 674
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd2364b32e6dbb4c96f287b33c171d7
+      internalID: 63859293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_267
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 50
+        width: 185
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bc9256626e4ad439cddb88eb48afa7
+      internalID: 1947258021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_268
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 50
+        width: 181
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707be221185b79543a96a6dd4e9ea7f2
+      internalID: 669158425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_269
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 73
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb6816221c17794f8219da4755592a5
+      internalID: -1098770911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_270
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 104
+        width: 940
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a6f17f77c60844a98764744ca2b654
+      internalID: 990950844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_271
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 27
+        width: 185
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11122c7753e8ad740a15600038dfdc14
+      internalID: 220249931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_272
+      rect:
+        serializedVersion: 2
+        x: 3224
+        y: 31
+        width: 96
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25c715183418624685b340e81597754
+      internalID: -269539566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_273
+      rect:
+        serializedVersion: 2
+        x: 3351
+        y: 31
+        width: 97
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2ec5ae13d92a043bb37bbfc920f687
+      internalID: -414792193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_274
+      rect:
+        serializedVersion: 2
+        x: 3482
+        y: 31
+        width: 97
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd77ebc57114444aaf3da351ca658f2
+      internalID: 177467196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_275
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 73
+        width: 69
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5126bc1d9e7e01d43a70cee322ca38fd
+      internalID: 775653853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_276
+      rect:
+        serializedVersion: 2
+        x: 3675
+        y: 73
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69007623763e83e47bea2106189e8ca0
+      internalID: -69632789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_277
+      rect:
+        serializedVersion: 2
+        x: 3760
+        y: 73
+        width: 69
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a1e02510bfbc84daf388518bd89ac8
+      internalID: -417681485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_278
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 19
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0521ee4be28587d488d8b08f5010cc18
+      internalID: -1217716781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_279
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 39
+        width: 940
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0536a6c1aaeae1745be32382c9bae915
+      internalID: 1118286855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_280
+      rect:
+        serializedVersion: 2
+        x: 3606
+        y: 19
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d8c329c95f3aa4789e6e5064eb1bd2
+      internalID: 1445035152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_281
+      rect:
+        serializedVersion: 2
+        x: 3659
+        y: 19
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eed6c5e5f2e40a4196337219a087ed6
+      internalID: -192225751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_282
+      rect:
+        serializedVersion: 2
+        x: 3717
+        y: 19
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099cce97b24e26048ae5042af091db5c
+      internalID: 2073791140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_283
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 19
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b797f1c0d4caa3e4995f68f26d482f97
+      internalID: -2006806815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_284
+      rect:
+        serializedVersion: 2
+        x: 3829
+        y: 19
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84877a3ec06ac944b7697fae706678b
+      internalID: -502480933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SongFrame_285
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 0
+        width: 802
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794779fc8f04b664f95289b3bd168c3f
+      internalID: -905568941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 647f237254b8dca4ea628fbd6c9a506a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SongFrame_0: 1984625675
+      SongFrame_1: -623547989
+      SongFrame_10: -894743421
+      SongFrame_100: -949795350
+      SongFrame_101: 421859769
+      SongFrame_102: -592064613
+      SongFrame_103: -910143217
+      SongFrame_104: -1118175849
+      SongFrame_105: -443931310
+      SongFrame_106: 1683492065
+      SongFrame_107: 101691840
+      SongFrame_108: -679827540
+      SongFrame_109: 2055681288
+      SongFrame_11: -447037309
+      SongFrame_110: 1352859127
+      SongFrame_111: 2142030458
+      SongFrame_112: 1322650015
+      SongFrame_113: 1806901467
+      SongFrame_114: -695454723
+      SongFrame_115: -1410440401
+      SongFrame_116: -2016787047
+      SongFrame_117: 1449684063
+      SongFrame_118: -284770603
+      SongFrame_119: -36766680
+      SongFrame_12: -1187462461
+      SongFrame_120: 1091032312
+      SongFrame_121: 877412717
+      SongFrame_122: -1695046458
+      SongFrame_123: -1261375521
+      SongFrame_124: 1316421832
+      SongFrame_125: -1687061574
+      SongFrame_126: -1405826273
+      SongFrame_127: -56972616
+      SongFrame_128: 299605374
+      SongFrame_129: 2090055018
+      SongFrame_13: 1974298369
+      SongFrame_130: -2077417916
+      SongFrame_131: 1117057495
+      SongFrame_132: -1073027951
+      SongFrame_133: -233741729
+      SongFrame_134: 398613744
+      SongFrame_135: -1653353789
+      SongFrame_136: 720672599
+      SongFrame_137: 1726273288
+      SongFrame_138: -522106361
+      SongFrame_139: -1694551013
+      SongFrame_14: -759347414
+      SongFrame_140: -116906179
+      SongFrame_141: 616183141
+      SongFrame_142: -2045131114
+      SongFrame_143: 1498161588
+      SongFrame_144: 626601488
+      SongFrame_145: 2109653323
+      SongFrame_146: -1805655429
+      SongFrame_147: -478645409
+      SongFrame_148: 278088317
+      SongFrame_149: -176796249
+      SongFrame_15: 1032670945
+      SongFrame_150: -43794242
+      SongFrame_151: -558424905
+      SongFrame_152: -251124113
+      SongFrame_153: -1655710508
+      SongFrame_154: 1317962844
+      SongFrame_155: 263899129
+      SongFrame_156: 298542943
+      SongFrame_157: 1064722008
+      SongFrame_158: 1174964424
+      SongFrame_159: -1038140938
+      SongFrame_16: 1407940812
+      SongFrame_160: 207102067
+      SongFrame_161: -886629033
+      SongFrame_162: -258669580
+      SongFrame_163: 449943929
+      SongFrame_164: 1639605190
+      SongFrame_165: -1634655795
+      SongFrame_166: 707991868
+      SongFrame_167: -234800545
+      SongFrame_168: -1668547481
+      SongFrame_169: -968914982
+      SongFrame_17: -238999479
+      SongFrame_170: -255555471
+      SongFrame_171: -1612229765
+      SongFrame_172: -1330900148
+      SongFrame_173: 1114291291
+      SongFrame_174: 1116849316
+      SongFrame_175: 298703710
+      SongFrame_176: 1049206735
+      SongFrame_177: -1489509657
+      SongFrame_178: -1566772783
+      SongFrame_179: 361433915
+      SongFrame_18: 978454824
+      SongFrame_180: 1912536818
+      SongFrame_181: -1898429212
+      SongFrame_182: 2111981927
+      SongFrame_183: 212137868
+      SongFrame_184: -1781627285
+      SongFrame_185: -608920146
+      SongFrame_186: -1238177974
+      SongFrame_187: 2144139653
+      SongFrame_188: -1186363430
+      SongFrame_189: -1774668414
+      SongFrame_19: -1127636480
+      SongFrame_190: -1560068382
+      SongFrame_191: -71972880
+      SongFrame_192: 1598852517
+      SongFrame_193: -508777126
+      SongFrame_194: -760882850
+      SongFrame_195: 1279839255
+      SongFrame_196: -1950782082
+      SongFrame_197: -1532243724
+      SongFrame_198: 957669293
+      SongFrame_199: 1924350777
+      SongFrame_2: 1347155490
+      SongFrame_20: 1118368924
+      SongFrame_200: 1920776049
+      SongFrame_201: -989832367
+      SongFrame_202: 789204084
+      SongFrame_203: -192232587
+      SongFrame_204: 997129399
+      SongFrame_205: 637355122
+      SongFrame_206: -386038764
+      SongFrame_207: 1570265447
+      SongFrame_208: 61096576
+      SongFrame_209: -296756683
+      SongFrame_21: -1412830955
+      SongFrame_210: 41990925
+      SongFrame_211: -432227377
+      SongFrame_212: -1440961045
+      SongFrame_213: 68967989
+      SongFrame_214: 797696212
+      SongFrame_215: -1986985860
+      SongFrame_216: 974932256
+      SongFrame_217: -1102526184
+      SongFrame_218: 1281699322
+      SongFrame_219: 1326473160
+      SongFrame_22: 982155750
+      SongFrame_220: -1174528722
+      SongFrame_221: 1865882868
+      SongFrame_222: 1124698641
+      SongFrame_223: -1605039672
+      SongFrame_224: 885937868
+      SongFrame_225: 1385034002
+      SongFrame_226: -810611523
+      SongFrame_227: 1089947350
+      SongFrame_228: 836136912
+      SongFrame_229: 1540284716
+      SongFrame_23: 488365229
+      SongFrame_230: 1262977915
+      SongFrame_231: -1252269180
+      SongFrame_232: 783695061
+      SongFrame_233: 2089017214
+      SongFrame_234: 865715397
+      SongFrame_235: 446142346
+      SongFrame_236: 1994337032
+      SongFrame_237: -1982988846
+      SongFrame_238: 1322062800
+      SongFrame_239: 839412923
+      SongFrame_24: 477600290
+      SongFrame_240: -1713893876
+      SongFrame_241: 2113051417
+      SongFrame_242: 1856437492
+      SongFrame_243: -1953588129
+      SongFrame_244: 1413365605
+      SongFrame_245: 2002331432
+      SongFrame_246: 876533364
+      SongFrame_247: 690554931
+      SongFrame_248: -45468421
+      SongFrame_249: 1656225860
+      SongFrame_25: 1821162644
+      SongFrame_250: 659397505
+      SongFrame_251: -1862853416
+      SongFrame_252: -322443883
+      SongFrame_253: 290760667
+      SongFrame_254: -876359072
+      SongFrame_255: 31179432
+      SongFrame_256: -1499227481
+      SongFrame_257: -1972853470
+      SongFrame_258: -1361975877
+      SongFrame_259: -939572161
+      SongFrame_26: 229760126
+      SongFrame_260: -1769776631
+      SongFrame_261: -2138473734
+      SongFrame_262: -605718780
+      SongFrame_263: -1501474205
+      SongFrame_264: 2145879210
+      SongFrame_265: -2103534735
+      SongFrame_266: 63859293
+      SongFrame_267: 1947258021
+      SongFrame_268: 669158425
+      SongFrame_269: -1098770911
+      SongFrame_27: 939665108
+      SongFrame_270: 990950844
+      SongFrame_271: 220249931
+      SongFrame_272: -269539566
+      SongFrame_273: -414792193
+      SongFrame_274: 177467196
+      SongFrame_275: 775653853
+      SongFrame_276: -69632789
+      SongFrame_277: -417681485
+      SongFrame_278: -1217716781
+      SongFrame_279: 1118286855
+      SongFrame_28: 975421413
+      SongFrame_280: 1445035152
+      SongFrame_281: -192225751
+      SongFrame_282: 2073791140
+      SongFrame_283: -2006806815
+      SongFrame_284: -502480933
+      SongFrame_285: -905568941
+      SongFrame_29: 1581183090
+      SongFrame_3: -914548226
+      SongFrame_30: -285755586
+      SongFrame_31: -1550331495
+      SongFrame_32: -2147290510
+      SongFrame_33: 1636445385
+      SongFrame_34: 332889101
+      SongFrame_35: -60778266
+      SongFrame_36: 568610552
+      SongFrame_37: 1575991599
+      SongFrame_38: 500940102
+      SongFrame_39: 2040127826
+      SongFrame_4: -1828181095
+      SongFrame_40: -431696445
+      SongFrame_41: -909506964
+      SongFrame_42: 1589516276
+      SongFrame_43: -247435
+      SongFrame_44: -841884029
+      SongFrame_45: -1900921664
+      SongFrame_46: 86098788
+      SongFrame_47: -1852437531
+      SongFrame_48: -971840715
+      SongFrame_49: -255080233
+      SongFrame_5: -1429143050
+      SongFrame_50: -153908816
+      SongFrame_51: 1497471359
+      SongFrame_52: -430472946
+      SongFrame_53: -121311448
+      SongFrame_54: -22671442
+      SongFrame_55: 1117903760
+      SongFrame_56: 378767269
+      SongFrame_57: -1175542786
+      SongFrame_58: 1810438715
+      SongFrame_59: 2128414653
+      SongFrame_6: -439543536
+      SongFrame_60: -1822390386
+      SongFrame_61: -538315908
+      SongFrame_62: 90436355
+      SongFrame_63: -1949369509
+      SongFrame_64: 1230689218
+      SongFrame_65: 614442972
+      SongFrame_66: -279390276
+      SongFrame_67: 1972749075
+      SongFrame_68: 1985350660
+      SongFrame_69: 412709779
+      SongFrame_7: 1080757393
+      SongFrame_70: 1969537918
+      SongFrame_71: -1467540217
+      SongFrame_72: 1735277290
+      SongFrame_73: -608397725
+      SongFrame_74: 1217792547
+      SongFrame_75: -1365784045
+      SongFrame_76: 720779338
+      SongFrame_77: -177729630
+      SongFrame_78: 656776539
+      SongFrame_79: 1842019047
+      SongFrame_8: 1361632104
+      SongFrame_80: 1756112225
+      SongFrame_81: -1197246913
+      SongFrame_82: -2026132486
+      SongFrame_83: -2087960001
+      SongFrame_84: -315627410
+      SongFrame_85: -381602172
+      SongFrame_86: -1192858446
+      SongFrame_87: 1508717975
+      SongFrame_88: -1524907841
+      SongFrame_89: 660714885
+      SongFrame_9: 2003785971
+      SongFrame_90: -1108142853
+      SongFrame_91: -497391585
+      SongFrame_92: 1699814744
+      SongFrame_93: -1188274534
+      SongFrame_94: -951122611
+      SongFrame_95: -1364517547
+      SongFrame_96: 1349623884
+      SongFrame_97: -1808339477
+      SongFrame_98: 2124611411
+      SongFrame_99: -874532947
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
