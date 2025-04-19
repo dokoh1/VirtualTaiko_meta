@@ -45,13 +45,13 @@ public class Drums : MonoBehaviour
     // 판정 보정
     [Range(0, 0.2f)]
     [SerializeField]
-    private float delay = 1f;    
+    private float delay = 0.1f;    
 
     private string dateSet = "notHit";
     private bool leftHit = false;
     private bool rightHit = false;
 
-
+    private Coroutine resetCoroutine;
     
    
     private void Awake()
@@ -70,10 +70,6 @@ public class Drums : MonoBehaviour
         
     }
 
-    private void Update()
-    {
-        print(dateSet);
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -89,7 +85,6 @@ public class Drums : MonoBehaviour
         {
            leftHit = true;
            dateSet = "leftHit";
-           StartCoroutine("NotHit");
         }
 
     
@@ -97,15 +92,20 @@ public class Drums : MonoBehaviour
         {
            rightHit = true;
            dateSet = "rightHit";
-           StartCoroutine("NotHit");
         }
 
 
         if(rightHit && leftHit)
         {
            dateSet = "dobletHit";
-           StartCoroutine("NotHit");
         }
+
+        // 코루틴 재시작
+        if (resetCoroutine != null)
+        {
+            StopCoroutine(resetCoroutine);
+        }
+        resetCoroutine = StartCoroutine(NotHit());
     }
 
     IEnumerator NotHit()

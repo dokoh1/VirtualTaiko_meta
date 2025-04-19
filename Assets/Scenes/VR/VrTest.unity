@@ -696,6 +696,7 @@ MonoBehaviour:
   duration: 0.2
   leftControll: {fileID: 1170524739}
   rightControll: {fileID: 1170524738}
+  delay: 1
 --- !u!65 &825229632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2061,6 +2062,7 @@ MonoBehaviour:
   duration: 0.2
   leftControll: {fileID: 1170524739}
   rightControll: {fileID: 1170524738}
+  delay: 0.2
 --- !u!64 &2130580167
 MeshCollider:
   m_ObjectHideFlags: 0
