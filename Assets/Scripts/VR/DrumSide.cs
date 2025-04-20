@@ -9,7 +9,7 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 //  나중에 함수별로 코드 분리할 예정
-public class Drums : MonoBehaviour
+public class DrumSide : MonoBehaviour
 {
     //  데이터 저장
     public enum DrumDataType
@@ -29,6 +29,7 @@ public class Drums : MonoBehaviour
     AudioFunction Visual;
     private LayerMask leftStick;
     private LayerMask rightStick;
+    private LayerMask StickBody;
 
     // Audio
     public AudioClip clip;
@@ -70,6 +71,7 @@ public class Drums : MonoBehaviour
     {
         leftStick = LayerMask.NameToLayer("LeftStick");
         rightStick = LayerMask.NameToLayer("RightStick");
+        StickBody = LayerMask.NameToLayer("StickBod");
         source = GetComponent<AudioSource>();
     }
 
