@@ -41,11 +41,11 @@ public class TimingManager : MonoBehaviour
             Destroy(note);
             BoxNoteList.RemoveAt(0);
         }
-        else
-        {
-            Destroy(note);
-            BoxNoteList.RemoveAt(0);
-        }
+        // else
+        // {
+        //     Destroy(note);
+        //     BoxNoteList.RemoveAt(0);
+        // }
 
         return result;
     }

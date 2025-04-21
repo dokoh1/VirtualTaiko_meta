@@ -50,8 +50,8 @@ namespace dokoh
             else if (drums.dataSet == DrumDataType.LeftFace)
                 ScrollDown();
             // 곡 선택
-            // else if (testDrumInput.testInputType == DrumInputDataType.LeftSide)
-                // DoChoice();
+            else if (drums.dataSet == DrumDataType.DobletFace)
+                DoChoice();
         }
 
         private void DoChoice()
