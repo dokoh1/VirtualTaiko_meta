@@ -1237,9 +1237,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoxNoteList: []
   Center: {fileID: 1698204117}
-  perfectRange: 20
-  goodRange: 40
-  badRange: 60
 --- !u!114 &2052833992
 MonoBehaviour:
   m_ObjectHideFlags: 0
