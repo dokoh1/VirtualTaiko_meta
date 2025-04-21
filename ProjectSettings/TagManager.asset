@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Note
+  - Stick
   layers:
   - Default
   - TransparentFX
@@ -23,9 +24,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - StickBody
+  - LeftStick
+  - RightStick
   - 
   - 
   - 
