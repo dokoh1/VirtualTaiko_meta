@@ -149,12 +149,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arcade - Taiko no Tatsujin 2020 Version - Notes_1
+      name: Don 1
       rect:
         serializedVersion: 2
         x: 30
-        y: 5937
-        width: 121
+        y: 5939
+        width: 117
         height: 122
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -171,11 +171,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcade - Taiko no Tatsujin 2020 Version - Notes_2
+      name: Big Don 1
       rect:
         serializedVersion: 2
-        x: 203
-        y: 5913
+        x: 200
+        y: 5911
         width: 176
         height: 173
       alignment: 0
@@ -831,10 +831,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcade - Taiko no Tatsujin 2020 Version - Notes_32
+      name: Big Ka 1
       rect:
         serializedVersion: 2
-        x: 203
+        x: 200
         y: 5310
         width: 177
         height: 174
@@ -897,11 +897,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arcade - Taiko no Tatsujin 2020 Version - Notes_35
+      name: Ka 1
       rect:
         serializedVersion: 2
         x: 30
-        y: 5336
+        y: 5337
         width: 121
         height: 120
       alignment: 0
@@ -4013,7 +4013,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Arcade - Taiko no Tatsujin 2020 Version - Notes_0: 938987782
-      Arcade - Taiko no Tatsujin 2020 Version - Notes_1: 833254200
       Arcade - Taiko no Tatsujin 2020 Version - Notes_10: -1993564055
       Arcade - Taiko no Tatsujin 2020 Version - Notes_100: 1083781698
       Arcade - Taiko no Tatsujin 2020 Version - Notes_101: -1963388831
@@ -4100,7 +4099,6 @@ TextureImporter:
       Arcade - Taiko no Tatsujin 2020 Version - Notes_175: -2018299772
       Arcade - Taiko no Tatsujin 2020 Version - Notes_18: -1605657809
       Arcade - Taiko no Tatsujin 2020 Version - Notes_19: -1075578092
-      Arcade - Taiko no Tatsujin 2020 Version - Notes_2: -5304058
       Arcade - Taiko no Tatsujin 2020 Version - Notes_20: -1654426927
       Arcade - Taiko no Tatsujin 2020 Version - Notes_21: -1341277332
       Arcade - Taiko no Tatsujin 2020 Version - Notes_22: 1570305923
@@ -4114,10 +4112,8 @@ TextureImporter:
       Arcade - Taiko no Tatsujin 2020 Version - Notes_3: 351317718
       Arcade - Taiko no Tatsujin 2020 Version - Notes_30: -127414180
       Arcade - Taiko no Tatsujin 2020 Version - Notes_31: 1120751062
-      Arcade - Taiko no Tatsujin 2020 Version - Notes_32: 250878882
       Arcade - Taiko no Tatsujin 2020 Version - Notes_33: 53288227
       Arcade - Taiko no Tatsujin 2020 Version - Notes_34: -1721126608
-      Arcade - Taiko no Tatsujin 2020 Version - Notes_35: 1911590493
       Arcade - Taiko no Tatsujin 2020 Version - Notes_36: -12638555
       Arcade - Taiko no Tatsujin 2020 Version - Notes_37: 1293002554
       Arcade - Taiko no Tatsujin 2020 Version - Notes_38: 1370556896
@@ -4188,6 +4184,10 @@ TextureImporter:
       Arcade - Taiko no Tatsujin 2020 Version - Notes_97: -1171379027
       Arcade - Taiko no Tatsujin 2020 Version - Notes_98: -2086129435
       Arcade - Taiko no Tatsujin 2020 Version - Notes_99: -1315426390
+      Big Don 1: -5304058
+      Big Ka 1: 250878882
+      Don 1: 833254200
+      Ka 1: 1911590493
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
