@@ -1,0 +1,5489 @@
+fileFormatVersion: 2
+guid: 33f7ba29530e1ee48bcd4dfdd11898e6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Play10_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1609
+        width: 1730
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5862093c94e9bbc40878ac9ab9ed39e9
+      internalID: -714085805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_1
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1855
+        width: 289
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591b9b6df2cbf63469a785f34085ba8b
+      internalID: -1304128780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1879
+        width: 694
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b46aed6c8e3ce84d818dfc3c52ae554
+      internalID: 270893073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_3
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1901
+        width: 887
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec932ea436fc694eb045aa1289c63c5
+      internalID: -874870481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_4
+      rect:
+        serializedVersion: 2
+        x: 2959
+        y: 637
+        width: 1442
+        height: 1407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b948ca25244c5e49beeec1a415d01ac
+      internalID: 1116674524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_5
+      rect:
+        serializedVersion: 2
+        x: 4378
+        y: 1917
+        width: 123
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb2973eea1db344384ac9cd732fb10f
+      internalID: -817151381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_6
+      rect:
+        serializedVersion: 2
+        x: 4532
+        y: 1662
+        width: 53
+        height: 382
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103a1c823fac88a459188cbf491ec62f
+      internalID: -1138440893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_7
+      rect:
+        serializedVersion: 2
+        x: 4617
+        y: 1940
+        width: 108
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea36879712b9604da4db3a03d9f3f32
+      internalID: -352889180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_8
+      rect:
+        serializedVersion: 2
+        x: 4787
+        y: 1933
+        width: 139
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047b961cb3326534a92ad29d4bcc4dcf
+      internalID: -521013547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_9
+      rect:
+        serializedVersion: 2
+        x: 4957
+        y: 1917
+        width: 169
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7af289f83a175418a97de8c3670c65
+      internalID: 902994141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_10
+      rect:
+        serializedVersion: 2
+        x: 5142
+        y: 1917
+        width: 177
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928b8b6f5042c224cb77bb75d4c5d627
+      internalID: -1269848399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_11
+      rect:
+        serializedVersion: 2
+        x: 5628
+        y: 1604
+        width: 1735
+        height: 440
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdcf75dd6ca18e49aa33054c2239815
+      internalID: 1683036421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_12
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 158
+        width: 2337
+        height: 1886
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663829e25e1bbc54798e5981e2eb7e61
+      internalID: -1680623530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_13
+      rect:
+        serializedVersion: 2
+        x: 9724
+        y: 507
+        width: 1890
+        height: 1537
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee4cfa8ec362e145b026d0895293843
+      internalID: 402692744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_14
+      rect:
+        serializedVersion: 2
+        x: 11444
+        y: 1870
+        width: 185
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631cef839a3b5374f861243beee9f854
+      internalID: 738184506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_15
+      rect:
+        serializedVersion: 2
+        x: 11884
+        y: 1801
+        width: 432
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960d6ac758a168d41a506ca87b2beb91
+      internalID: 1626516938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_16
+      rect:
+        serializedVersion: 2
+        x: 12540
+        y: 1801
+        width: 439
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d2f93563a842b4b96c1a703cd32ea4
+      internalID: 857614018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_17
+      rect:
+        serializedVersion: 2
+        x: 13219
+        y: 1809
+        width: 400
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb81f7445b11e540bb0090b44f98981
+      internalID: 471910065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_18
+      rect:
+        serializedVersion: 2
+        x: 13844
+        y: 1878
+        width: 700
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72a538f7f4e65d40a2d6cb08648b2cc
+      internalID: 1872396347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_19
+      rect:
+        serializedVersion: 2
+        x: 14692
+        y: 1872
+        width: 154
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7c267c972441a4aa72807731db75c9
+      internalID: -2051208266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_20
+      rect:
+        serializedVersion: 2
+        x: 15124
+        y: 1871
+        width: 177
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db91ddd5bed9f6242994b5119f3c984f
+      internalID: -303407615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_21
+      rect:
+        serializedVersion: 2
+        x: 15433
+        y: 1633
+        width: 366
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b949ee1690abd0e49b7ca6f9b1d0bac1
+      internalID: -245924064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_22
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 1647
+        width: 285
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec16dbe93b251c499fbae0dd4fef18c
+      internalID: 1734303047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_23
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1824
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f850d576d8907e4e8377cb030e8cab5
+      internalID: -1994332389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_24
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1693
+        width: 698
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951fd11e450a6044f93b8c6628fd69bc
+      internalID: -1635857000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_25
+      rect:
+        serializedVersion: 2
+        x: 2758
+        y: 1701
+        width: 200
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e587e38b829b26488142b11e91df093
+      internalID: 760821181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_26
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 1755
+        width: 139
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d37b15833416044927e899717f7a21
+      internalID: 35909224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_27
+      rect:
+        serializedVersion: 2
+        x: 4617
+        y: 1772
+        width: 93
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408ebb52f51eb094fb3d811a5641ebf2
+      internalID: -1510895755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_28
+      rect:
+        serializedVersion: 2
+        x: 4802
+        y: 1778
+        width: 100
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eabd3c4b68a3184b9e540e91927134d
+      internalID: 2131499353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_29
+      rect:
+        serializedVersion: 2
+        x: 4957
+        y: 1755
+        width: 169
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9288352c912083142bb6bcd0b3d53ff5
+      internalID: -1833764883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_30
+      rect:
+        serializedVersion: 2
+        x: 5149
+        y: 1755
+        width: 162
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91940c7fae70dcb49a77535b259bc580
+      internalID: 749871248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_31
+      rect:
+        serializedVersion: 2
+        x: 11452
+        y: 1685
+        width: 177
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8447873667c8b848876690e782e6b74
+      internalID: 1101665800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_32
+      rect:
+        serializedVersion: 2
+        x: 13991
+        y: 1685
+        width: 107
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4e663f8761a684196a7b763ef4bf3b
+      internalID: -994649062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_33
+      rect:
+        serializedVersion: 2
+        x: 14414
+        y: 1685
+        width: 170
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37218dcc3e46a647840a73134b43f8a
+      internalID: -713250798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_34
+      rect:
+        serializedVersion: 2
+        x: 14870
+        y: 1685
+        width: 146
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b46a1eb73b07044783674eda89a0142
+      internalID: 581192331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_35
+      rect:
+        serializedVersion: 2
+        x: 15170
+        y: 1701
+        width: 408
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008894fcc7a3ea240801951fbf70d414
+      internalID: -1953142361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_36
+      rect:
+        serializedVersion: 2
+        x: 2858
+        y: 1616
+        width: 147
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97968a70527b4f3408e28c8b014cfea6
+      internalID: -28580080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_37
+      rect:
+        serializedVersion: 2
+        x: 4386
+        y: 1593
+        width: 107
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0970caba67b834db2af9ac6ff4a734
+      internalID: 1970661562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_38
+      rect:
+        serializedVersion: 2
+        x: 4617
+        y: 1608
+        width: 116
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8be2f01f07c19d45afb9df0e6362c9c
+      internalID: 985463748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_39
+      rect:
+        serializedVersion: 2
+        x: 4810
+        y: 1608
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7d856619b603b4fa55630176c9d547
+      internalID: 124732536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_40
+      rect:
+        serializedVersion: 2
+        x: 4957
+        y: 1593
+        width: 169
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c89e537bd6bca468df7bd713ffa195
+      internalID: -1621564042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_41
+      rect:
+        serializedVersion: 2
+        x: 5134
+        y: 1593
+        width: 193
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fefcee08211b94489d9443384e9e83b
+      internalID: -2050475087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_42
+      rect:
+        serializedVersion: 2
+        x: 11791
+        y: 1563
+        width: 618
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4bb689a7e273f40ab62bb7d30bfa93
+      internalID: -1300129455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_43
+      rect:
+        serializedVersion: 2
+        x: 12472
+        y: 1554
+        width: 577
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e034c1793ca2934f9ef76096917280b
+      internalID: -877084307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_44
+      rect:
+        serializedVersion: 2
+        x: 13142
+        y: 1539
+        width: 547
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b54e85abf873914a8d20e2b9b25158d
+      internalID: -1154657243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_45
+      rect:
+        serializedVersion: 2
+        x: 13905
+        y: 1678
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9e92475685c304d929e2911a76e169
+      internalID: 610103146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_46
+      rect:
+        serializedVersion: 2
+        x: 14098
+        y: 1678
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd169e1c4f90fd3499ba7bfe91051153
+      internalID: 230655092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_47
+      rect:
+        serializedVersion: 2
+        x: 15179
+        y: 1609
+        width: 80
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8a8d87ef3cadd4ca1ad749c1550308
+      internalID: -1012535312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_48
+      rect:
+        serializedVersion: 2
+        x: 15618
+        y: 1610
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5154112834ee546a2beda4673cf85b
+      internalID: -2039730825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_49
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1439
+        width: 277
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835f97f07d5a31141a499eec6631bacb
+      internalID: -297989092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_50
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1608
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8bc0b7436a03d42bb617365a9fd0f4
+      internalID: 1138882193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_51
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 1508
+        width: 694
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf14ffa2b0c71b44b1be301ec67bacc
+      internalID: -2048791592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_52
+      rect:
+        serializedVersion: 2
+        x: 11444
+        y: 1493
+        width: 185
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c42375bb0e51d489e5822eadf6d10f
+      internalID: 519337122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_53
+      rect:
+        serializedVersion: 2
+        x: 13975
+        y: 1494
+        width: 169
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d230b5bc0c2427a45ae8e782de9e5984
+      internalID: 637037821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_54
+      rect:
+        serializedVersion: 2
+        x: 14422
+        y: 1500
+        width: 154
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5499707a16dc9f46b0889875842a3ba
+      internalID: 1315591694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_55
+      rect:
+        serializedVersion: 2
+        x: 14862
+        y: 1500
+        width: 169
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fb3d20ae59ddc4cbcccd5624dae84b
+      internalID: -1100211754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1154
+        width: 1730
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14627d35629c024ca3ffd8b8aea74dc
+      internalID: -1780015481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_57
+      rect:
+        serializedVersion: 2
+        x: 2854
+        y: 1502
+        width: 158
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956c9112df0575c4db71a46396758bf2
+      internalID: -2046805240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_58
+      rect:
+        serializedVersion: 2
+        x: 4417
+        y: 1485
+        width: 53
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a793055c10922478e14d6b6d5fcd8e
+      internalID: 2115478350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_59
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 1485
+        width: 54
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e0b72569a89604cae209f01542cef4
+      internalID: 1528950426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_60
+      rect:
+        serializedVersion: 2
+        x: 4602
+        y: 1446
+        width: 123
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bde41e7a2ac213479f869a4d02c7a34
+      internalID: 2018707744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_61
+      rect:
+        serializedVersion: 2
+        x: 4810
+        y: 1446
+        width: 92
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bbc4cb1fc5cff546bd1c9bd625c2f0d
+      internalID: 2002775202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_62
+      rect:
+        serializedVersion: 2
+        x: 4957
+        y: 1427
+        width: 169
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3a154d4f6891f49a20c60eabd6cf84
+      internalID: 170544984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_63
+      rect:
+        serializedVersion: 2
+        x: 5165
+        y: 1415
+        width: 131
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db42557b4ab3f2840b8e8267585af24a
+      internalID: 403969168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_64
+      rect:
+        serializedVersion: 2
+        x: 5628
+        y: 1147
+        width: 1735
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca557ac1cd306c4e8b7d1eef73fa590
+      internalID: 1396923155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_65
+      rect:
+        serializedVersion: 2
+        x: 11792
+        y: 1315
+        width: 609
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d3251371459b6499fb39c15fc43e97
+      internalID: -1967790644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_66
+      rect:
+        serializedVersion: 2
+        x: 12432
+        y: 1300
+        width: 1319
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d32a938dec96e48b881546d7090efd
+      internalID: -1874025994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_67
+      rect:
+        serializedVersion: 2
+        x: 15356
+        y: 1516
+        width: 198
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83dcf76eb7c4a4b48801c62503a81fd5
+      internalID: -1826624589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_68
+      rect:
+        serializedVersion: 2
+        x: 15558
+        y: 1377
+        width: 191
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc44fe93d32d46b44ac2a319aa9a0ac6
+      internalID: -445006544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_69
+      rect:
+        serializedVersion: 2
+        x: 15795
+        y: 1177
+        width: 4
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d4687241fa5a34fa819494590b5c60
+      internalID: 466470120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_70
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1223
+        width: 200
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681bcffe2a7e9b14cbf3535e8687be11
+      internalID: -496040280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_71
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1392
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108badb33ef7ba74e982e35ecc247c53
+      internalID: 686472868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_72
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1354
+        width: 532
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3b38d1bf76b0e41b680ab035e4a5e6
+      internalID: -1627089046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_73
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 1362
+        width: 170
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae22f86b8b8d9d845a6899ba25169041
+      internalID: -521989351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_74
+      rect:
+        serializedVersion: 2
+        x: 4401
+        y: 1319
+        width: 93
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ed1dc5e15783e49b2a5d8880e0258f
+      internalID: -1820936568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_75
+      rect:
+        serializedVersion: 2
+        x: 4957
+        y: 1261
+        width: 169
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4589fa6939457bb43809bbeefc61022d
+      internalID: -1888770041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_76
+      rect:
+        serializedVersion: 2
+        x: 5165
+        y: 1261
+        width: 131
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339075ce1889f2848b6f9d2c6e16549e
+      internalID: 815977736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_77
+      rect:
+        serializedVersion: 2
+        x: 11190
+        y: 1215
+        width: 455
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01e443003b6f914f86699142d8cded9
+      internalID: 427306282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_78
+      rect:
+        serializedVersion: 2
+        x: 13982
+        y: 1308
+        width: 147
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76e918278412df46a4a5a009271cb6a
+      internalID: 1860071539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_79
+      rect:
+        serializedVersion: 2
+        x: 14422
+        y: 1308
+        width: 147
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfe879cdc0de0040bb2241b30a95984
+      internalID: 1314046221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_80
+      rect:
+        serializedVersion: 2
+        x: 14839
+        y: 1307
+        width: 208
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6272494d4209e5647bd77666159674b1
+      internalID: 950394784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_81
+      rect:
+        serializedVersion: 2
+        x: 15364
+        y: 1346
+        width: 138
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0678b2be358a0849ac64b4f0c50e2f6
+      internalID: -850089340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_82
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1315
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46e5a16b85d49b43b11606c73761ba8
+      internalID: 923643266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_83
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 1215
+        width: 528
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e37cb995afa8e5408f7876d3d555c09
+      internalID: 1439811547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_84
+      rect:
+        serializedVersion: 2
+        x: 2673
+        y: 1230
+        width: 208
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f749f8b06580f4d9a80431604233a5
+      internalID: 1788419506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_85
+      rect:
+        serializedVersion: 2
+        x: 4609
+        y: 1284
+        width: 116
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5601217e7f46bca4f9affab72fa5940d
+      internalID: -456487745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_86
+      rect:
+        serializedVersion: 2
+        x: 4810
+        y: 1284
+        width: 108
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cf2e6857174be45a4a95f63fcc84f3
+      internalID: -2002539435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_87
+      rect:
+        serializedVersion: 2
+        x: 15303
+        y: 1192
+        width: 184
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad3b218459e17744975d55ea84123e7
+      internalID: 470149251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_88
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1247
+        width: 69
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72eba7f0de44534aa8eb21e1bb78b84
+      internalID: 1220135457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_89
+      rect:
+        serializedVersion: 2
+        x: 5149
+        y: 1086
+        width: 177
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05e6ef363a1e1e45bbcf9d451613cf8
+      internalID: 556800190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_90
+      rect:
+        serializedVersion: 2
+        x: 11923
+        y: 1045
+        width: 354
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c32f4543a90e145a591c0a2e9dc962
+      internalID: -1360629753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_91
+      rect:
+        serializedVersion: 2
+        x: 12463
+        y: 1061
+        width: 609
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513874cd041d4fb4bb147af47b382dd4
+      internalID: -13415463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_92
+      rect:
+        serializedVersion: 2
+        x: 13982
+        y: 1122
+        width: 139
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aead3edbf27c83469cedb3dae81953f
+      internalID: 1290399082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_93
+      rect:
+        serializedVersion: 2
+        x: 14414
+        y: 1122
+        width: 170
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82471adac152eba43a9366df0f654a49
+      internalID: 780812043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_94
+      rect:
+        serializedVersion: 2
+        x: 14854
+        y: 1122
+        width: 200
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136d6a82b1503aa4a90fdc40eb788489
+      internalID: 610264858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_95
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 1146
+        width: 139
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7655c9e866d3e9e49915fad76746974d
+      internalID: 2061968342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_96
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 1069
+        width: 530
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7948440d21a395499377d33a75565fb
+      internalID: 250141214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_97
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 1116
+        width: 208
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0307cd90b08149d48842a9646e156bda
+      internalID: -1109159763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_98
+      rect:
+        serializedVersion: 2
+        x: 4401
+        y: 1153
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a64a636edc03384ba20574173f9490c
+      internalID: -1452445754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_99
+      rect:
+        serializedVersion: 2
+        x: 4609
+        y: 1115
+        width: 116
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e88185612006a499c4fced6df182c5
+      internalID: 1751535528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_100
+      rect:
+        serializedVersion: 2
+        x: 4771
+        y: 1099
+        width: 170
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273edb0f9d9b03b4da796cd77c8db98d
+      internalID: 1545412309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_101
+      rect:
+        serializedVersion: 2
+        x: 4957
+        y: 1099
+        width: 169
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad919b41d0c19974482c8034e0627836
+      internalID: 75851045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_102
+      rect:
+        serializedVersion: 2
+        x: 5628
+        y: 0
+        width: 2020
+        height: 1183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d800daa976b4aff428d4f864f6f37d4b
+      internalID: -1708513269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_103
+      rect:
+        serializedVersion: 2
+        x: 11190
+        y: 1022
+        width: 455
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fac96275fa9c8b48b1fffed5d6d45f0
+      internalID: 848271732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_104
+      rect:
+        serializedVersion: 2
+        x: 13088
+        y: 1084
+        width: 663
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f6eb0ad2b84c25489d810dda1c90f48
+      internalID: -1792850284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_105
+      rect:
+        serializedVersion: 2
+        x: 15248
+        y: 1053
+        width: 223
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40778f3a0472a9409a0b63dd93512a1
+      internalID: -1927450427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_106
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 698
+        width: 929
+        height: 447
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24445fd7f8fe7847bbd9c23a96b0c33
+      internalID: 2089805895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_107
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 698
+        width: 939
+        height: 447
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67efbebd3c30ce41a5a94cc516cca4b
+      internalID: -675861399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_108
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 1030
+        width: 101
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424f17c4487a2a542823f63d1de982fe
+      internalID: -133772613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_109
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 1030
+        width: 92
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4f031500cd1f440ba8917b87fabaed
+      internalID: -180143960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_110
+      rect:
+        serializedVersion: 2
+        x: 4355
+        y: 1053
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02f12a237777a344a6e68a7187ea01f
+      internalID: -1137229222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_111
+      rect:
+        serializedVersion: 2
+        x: 4424
+        y: 1053
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fc47977efe609489b14a4374bf2112
+      internalID: 1339209699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_112
+      rect:
+        serializedVersion: 2
+        x: 4486
+        y: 1053
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181a7c84c2320b641a46b5f4e34f1efd
+      internalID: 1316240930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_113
+      rect:
+        serializedVersion: 2
+        x: 13975
+        y: 937
+        width: 162
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb8af17e35d5e84681135d39d87a4bb
+      internalID: 1579153163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_114
+      rect:
+        serializedVersion: 2
+        x: 14399
+        y: 930
+        width: 200
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01c386d059289f46b6f4107a0486d70
+      internalID: -1847939285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_115
+      rect:
+        serializedVersion: 2
+        x: 14839
+        y: 929
+        width: 208
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438b3b662c1dbba4b8d548630e43b980
+      internalID: -176836351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_116
+      rect:
+        serializedVersion: 2
+        x: 15251
+        y: 978
+        width: 49
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8810d2d7b469d2f41bb733f06675b7c2
+      internalID: 1492234136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_117
+      rect:
+        serializedVersion: 2
+        x: 15795
+        y: 722
+        width: 4
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6551c304575e1e488c680b4c3c7edef
+      internalID: 1512586907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_118
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 914
+        width: 115
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b73d2e95f8e274da3ceeccd5419f9f
+      internalID: -1284697514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_119
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 930
+        width: 525
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0ec4224a2a75742899d0f9be152b8b
+      internalID: 1686460800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_120
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 941
+        width: 80
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c42e6c7750c3247ade46b26eec5806
+      internalID: -1909206990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_121
+      rect:
+        serializedVersion: 2
+        x: 4378
+        y: 891
+        width: 123
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cd721acaf61cf42be94e12207435cb
+      internalID: 353789109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_122
+      rect:
+        serializedVersion: 2
+        x: 11791
+        y: 814
+        width: 617
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f14efec9ff1b745a2c2f4514067559
+      internalID: 1971067657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_123
+      rect:
+        serializedVersion: 2
+        x: 12501
+        y: 814
+        width: 532
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07455c5c319cd4e48b359227a1e97933
+      internalID: -2005827095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_124
+      rect:
+        serializedVersion: 2
+        x: 13143
+        y: 798
+        width: 554
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7edb9b5e79663d34fa1245aac424316a
+      internalID: 2060677435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_125
+      rect:
+        serializedVersion: 2
+        x: 15171
+        y: 922
+        width: 176
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3914db1022ffc7942a37a31af61f7572
+      internalID: 819785656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_126
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 713
+        width: 373
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d410470546a87cb4d89b1b75773b8a82
+      internalID: 1165583907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_127
+      rect:
+        serializedVersion: 2
+        x: 2812
+        y: 823
+        width: 324
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10970802555a4c408d9a54c976b31f3
+      internalID: 1999896602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_128
+      rect:
+        serializedVersion: 2
+        x: 13951
+        y: 744
+        width: 201
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9984ea870f2ca24ba734f753eb8248c
+      internalID: 285168896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_129
+      rect:
+        serializedVersion: 2
+        x: 14414
+        y: 744
+        width: 185
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8dd8de5fdd46a44932b0585a2f34ce
+      internalID: -1124465081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_130
+      rect:
+        serializedVersion: 2
+        x: 14800
+        y: 737
+        width: 285
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f0944f6112f614c918c4ba7bca8c56
+      internalID: -1035382066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_131
+      rect:
+        serializedVersion: 2
+        x: 15441
+        y: 799
+        width: 122
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304b1726e42b9254d8b4743d12f4ec5b
+      internalID: -1356156455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_132
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 660
+        width: 101
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94ff22b7e83c4348b27f49e4dd9413f
+      internalID: 1717042296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_133
+      rect:
+        serializedVersion: 2
+        x: 2831
+        y: 737
+        width: 282
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b574937da3b706341be24b4e6e9e51d8
+      internalID: -471801482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_134
+      rect:
+        serializedVersion: 2
+        x: 11892
+        y: 552
+        width: 416
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc37e83d32d0bf043b7ad90f965811be
+      internalID: 1429125918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_135
+      rect:
+        serializedVersion: 2
+        x: 12440
+        y: 567
+        width: 647
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3cf9316f984744fb56d506a1a06e66
+      internalID: 368035638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_136
+      rect:
+        serializedVersion: 2
+        x: 13103
+        y: 617
+        width: 705
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dd9ae982199e14bb01c43fe9b84802
+      internalID: 1791011613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_137
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 929
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5332aa93c0322dd43a31e055b6854cdd
+      internalID: -1909548903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_138
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 239
+        width: 939
+        height: 444
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a2266c54f1eeb49943723affb46cfb
+      internalID: 792305261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_139
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 559
+        width: 362
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fcf61396492f64e8ef47f43be41b03
+      internalID: -1381778258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_140
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 582
+        width: 223
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dee5331540f59342a082bef9264205c
+      internalID: -1577425331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_141
+      rect:
+        serializedVersion: 2
+        x: 2852
+        y: 629
+        width: 322
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3a7b2b600428e409dba00acc0e5137
+      internalID: 1102676321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_142
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 467
+        width: 192
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985c8443212b2964e82a7bb6ac58e878
+      internalID: -938348549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_143
+      rect:
+        serializedVersion: 2
+        x: 3699
+        y: 598
+        width: 108
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854e53f7907ca6748a8746d6dbdfbf3f
+      internalID: -172599124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_144
+      rect:
+        serializedVersion: 2
+        x: 3846
+        y: 590
+        width: 162
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855430026cbd46945afc242c0bee8eaa
+      internalID: 837450007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_145
+      rect:
+        serializedVersion: 2
+        x: 4069
+        y: 598
+        width: 116
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7040edaf1613de44bec66d5f1c99496
+      internalID: 392653933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_146
+      rect:
+        serializedVersion: 2
+        x: 4247
+        y: 598
+        width: 100
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c5719b40e2b754b9162e6bff6689af
+      internalID: 1336559709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_147
+      rect:
+        serializedVersion: 2
+        x: 4432
+        y: 594
+        width: 123
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08847982f1a2b354eab6eb8daf104fd3
+      internalID: 307358307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_148
+      rect:
+        serializedVersion: 2
+        x: 13967
+        y: 559
+        width: 193
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72392548dc848f442b39a61068d0a288
+      internalID: -495675750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_149
+      rect:
+        serializedVersion: 2
+        x: 14399
+        y: 552
+        width: 200
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711479b7b968ba44692adb943e51d00a
+      internalID: -1658367155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_150
+      rect:
+        serializedVersion: 2
+        x: 14854
+        y: 559
+        width: 177
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9f6dff90820cf48a86e01c4db8dc3c
+      internalID: -954719167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_151
+      rect:
+        serializedVersion: 2
+        x: 15364
+        y: 660
+        width: 176
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee039890cf335394e99ecdfdbcb16aac
+      internalID: -675609977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_152
+      rect:
+        serializedVersion: 2
+        x: 15795
+        y: 266
+        width: 4
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2753ebc2431894e98fcbef215ae0a3
+      internalID: 15299200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_153
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 166
+        width: 539
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948e583bfdc34de4fa7b235b9209118c
+      internalID: 1200878400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_154
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 536
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bab61735c87404d9462c32b2bd9ca2
+      internalID: 1960818548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_155
+      rect:
+        serializedVersion: 2
+        x: 2527
+        y: 506
+        width: 45
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206609706ea1aec4d9b7a34daf806978
+      internalID: -247104665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_156
+      rect:
+        serializedVersion: 2
+        x: 2847
+        y: 515
+        width: 335
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bac65e82fa3b3643952675f0a21abd7
+      internalID: -746658211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_157
+      rect:
+        serializedVersion: 2
+        x: 3367
+        y: 529
+        width: 108
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec789ea61badc847a82f04d6b492ca5
+      internalID: 141291552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_158
+      rect:
+        serializedVersion: 2
+        x: 3491
+        y: 266
+        width: 169
+        height: 339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd484e10668bbec4aa24c191be46ff67
+      internalID: 1596886094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_159
+      rect:
+        serializedVersion: 2
+        x: 11900
+        y: 305
+        width: 408
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627f1a38e0617294ca64667ea1a561be
+      internalID: 1368971846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_160
+      rect:
+        serializedVersion: 2
+        x: 13103
+        y: 429
+        width: 706
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0454a98cd74376545a06f6687c90578e
+      internalID: -285861173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_161
+      rect:
+        serializedVersion: 2
+        x: 15265
+        y: 524
+        width: 213
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed138b9e222ea642b9d4b30bedcdff2
+      internalID: 217106996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_162
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 451
+        width: 182
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e144f80a06225af46bcab1e7164243b9
+      internalID: -471930535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_163
+      rect:
+        serializedVersion: 2
+        x: 2843
+        y: 413
+        width: 347
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d709b5b398b5444b17b27521622e07
+      internalID: -1492963079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_164
+      rect:
+        serializedVersion: 2
+        x: 3205
+        y: 336
+        width: 139
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75317175d6e73654aa267d046522aad8
+      internalID: -217760446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_165
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 437
+        width: 61
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7674ab3709b714098502f8893ed990
+      internalID: 178282713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_166
+      rect:
+        serializedVersion: 2
+        x: 3676
+        y: 428
+        width: 123
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eac47dc23f61c54fb9f9850ecb99bf5
+      internalID: 954804581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_167
+      rect:
+        serializedVersion: 2
+        x: 3869
+        y: 429
+        width: 107
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8be02843c4da7409ed1aa58ddc3fd5
+      internalID: 1101740468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_168
+      rect:
+        serializedVersion: 2
+        x: 4054
+        y: 428
+        width: 123
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d560db62508ed404ba912b7976b54cf3
+      internalID: -1438562404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_169
+      rect:
+        serializedVersion: 2
+        x: 4259
+        y: 428
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf6ccde250f7674cb1070feecbd1a5c
+      internalID: 597073384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_170
+      rect:
+        serializedVersion: 2
+        x: 4428
+        y: 428
+        width: 127
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ce60d9c3db9ce4797b5775be438975
+      internalID: 1645809676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_171
+      rect:
+        serializedVersion: 2
+        x: 9724
+        y: 51
+        width: 940
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7593b09a7042364cb7eb8d23ce6812b
+      internalID: 1712521433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_172
+      rect:
+        serializedVersion: 2
+        x: 10673
+        y: 51
+        width: 941
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c0a026ceca0d94cb89ae702774991f
+      internalID: 205279600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_173
+      rect:
+        serializedVersion: 2
+        x: 12517
+        y: 306
+        width: 486
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96343af0f21df1b44a53897e892cce2a
+      internalID: -1623172474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_174
+      rect:
+        serializedVersion: 2
+        x: 13951
+        y: 366
+        width: 200
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d925aebdc4c13448e1894f44f0e76e
+      internalID: 445433300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_175
+      rect:
+        serializedVersion: 2
+        x: 14353
+        y: 360
+        width: 285
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8e4d7fb29b0b54e9a0fe5b66c4d50a
+      internalID: 59548931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_176
+      rect:
+        serializedVersion: 2
+        x: 14862
+        y: 367
+        width: 162
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4684ea5477d81da4eb9ed0d831881b5d
+      internalID: -652046730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_177
+      rect:
+        serializedVersion: 2
+        x: 15171
+        y: 413
+        width: 207
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187d499cde6a31b47bb73eb96d1bc1ab
+      internalID: 2099136957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_178
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 328
+        width: 123
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb0ccb6ce3d70845b47b74c4db65b03
+      internalID: -1337854496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_179
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 305
+        width: 351
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1006d765631195c4c80cf649f60c6d53
+      internalID: 2080984888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_180
+      rect:
+        serializedVersion: 2
+        x: 3383
+        y: 351
+        width: 77
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692921fcef9886247a3c1f999cbd1b54
+      internalID: -1109834286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_181
+      rect:
+        serializedVersion: 2
+        x: 3684
+        y: 266
+        width: 115
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff15030caa4281344ae47dc11de037fb
+      internalID: 2143511548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_182
+      rect:
+        serializedVersion: 2
+        x: 3884
+        y: 266
+        width: 100
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e57a05b7f8e05c44b413f1dcdf4f204
+      internalID: 1351717490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_183
+      rect:
+        serializedVersion: 2
+        x: 4062
+        y: 266
+        width: 115
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a149507551a484ab7e749e663ef52d
+      internalID: 604043989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_184
+      rect:
+        serializedVersion: 2
+        x: 4259
+        y: 266
+        width: 88
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbc0fdb13567a441b1cff3d204d22b7
+      internalID: -1048067889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_185
+      rect:
+        serializedVersion: 2
+        x: 4409
+        y: 266
+        width: 169
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4665d766568be4c80ce2f25c0ea9f2
+      internalID: 1502232650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_186
+      rect:
+        serializedVersion: 2
+        x: 8474
+        y: 151
+        width: 378
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608d4e6e23d7e5f4da4e06d678b50a7e
+      internalID: 1434156906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_187
+      rect:
+        serializedVersion: 2
+        x: 13103
+        y: 251
+        width: 701
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f659a81b5517847aa87fe1ce7da5f3
+      internalID: -1939229012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_188
+      rect:
+        serializedVersion: 2
+        x: 15163
+        y: 328
+        width: 96
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5ca3287aa9d8242bc62c8c6bab9ea6
+      internalID: 271336885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_189
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 260
+        width: 70
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f83adcbda2b61e4081c1ad071753906
+      internalID: 1138911495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_190
+      rect:
+        serializedVersion: 2
+        x: 2527
+        y: 19
+        width: 731
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d528aecedb0c9164088b206255af94b7
+      internalID: -522087183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_191
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 266
+        width: 277
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30bc652a928120409b113fc41fd9849
+      internalID: 1878903647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_192
+      rect:
+        serializedVersion: 2
+        x: 3560
+        y: 166
+        width: 92
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8cdba8ee48ae740a94a6040627974d
+      internalID: 135255642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_193
+      rect:
+        serializedVersion: 2
+        x: 11892
+        y: 58
+        width: 408
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ccb2657bd751546920565bbc568401
+      internalID: 715087683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_194
+      rect:
+        serializedVersion: 2
+        x: 12486
+        y: 66
+        width: 554
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db145440c54e775448a8e08f5a174c12
+      internalID: 1384514788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_195
+      rect:
+        serializedVersion: 2
+        x: 13905
+        y: 174
+        width: 285
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a91fdc9b3a326419f5e0172cfb9295
+      internalID: -1265805311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_196
+      rect:
+        serializedVersion: 2
+        x: 14414
+        y: 181
+        width: 170
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c70eb46a2a6cc418829d6c75cb1a06
+      internalID: 1214298204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_197
+      rect:
+        serializedVersion: 2
+        x: 14862
+        y: 181
+        width: 154
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ace0a304bb7a1438a580cf849f00fc
+      internalID: 1642299813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_198
+      rect:
+        serializedVersion: 2
+        x: 15209
+        y: 236
+        width: 76
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bacda5342e91614aa393746724a17f2
+      internalID: -1029769493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_199
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 46
+        width: 709
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f8eb64584eda5449820c447c2a7d1c
+      internalID: -99155747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_200
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 46
+        width: 708
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca6f7d0c1f72e945984154d5803263f
+      internalID: -1482693813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_201
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 89
+        width: 607
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b104be2f00db3f439137a261706b11f
+      internalID: -1389801623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_202
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 167
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0298bd3b2586bda4da7f579d94464ea3
+      internalID: 782687346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_203
+      rect:
+        serializedVersion: 2
+        x: 3275
+        y: 189
+        width: 115
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51595f55ed784a4492188e61c785145
+      internalID: -1769602769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_204
+      rect:
+        serializedVersion: 2
+        x: 3452
+        y: 181
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2016a2273de8fd84ea8d1623fc2ed5c7
+      internalID: -739162096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_205
+      rect:
+        serializedVersion: 2
+        x: 3676
+        y: 97
+        width: 123
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587176eb0a2b22b42ac1e77569caca57
+      internalID: -1050121963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_206
+      rect:
+        serializedVersion: 2
+        x: 3884
+        y: 104
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9531e2fd474c17247ae3e3c8b0f2c535
+      internalID: -1968993319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_207
+      rect:
+        serializedVersion: 2
+        x: 4054
+        y: 97
+        width: 123
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2db439663bd24d4d9e8d047cd28ad4b
+      internalID: -1856317660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_208
+      rect:
+        serializedVersion: 2
+        x: 4262
+        y: 104
+        width: 108
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5aeab0d2f53dc54e8bc551c8c21bae3
+      internalID: -1492492781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_209
+      rect:
+        serializedVersion: 2
+        x: 4432
+        y: 104
+        width: 108
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440a2f995015b084db3c1679bd77a1ac
+      internalID: 229027163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_210
+      rect:
+        serializedVersion: 2
+        x: 13103
+        y: 58
+        width: 701
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169e29056f242d84d98b1d2f481fe688
+      internalID: -884362146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_211
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 73
+        width: 200
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8e6d69792db644390df38c8f42da21
+      internalID: 1424306052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_212
+      rect:
+        serializedVersion: 2
+        x: 3182
+        y: 42
+        width: 193
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b000561b2308c4c9b97346d7e285a7
+      internalID: 1165905980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_213
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 0
+        width: 277
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6973ff046b1a07c4ca5ce4bc27f7d874
+      internalID: 361920550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_214
+      rect:
+        serializedVersion: 2
+        x: 7673
+        y: 0
+        width: 2012
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba2217a287efa84185ee53aedbf6525
+      internalID: 45462168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_215
+      rect:
+        serializedVersion: 2
+        x: 7687
+        y: 13
+        width: 532
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522bc7792c9a9ad46a0c4e5f9d246fdf
+      internalID: 1523932852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_216
+      rect:
+        serializedVersion: 2
+        x: 8227
+        y: 13
+        width: 532
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a030093e2467dd4da81679fe1deb8ef
+      internalID: 682925197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_217
+      rect:
+        serializedVersion: 2
+        x: 8768
+        y: 20
+        width: 528
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bef527eff9e43c44845ad647b2247bc
+      internalID: 553135595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_218
+      rect:
+        serializedVersion: 2
+        x: 13829
+        y: 35
+        width: 531
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d704073151ce00147849dd07beb74e75
+      internalID: 762809204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_219
+      rect:
+        serializedVersion: 2
+        x: 14376
+        y: 35
+        width: 530
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c655135b29b6a740b7b31c48f3cf1c4
+      internalID: -533489537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_220
+      rect:
+        serializedVersion: 2
+        x: 14923
+        y: 4
+        width: 378
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0810749b56e052c45835a38ae0f51b99
+      internalID: -1035444646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_221
+      rect:
+        serializedVersion: 2
+        x: 15355
+        y: 89
+        width: 285
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d4eaefbe5328541a3bb94c7e306c0f
+      internalID: -966322125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_222
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 1736
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d595bd66974f97a4695bfa4411fb1ea2
+      internalID: 1148408783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_223
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 5
+        width: 157
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689ef73da737017479443a378c31d8f1
+      internalID: 1310371935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_224
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 0
+        width: 300
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6d16c3c650ff444b9900ae64215042
+      internalID: -1155149612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_225
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 0
+        width: 262
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26cf300829792945954f39e6b940b5d
+      internalID: 1463709870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_226
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 0
+        width: 37
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b271be171dcf4374990cae0d7b345e10
+      internalID: 872851652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_227
+      rect:
+        serializedVersion: 2
+        x: 3653
+        y: 0
+        width: 655
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6f3729da1a9c54c8af614313546ab0
+      internalID: -1538297491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_228
+      rect:
+        serializedVersion: 2
+        x: 4533
+        y: 0
+        width: 45
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d485b892fdc06469f9bdb742ccd61d
+      internalID: -1325429013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_229
+      rect:
+        serializedVersion: 2
+        x: 5018
+        y: 0
+        width: 50
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c136a5e3aca5b4ebb0764d41938b58
+      internalID: -1134945976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_230
+      rect:
+        serializedVersion: 2
+        x: 5204
+        y: 0
+        width: 53
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd18483b592dac4a86e340705e4a64f
+      internalID: -1267815271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_231
+      rect:
+        serializedVersion: 2
+        x: 9680
+        y: 0
+        width: 24
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef1fced6bf32c7429a249ef1bd4dbf4
+      internalID: -1625157354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play10_232
+      rect:
+        serializedVersion: 2
+        x: 9724
+        y: 0
+        width: 979
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32b3ebfdfc46014a9903786b42d8d72
+      internalID: 1692718896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5bd67a9c2682bfa41bcfcc0455a580c6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Play10_0: -714085805
+      Play10_1: -1304128780
+      Play10_10: -1269848399
+      Play10_100: 1545412309
+      Play10_101: 75851045
+      Play10_102: -1708513269
+      Play10_103: 848271732
+      Play10_104: -1792850284
+      Play10_105: -1927450427
+      Play10_106: 2089805895
+      Play10_107: -675861399
+      Play10_108: -133772613
+      Play10_109: -180143960
+      Play10_11: 1683036421
+      Play10_110: -1137229222
+      Play10_111: 1339209699
+      Play10_112: 1316240930
+      Play10_113: 1579153163
+      Play10_114: -1847939285
+      Play10_115: -176836351
+      Play10_116: 1492234136
+      Play10_117: 1512586907
+      Play10_118: -1284697514
+      Play10_119: 1686460800
+      Play10_12: -1680623530
+      Play10_120: -1909206990
+      Play10_121: 353789109
+      Play10_122: 1971067657
+      Play10_123: -2005827095
+      Play10_124: 2060677435
+      Play10_125: 819785656
+      Play10_126: 1165583907
+      Play10_127: 1999896602
+      Play10_128: 285168896
+      Play10_129: -1124465081
+      Play10_13: 402692744
+      Play10_130: -1035382066
+      Play10_131: -1356156455
+      Play10_132: 1717042296
+      Play10_133: -471801482
+      Play10_134: 1429125918
+      Play10_135: 368035638
+      Play10_136: 1791011613
+      Play10_137: -1909548903
+      Play10_138: 792305261
+      Play10_139: -1381778258
+      Play10_14: 738184506
+      Play10_140: -1577425331
+      Play10_141: 1102676321
+      Play10_142: -938348549
+      Play10_143: -172599124
+      Play10_144: 837450007
+      Play10_145: 392653933
+      Play10_146: 1336559709
+      Play10_147: 307358307
+      Play10_148: -495675750
+      Play10_149: -1658367155
+      Play10_15: 1626516938
+      Play10_150: -954719167
+      Play10_151: -675609977
+      Play10_152: 15299200
+      Play10_153: 1200878400
+      Play10_154: 1960818548
+      Play10_155: -247104665
+      Play10_156: -746658211
+      Play10_157: 141291552
+      Play10_158: 1596886094
+      Play10_159: 1368971846
+      Play10_16: 857614018
+      Play10_160: -285861173
+      Play10_161: 217106996
+      Play10_162: -471930535
+      Play10_163: -1492963079
+      Play10_164: -217760446
+      Play10_165: 178282713
+      Play10_166: 954804581
+      Play10_167: 1101740468
+      Play10_168: -1438562404
+      Play10_169: 597073384
+      Play10_17: 471910065
+      Play10_170: 1645809676
+      Play10_171: 1712521433
+      Play10_172: 205279600
+      Play10_173: -1623172474
+      Play10_174: 445433300
+      Play10_175: 59548931
+      Play10_176: -652046730
+      Play10_177: 2099136957
+      Play10_178: -1337854496
+      Play10_179: 2080984888
+      Play10_18: 1872396347
+      Play10_180: -1109834286
+      Play10_181: 2143511548
+      Play10_182: 1351717490
+      Play10_183: 604043989
+      Play10_184: -1048067889
+      Play10_185: 1502232650
+      Play10_186: 1434156906
+      Play10_187: -1939229012
+      Play10_188: 271336885
+      Play10_189: 1138911495
+      Play10_19: -2051208266
+      Play10_190: -522087183
+      Play10_191: 1878903647
+      Play10_192: 135255642
+      Play10_193: 715087683
+      Play10_194: 1384514788
+      Play10_195: -1265805311
+      Play10_196: 1214298204
+      Play10_197: 1642299813
+      Play10_198: -1029769493
+      Play10_199: -99155747
+      Play10_2: 270893073
+      Play10_20: -303407615
+      Play10_200: -1482693813
+      Play10_201: -1389801623
+      Play10_202: 782687346
+      Play10_203: -1769602769
+      Play10_204: -739162096
+      Play10_205: -1050121963
+      Play10_206: -1968993319
+      Play10_207: -1856317660
+      Play10_208: -1492492781
+      Play10_209: 229027163
+      Play10_21: -245924064
+      Play10_210: -884362146
+      Play10_211: 1424306052
+      Play10_212: 1165905980
+      Play10_213: 361920550
+      Play10_214: 45462168
+      Play10_215: 1523932852
+      Play10_216: 682925197
+      Play10_217: 553135595
+      Play10_218: 762809204
+      Play10_219: -533489537
+      Play10_22: 1734303047
+      Play10_220: -1035444646
+      Play10_221: -966322125
+      Play10_222: 1148408783
+      Play10_223: 1310371935
+      Play10_224: -1155149612
+      Play10_225: 1463709870
+      Play10_226: 872851652
+      Play10_227: -1538297491
+      Play10_228: -1325429013
+      Play10_229: -1134945976
+      Play10_23: -1994332389
+      Play10_230: -1267815271
+      Play10_231: -1625157354
+      Play10_232: 1692718896
+      Play10_24: -1635857000
+      Play10_25: 760821181
+      Play10_26: 35909224
+      Play10_27: -1510895755
+      Play10_28: 2131499353
+      Play10_29: -1833764883
+      Play10_3: -874870481
+      Play10_30: 749871248
+      Play10_31: 1101665800
+      Play10_32: -994649062
+      Play10_33: -713250798
+      Play10_34: 581192331
+      Play10_35: -1953142361
+      Play10_36: -28580080
+      Play10_37: 1970661562
+      Play10_38: 985463748
+      Play10_39: 124732536
+      Play10_4: 1116674524
+      Play10_40: -1621564042
+      Play10_41: -2050475087
+      Play10_42: -1300129455
+      Play10_43: -877084307
+      Play10_44: -1154657243
+      Play10_45: 610103146
+      Play10_46: 230655092
+      Play10_47: -1012535312
+      Play10_48: -2039730825
+      Play10_49: -297989092
+      Play10_5: -817151381
+      Play10_50: 1138882193
+      Play10_51: -2048791592
+      Play10_52: 519337122
+      Play10_53: 637037821
+      Play10_54: 1315591694
+      Play10_55: -1100211754
+      Play10_56: -1780015481
+      Play10_57: -2046805240
+      Play10_58: 2115478350
+      Play10_59: 1528950426
+      Play10_6: -1138440893
+      Play10_60: 2018707744
+      Play10_61: 2002775202
+      Play10_62: 170544984
+      Play10_63: 403969168
+      Play10_64: 1396923155
+      Play10_65: -1967790644
+      Play10_66: -1874025994
+      Play10_67: -1826624589
+      Play10_68: -445006544
+      Play10_69: 466470120
+      Play10_7: -352889180
+      Play10_70: -496040280
+      Play10_71: 686472868
+      Play10_72: -1627089046
+      Play10_73: -521989351
+      Play10_74: -1820936568
+      Play10_75: -1888770041
+      Play10_76: 815977736
+      Play10_77: 427306282
+      Play10_78: 1860071539
+      Play10_79: 1314046221
+      Play10_8: -521013547
+      Play10_80: 950394784
+      Play10_81: -850089340
+      Play10_82: 923643266
+      Play10_83: 1439811547
+      Play10_84: 1788419506
+      Play10_85: -456487745
+      Play10_86: -2002539435
+      Play10_87: 470149251
+      Play10_88: 1220135457
+      Play10_89: 556800190
+      Play10_9: 902994141
+      Play10_90: -1360629753
+      Play10_91: -13415463
+      Play10_92: 1290399082
+      Play10_93: 780812043
+      Play10_94: 610264858
+      Play10_95: 2061968342
+      Play10_96: 250141214
+      Play10_97: -1109159763
+      Play10_98: -1452445754
+      Play10_99: 1751535528
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

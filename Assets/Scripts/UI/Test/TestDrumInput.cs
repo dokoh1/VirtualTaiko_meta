@@ -1,25 +1,36 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class TestDrumInput : MonoBehaviour
 {
-    public DrumDataType testType;
+    public DrumInputDataType testInputType;
+    public JudgementDataType judgementData;
     void Start()
     {
-        testType = DrumDataType.NotPlayed;
+        testInputType = DrumInputDataType.NotPlayed;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Alpha1))
-            testType = DrumDataType.LeftFace;
+            testInputType = DrumInputDataType.LeftFace;
         else if (Input.GetKeyUp(KeyCode.Alpha2))
-            testType = DrumDataType.RightFace;
+            testInputType = DrumInputDataType.RightFace;
         else if (Input.GetKeyUp(KeyCode.Alpha3))
-            testType = DrumDataType.LeftSide;
+            testInputType = DrumInputDataType.LeftSide;
         else if (Input.GetKeyUp(KeyCode.Alpha4))
-            testType = DrumDataType.RightSide;
+            testInputType = DrumInputDataType.RightSide;
+        else if (Input.GetKeyUp(KeyCode.Alpha5))
+            judgementData = JudgementDataType.Good;
+        else if (Input.GetKeyUp(KeyCode.Alpha6))
+            judgementData = JudgementDataType.Great;
+        else if (Input.GetKeyUp(KeyCode.Alpha7))
+            judgementData = JudgementDataType.Bad;
         else if (!Input.anyKey)
-            testType = DrumDataType.NotPlayed;
+        {
+            testInputType = DrumInputDataType.NotPlayed;
+            judgementData = JudgementDataType.None;
+        }
     }
 }
