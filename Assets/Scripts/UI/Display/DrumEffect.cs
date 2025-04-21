@@ -25,13 +25,13 @@ public class DrumEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (testDrumInput.testInputType == DrumInputDataType.LeftSide)
+        if (testDrumInput.testInputType == DrumDataType.LeftSide)
             ShowDrumEffect(LeftSide);
-        else if (testDrumInput.testInputType == DrumInputDataType.RightSide)
+        else if (testDrumInput.testInputType == DrumDataType.RightSide)
             ShowDrumEffect(RightSide);
-        else if (testDrumInput.testInputType == DrumInputDataType.LeftFace)
+        else if (testDrumInput.testInputType == DrumDataType.LeftFace)
             ShowDrumEffect(LeftFace);
-        else if (testDrumInput.testInputType == DrumInputDataType.RightFace)
+        else if (testDrumInput.testInputType == DrumDataType.RightFace)
             ShowDrumEffect(RightFace);
     }
 
