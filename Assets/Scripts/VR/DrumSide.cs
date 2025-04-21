@@ -11,17 +11,6 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 //  나중에 함수별로 코드 분리할 예정
 public class DrumSide : MonoBehaviour
 {
-    //  데이터 저장
-    public enum DrumDataType
-    {
-        RightSide,
-        RightFace,
-        LeftSide,
-        LeftFace,
-        DobletFace,
-        Dobletside,
-        NotHit
-    }
 
     public delegate void AudioFunction();
     VisualFunction Audio;
@@ -58,9 +47,9 @@ public class DrumSide : MonoBehaviour
     // 판정 보정
     [Range(0, 1f)]
     [SerializeField]
-    private float delay = 1f;
+    private float delay = 0.2f;
 
-    private string dateSet = "notHit";
+    private DrumDataType dateSet = DrumDataType.NotHit;
     private bool leftHit = false;
     private bool rightHit = false;
     
@@ -85,15 +74,15 @@ public class DrumSide : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("true");
+        //print("true");
         estimator = other.GetComponent<VelocityEstimator>();
 
         //  데이터 저장
         if (other.gameObject.layer == leftStick)
         {
             leftHit = true;
-            dateSet = "leftHit";
-            print(dateSet);
+            dateSet = DrumDataType.LeftSide;
+            //print(dateSet);
             PlayLeftVibration();
             Audio();
         }
@@ -102,8 +91,8 @@ public class DrumSide : MonoBehaviour
         if (other.gameObject.layer == rightStick)
         {
             rightHit = true;
-            dateSet = "rightHit";
-            print(dateSet);
+            dateSet = DrumDataType.RightSide;
+            //print(dateSet);
             PlayRightVibration();
             Audio();
         }
@@ -111,8 +100,8 @@ public class DrumSide : MonoBehaviour
 
         if (rightHit && leftHit)
         {
-            dateSet = "dobletHit";
-            print(dateSet);
+            dateSet = DrumDataType.Dobletside;
+            //print(dateSet);
             // Audio();
         }
 
@@ -129,8 +118,8 @@ public class DrumSide : MonoBehaviour
         yield return new WaitForSeconds(delay);
         leftHit = false;
         rightHit = false;
-        dateSet = "notHit";
-        print(dateSet);
+        dateSet = DrumDataType.NotHit;
+        //print(dateSet);
     }
 
 

@@ -14,6 +14,7 @@ namespace dokoh
         private List<ChoiceData> choices = new();
 
         [SerializeField] private TestDrumInput testDrumInput;
+        public Drums drums;
         
         private ChoiceAnimationData _animData;
 
@@ -41,16 +42,16 @@ namespace dokoh
         
         void Update()
         {
-            // 곡 선택
             activeChoice = choices[3];
-            if (testDrumInput.testInputType == DrumInputDataType.RightFace)
-                DoChoice();
-            // 곡 아래로
-            else if (testDrumInput.testInputType == DrumInputDataType.LeftFace)
-                ScrollDown();
             // 곡 위로
-            else if (testDrumInput.testInputType == DrumInputDataType.LeftSide)
+            if (drums.dataSet == DrumDataType.RightFace)
                 ScrollUp();
+            // 곡 아래로
+            else if (drums.dataSet == DrumDataType.LeftFace)
+                ScrollDown();
+            // 곡 선택
+            // else if (testDrumInput.testInputType == DrumInputDataType.LeftSide)
+                // DoChoice();
         }
 
         private void DoChoice()
