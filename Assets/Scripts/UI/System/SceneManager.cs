@@ -13,7 +13,8 @@ namespace dokoh
         {
             foreach (SceneData sceneData in sceneObjects)
             {
-                if (sceneData.SceneDataType == SceneDataType.Start)
+                // if (sceneData.SceneDataType == SceneDataType.Start)
+                if (sceneData.SceneDataType == SceneDataType.Music1)
                     sceneData.SceneObject.SetActive(true);
                 else
                     sceneData.SceneObject.SetActive(false);
