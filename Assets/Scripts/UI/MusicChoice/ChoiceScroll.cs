@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using UnityEditor;
 using UnityEngine.Serialization;
 
 namespace dokoh
@@ -19,7 +18,6 @@ namespace dokoh
         private ChoiceAnimationData _animData;
 
         private readonly float _moveDistance = 85f;
-        private readonly float _activeDistance = 120f;
         private readonly float _moveDuration = 0.5f;
         private bool _isScrolling;
         
@@ -45,13 +43,13 @@ namespace dokoh
         {
             // 곡 선택
             activeChoice = choices[3];
-            if (testDrumInput.testType == DrumDataType.RightFace)
+            if (testDrumInput.testInputType == DrumInputDataType.RightFace)
                 DoChoice();
             // 곡 아래로
-            else if (testDrumInput.testType == DrumDataType.LeftFace)
+            else if (testDrumInput.testInputType == DrumInputDataType.LeftFace)
                 ScrollDown();
             // 곡 위로
-            else if (testDrumInput.testType == DrumDataType.LeftSide)
+            else if (testDrumInput.testInputType == DrumInputDataType.LeftSide)
                 ScrollUp();
         }
 

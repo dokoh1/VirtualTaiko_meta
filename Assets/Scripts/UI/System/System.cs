@@ -14,7 +14,4 @@ namespace dokoh
             Instance = this;
         }
     }
-
-
-
 }
