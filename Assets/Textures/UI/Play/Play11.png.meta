@@ -1,0 +1,3810 @@
+fileFormatVersion: 2
+guid: 5130b83261fda52479a44e7a7ae1d369
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Play11_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 758
+        width: 501
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03861d414b868874bb8a936ff4bdd208
+      internalID: -719489844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_1
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 797
+        width: 245
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e79ecd528d5c949ac7715110efe720
+      internalID: -2034373024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_2
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 723
+        width: 228
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1d716cf8c84c14fb6b5ff5897fe78b
+      internalID: 1131660478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_3
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 743
+        width: 1234
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b94c52122a216341988c317bed86f8a
+      internalID: -1363755727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_4
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 726
+        width: 262
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97149f7f152318643aac38b372fed3af
+      internalID: -571552324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_5
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 690
+        width: 329
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dee56f26d213714d826abc94c3764a7
+      internalID: 1525585310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_6
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 712
+        width: 278
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e7c3f753167dd4a8b02e5dd9d9f487
+      internalID: 801878449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_7
+      rect:
+        serializedVersion: 2
+        x: 4126
+        y: 712
+        width: 287
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541f015eaa3c09e48bdd30a34864c481
+      internalID: 1021611439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_8
+      rect:
+        serializedVersion: 2
+        x: 4499
+        y: 922
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3335d0d8b72c44294c68bb0239d4c8
+      internalID: 1515876656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_9
+      rect:
+        serializedVersion: 2
+        x: 4538
+        y: 945
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f99469435bad5469bb29ade2ef00d5
+      internalID: 273558383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_10
+      rect:
+        serializedVersion: 2
+        x: 4626
+        y: 883
+        width: 116
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454c065ba33765a48bd1f2395fab1796
+      internalID: 77735859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_11
+      rect:
+        serializedVersion: 2
+        x: 4921
+        y: 962
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fbe239d9c291041b02daa1d55e818a
+      internalID: -1901557790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_12
+      rect:
+        serializedVersion: 2
+        x: 5017
+        y: 941
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b08ebacd41ae524baf8519c63d0dd91
+      internalID: -351403151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_13
+      rect:
+        serializedVersion: 2
+        x: 5168
+        y: 731
+        width: 250
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84eb5c0cc73912a4e8c1e94dfef94611
+      internalID: 1701014317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_14
+      rect:
+        serializedVersion: 2
+        x: 5480
+        y: 710
+        width: 296
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a772a81b2d44a48bc088c4f2605e7d
+      internalID: 369792004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_15
+      rect:
+        serializedVersion: 2
+        x: 5843
+        y: 716
+        width: 276
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049221277d9aab840a6b6164e89e30cf
+      internalID: -1714406143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_16
+      rect:
+        serializedVersion: 2
+        x: 6177
+        y: 716
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fe4e0b559521c40add0b4071feee86
+      internalID: -1005369008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_17
+      rect:
+        serializedVersion: 2
+        x: 6589
+        y: 898
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db080a8a7453034abae4b5990430c43
+      internalID: -1314678222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_18
+      rect:
+        serializedVersion: 2
+        x: 6637
+        y: 902
+        width: 32
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b33d0d4984e7c34b9b414c46a9d63cb
+      internalID: 933579477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_19
+      rect:
+        serializedVersion: 2
+        x: 6667
+        y: 898
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6eb623c44a554643a5d33fac2990cc2
+      internalID: -1565430930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_20
+      rect:
+        serializedVersion: 2
+        x: 6861
+        y: 805
+        width: 196
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56dacedeb1f68b4dbd782d27d33994f
+      internalID: 1009027443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_21
+      rect:
+        serializedVersion: 2
+        x: 7088
+        y: 781
+        width: 234
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70b352ae705772408759bf4a480f0e2
+      internalID: -842937912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_22
+      rect:
+        serializedVersion: 2
+        x: 7327
+        y: 782
+        width: 237
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2712e5cb675ed44831b41fe3c1c69c
+      internalID: 1079082378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_23
+      rect:
+        serializedVersion: 2
+        x: 7575
+        y: 787
+        width: 233
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc5dc4a58192ab4da55ea62cb304a4a
+      internalID: 1531162860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_24
+      rect:
+        serializedVersion: 2
+        x: 7865
+        y: 783
+        width: 238
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d78f615dcbf24248b056d3c2a11330d
+      internalID: 1610356256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_25
+      rect:
+        serializedVersion: 2
+        x: 8151
+        y: 947
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e313d2f7e2614154aab47f74efb3d66a
+      internalID: -721762524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_26
+      rect:
+        serializedVersion: 2
+        x: 8280
+        y: 951
+        width: 107
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22d3c64b263a484382b196c716c3134
+      internalID: -2015994647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_27
+      rect:
+        serializedVersion: 2
+        x: 8375
+        y: 194
+        width: 144
+        height: 830
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f335da75708ad4382c339432bae4da
+      internalID: 113782341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_28
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 724
+        width: 222
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064e1b6b65b9199449e1f4b42c5a8f4f
+      internalID: 2031079264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_29
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 727
+        width: 197
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bcc7ed6ba38f342972aebda0f23d81
+      internalID: -126714614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_30
+      rect:
+        serializedVersion: 2
+        x: 4468
+        y: 864
+        width: 41
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b8a7859b967864d8427a4c51cfb314
+      internalID: 1015519694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_31
+      rect:
+        serializedVersion: 2
+        x: 6526
+        y: 870
+        width: 85
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81628d52bc8da2f4d81bc2479cd1bbe9
+      internalID: 1962677339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_32
+      rect:
+        serializedVersion: 2
+        x: 6551
+        y: 887
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7aad24d539f4ee4e8025ce8bc834154
+      internalID: -550499154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_33
+      rect:
+        serializedVersion: 2
+        x: 6683
+        y: 870
+        width: 97
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89659450fe2f33c4d89cba697bc7ef16
+      internalID: -673380711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_34
+      rect:
+        serializedVersion: 2
+        x: 8147
+        y: 862
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea501a4ad803cd84fa9945ead5744c4a
+      internalID: 1170126253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_35
+      rect:
+        serializedVersion: 2
+        x: 8280
+        y: 860
+        width: 108
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af7c914341e0f14ab5cd5ed62ecde83
+      internalID: -1809149030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_36
+      rect:
+        serializedVersion: 2
+        x: 4462
+        y: 733
+        width: 89
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1199262e833ff814b9411eddf09a200a
+      internalID: 1753390333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_37
+      rect:
+        serializedVersion: 2
+        x: 4717
+        y: 849
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86063b79f9550bd4f86cef598c716bb4
+      internalID: -1027548324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_38
+      rect:
+        serializedVersion: 2
+        x: 4817
+        y: 802
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db941772905d1d46a33c5f190d4bdcd
+      internalID: -830084818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_39
+      rect:
+        serializedVersion: 2
+        x: 6517
+        y: 840
+        width: 90
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e337d10af44120a4a861fb4dffe73164
+      internalID: -1927415636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_40
+      rect:
+        serializedVersion: 2
+        x: 6700
+        y: 840
+        width: 90
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bc8d3a745c3da429f24fc20295f72a
+      internalID: 482997445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_41
+      rect:
+        serializedVersion: 2
+        x: 4551
+        y: 703
+        width: 188
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a40dd53296a8946a97dce8de32e402
+      internalID: 902332443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_42
+      rect:
+        serializedVersion: 2
+        x: 6525
+        y: 794
+        width: 86
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a753af107e6492a4fb6ee92c8b32d793
+      internalID: 1310668462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_43
+      rect:
+        serializedVersion: 2
+        x: 6551
+        y: 754
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb7ce3b6f348d54fbb91197bd29ee09
+      internalID: -2048060357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_44
+      rect:
+        serializedVersion: 2
+        x: 6589
+        y: 728
+        width: 51
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b28b9978a96cb4fa3f1b901635aa4f
+      internalID: 320130858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_45
+      rect:
+        serializedVersion: 2
+        x: 6638
+        y: 719
+        width: 31
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a311ca8a36365468547cf2a60cf875
+      internalID: 2016392895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_46
+      rect:
+        serializedVersion: 2
+        x: 6667
+        y: 728
+        width: 88
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d64fc271be56f849afd5524ca05e155
+      internalID: 2128536857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_47
+      rect:
+        serializedVersion: 2
+        x: 6696
+        y: 794
+        width: 84
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd3f24e5379d294da349817c919782f
+      internalID: -220093029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_48
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 548
+        width: 245
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c8b8e2356e5a44e9a83ba9c7e7fb8b
+      internalID: -228036877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_49
+      rect:
+        serializedVersion: 2
+        x: 4961
+        y: 720
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc813ec2554666b4c9de69bdecc691ae
+      internalID: 1074888219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_50
+      rect:
+        serializedVersion: 2
+        x: 6857
+        y: 545
+        width: 210
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b52050d34f1bd4b8f050ca34a433b9
+      internalID: 1619584242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_51
+      rect:
+        serializedVersion: 2
+        x: 7083
+        y: 536
+        width: 239
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2915db8c0a7f94888a0d52a4f2ead9
+      internalID: 1890304037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_52
+      rect:
+        serializedVersion: 2
+        x: 7348
+        y: 560
+        width: 198
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe9e5cbd0fe8674faf4dd1024c2a25a
+      internalID: -1571141129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_53
+      rect:
+        serializedVersion: 2
+        x: 7571
+        y: 537
+        width: 241
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b9b21f60052b0469ed2f8d0bb128de
+      internalID: 1335688746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_54
+      rect:
+        serializedVersion: 2
+        x: 7860
+        y: 156
+        width: 420
+        height: 624
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8394544693acfb64f8d59de50935f769
+      internalID: -735238038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_55
+      rect:
+        serializedVersion: 2
+        x: 8313
+        y: 710
+        width: 83
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147404a60eb9f1d4dad9d766ae7b9e46
+      internalID: 316193022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_56
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 400
+        width: 227
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819949c5101c113438ef71267cfd00c4
+      internalID: 1453577833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_57
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 512
+        width: 176
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55bb32c25019c942b215d52962a18ac
+      internalID: -708031955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_58
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 402
+        width: 241
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c614fba3a7ee54aaa29f84ac431971
+      internalID: 387538088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_59
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 385
+        width: 270
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e843df911486ebb4895fa6dedcdf83df
+      internalID: -868518982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_60
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 356
+        width: 329
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8559081849a670148a2c6e42bd8ba253
+      internalID: 2121722015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_61
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 375
+        width: 278
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59bb9f8200dd2a4e810705246d061b0
+      internalID: 1795502882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_62
+      rect:
+        serializedVersion: 2
+        x: 4126
+        y: 375
+        width: 287
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18328a24d6efbea4da490014c6308f04
+      internalID: 1868299013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_63
+      rect:
+        serializedVersion: 2
+        x: 4505
+        y: 591
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec485d5d72ee0324292eb94d341f5131
+      internalID: 940075520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_64
+      rect:
+        serializedVersion: 2
+        x: 4546
+        y: 616
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64529d756af4b00449c27ddb7b6050f8
+      internalID: 566317915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_65
+      rect:
+        serializedVersion: 2
+        x: 4609
+        y: 562
+        width: 116
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eeced44a37402446b6d44150ee840ba
+      internalID: -1135700180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_66
+      rect:
+        serializedVersion: 2
+        x: 4844
+        y: 406
+        width: 227
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8438f9fc76018694499c2b64e0f620d9
+      internalID: 902731557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_67
+      rect:
+        serializedVersion: 2
+        x: 5160
+        y: 387
+        width: 266
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7e4e07bbd9d124798c919298a4ba65
+      internalID: -325850277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_68
+      rect:
+        serializedVersion: 2
+        x: 5466
+        y: 356
+        width: 326
+        height: 328
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe90851969d5b842a7303aaee3cfdae
+      internalID: -1658998890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_69
+      rect:
+        serializedVersion: 2
+        x: 5843
+        y: 382
+        width: 277
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c9d86a811c99a4b9f6e6c396960c9a
+      internalID: 287229228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_70
+      rect:
+        serializedVersion: 2
+        x: 6177
+        y: 379
+        width: 280
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55000e039885b834dae56f7746146c23
+      internalID: 1043050037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_71
+      rect:
+        serializedVersion: 2
+        x: 6512
+        y: 450
+        width: 210
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc219d9364172db4b8d1398d5f0c725f
+      internalID: 356393235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_72
+      rect:
+        serializedVersion: 2
+        x: 8292
+        y: 614
+        width: 121
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa8a993f9f9862408d729462ff1253d
+      internalID: -2109399742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_73
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 398
+        width: 172
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c61cac28a5fc646939ad58c0ad392f
+      internalID: 1265534319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_74
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 400
+        width: 155
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fef99b7ea09bd4cbd414fbc8625beb
+      internalID: -271172955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_75
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 558
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bbd1d9946f5d71439c6de4e1e8cca4d
+      internalID: -1647109524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_76
+      rect:
+        serializedVersion: 2
+        x: 4463
+        y: 383
+        width: 100
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f899fa9338dd82b4cbf97ce4c42390ff
+      internalID: 930384256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_77
+      rect:
+        serializedVersion: 2
+        x: 8267
+        y: 493
+        width: 59
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3859b665b36deea49972409f17e1a23f
+      internalID: -487300224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_78
+      rect:
+        serializedVersion: 2
+        x: 4721
+        y: 540
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d4e1912a7143d4c8e7555a74e29a3e
+      internalID: 1558715720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_79
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 300
+        width: 245
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666bd1582e3508441b73974e89e9928d
+      internalID: 1322912017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_80
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 327
+        width: 177
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853a73260d8310c4d97674dc5015638c
+      internalID: 524990868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_81
+      rect:
+        serializedVersion: 2
+        x: 4562
+        y: 366
+        width: 55
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614f6e8937227df45a23f44d358e953f
+      internalID: 1228006895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_82
+      rect:
+        serializedVersion: 2
+        x: 4637
+        y: 375
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38312675ecc68294abc3edf5c67a3bce
+      internalID: 961101519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_83
+      rect:
+        serializedVersion: 2
+        x: 4687
+        y: 416
+        width: 60
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57b56b1d1034e045931934552578ecb
+      internalID: 11583213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_84
+      rect:
+        serializedVersion: 2
+        x: 6849
+        y: 296
+        width: 222
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7397ba2062bcd43837b523b6a8db63
+      internalID: -1628393621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_85
+      rect:
+        serializedVersion: 2
+        x: 7084
+        y: 294
+        width: 238
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30749e741ebd552468cc62554dc25c43
+      internalID: -1776819012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_86
+      rect:
+        serializedVersion: 2
+        x: 7344
+        y: 310
+        width: 208
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2247a22213f1bb4a803cb3ac7481cfd
+      internalID: 387363152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_87
+      rect:
+        serializedVersion: 2
+        x: 7571
+        y: 294
+        width: 241
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d44fea8a565c874aabf13450ee5d251
+      internalID: 1854590384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_88
+      rect:
+        serializedVersion: 2
+        x: 8263
+        y: 410
+        width: 67
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c251229789d17647bbf053fe1fe6d0c
+      internalID: -1222548262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_89
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 119
+        width: 46
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d52bb84d4e7594090a79843b7ad4ba
+      internalID: 1022416226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_90
+      rect:
+        serializedVersion: 2
+        x: 6550
+        y: 346
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d529ceebd60de0f45b0d7409f66e2776
+      internalID: -1054752814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_91
+      rect:
+        serializedVersion: 2
+        x: 6579
+        y: 364
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002540a2e10467c4b924df1113781518
+      internalID: -1167306296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_92
+      rect:
+        serializedVersion: 2
+        x: 6608
+        y: 369
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4195fd519824513419e2b4ed93e8518b
+      internalID: -1195193631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_93
+      rect:
+        serializedVersion: 2
+        x: 6642
+        y: 360
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f156e58a9360a42a568a26617484aa
+      internalID: -716428430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_94
+      rect:
+        serializedVersion: 2
+        x: 6666
+        y: 344
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7e5fa126d186944b04c0b90517119d
+      internalID: -23045219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_95
+      rect:
+        serializedVersion: 2
+        x: 8263
+        y: 323
+        width: 67
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3b46f409318f042892fcdd6b76ef10
+      internalID: -1945887416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_96
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 236
+        width: 73
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582fd810d0056eb4593e665b5a71af0c
+      internalID: -60211056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_97
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 160
+        width: 170
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b8433f7bf7ed0418dee3e0492fd596
+      internalID: -43843420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_98
+      rect:
+        serializedVersion: 2
+        x: 3097
+        y: 35
+        width: 299
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcb7bb07fa082448bfeab1100c64d02
+      internalID: -1153411257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_99
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 33
+        width: 283
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be07302c5e6015b49a77bd2d560f7ac7
+      internalID: -272585654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_100
+      rect:
+        serializedVersion: 2
+        x: 4131
+        y: 38
+        width: 274
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff22623490d04747a7e88a3200752ee
+      internalID: 2078482813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_101
+      rect:
+        serializedVersion: 2
+        x: 4609
+        y: 283
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e460e1c7e01b652498b258659345d9d7
+      internalID: 1849618020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_102
+      rect:
+        serializedVersion: 2
+        x: 5466
+        y: 21
+        width: 326
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ddc9a2f3083cc479e7b1c51862173d
+      internalID: 388841352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_103
+      rect:
+        serializedVersion: 2
+        x: 6533
+        y: 331
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3734580a6ca1faf4a9588176f818d927
+      internalID: -512128620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_104
+      rect:
+        serializedVersion: 2
+        x: 6685
+        y: 325
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9c2ee67bcbe4d4f85aab85516fd1cb
+      internalID: 888896297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_105
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 179
+        width: 142
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bb955ca3dd13243b7b2eedd0c4fca5
+      internalID: 1687398124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_106
+      rect:
+        serializedVersion: 2
+        x: 2785
+        y: 60
+        width: 249
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083670e9104d98f47af2ff304a56eecd
+      internalID: -1109875706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_107
+      rect:
+        serializedVersion: 2
+        x: 3440
+        y: 38
+        width: 279
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06af86e2ffe3ee4d9452326e096ae79
+      internalID: -1894890041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_108
+      rect:
+        serializedVersion: 2
+        x: 4487
+        y: 237
+        width: 103
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af61267649f3c341839deb011d86d5d
+      internalID: 1993303396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_109
+      rect:
+        serializedVersion: 2
+        x: 4836
+        y: 65
+        width: 241
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a072d3559fa594984982ce9fd54f98
+      internalID: -479156722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_110
+      rect:
+        serializedVersion: 2
+        x: 5160
+        y: 52
+        width: 266
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0c2db8a130fc243b6425a803c8bd85
+      internalID: 1817785804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_111
+      rect:
+        serializedVersion: 2
+        x: 5840
+        y: 46
+        width: 280
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd4962e0bf99614bb36e0ad5240b826
+      internalID: -1471298006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_112
+      rect:
+        serializedVersion: 2
+        x: 6252
+        y: 225
+        width: 52
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91a4abfabdb1c045be6aa0fed6daf56
+      internalID: 2136515463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_113
+      rect:
+        serializedVersion: 2
+        x: 6292
+        y: 228
+        width: 43
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8dd33b4fb329449a4222eed5f87cfe
+      internalID: -249305495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_114
+      rect:
+        serializedVersion: 2
+        x: 6330
+        y: 225
+        width: 56
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad2560105cf8f44cbbcd62cb8fd79a7
+      internalID: -1544234070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_115
+      rect:
+        serializedVersion: 2
+        x: 6521
+        y: 303
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de1c9830f68bcc4b9d836e0cd2e1340
+      internalID: 2089824367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_116
+      rect:
+        serializedVersion: 2
+        x: 6693
+        y: 298
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae88225469c46064d950dbaaf20eb320
+      internalID: -1631311990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 767
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9a6a690210cab449544a71bc78173c
+      internalID: -1752749524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_118
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 69
+        width: 183
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af33a9723910caa44bcc1567a9f8de7b
+      internalID: 2146450655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_119
+      rect:
+        serializedVersion: 2
+        x: 4688
+        y: 229
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb7d2aa0125c6842b78a5672ee022ec
+      internalID: 293782777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_120
+      rect:
+        serializedVersion: 2
+        x: 6213
+        y: 215
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b61d093393e18344873e5876a7d5e27
+      internalID: -1862294836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_121
+      rect:
+        serializedVersion: 2
+        x: 6346
+        y: 198
+        width: 102
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60f752b929460d4e95af51536e256a9
+      internalID: 981040947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_122
+      rect:
+        serializedVersion: 2
+        x: 6518
+        y: 273
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e687f3578d5255f4a9bf805e69a10845
+      internalID: 1437488618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_123
+      rect:
+        serializedVersion: 2
+        x: 6695
+        y: 269
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a51778994fe05645ab4799326dc2e0a
+      internalID: 1653443624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_124
+      rect:
+        serializedVersion: 2
+        x: 6845
+        y: 49
+        width: 231
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee10153e2d78966479f84e0071770e97
+      internalID: -1456222320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_125
+      rect:
+        serializedVersion: 2
+        x: 7084
+        y: 48
+        width: 238
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbb8d0d67a33aa4f880eebaa5469151
+      internalID: 552971389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_126
+      rect:
+        serializedVersion: 2
+        x: 7337
+        y: 58
+        width: 221
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24db75b64ced0f34a91f4d2d820ef577
+      internalID: -236435260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_127
+      rect:
+        serializedVersion: 2
+        x: 7571
+        y: 50
+        width: 241
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228623bcc2a28b24185f56647624af68
+      internalID: -440957580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_128
+      rect:
+        serializedVersion: 2
+        x: 8263
+        y: 235
+        width: 67
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067dfce36fcfe4e49b752619519a4ffe
+      internalID: -28663314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_129
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 69
+        width: 175
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7102e07b8934647bac12a472712fbd
+      internalID: 1590281203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_130
+      rect:
+        serializedVersion: 2
+        x: 6180
+        y: 121
+        width: 97
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51090c5e9a7ac9240a0bc59ea9a94b1a
+      internalID: -578589310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_131
+      rect:
+        serializedVersion: 2
+        x: 6525
+        y: 246
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9c8c2441c728f41bdf3a3ab40a9fb5
+      internalID: -818864923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_132
+      rect:
+        serializedVersion: 2
+        x: 6537
+        y: 224
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb6b8ff1423d174fb268744dace2d85
+      internalID: -518413590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_133
+      rect:
+        serializedVersion: 2
+        x: 6687
+        y: 240
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89518caaac2506144976ef0f85d6ba21
+      internalID: 141988766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_134
+      rect:
+        serializedVersion: 2
+        x: 4459
+        y: 100
+        width: 50
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aab467238f4e5b47a4cf3b3bd27f067
+      internalID: -440528450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_135
+      rect:
+        serializedVersion: 2
+        x: 4721
+        y: 204
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed2dac66a253944dab7b0b514ee791d
+      internalID: 1191652410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_136
+      rect:
+        serializedVersion: 2
+        x: 6554
+        y: 208
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a20fa0f52a4624798f57cdec06fe6d
+      internalID: 1858427158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_137
+      rect:
+        serializedVersion: 2
+        x: 6575
+        y: 196
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8816263f70c9ae41b7d7de028506e02
+      internalID: -1376369866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_138
+      rect:
+        serializedVersion: 2
+        x: 6608
+        y: 191
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68128b632db50546a95dce8e050e805
+      internalID: -812472155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_139
+      rect:
+        serializedVersion: 2
+        x: 6641
+        y: 198
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1919cdb2bea3cd42afbc73672553474
+      internalID: -1120516252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_140
+      rect:
+        serializedVersion: 2
+        x: 6670
+        y: 215
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e101eb3ac2abab94d92f8a39b1d32de6
+      internalID: 1732307880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_141
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 32
+        width: 141
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe672856322975448b2474f0abf53a2
+      internalID: 1178521826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_142
+      rect:
+        serializedVersion: 2
+        x: 4713
+        y: 137
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb002c3904e4cf4999aee36aab543a3
+      internalID: -860073659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_143
+      rect:
+        serializedVersion: 2
+        x: 6298
+        y: 46
+        width: 146
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c10f11071781342898c1ebbe7d0c72
+      internalID: 835901330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_144
+      rect:
+        serializedVersion: 2
+        x: 6363
+        y: 166
+        width: 93
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faadad36db9df6b46b3c784b92accdf4
+      internalID: 282607897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_145
+      rect:
+        serializedVersion: 2
+        x: 4522
+        y: 54
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1c07aaa3f25a34a91ab326ae52be92
+      internalID: 983767976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_146
+      rect:
+        serializedVersion: 2
+        x: 4678
+        y: 79
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0453375dbbb4174b80572a51117f87a
+      internalID: 1291244114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_147
+      rect:
+        serializedVersion: 2
+        x: 6210
+        y: 82
+        width: 77
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f996c93d562f424d92589bcdaa8bb08
+      internalID: -1270365165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_148
+      rect:
+        serializedVersion: 2
+        x: 6252
+        y: 57
+        width: 52
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5214b76107080040babb482ef57c3aa
+      internalID: -735524938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_149
+      rect:
+        serializedVersion: 2
+        x: 6529
+        y: 77
+        width: 66
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1d28d51332cbd40a2cd5608ea3b7b6
+      internalID: 1252015638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_150
+      rect:
+        serializedVersion: 2
+        x: 6658
+        y: 90
+        width: 112
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6ed21a4b88a554582a0c7bec399930
+      internalID: -1806162287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_151
+      rect:
+        serializedVersion: 2
+        x: 7872
+        y: 73
+        width: 129
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9b4eb118b45414993b8f0d11cdb0f6
+      internalID: 411488586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_152
+      rect:
+        serializedVersion: 2
+        x: 8055
+        y: 73
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db7cc31566db4049a2ff96750b41d77
+      internalID: -1185560042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_153
+      rect:
+        serializedVersion: 2
+        x: 8180
+        y: 77
+        width: 124
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21f900defc278243ba909e4d70894b0
+      internalID: 1169758190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_154
+      rect:
+        serializedVersion: 2
+        x: 8343
+        y: 0
+        width: 176
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead613846a07ac1419b63244893eb0e7
+      internalID: 768524469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_155
+      rect:
+        serializedVersion: 2
+        x: 4551
+        y: 66
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae637366a0a7898458fd7c39e77c1f83
+      internalID: -1862424041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_156
+      rect:
+        serializedVersion: 2
+        x: 4562
+        y: 33
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cf63eef8e22814db0e4f8a6556dbd6
+      internalID: -1852225256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_157
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 48
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c8969920ab7ab40b9fc4cd660822fa
+      internalID: 1714234759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_158
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 6
+        width: 955
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863d6bd85d9fce64fa05342058d803ac
+      internalID: -331319717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play11_159
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 0
+        width: 956
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a694d950d74660429018f98f179a02e
+      internalID: -245928207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c051e08bf5a8f9343bdea712c53f84ec
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Play11_0: -719489844
+      Play11_1: -2034373024
+      Play11_10: 77735859
+      Play11_100: 2078482813
+      Play11_101: 1849618020
+      Play11_102: 388841352
+      Play11_103: -512128620
+      Play11_104: 888896297
+      Play11_105: 1687398124
+      Play11_106: -1109875706
+      Play11_107: -1894890041
+      Play11_108: 1993303396
+      Play11_109: -479156722
+      Play11_11: -1901557790
+      Play11_110: 1817785804
+      Play11_111: -1471298006
+      Play11_112: 2136515463
+      Play11_113: -249305495
+      Play11_114: -1544234070
+      Play11_115: 2089824367
+      Play11_116: -1631311990
+      Play11_117: -1752749524
+      Play11_118: 2146450655
+      Play11_119: 293782777
+      Play11_12: -351403151
+      Play11_120: -1862294836
+      Play11_121: 981040947
+      Play11_122: 1437488618
+      Play11_123: 1653443624
+      Play11_124: -1456222320
+      Play11_125: 552971389
+      Play11_126: -236435260
+      Play11_127: -440957580
+      Play11_128: -28663314
+      Play11_129: 1590281203
+      Play11_13: 1701014317
+      Play11_130: -578589310
+      Play11_131: -818864923
+      Play11_132: -518413590
+      Play11_133: 141988766
+      Play11_134: -440528450
+      Play11_135: 1191652410
+      Play11_136: 1858427158
+      Play11_137: -1376369866
+      Play11_138: -812472155
+      Play11_139: -1120516252
+      Play11_14: 369792004
+      Play11_140: 1732307880
+      Play11_141: 1178521826
+      Play11_142: -860073659
+      Play11_143: 835901330
+      Play11_144: 282607897
+      Play11_145: 983767976
+      Play11_146: 1291244114
+      Play11_147: -1270365165
+      Play11_148: -735524938
+      Play11_149: 1252015638
+      Play11_15: -1714406143
+      Play11_150: -1806162287
+      Play11_151: 411488586
+      Play11_152: -1185560042
+      Play11_153: 1169758190
+      Play11_154: 768524469
+      Play11_155: -1862424041
+      Play11_156: -1852225256
+      Play11_157: 1714234759
+      Play11_158: -331319717
+      Play11_159: -245928207
+      Play11_16: -1005369008
+      Play11_17: -1314678222
+      Play11_18: 933579477
+      Play11_19: -1565430930
+      Play11_2: 1131660478
+      Play11_20: 1009027443
+      Play11_21: -842937912
+      Play11_22: 1079082378
+      Play11_23: 1531162860
+      Play11_24: 1610356256
+      Play11_25: -721762524
+      Play11_26: -2015994647
+      Play11_27: 113782341
+      Play11_28: 2031079264
+      Play11_29: -126714614
+      Play11_3: -1363755727
+      Play11_30: 1015519694
+      Play11_31: 1962677339
+      Play11_32: -550499154
+      Play11_33: -673380711
+      Play11_34: 1170126253
+      Play11_35: -1809149030
+      Play11_36: 1753390333
+      Play11_37: -1027548324
+      Play11_38: -830084818
+      Play11_39: -1927415636
+      Play11_4: -571552324
+      Play11_40: 482997445
+      Play11_41: 902332443
+      Play11_42: 1310668462
+      Play11_43: -2048060357
+      Play11_44: 320130858
+      Play11_45: 2016392895
+      Play11_46: 2128536857
+      Play11_47: -220093029
+      Play11_48: -228036877
+      Play11_49: 1074888219
+      Play11_5: 1525585310
+      Play11_50: 1619584242
+      Play11_51: 1890304037
+      Play11_52: -1571141129
+      Play11_53: 1335688746
+      Play11_54: -735238038
+      Play11_55: 316193022
+      Play11_56: 1453577833
+      Play11_57: -708031955
+      Play11_58: 387538088
+      Play11_59: -868518982
+      Play11_6: 801878449
+      Play11_60: 2121722015
+      Play11_61: 1795502882
+      Play11_62: 1868299013
+      Play11_63: 940075520
+      Play11_64: 566317915
+      Play11_65: -1135700180
+      Play11_66: 902731557
+      Play11_67: -325850277
+      Play11_68: -1658998890
+      Play11_69: 287229228
+      Play11_7: 1021611439
+      Play11_70: 1043050037
+      Play11_71: 356393235
+      Play11_72: -2109399742
+      Play11_73: 1265534319
+      Play11_74: -271172955
+      Play11_75: -1647109524
+      Play11_76: 930384256
+      Play11_77: -487300224
+      Play11_78: 1558715720
+      Play11_79: 1322912017
+      Play11_8: 1515876656
+      Play11_80: 524990868
+      Play11_81: 1228006895
+      Play11_82: 961101519
+      Play11_83: 11583213
+      Play11_84: -1628393621
+      Play11_85: -1776819012
+      Play11_86: 387363152
+      Play11_87: 1854590384
+      Play11_88: -1222548262
+      Play11_89: 1022416226
+      Play11_9: 273558383
+      Play11_90: -1054752814
+      Play11_91: -1167306296
+      Play11_92: -1195193631
+      Play11_93: -716428430
+      Play11_94: -23045219
+      Play11_95: -1945887416
+      Play11_96: -60211056
+      Play11_97: -43843420
+      Play11_98: -1153411257
+      Play11_99: -272585654
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

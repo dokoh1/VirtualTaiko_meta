@@ -2,6 +2,8 @@ public enum SceneDataType
 {
     Start,
     MusicChoice,
-    Play,
+    Music1,
+    Music2,
+    Music3,
     Score,
 }
