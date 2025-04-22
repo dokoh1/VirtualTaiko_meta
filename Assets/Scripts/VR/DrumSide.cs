@@ -62,6 +62,7 @@ public class DrumSide : MonoBehaviour
         rightStick = LayerMask.NameToLayer("RightStick");
         StickBody = LayerMask.NameToLayer("StickBod");
         source = GetComponent<AudioSource>();
+        var childColliders = GetComponentsInChildren<Collider>();
     }
 
     private void Start()
