@@ -3,24 +3,23 @@ using UnityEngine.Serialization;
 
 public class TestDrumInput : MonoBehaviour
 {
-    public DrumInputDataType testInputType;
+    public DrumDataType testInputType;
     public JudgementDataType judgementData;
     void Start()
     {
-        testInputType = DrumInputDataType.NotPlayed;
+        testInputType = DrumDataType.NotHit;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Alpha1))
-            testInputType = DrumInputDataType.LeftFace;
+            testInputType = DrumDataType.LeftFace;
         else if (Input.GetKeyUp(KeyCode.Alpha2))
-            testInputType = DrumInputDataType.RightFace;
+            testInputType = DrumDataType.RightFace;
         else if (Input.GetKeyUp(KeyCode.Alpha3))
-            testInputType = DrumInputDataType.LeftSide;
+            testInputType = DrumDataType.LeftSide;
         else if (Input.GetKeyUp(KeyCode.Alpha4))
-            testInputType = DrumInputDataType.RightSide;
+            testInputType = DrumDataType.RightSide;
         else if (Input.GetKeyUp(KeyCode.Alpha5))
             judgementData = JudgementDataType.Good;
         else if (Input.GetKeyUp(KeyCode.Alpha6))
@@ -29,7 +28,7 @@ public class TestDrumInput : MonoBehaviour
             judgementData = JudgementDataType.Bad;
         else if (!Input.anyKey)
         {
-            testInputType = DrumInputDataType.NotPlayed;
+            testInputType = DrumDataType.NotHit;
             judgementData = JudgementDataType.None;
         }
     }

@@ -1,11 +1,12 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     private TimingManager timingManager;
-    public Drums drums;
+    // public Drums drums;
     public void Start()
     {
         timingManager = FindFirstObjectByType<TimingManager>();
@@ -16,9 +17,10 @@ public class PlayerController : MonoBehaviour
     {
         while (true)
         {
-            if (drums.dataSet == DrumDataType.RightFace)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 HitResult result = timingManager.CheckTiming();
+                
                 // switch (result)
                 // {
                 //     case HitResult.Perfect:
@@ -34,12 +36,12 @@ public class PlayerController : MonoBehaviour
                 //         Debug.Log("Miss...");
                 //         break;
                 // }
-
-                yield return new WaitForSeconds(0.1f);
+                
+                yield return new WaitForSeconds(0.001f);
             }
             else
             {
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.001f);
             }
         }
     }

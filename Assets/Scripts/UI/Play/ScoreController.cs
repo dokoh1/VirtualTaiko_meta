@@ -3,40 +3,55 @@ using UnityEngine.Serialization;
 
 public class ScoreController : MonoBehaviour
 {
-    public int currentScore;
-    public TestDrumInput testDrumInput;
-    public int ComboHit;
-    public int DeadGauge;
-    public int MaxDeadGauge;
+    // public TestDrumInput testDrumInput;
+    
+    private int currentScore;
+    private int ComboHit;
+   
+    private int DeadGauge;
+    private int MaxDeadGauge;
     private int deadGaugeAmount;
+    
     private JudgementData _judgementData;
+    
+    public TimingManager timingManager;
+    public NumberImage ScoreNumberImage;
+    public NumberImage ComboNumberImage;
     
     private void Start()
     {
         currentScore = 0;
+        ComboHit = 0;
         DeadGauge = 200;
         MaxDeadGauge = 200;
         deadGaugeAmount = 50;
         _judgementData = new();
+        ScoreNumberImage.UpdateDisplay(currentScore);
     }
 
     private void Update()
     {
-        ScoreUpdate();
+        if (timingManager.HitQueue.Count > 0)
+        {
+            ScoreUpdate();
+            ScoreNumberImage.UpdateDisplay(currentScore);
+            ComboNumberImage.UpdateDisplay(ComboHit);
+        }
     }
     
     private void ScoreUpdate()
     {
-        if (testDrumInput.judgementData == JudgementDataType.Bad)
+        HitResult hitResult = timingManager.HitQueue.Dequeue();
+        if (hitResult == HitResult.Bad)
         {
             DeadGauge -= deadGaugeAmount;
             if (DeadGauge < 0)
                 return;
             ComboHit = 0;
         }
-        else if (testDrumInput.judgementData == JudgementDataType.Good)
+        else if (hitResult == HitResult.Good)
             ScoreCalculation(_judgementData.GoodComboScore, _judgementData.GoodScore);
-        else if (testDrumInput.judgementData == JudgementDataType.Great)
+        else if (hitResult == HitResult.Perfect)
            ScoreCalculation(_judgementData.GreatComboScore, _judgementData.GreatScore);
     }
 

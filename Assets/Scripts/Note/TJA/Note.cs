@@ -7,7 +7,7 @@ public class Note : MonoBehaviour
     {
         transform.localPosition -= Vector3.right * (notespeed * Time.deltaTime);
     }
-    public HitResult currentZone = HitResult.Miss;
+    public HitResult currentZone = HitResult.Bad;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,7 +23,7 @@ public class Note : MonoBehaviour
         var zone = other.GetComponent<JudgementZone>();
         if (zone != null && zone.zoneType == currentZone)
         {
-            currentZone = HitResult.Miss;  // 빠져나오면 리셋
+            currentZone = HitResult.Bad;  // 빠져나오면 리셋
         }
     }
 }

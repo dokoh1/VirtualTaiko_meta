@@ -449,6 +449,52 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &-1447155569002932662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: iPhone
+  m_EditorClassIdentifier: 
+  features:
+  - {fileID: 1838421845746422002}
+  m_renderMode: 1
+  m_autoColorSubmissionMode: 1
+  m_colorSubmissionModes:
+    m_List: 00000000
+  m_depthSubmissionMode: 0
+  m_spacewarpMotionVectorTextureFormat: 0
+  m_optimizeBufferDiscards: 0
+  m_symmetricProjection: 0
+  m_foveatedRenderingApi: 0
+--- !u!114 &-1336066564963130094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: VisionOS
+  m_EditorClassIdentifier: 
+  features:
+  - {fileID: -4918258574773848902}
+  m_renderMode: 1
+  m_autoColorSubmissionMode: 1
+  m_colorSubmissionModes:
+    m_List: 00000000
+  m_depthSubmissionMode: 0
+  m_spacewarpMotionVectorTextureFormat: 0
+  m_optimizeBufferDiscards: 0
+  m_symmetricProjection: 0
+  m_foveatedRenderingApi: 0
 --- !u!114 &-1242817178177792767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,9 +624,9 @@ MonoBehaviour:
   Values:
   - {fileID: 3942179541378077402}
   - {fileID: 5541248657433017416}
-  - {fileID: -5560123725287752801}
-  - {fileID: 5297701651883320618}
-  - {fileID: 5539600828838923024}
+  - {fileID: 5616485041879898234}
+  - {fileID: -1447155569002932662}
+  - {fileID: -1336066564963130094}
 --- !u!114 &12183468780357042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,6 +1007,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   features:
   - {fileID: -6302105477172960782}
+  m_renderMode: 1
+  m_autoColorSubmissionMode: 1
+  m_colorSubmissionModes:
+    m_List: 00000000
+  m_depthSubmissionMode: 0
+  m_spacewarpMotionVectorTextureFormat: 0
+  m_optimizeBufferDiscards: 0
+  m_symmetricProjection: 0
+  m_foveatedRenderingApi: 0
+--- !u!114 &5616485041879898234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: Android
+  m_EditorClassIdentifier: 
+  features:
+  - {fileID: -3831197570107264782}
+  - {fileID: 710636318282242704}
+  - {fileID: 4281689868025542273}
+  - {fileID: 6104733974135124793}
+  - {fileID: -700550567286308198}
+  - {fileID: 1089660006855398582}
+  - {fileID: -7638101475235873083}
+  - {fileID: 2482850053939785195}
+  - {fileID: -5797681381309558884}
+  - {fileID: -7566302047826531305}
+  - {fileID: -8569212058972583436}
+  - {fileID: -1242817178177792767}
+  - {fileID: 9006704350588406466}
+  - {fileID: 3473339686959083063}
+  - {fileID: -8050427362316150460}
+  - {fileID: -7494449920167193680}
+  - {fileID: 12183468780357042}
+  - {fileID: -2908928940997450750}
+  - {fileID: 6255559799189663324}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:

@@ -31,8 +31,7 @@ public class NoteManager1 : MonoBehaviour
     {
         if (other.CompareTag("Note"))
         {
-            timingManager.BoxNoteList.Remove(other.gameObject);
-            Destroy(other.gameObject);
+            timingManager.MissNote(other.gameObject);
         }
     }
 }
