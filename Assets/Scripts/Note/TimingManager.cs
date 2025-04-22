@@ -5,8 +5,7 @@ public enum HitResult
 {
     Perfect,
     Good,
-    Bad,
-    Miss
+    Bad
 }
 
 public class TimingManager : MonoBehaviour
@@ -21,7 +20,7 @@ public class TimingManager : MonoBehaviour
 
     public HitResult CheckTiming()
     {
-        if (BoxNoteList.Count == 0) return HitResult.Miss;
+        if (BoxNoteList.Count == 0) return HitResult.Bad;
 
         GameObject closestNote = null;
         float closestDistance = float.MaxValue;
@@ -40,7 +39,7 @@ public class TimingManager : MonoBehaviour
             }
         }
 
-        if (closestNote == null) return HitResult.Miss;
+        if (closestNote == null) return HitResult.Bad;
 
         float noteXPos = closestNote.transform.position.x;
         float distanceFromCenter = Mathf.Abs(noteXPos - centerX);
@@ -55,7 +54,7 @@ public class TimingManager : MonoBehaviour
             result = HitResult.Bad;
         else
         {
-            return HitResult.Miss;
+            return HitResult.Bad;
         }
 
         // ✅ Perfect, Good, Bad 판정일 때
