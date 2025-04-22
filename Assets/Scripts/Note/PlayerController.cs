@@ -6,7 +6,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private TimingManager timingManager;
-    public Queue<HitResult> HitQueue = new Queue<HitResult>();
     // public Drums drums;
     public void Start()
     {
@@ -21,7 +20,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 HitResult result = timingManager.CheckTiming();
-                HitQueue.Enqueue(result);
+                
                 // switch (result)
                 // {
                 //     case HitResult.Perfect:

@@ -5,13 +5,15 @@ public enum HitResult
 {
     Perfect,
     Good,
-    Bad
+    Bad,
+    None,
 }
 
 public class TimingManager : MonoBehaviour
 {
     public List<GameObject> BoxNoteList = new List<GameObject>();
     public Transform Center;
+    public Queue<HitResult> HitQueue = new Queue<HitResult>();
     
     [Header("판정 거리 기준 (중심 기준 거리)")]
     private float perfectRange = 0.35f;
@@ -54,8 +56,10 @@ public class TimingManager : MonoBehaviour
             result = HitResult.Bad;
         else
         {
-            return HitResult.Bad;
-        }
+            result = HitResult.None;
+            return result;
+        } 
+        HitQueue.Enqueue(result);
         BoxNoteList.Remove(closestNote);
         Destroy(closestNote);
         Debug.Log(result);
@@ -69,6 +73,7 @@ public class TimingManager : MonoBehaviour
         if (BoxNoteList.Contains(note))
         {
             HitResult result = HitResult.Bad;
+            HitQueue.Enqueue(result);
             BoxNoteList.Remove(note);
             Destroy(note);
             Debug.Log(result);
