@@ -4,7 +4,10 @@ using UnityEngine;
 public class DrumEffect : MonoBehaviour
 {
     [SerializeField]
-   private TestDrumInput testDrumInput;
+//    private TestDrumInput testDrumInput;
+    private Drums drums;
+    [SerializeField]
+    private DrumSide drumsSide;
    [SerializeField]
    private GameObject LeftSide;
    [SerializeField]
@@ -25,13 +28,21 @@ public class DrumEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (testDrumInput.testInputType == DrumDataType.LeftSide)
+        // if (testDrumInput.testInputType == DrumDataType.LeftSide)
+        //     ShowDrumEffect(LeftSide);
+        // else if (testDrumInput.testInputType == DrumDataType.RightSide)
+        //     ShowDrumEffect(RightSide);
+        // else if (testDrumInput.testInputType == DrumDataType.LeftFace)
+        //     ShowDrumEffect(LeftFace);
+        // else if (testDrumInput.testInputType == DrumDataType.RightFace)
+        //     ShowDrumEffect(RightFace);
+        if (drumsSide.dataSet == DrumDataType.LeftSide)
             ShowDrumEffect(LeftSide);
-        else if (testDrumInput.testInputType == DrumDataType.RightSide)
+        else if (drumsSide.dataSet == DrumDataType.RightSide)
             ShowDrumEffect(RightSide);
-        else if (testDrumInput.testInputType == DrumDataType.LeftFace)
+        else if (drums.dataSet == DrumDataType.LeftFace)
             ShowDrumEffect(LeftFace);
-        else if (testDrumInput.testInputType == DrumDataType.RightFace)
+        else if (drums.dataSet == DrumDataType.RightFace)
             ShowDrumEffect(RightFace);
     }
 

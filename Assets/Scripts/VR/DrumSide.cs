@@ -49,7 +49,7 @@ public class DrumSide : MonoBehaviour
     [SerializeField]
     private float delay = 0.2f;
 
-    private DrumDataType dateSet = DrumDataType.NotHit;
+    public DrumDataType dataSet = DrumDataType.NotHit;
     private bool leftHit = false;
     private bool rightHit = false;
     
@@ -82,8 +82,8 @@ public class DrumSide : MonoBehaviour
         if (other.gameObject.layer == leftStick)
         {
             leftHit = true;
-            dateSet = DrumDataType.LeftSide;
-            //print(dateSet);
+            dataSet = DrumDataType.LeftSide;
+            //print(dataSet);
             PlayLeftVibration();
             Audio();
         }
@@ -92,8 +92,8 @@ public class DrumSide : MonoBehaviour
         if (other.gameObject.layer == rightStick)
         {
             rightHit = true;
-            dateSet = DrumDataType.RightSide;
-            //print(dateSet);
+            dataSet = DrumDataType.RightSide;
+            //print(dataSet);
             PlayRightVibration();
             Audio();
         }
@@ -101,8 +101,8 @@ public class DrumSide : MonoBehaviour
 
         if (rightHit && leftHit)
         {
-            dateSet = DrumDataType.Dobletside;
-            //print(dateSet);
+            dataSet = DrumDataType.Dobletside;
+            //print(dataSet);
             // Audio();
         }
 
@@ -119,8 +119,8 @@ public class DrumSide : MonoBehaviour
         yield return new WaitForSeconds(delay);
         leftHit = false;
         rightHit = false;
-        dateSet = DrumDataType.NotHit;
-        //print(dateSet);
+        dataSet = DrumDataType.NotHit;
+        //print(dataSet);
     }
 
 

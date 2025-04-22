@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private TimingManager timingManager;
-    // public Drums drums;
+    public Drums drums;
     public void Start()
     {
         timingManager = FindFirstObjectByType<TimingManager>();
@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
     {
         while (true)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            // if (Input.GetKeyDown(KeyCode.Space))
+            if (drums.dataSet == DrumDataType.RightFace)
             {
                 HitResult result = timingManager.CheckTiming();
                 
