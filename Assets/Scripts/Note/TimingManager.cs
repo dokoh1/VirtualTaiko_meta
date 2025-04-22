@@ -56,22 +56,23 @@ public class TimingManager : MonoBehaviour
         {
             return HitResult.Bad;
         }
-
-        // ✅ Perfect, Good, Bad 판정일 때
         BoxNoteList.Remove(closestNote);
         Destroy(closestNote);
         Debug.Log(result);
 
+        // ✅ Perfect, Good, Bad 판정일 때
+
         return result;
     }
-
     public void MissNote(GameObject note)
     {
         if (BoxNoteList.Contains(note))
         {
+            HitResult result = HitResult.Bad;
             BoxNoteList.Remove(note);
             Destroy(note);
-            Debug.Log("Bad");
+            Debug.Log(result);
         }
     }
+
 }
