@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 
 public enum HitResult
@@ -16,50 +15,64 @@ public class TimingManager : MonoBehaviour
     public Transform Center;
     
     [Header("판정 거리 기준 (중심 기준 거리)")]
-    private float perfectRange = 0.5f;
-    private float goodRange = 1f;
-    private float badRange = 3f;
+    private float perfectRange = 0.35f;
+    private float goodRange = 0.7f;
+    private float badRange = 1.05f;
 
     public HitResult CheckTiming()
     {
         if (BoxNoteList.Count == 0) return HitResult.Miss;
 
-        GameObject note = BoxNoteList[0];
-        float noteX = note.transform.position.x; // ⬅ 월드 좌표
-        float centerX = Center.position.x;        // ⬅ 월드 좌표
-        float distance = Mathf.Abs(noteX - centerX);
-        // Debug.Log("distance " + distance);
+        GameObject closestNote = null;
+        float closestDistance = float.MaxValue;
+        float centerX = Center.position.x;
+
+        // 💡 가장 가까운 노트 찾기
+        foreach (var note in BoxNoteList)
+        {
+            float noteX = note.transform.position.x;
+            float distance = Mathf.Abs(noteX - centerX);
+
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestNote = note;
+            }
+        }
+
+        if (closestNote == null) return HitResult.Miss;
+
+        float noteXPos = closestNote.transform.position.x;
+        float distanceFromCenter = Mathf.Abs(noteXPos - centerX);
+
         HitResult result;
-        if (distance <= perfectRange) 
-        {   
+
+        if (distanceFromCenter <= perfectRange)
             result = HitResult.Perfect;
-        }
-        else if (distance <= goodRange) 
-        {
-
+        else if (distanceFromCenter <= goodRange)
             result = HitResult.Good;
-        }
-        
-        else if (distance <= badRange)
-        {
+        else if (distanceFromCenter <= badRange)
             result = HitResult.Bad;
-        } 
-        else result = HitResult.Miss;
-
-        Debug.Log($"판정: {result} (Distance: {distance:F1})");
-
-        if (result != HitResult.Miss)
+        else
         {
-            Destroy(note);
-            BoxNoteList.RemoveAt(0);
+            return HitResult.Miss;
         }
-        // else
-        // {
-        //     Destroy(note);
-        //     BoxNoteList.RemoveAt(0);
-        // }
+
+        // ✅ Perfect, Good, Bad 판정일 때
+        BoxNoteList.Remove(closestNote);
+        Destroy(closestNote);
+        Debug.Log(result);
 
         return result;
     }
 
+    public void MissNote(GameObject note)
+    {
+        if (BoxNoteList.Contains(note))
+        {
+            BoxNoteList.Remove(note);
+            Destroy(note);
+            Debug.Log("Bad");
+        }
+    }
 }

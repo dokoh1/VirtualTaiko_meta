@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         while (true)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 HitResult result = timingManager.CheckTiming();
                 HitQueue.Enqueue(result);
@@ -38,11 +38,11 @@ public class PlayerController : MonoBehaviour
                 //         break;
                 // }
                 
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.001f);
             }
             else
             {
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.001f);
             }
         }
     }
