@@ -55,7 +55,7 @@ public class ScoreController : MonoBehaviour
                 dokoh.System.ScoreManager.Perfect = PerfectHit;
                 dokoh.System.ScoreManager.Good = GoodHit;
                 dokoh.System.ScoreManager.Bad = BadHit;
-                dokoh.System.SceneManager.LoadScene(SceneDataType.Score);
+                dokoh.System.SceneManager.LoadScene(SceneDataType.Result);
             }
             ScoreNumberImage.UpdateDisplay(currentScore);
             ComboNumberImage.UpdateDisplay(ComboHit);

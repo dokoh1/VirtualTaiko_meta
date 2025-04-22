@@ -5,5 +5,5 @@ public enum SceneDataType
     Music1,
     Music2,
     Music3,
-    Score,
+    Result,
 }

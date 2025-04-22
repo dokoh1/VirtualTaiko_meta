@@ -201,10 +201,10 @@ TextureImporter:
       name: Play10_4
       rect:
         serializedVersion: 2
-        x: 2959
-        y: 637
-        width: 1442
-        height: 1407
+        x: 3418
+        y: 969
+        width: 102
+        height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,10 +355,10 @@ TextureImporter:
       name: Play10_11
       rect:
         serializedVersion: 2
-        x: 5628
-        y: 1604
-        width: 1735
-        height: 440
+        x: 5635
+        y: 1630
+        width: 1697
+        height: 410
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1522,9 +1522,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5628
-        y: 1147
-        width: 1735
-        height: 446
+        y: 1175
+        width: 1712
+        height: 413
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1807,10 +1807,10 @@ TextureImporter:
       name: Play10_77
       rect:
         serializedVersion: 2
-        x: 11190
-        y: 1215
-        width: 455
-        height: 216
+        x: 11196
+        y: 1224
+        width: 442
+        height: 201
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5235,6 +5235,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Play10_233
+      rect:
+        serializedVersion: 2
+        x: 3262
+        y: 1057
+        width: 105
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d27d2d412f69340b09b8931bfb2504
+      internalID: -422599643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -5399,6 +5421,7 @@ TextureImporter:
       Play10_230: -1267815271
       Play10_231: -1625157354
       Play10_232: 1692718896
+      Play10_233: -422599643
       Play10_24: -1635857000
       Play10_25: 760821181
       Play10_26: 35909224

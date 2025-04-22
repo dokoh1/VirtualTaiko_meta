@@ -1,0 +1,7329 @@
+fileFormatVersion: 2
+guid: 9f97eeb7fde5c4b4ebce83f89e8b35e6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DrumActive_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1767
+        width: 1573
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aead9fb72bbffb347b40d936c506db57
+      internalID: 1371036071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1739
+        width: 226
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e210458fa27dbe45a7636e41f88d08c
+      internalID: 502481884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_2
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1742
+        width: 192
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6379e56475ae26942a209aa3aa3cd93d
+      internalID: 1430577569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_3
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 1875
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915d9d16145505346ade5da28d1c2849
+      internalID: 1511902002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_4
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 1920
+        width: 20
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6585bacb6d1d0984d9a66c7366fe7625
+      internalID: -1316084201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_5
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 1875
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca1faf6994f88549890bcda812414a0
+      internalID: 1548916207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_6
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 1885
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6a5045349a4f143a8ba9e2d81e1cd9
+      internalID: 353678638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_7
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 1905
+        width: 56
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884817e9b69e33d41933b7138d131d30
+      internalID: -1184308506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_8
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 1917
+        width: 37
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414a4c6b1fdf4a44187295c89dc6d10c
+      internalID: -1392629911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_9
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1921
+        width: 19
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791daa050bc32ca42ae759cf57c74590
+      internalID: -663250644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_10
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 1917
+        width: 36
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c85d6815e3d0d43900963e463f5b88
+      internalID: -1734030321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_11
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 1905
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da385ce611c55664ab14e74d3fa0bd5f
+      internalID: -1351285719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_12
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 1886
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1e024ee04ad6e498a5013f282040eb
+      internalID: 1413845788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_13
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 1875
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59a6ac57a7bfe34382cf0271b2ad67f
+      internalID: 436628782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_14
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 1920
+        width: 22
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b61b6a4e9884114fb9cc601f86d9b66
+      internalID: -1899176157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_15
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1875
+        width: 142
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14e74d14756a114a924ef86e18fe0ba
+      internalID: -553126662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_16
+      rect:
+        serializedVersion: 2
+        x: 3104
+        y: 1886
+        width: 91
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53af697396c24d41be4a2207b4a3ae1
+      internalID: -1936750405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_17
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 1905
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed51c409f48bea34395ddf8191135379
+      internalID: -1269850057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_18
+      rect:
+        serializedVersion: 2
+        x: 3181
+        y: 1917
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60f180b2a8e1c1418b2894e396bd185
+      internalID: 1830502642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_19
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1922
+        width: 20
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4f402d5a2ca5f42996135659fdb8bf
+      internalID: -397294764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_20
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 1917
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a149a76633cee44a00284f74577ad9
+      internalID: -2030467692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_21
+      rect:
+        serializedVersion: 2
+        x: 3284
+        y: 1905
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5acba47599fbd7640a43c22d0bd80aef
+      internalID: 1513222888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_22
+      rect:
+        serializedVersion: 2
+        x: 3296
+        y: 1886
+        width: 215
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559ae987553395f4595e01aa700bde73
+      internalID: 1335691562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_23
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 1857
+        width: 77
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6cbee16ba29ec4b9645510d2afcc68
+      internalID: -1288189820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_24
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 1857
+        width: 75
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32297ee8f776d2246a919aaefec22898
+      internalID: -267147383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_25
+      rect:
+        serializedVersion: 2
+        x: 2427
+        y: 1857
+        width: 76
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93286f4e1c2aa7c46bde3150cc89aedf
+      internalID: 1422458294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_26
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 1857
+        width: 76
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5b72c64876b2a459c04cca1c4994f4
+      internalID: 1926338527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_27
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1855
+        width: 98
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b1f2419525f8445b6e37704dd1171a
+      internalID: -274885995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_28
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 1855
+        width: 98
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d4a10f298fe4c4b9418a1e5d746cf6
+      internalID: 195196946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_29
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 1855
+        width: 97
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258ebc772df18c742b3d85e5be875f71
+      internalID: -664565559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_30
+      rect:
+        serializedVersion: 2
+        x: 3301
+        y: 1855
+        width: 98
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f95b9ea06c2d6b45a3b1ed57af0458f
+      internalID: 1206948543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_31
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 1736
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64270fb3706aa34c9fd581bb81efe86
+      internalID: 1998652253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_32
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 1735
+        width: 20
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b51a60541a44d4c85c08ef34b325f2
+      internalID: 1958406366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_33
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 1736
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3480b4e632bdc40ba21a667415a763
+      internalID: -1410898483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_34
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 1810
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42816ae536739d468d7fdf48575134a
+      internalID: 1987532981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_35
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 1771
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9917b0d347d08b41bd73d99861ddc30
+      internalID: 14601492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_36
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 1743
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91738ba3e8947ee4787b37b6f8c0bd59
+      internalID: -1053591129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_37
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1735
+        width: 19
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf1ba978584a13428bba5cd93037a33
+      internalID: 875025273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_38
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 1743
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b01b6c1e4ed74d408e05e6609a89a05
+      internalID: 583078131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_39
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 1771
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227b20a0589213b4cb93a934d7a6c5d8
+      internalID: 839323454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_40
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 1810
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502320ada97d55c4aa83b53c567e7d48
+      internalID: 1663350996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_41
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 1716
+        width: 141
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b4a54c6e1263348aaf6d2befc769f4
+      internalID: 1073974959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_42
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 1714
+        width: 22
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3b7fbd20b0a8b428d1562f190e1331
+      internalID: -1895914147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_43
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1716
+        width: 142
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6410d15ca3e5467479c536d07ab2602b
+      internalID: 1179197488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_44
+      rect:
+        serializedVersion: 2
+        x: 3104
+        y: 1802
+        width: 92
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2424e303da6d248b276d17f7d21c3e
+      internalID: -280680382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_45
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 1755
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1207ccb21231fc4ca484dc0e10a38b7
+      internalID: 2078732575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_46
+      rect:
+        serializedVersion: 2
+        x: 3181
+        y: 1724
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752e3f0b8df52dd47895baddd5ab47e4
+      internalID: -1797872627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_47
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1714
+        width: 20
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca7e0cf443c8c44e929f39347478e6e
+      internalID: -845193675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_48
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 1724
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc0b7a39a9dc8e498b45457625423fb
+      internalID: 1166300167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_49
+      rect:
+        serializedVersion: 2
+        x: 3284
+        y: 1755
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b1d49829195be4bb3fb9298ea3cde6
+      internalID: 631755014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_50
+      rect:
+        serializedVersion: 2
+        x: 3296
+        y: 1802
+        width: 92
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481fbdff68712f34cb01d88431a9b158
+      internalID: 1318756525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_51
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1414
+        width: 168
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fafc5dc0fbbdca4f8fda757e3b84453
+      internalID: -1827284261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_52
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1415
+        width: 151
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84eb248434d37a24f9634984d6f7371a
+      internalID: -1170230947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_53
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1573
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebb9fa66479ea1418b708285d3ac7eb
+      internalID: -1511054583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_54
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 1531
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a265a0791e463184fb831562573df594
+      internalID: -1199846259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_55
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 1577
+        width: 20
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d06c7edd880b5446ac5a8db657df199
+      internalID: 1835682962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_56
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 1531
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244c27cef3e77a642adf31108fae1b35
+      internalID: 761612127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_57
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 1541
+        width: 72
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd132970e457d8548a51b9cde2e946fe
+      internalID: -2108963836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_58
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 1560
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520dbc313bd078348a727764893bd806
+      internalID: 269171330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_59
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 1572
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7ae853757ec544b83fcb878fa8f151
+      internalID: 152477334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_60
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1577
+        width: 19
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7211813ca02ef648b08337ddfc00c1e
+      internalID: 153167688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_61
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 1572
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928372d54d9a5494a8fea0a2e640b8e4
+      internalID: 206605173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_62
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 1560
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d43b686e7219f45a56d7a1487e36e7
+      internalID: 749765815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_63
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 1541
+        width: 71
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a371ef296d50e4093b14d137e808db
+      internalID: 1666154138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_64
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 1541
+        width: 132
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf7e4ae20ff00b43b3f9aad9278840e
+      internalID: 845093323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_65
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 1575
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506998a49a62ee04b8c84272225d31e6
+      internalID: -1259636923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_66
+      rect:
+        serializedVersion: 2
+        x: 2921
+        y: 1531
+        width: 131
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a42d0d91ce8bc489fbdfb9f8dee1a1
+      internalID: 460228975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_67
+      rect:
+        serializedVersion: 2
+        x: 3104
+        y: 1541
+        width: 92
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13471d0b89bb2c439fc0578b9d9e66c
+      internalID: 1732076852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_68
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 1560
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9e8b578af296c48bef0761925bdf7c
+      internalID: -1527351795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_69
+      rect:
+        serializedVersion: 2
+        x: 3181
+        y: 1572
+        width: 46
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cc302afd8af674d8a769ad5ac67254
+      internalID: -1798657731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_70
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1577
+        width: 20
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e330ffba2f1f6e143b3fc59189d814a8
+      internalID: 17523731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_71
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 1572
+        width: 46
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8970e648d46ca8141a9a04363e88cf8c
+      internalID: -74797325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_72
+      rect:
+        serializedVersion: 2
+        x: 3284
+        y: 1560
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b405a33de849724bbb0a5a68fed3d6a
+      internalID: -1458826334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_73
+      rect:
+        serializedVersion: 2
+        x: 3296
+        y: 1541
+        width: 92
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad38b20dabe0ad04a88139c3d118fd73
+      internalID: 1376038663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_74
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 1512
+        width: 77
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91dd3a8a181ed894b98b536d46643983
+      internalID: 1241840583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_75
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 1512
+        width: 75
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de75dd29f1be564c8e6f032d0034ec8
+      internalID: 1491064690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_76
+      rect:
+        serializedVersion: 2
+        x: 2427
+        y: 1512
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149ce6d0e4bea7d449292f684c636747
+      internalID: 1042171475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_77
+      rect:
+        serializedVersion: 2
+        x: 2613
+        y: 1512
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c3d2ce92a8f6d48be50fdf275f2370
+      internalID: -1311652509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_78
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1512
+        width: 98
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9cff0627766744aa677108050cb162
+      internalID: 896892907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_79
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 1531
+        width: 96
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f24a7b414692c4fb1086a4dee96e54
+      internalID: 1908403475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_80
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 1512
+        width: 98
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d9d806675c06642b765a69e945dd68
+      internalID: -2127019281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_81
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 1512
+        width: 97
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fab5c2b12c0224aa60d86466e5e445
+      internalID: 1594482506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_82
+      rect:
+        serializedVersion: 2
+        x: 3301
+        y: 1512
+        width: 98
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c792f1cf9d64e548a7abbb294c8c288
+      internalID: 1482622547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_83
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 1393
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a62994dfc22dc04c9b9dcdb9e179db7
+      internalID: -154894060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_84
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 1390
+        width: 20
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd4fc6c4374a1e4991a17b73917f527
+      internalID: 806145158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_85
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 1393
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475d72460e835674db77f8174e460ac9
+      internalID: -143912559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_86
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 1466
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832ffc04137c2ff4eb54cc35ca821707
+      internalID: 2129260995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_87
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 1426
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124fea367bfd9be41ac67551b912cdad
+      internalID: 489833932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_88
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 1400
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d39072f1c9200428ae87f757037825
+      internalID: -321810520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_89
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1390
+        width: 19
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cd66a2d80cc8548b011a0d896f6fd7
+      internalID: -112736112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_90
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 1400
+        width: 36
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8288b2372f59b43bab844bd562d8af
+      internalID: 497015577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_91
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 1426
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a71fc8072e1fcb4d84c3c00cd1f747b
+      internalID: 107754491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_92
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 1466
+        width: 71
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22b2d21bb3312741b152bbdec6a31c6
+      internalID: -530835286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_93
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 1372
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6ed9a03d515ae4a9f66c61a10e04a9
+      internalID: 462454865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_94
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 1369
+        width: 22
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53a24fddb6baa24899b27fa55662daf
+      internalID: 761906787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_95
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1373
+        width: 142
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae3f0f16c9635649ab2bc6a53e4c632
+      internalID: -1810914915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_96
+      rect:
+        serializedVersion: 2
+        x: 3104
+        y: 1457
+        width: 91
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a05b7456894d049874c5e0e54b1d51
+      internalID: -572116262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_97
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 1411
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b063677764f2ad2479d9d295f9f57df7
+      internalID: 1036421285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_98
+      rect:
+        serializedVersion: 2
+        x: 3181
+        y: 1380
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee1da6e8767e294c9022cac417c5ba5
+      internalID: 1437521486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_99
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1369
+        width: 20
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83e53ea0ff519645b6b44b9e09dfa68
+      internalID: 1518622267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_100
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 1380
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7790872cbe36bf4b8075ef1788a2b34
+      internalID: -178782270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_101
+      rect:
+        serializedVersion: 2
+        x: 3284
+        y: 1411
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78744745026e08a41be84095a06def58
+      internalID: -1071948356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_102
+      rect:
+        serializedVersion: 2
+        x: 3296
+        y: 1457
+        width: 92
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5f135c3bbdc684b8cd5665b03ede9d
+      internalID: -1186560436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_103
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1188
+        width: 164
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4dfc18e8c6944f4285d2aee99b070f4
+      internalID: 2004755031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_104
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1176
+        width: 20
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a2c5299716d454db73b17d545930e4
+      internalID: 509115238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_105
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 1198
+        width: 113
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c92769c4c5494408c371344ee213bf
+      internalID: 809732818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_106
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 1232
+        width: 20
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503e0c82674132f4e96fd5b2af72b7c4
+      internalID: -689781461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_107
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 1198
+        width: 113
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844b793dc0ab48b4cb9382c8bf03e69d
+      internalID: -1973864141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_108
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 1229
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941e8db20fb5da1408e19131e1a66080
+      internalID: 1498716051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_109
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1291
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72653da15925ea841ab7b5eb4c510658
+      internalID: -135167985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_110
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 1229
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808074770df277d46a284c19b601eb5c
+      internalID: 1275346829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_111
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 1197
+        width: 132
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8612a7f93e62348939631b31117580
+      internalID: -1178868513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_112
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 1232
+        width: 22
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638d51f46d5b4414197820638d3703c0
+      internalID: 2132616029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_113
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1198
+        width: 134
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce93a2fc1260d3e41acf8ca2e85a9942
+      internalID: -1079150922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_114
+      rect:
+        serializedVersion: 2
+        x: 3181
+        y: 1229
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f08f40e8e399f84b883f75f347359eb
+      internalID: 1958307513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_115
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1291
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aabe4a207371e0448e33aee8ab9dc25
+      internalID: 22316484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_116
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 1229
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed8036ef04279e488a29c8acbcf2862
+      internalID: -1546177828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_117
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1084
+        width: 179
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005950083c35df04a8de59d6c37922f9
+      internalID: -960133195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_118
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 1198
+        width: 72
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437444cceac0a49458f421d31c6a9485
+      internalID: -424219366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_119
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 1217
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08c136c1970e2545848a08d60c5c95f
+      internalID: 2011550399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_120
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1233
+        width: 19
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b33ba5539e1d3b48b65502dcf0af54c
+      internalID: 466745921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_121
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 1217
+        width: 59
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da8846d011de2548b5a56ae5e5595ee
+      internalID: -983654782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_122
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 1198
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004166e5a5bfe3b43a1ebf1eb95613d1
+      internalID: -1396425882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_123
+      rect:
+        serializedVersion: 2
+        x: 3104
+        y: 1198
+        width: 91
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f288145124d5146921230e3dd557e3
+      internalID: 463676350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_124
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 1217
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ad1b0e13b391e45b072f0b023e7860
+      internalID: 1319258327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_125
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 1233
+        width: 17
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fdf2801b19c2845907537357bdbf5f
+      internalID: 1725472357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_126
+      rect:
+        serializedVersion: 2
+        x: 3284
+        y: 1217
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937f1303f82d9844191a90f2fdab12ef
+      internalID: 1136130696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_127
+      rect:
+        serializedVersion: 2
+        x: 3296
+        y: 1198
+        width: 92
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ed489e472fbf84db9bce11c2b26190
+      internalID: 1394733978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_128
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 1169
+        width: 79
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd2847e1458d264f84377c8b3dd634e
+      internalID: -470573099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_129
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 1049
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c61ef2a1c250948b6bd317cbce07b5
+      internalID: 1483045909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_130
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 1049
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed7974ac44f88841a641544996dd947
+      internalID: -769342459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_131
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 1169
+        width: 77
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d3bba30659ad243b5e41ad7657136c
+      internalID: -762950460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_132
+      rect:
+        serializedVersion: 2
+        x: 2427
+        y: 1169
+        width: 76
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831a6b130be29be4aaff8b65c8fb14a1
+      internalID: 118935798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_133
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 1169
+        width: 75
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22dae52e6b60434ea7acfea2fcf6a0f
+      internalID: 1855620364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_134
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1167
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e82e44d82832124a82561be6ee14cc9
+      internalID: -868664781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_135
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 1028
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ffbebca85649e448cd0266e2356e82
+      internalID: -436494382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_136
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 1028
+        width: 142
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2447399dd0400814dbb69e6fb20320c7
+      internalID: 947060853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_137
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 1167
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce3864280fb1fa4287064bb9cc88412
+      internalID: 1666820620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_138
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 1167
+        width: 97
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41ddb62edbea5b448430c39da462551
+      internalID: 1658161588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_139
+      rect:
+        serializedVersion: 2
+        x: 3301
+        y: 1167
+        width: 98
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2e3bcf57bdcc148862c1f0f599fe43
+      internalID: 1160950023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_140
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 704
+        width: 20
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0338da0906877447afcca58f6bd33c6
+      internalID: -1533321036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_141
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 1047
+        width: 20
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6d796448fadd842a45a841f7833dfb
+      internalID: 188858238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_142
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 1122
+        width: 72
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742b42699c669af4286be76e3c40be90
+      internalID: 1152848843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_143
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 1081
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a93d8c3e67582245b4ec132f86c5e56
+      internalID: 1501633342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_144
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 1056
+        width: 36
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f0305b97146ca4fa07bf225c867e71
+      internalID: -850056866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_145
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1047
+        width: 19
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f3fed38c2f00a40bf50eb685144edb
+      internalID: -2024078281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_146
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 1056
+        width: 36
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9765754a890cec04da3643a1f88df86c
+      internalID: 1075709995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_147
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 1081
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14295557b0739684a8badff49822f1aa
+      internalID: 1138655549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_148
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 1122
+        width: 71
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4ccc67dd73f3f4e81051fb9d744226
+      internalID: 84179772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_149
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 1026
+        width: 22
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69402a2ce29b6fe45867a2a324ddffae
+      internalID: -1069494989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_150
+      rect:
+        serializedVersion: 2
+        x: 3104
+        y: 1113
+        width: 92
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6ae770374fba24280f96d2a3a8107f
+      internalID: -1675435039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_151
+      rect:
+        serializedVersion: 2
+        x: 3135
+        y: 1068
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65600a88960eac541a4b1f30276fcf70
+      internalID: 1505203344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_152
+      rect:
+        serializedVersion: 2
+        x: 3181
+        y: 1037
+        width: 45
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577d680dab4d4ce408538ec9ddb47208
+      internalID: -732962210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_153
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1026
+        width: 20
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b70882a74214f84a87176f90e32614e
+      internalID: -1879413715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_154
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 1037
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bba245bc034494f8eea34e0a48bd02
+      internalID: -1279270542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_155
+      rect:
+        serializedVersion: 2
+        x: 3284
+        y: 1068
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc400b423efed04e9f11e5a9255cb98
+      internalID: -2123843372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_156
+      rect:
+        serializedVersion: 2
+        x: 3296
+        y: 1113
+        width: 92
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540c4da7ab287734ab969ea46163f629
+      internalID: -1910798313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_157
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 979
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a269b1a177010946b74ca4ab0635374
+      internalID: 1825163429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_158
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 843
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d0a014141628b44a527eb51bc3ff4c
+      internalID: -1592420340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_159
+      rect:
+        serializedVersion: 2
+        x: 2547
+        y: 888
+        width: 22
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d67bc6dfc2e77498eadf180792ca05
+      internalID: -1131383584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_160
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 843
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e91eeab0eb1fb45a831bb6ef2581dc
+      internalID: 1844305299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_161
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 889
+        width: 22
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74486a2926f23f54b98e3f10f85102f5
+      internalID: -600446551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_162
+      rect:
+        serializedVersion: 2
+        x: 3076
+        y: 800
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d2099515f64584eb15ff631e73f792
+      internalID: -1348267349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_163
+      rect:
+        serializedVersion: 2
+        x: 3286
+        y: 936
+        width: 144
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e7e9b24427e3e418c96dd488cc638f
+      internalID: 987222036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_164
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 754
+        width: 220
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80159daef4db09148a473c440e8dac46
+      internalID: 1608070103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_165
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 755
+        width: 134
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad91eaa049f2774bbcd2e3a1e7fdf73
+      internalID: 543313431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_166
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 843
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848fc2666f421b7439f1b912ac883bf2
+      internalID: -1294363109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_167
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 888
+        width: 20
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ca501c7118eca4ababf3e23a47e3c6
+      internalID: -23465770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_168
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 843
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e73c9381da91b14e92fd68f0847d6d6
+      internalID: 856879241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_169
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 853
+        width: 91
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f17e6a90f6102a4d93f73e0d4ffef0c
+      internalID: 1490749201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_170
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 872
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12fdf448f4bd0642a10b4875678a118
+      internalID: -466428538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_171
+      rect:
+        serializedVersion: 2
+        x: 2837
+        y: 884
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bde2b6e592ec254b83456430aeb38c4
+      internalID: -278703033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_172
+      rect:
+        serializedVersion: 2
+        x: 2921
+        y: 884
+        width: 46
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b8e284ccebcd841ac5077e450d6d6a
+      internalID: -921111770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_173
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 872
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d67f8f481145e43a4d22269b2ffa31
+      internalID: 1774919311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_174
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 853
+        width: 92
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f87ffd6d0979d4192083fbe86e87ce
+      internalID: 1152552078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_175
+      rect:
+        serializedVersion: 2
+        x: 3304
+        y: 846
+        width: 108
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede577692e9075c438072e3227b28de7
+      internalID: 76085529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_176
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 824
+        width: 77
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2df866709ca3f641b4d7a8759f05e05
+      internalID: 1783748785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_177
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 705
+        width: 119
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c260da4fad1d34db0187eec6e80b70
+      internalID: -1188352201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_178
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 705
+        width: 120
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e6169898a50dc4c8b5b75f982f85e5
+      internalID: 1808705404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_179
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 824
+        width: 75
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14695bb4d1e837d419005c5390c35a0f
+      internalID: -1579746428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_180
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 823
+        width: 98
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2f7ba87d258614083b6e954902f3ba
+      internalID: -1300205123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_181
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 692
+        width: 130
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d33af81dc1679c4e9ed1cf6607dbbc6
+      internalID: 194983734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_182
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 684
+        width: 141
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f5fb8b559ac754f9e536d8df6d3123
+      internalID: -2057997022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_183
+      rect:
+        serializedVersion: 2
+        x: 2612
+        y: 823
+        width: 98
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a9e4d74d67c7748ad7b70f780c9e0a
+      internalID: -828800054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_184
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 824
+        width: 98
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8263b1cf2ebdc4b9f0984e7735826c
+      internalID: -1741993647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_185
+      rect:
+        serializedVersion: 2
+        x: 2957
+        y: 824
+        width: 97
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5174b9bdc5cde4b8ff8ecc0a19a74e
+      internalID: 1479584573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_186
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 702
+        width: 20
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60acc8bc69c953044a3dcdf1ae3e9ddf
+      internalID: 641143622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_187
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 682
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbf6c34cd09ba442960f70ad02cd2dc
+      internalID: 1134574734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_188
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 769
+        width: 91
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106a8b3561e7c7f4da00029421525a55
+      internalID: -1132346024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_189
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 723
+        width: 72
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4cd9dd86765f24aa76e7b0464dc2e8
+      internalID: 1384868037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_190
+      rect:
+        serializedVersion: 2
+        x: 2837
+        y: 692
+        width: 46
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88b4c8682a781043b3689518815849d
+      internalID: -1068188125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_191
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 682
+        width: 22
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee3fcb31649c194bb80a5494629af76
+      internalID: -643854003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_192
+      rect:
+        serializedVersion: 2
+        x: 2921
+        y: 692
+        width: 46
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeeab1d55c137724d904f63930be9259
+      internalID: -1034214495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_193
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 723
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcd0b882564282499c1708671cb452c
+      internalID: 218213462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_194
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 769
+        width: 91
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba8666c5bcaa8146956fac2f88becfa
+      internalID: 2047916120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_195
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 726
+        width: 137
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270f398e138ffc246a78e7a0a839b274
+      internalID: 1923435727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_196
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 726
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71547b96d6864f4d8f4785666293b53
+      internalID: -1524367563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_197
+      rect:
+        serializedVersion: 2
+        x: 3418
+        y: 718
+        width: 66
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e1b69e6c3118044ba6c595ca6fbf5f
+      internalID: 983750311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_198
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 430
+        width: 261
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bd2c89bb3ee594e87f07447f0e1ad8
+      internalID: 1683728490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_199
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 502
+        width: 188
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255faacb7941e98418e9c55c1975b961
+      internalID: 1943580969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_200
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 573
+        width: 41
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecdcb344d632ee4a8a589305369b9c7
+      internalID: -773998036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_201
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 581
+        width: 27
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e64780bf5c2dff48b39140faa7939ef
+      internalID: 786275606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_202
+      rect:
+        serializedVersion: 2
+        x: 2536
+        y: 584
+        width: 16
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed551fa95a738be41ac580a357d165c7
+      internalID: -1524601317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_203
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 584
+        width: 13
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c40f60cd39a12e49ae73dde1aac099f
+      internalID: 1188642148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_204
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 581
+        width: 27
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430e098a544d17f45a8e349146e1f8f8
+      internalID: -1141229108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_205
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 573
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5487257edc6ae2b46a73feba748905d1
+      internalID: 55623157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_206
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 584
+        width: 20
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4a27ece8fe3014bbf7af62cca04596
+      internalID: 768599905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_207
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 583
+        width: 20
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0837c3af529744b9fafa9068c9620a
+      internalID: -40960250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_208
+      rect:
+        serializedVersion: 2
+        x: 3109
+        y: 639
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b80c46e1bbbed74094a3fe75f0db83e
+      internalID: -743526747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_209
+      rect:
+        serializedVersion: 2
+        x: 3251
+        y: 639
+        width: 101
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c07a40a564ace41b64246440bdc44b
+      internalID: -964769941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_210
+      rect:
+        serializedVersion: 2
+        x: 3387
+        y: 629
+        width: 124
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afbec1d9db8a364db0f591594433066
+      internalID: -814739146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_211
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 528
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5e4c4be2e97a24b9e2178146de5d5d
+      internalID: 605898242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_212
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 540
+        width: 37
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0b6c1de7cba014ebc821fc72e970be
+      internalID: -1989888013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_213
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 545
+        width: 20
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f44caad0ef1f04498d6d46e80d28c24
+      internalID: -225788505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_214
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 540
+        width: 38
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf10ac8b4d80f8441bd4d5ebd1abec79
+      internalID: 1738650472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_215
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 528
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dc2f0cf59c4e941a1cd4429f458da7
+      internalID: -1026173955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_216
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 533
+        width: 67
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1cf91b25224954e98125ece86dda6c
+      internalID: -1352999025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_217
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 550
+        width: 60
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084af1a66aa27434788bf84fc81550b1
+      internalID: 1587928409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_218
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 562
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46864f7b8e962d4abbff5cda5f4fafb
+      internalID: 1787358704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_219
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 562
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8d44762d71b634dad11111bef2a575
+      internalID: 1810404557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_220
+      rect:
+        serializedVersion: 2
+        x: 2631
+        y: 550
+        width: 60
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d78ff8fbcfc4f4ba179288eb8638e4
+      internalID: -1495106883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_221
+      rect:
+        serializedVersion: 2
+        x: 2641
+        y: 533
+        width: 67
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53229e3b1b0ae1b4cb38467677a23a9a
+      internalID: 1070841979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_222
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 541
+        width: 63
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf96e304ad6e9e4db8c7e20c9f58e65
+      internalID: 1255940898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_223
+      rect:
+        serializedVersion: 2
+        x: 2806
+        y: 569
+        width: 44
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f830b3bb92b5ce44ade1a42254a8559
+      internalID: 1940655688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_224
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 569
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d83bd06f539ee4e9ad6646e27290ce
+      internalID: 586153586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_225
+      rect:
+        serializedVersion: 2
+        x: 2981
+        y: 541
+        width: 63
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1474850561f55478362bc3938a63a2
+      internalID: -705761432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_226
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 551
+        width: 96
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f0378032d4c45499e1f50aceb0a0e0
+      internalID: -511227711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_227
+      rect:
+        serializedVersion: 2
+        x: 3263
+        y: 554
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0e51b9f614def438f5cbdb884ac89d
+      internalID: -1247207772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_228
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 509
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d39eedbb3371fb4399e8d4b93a2b7b8
+      internalID: 1744544563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_229
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 509
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ba6dc1874dec14e872546f60fd59ab
+      internalID: 1263210424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_230
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 515
+        width: 72
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cb0cd554f8c1b4f9102d3dfcaa9cdf
+      internalID: 2061174340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_231
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 515
+        width: 72
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b700ebb3b8ae3084e88b8b0d0da930d9
+      internalID: -975116302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_232
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 507
+        width: 74
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ae0b2111c33504d896a54113424925
+      internalID: 1104345062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_233
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 507
+        width: 72
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf53d8a7a21a51f488509b7cecef7437
+      internalID: 609839904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_234
+      rect:
+        serializedVersion: 2
+        x: 3244
+        y: 457
+        width: 115
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1af7b36d006fc4eabec030b4d76c23
+      internalID: -1719821494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_235
+      rect:
+        serializedVersion: 2
+        x: 2083
+        y: 480
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b6c5fc8ae9a8d428211834f2a8c837
+      internalID: -1536755247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_236
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 480
+        width: 75
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0f03bc31f8f994cbdb40a36efe4fb4
+      internalID: -872454056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_237
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 497
+        width: 75
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12043188fc38e324fa90adf153168d12
+      internalID: -1798192028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_238
+      rect:
+        serializedVersion: 2
+        x: 2652
+        y: 497
+        width: 75
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec44a54216378cc4faa3c2f139f5a820
+      internalID: -877144921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_239
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 462
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da60b1d3080068242bba43db8e7cf80d
+      internalID: 494453555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_240
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 279
+        width: 190
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e603ed05fd857764592532ab852a62f9
+      internalID: 2082447224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_241
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 434
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff563aa9a827f1242a9844496097c591
+      internalID: 174417757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_242
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 434
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad79b29b58d78454fb186aa22cd64f53
+      internalID: 313964870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_243
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 468
+        width: 75
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47901887dbce8e40813887b4e03473d
+      internalID: 1756361744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_244
+      rect:
+        serializedVersion: 2
+        x: 2652
+        y: 468
+        width: 75
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bab5a3593f88c4682468c28edee6d7
+      internalID: -975874125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_245
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 454
+        width: 74
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc94fd076416b654cb1ac349ec021ef6
+      internalID: 766690939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_246
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 454
+        width: 72
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13f4626993d2fc4b896ea1889de72f7
+      internalID: -1875667030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_247
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 394
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27dd53ae0b8a8d941838962afd56f031
+      internalID: 1621749576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_248
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 368
+        width: 37
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75eb9b314102422469f2e9a94349c15f
+      internalID: -1346674923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_249
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 368
+        width: 38
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d55685dbe148204f892e222d5215677
+      internalID: 256283934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_250
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 394
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ad363b98c05a3429ae5b1109b42394
+      internalID: 1294925125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_251
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 437
+        width: 72
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d035b950f32a0448b0dd368fb21fb88
+      internalID: -783603769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_252
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 407
+        width: 67
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b4e56883206024aa29753ec4bcb698
+      internalID: -788285795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_253
+      rect:
+        serializedVersion: 2
+        x: 2641
+        y: 407
+        width: 67
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ecaccd8c6a9134a83c51e61bb2d7b9
+      internalID: 1986658041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_254
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 437
+        width: 72
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f37ae3306f0a745b1467bd16033227
+      internalID: -2133708078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_255
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 394
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc025a6a34af12644a2b9fc9b8bf2ff4
+      internalID: 1647077919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_256
+      rect:
+        serializedVersion: 2
+        x: 2981
+        y: 394
+        width: 63
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255567b25a4175546a896b85ddf3273a
+      internalID: 1762881148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_257
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 359
+        width: 20
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0caa42d4263d74c9e59b42024bf327
+      internalID: -991513467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_258
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 381
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c853fbfee9e18448ad8c53f301ba7a
+      internalID: 1847113149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_259
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 357
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12aaab7c5495fa54098d715146ccf515
+      internalID: 1575101340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_260
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 340
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d840fd39bbd9454b9871f07e24abeb6
+      internalID: 1678404212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_261
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 327
+        width: 27
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d9f00917072994189e4e8051639e89
+      internalID: -1928835855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_262
+      rect:
+        serializedVersion: 2
+        x: 2536
+        y: 322
+        width: 16
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac8e9fc61225044da5298f9c365de9f
+      internalID: -706555444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_263
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 322
+        width: 13
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0037c19b753357f4596bbe4a9f17ad4f
+      internalID: 1248562847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_264
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 328
+        width: 28
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943ce1fc216f89e458bbb03408aa44d4
+      internalID: 1198371942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_265
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 340
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86dc4c26d7607ec4d8a907c7ce328bd0
+      internalID: -1296718752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_266
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 357
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1adc1e6196f5d54478f961e0a10edce5
+      internalID: 169213261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_267
+      rect:
+        serializedVersion: 2
+        x: 2631
+        y: 381
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dac53ebc2e9ba449babdfcdcae4eb1f
+      internalID: -997229950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_268
+      rect:
+        serializedVersion: 2
+        x: 2806
+        y: 348
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7effb089ad50fea48992b9c57f0a4ecc
+      internalID: 54772358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_269
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 323
+        width: 20
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f855728be71ced43896245beb4f1c86
+      internalID: 687352808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_270
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 323
+        width: 20
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea756d14fc6de1648a312fa25b5753df
+      internalID: -1373259332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_271
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 348
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee61b39943158014da2e007377d1bfa4
+      internalID: 342279900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_272
+      rect:
+        serializedVersion: 2
+        x: 3092
+        y: 370
+        width: 116
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1027a412aa2a7e4799f6b52d28c3e79
+      internalID: 524798927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_273
+      rect:
+        serializedVersion: 2
+        x: 3256
+        y: 371
+        width: 93
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25195c9c3088d4b46b0edaea1eeab7aa
+      internalID: -82406490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_274
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 98
+        width: 171
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27925936250423e4ab0f566a1e3044bd
+      internalID: 624209147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_275
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 267
+        width: 69
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47be1c2e6da3eb74a9d3c4f6491d512d
+      internalID: -541351612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_276
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 82
+        width: 209
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570fce7d12961f742bd5dc38df73f6e6
+      internalID: 1938705351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_277
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 243
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b47b69952b91d44f9ce2c43704034df
+      internalID: 1073752404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_278
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 259
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b1415a58c1a1440ac72ce72df84c89
+      internalID: -1778818265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_279
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 263
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce6f0767257e014681a2c1a1fc44d55
+      internalID: 243420415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_280
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 255
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2529d6a9aba0e941ad1f45bddba9b0b
+      internalID: -792165513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_281
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 112
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d39b8e8c4478b45a6d719944bae477
+      internalID: -1806081896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_282
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 112
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7befac38686f2e5438b8a30ff96d65e4
+      internalID: -791574147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_283
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 112
+        width: 206
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538369bc0b92df244830bf4794b432a5
+      internalID: 73734972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_284
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 246
+        width: 63
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814a2110459ac4b42914f28940701317
+      internalID: 2049009682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_285
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 246
+        width: 88
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edff68f24fc09c448b609427a2a5e20
+      internalID: 2089964597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_286
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 239
+        width: 1424
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f21cba8c2a0a134b92c709848d515b9
+      internalID: -1524845084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_287
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 227
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a33156044f6618438b59182f00c1355
+      internalID: 1094175477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_288
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 239
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e7b3d75126c574f85b148b461fc314
+      internalID: -632722745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_289
+      rect:
+        serializedVersion: 2
+        x: 2507
+        y: 221
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ca56534f4d0654fb4892a9763f29a1
+      internalID: -1057027550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_290
+      rect:
+        serializedVersion: 2
+        x: 2344
+        y: 199
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dce3695afb67da47bea30d686b69528
+      internalID: 2062495004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_291
+      rect:
+        serializedVersion: 2
+        x: 2516
+        y: 195
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2256b7d4401a7384ca962887ea7808b8
+      internalID: -844099284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_292
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 159
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd619d2aea916d49b4135522b3ef7c1
+      internalID: 266743094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_293
+      rect:
+        serializedVersion: 2
+        x: 3387
+        y: 148
+        width: 65
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfe83021b33558479b909f6b6e44731
+      internalID: 2034401286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_294
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 169
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437d20f46222f494cb090916574e8011
+      internalID: -517233509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_295
+      rect:
+        serializedVersion: 2
+        x: 2518
+        y: 166
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3749aef6c7fd4542926716f4ace63a4
+      internalID: 1709941812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_296
+      rect:
+        serializedVersion: 2
+        x: 2348
+        y: 142
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5f456309431914f956860a773db491
+      internalID: -101109598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_297
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 135
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e8da791b8e9604f8feb04c122e82d8
+      internalID: -2027878379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_298
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 121
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8963ca82e704544b8e4770b99298969
+      internalID: 774744976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_299
+      rect:
+        serializedVersion: 2
+        x: 2377
+        y: 104
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade232938dd1b52408a19e89706d845c
+      internalID: 1968278237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_300
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 112
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039d46898d3fa4047b1dbc3d084f83cf
+      internalID: -2111415757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_301
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 92
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3c2a2f500ec824597e9de201a66b3c
+      internalID: -633130223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_302
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 87
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd321580177d92448cbb48e9fd2f735
+      internalID: 1449103590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_303
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 94
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f986ef31dabad418d324a0e4c21f38
+      internalID: 177689108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_304
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 32
+        width: 122
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5328637d4fbb040b52fc73e0890d96
+      internalID: -1190980761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_305
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 32
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814fda5c8b311ae4f83617b96a0d478a
+      internalID: -62290203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_306
+      rect:
+        serializedVersion: 2
+        x: 3227
+        y: 35
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05aafdff7f8f7cb4ab6d6c222dd49ae7
+      internalID: 1721298911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_307
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 0
+        width: 157
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0f16ca286eac6498a68c46c7466cdc
+      internalID: -1466905042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_308
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 1423
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503fd910afd3d6e4f80ac1c072158bf2
+      internalID: 8789783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_309
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 40
+        width: 106
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f7cd07680050f47875d11a9bd45608
+      internalID: 677654869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_310
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 39
+        width: 86
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db7481dd7a00354787a8338cb361e2f
+      internalID: 63998642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_311
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 1423
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b880886988c2844dba17398539fa7d0
+      internalID: -768331856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DrumActive_312
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1572
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9212a7c7084080844b00d38766a079e8
+      internalID: 777751303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b1d6238ddb4a3054abce8f61bda31a54
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DrumActive_0: 1371036071
+      DrumActive_1: 502481884
+      DrumActive_10: -1734030321
+      DrumActive_100: -178782270
+      DrumActive_101: -1071948356
+      DrumActive_102: -1186560436
+      DrumActive_103: 2004755031
+      DrumActive_104: 509115238
+      DrumActive_105: 809732818
+      DrumActive_106: -689781461
+      DrumActive_107: -1973864141
+      DrumActive_108: 1498716051
+      DrumActive_109: -135167985
+      DrumActive_11: -1351285719
+      DrumActive_110: 1275346829
+      DrumActive_111: -1178868513
+      DrumActive_112: 2132616029
+      DrumActive_113: -1079150922
+      DrumActive_114: 1958307513
+      DrumActive_115: 22316484
+      DrumActive_116: -1546177828
+      DrumActive_117: -960133195
+      DrumActive_118: -424219366
+      DrumActive_119: 2011550399
+      DrumActive_12: 1413845788
+      DrumActive_120: 466745921
+      DrumActive_121: -983654782
+      DrumActive_122: -1396425882
+      DrumActive_123: 463676350
+      DrumActive_124: 1319258327
+      DrumActive_125: 1725472357
+      DrumActive_126: 1136130696
+      DrumActive_127: 1394733978
+      DrumActive_128: -470573099
+      DrumActive_129: 1483045909
+      DrumActive_13: 436628782
+      DrumActive_130: -769342459
+      DrumActive_131: -762950460
+      DrumActive_132: 118935798
+      DrumActive_133: 1855620364
+      DrumActive_134: -868664781
+      DrumActive_135: -436494382
+      DrumActive_136: 947060853
+      DrumActive_137: 1666820620
+      DrumActive_138: 1658161588
+      DrumActive_139: 1160950023
+      DrumActive_14: -1899176157
+      DrumActive_140: -1533321036
+      DrumActive_141: 188858238
+      DrumActive_142: 1152848843
+      DrumActive_143: 1501633342
+      DrumActive_144: -850056866
+      DrumActive_145: -2024078281
+      DrumActive_146: 1075709995
+      DrumActive_147: 1138655549
+      DrumActive_148: 84179772
+      DrumActive_149: -1069494989
+      DrumActive_15: -553126662
+      DrumActive_150: -1675435039
+      DrumActive_151: 1505203344
+      DrumActive_152: -732962210
+      DrumActive_153: -1879413715
+      DrumActive_154: -1279270542
+      DrumActive_155: -2123843372
+      DrumActive_156: -1910798313
+      DrumActive_157: 1825163429
+      DrumActive_158: -1592420340
+      DrumActive_159: -1131383584
+      DrumActive_16: -1936750405
+      DrumActive_160: 1844305299
+      DrumActive_161: -600446551
+      DrumActive_162: -1348267349
+      DrumActive_163: 987222036
+      DrumActive_164: 1608070103
+      DrumActive_165: 543313431
+      DrumActive_166: -1294363109
+      DrumActive_167: -23465770
+      DrumActive_168: 856879241
+      DrumActive_169: 1490749201
+      DrumActive_17: -1269850057
+      DrumActive_170: -466428538
+      DrumActive_171: -278703033
+      DrumActive_172: -921111770
+      DrumActive_173: 1774919311
+      DrumActive_174: 1152552078
+      DrumActive_175: 76085529
+      DrumActive_176: 1783748785
+      DrumActive_177: -1188352201
+      DrumActive_178: 1808705404
+      DrumActive_179: -1579746428
+      DrumActive_18: 1830502642
+      DrumActive_180: -1300205123
+      DrumActive_181: 194983734
+      DrumActive_182: -2057997022
+      DrumActive_183: -828800054
+      DrumActive_184: -1741993647
+      DrumActive_185: 1479584573
+      DrumActive_186: 641143622
+      DrumActive_187: 1134574734
+      DrumActive_188: -1132346024
+      DrumActive_189: 1384868037
+      DrumActive_19: -397294764
+      DrumActive_190: -1068188125
+      DrumActive_191: -643854003
+      DrumActive_192: -1034214495
+      DrumActive_193: 218213462
+      DrumActive_194: 2047916120
+      DrumActive_195: 1923435727
+      DrumActive_196: -1524367563
+      DrumActive_197: 983750311
+      DrumActive_198: 1683728490
+      DrumActive_199: 1943580969
+      DrumActive_2: 1430577569
+      DrumActive_20: -2030467692
+      DrumActive_200: -773998036
+      DrumActive_201: 786275606
+      DrumActive_202: -1524601317
+      DrumActive_203: 1188642148
+      DrumActive_204: -1141229108
+      DrumActive_205: 55623157
+      DrumActive_206: 768599905
+      DrumActive_207: -40960250
+      DrumActive_208: -743526747
+      DrumActive_209: -964769941
+      DrumActive_21: 1513222888
+      DrumActive_210: -814739146
+      DrumActive_211: 605898242
+      DrumActive_212: -1989888013
+      DrumActive_213: -225788505
+      DrumActive_214: 1738650472
+      DrumActive_215: -1026173955
+      DrumActive_216: -1352999025
+      DrumActive_217: 1587928409
+      DrumActive_218: 1787358704
+      DrumActive_219: 1810404557
+      DrumActive_22: 1335691562
+      DrumActive_220: -1495106883
+      DrumActive_221: 1070841979
+      DrumActive_222: 1255940898
+      DrumActive_223: 1940655688
+      DrumActive_224: 586153586
+      DrumActive_225: -705761432
+      DrumActive_226: -511227711
+      DrumActive_227: -1247207772
+      DrumActive_228: 1744544563
+      DrumActive_229: 1263210424
+      DrumActive_23: -1288189820
+      DrumActive_230: 2061174340
+      DrumActive_231: -975116302
+      DrumActive_232: 1104345062
+      DrumActive_233: 609839904
+      DrumActive_234: -1719821494
+      DrumActive_235: -1536755247
+      DrumActive_236: -872454056
+      DrumActive_237: -1798192028
+      DrumActive_238: -877144921
+      DrumActive_239: 494453555
+      DrumActive_24: -267147383
+      DrumActive_240: 2082447224
+      DrumActive_241: 174417757
+      DrumActive_242: 313964870
+      DrumActive_243: 1756361744
+      DrumActive_244: -975874125
+      DrumActive_245: 766690939
+      DrumActive_246: -1875667030
+      DrumActive_247: 1621749576
+      DrumActive_248: -1346674923
+      DrumActive_249: 256283934
+      DrumActive_25: 1422458294
+      DrumActive_250: 1294925125
+      DrumActive_251: -783603769
+      DrumActive_252: -788285795
+      DrumActive_253: 1986658041
+      DrumActive_254: -2133708078
+      DrumActive_255: 1647077919
+      DrumActive_256: 1762881148
+      DrumActive_257: -991513467
+      DrumActive_258: 1847113149
+      DrumActive_259: 1575101340
+      DrumActive_26: 1926338527
+      DrumActive_260: 1678404212
+      DrumActive_261: -1928835855
+      DrumActive_262: -706555444
+      DrumActive_263: 1248562847
+      DrumActive_264: 1198371942
+      DrumActive_265: -1296718752
+      DrumActive_266: 169213261
+      DrumActive_267: -997229950
+      DrumActive_268: 54772358
+      DrumActive_269: 687352808
+      DrumActive_27: -274885995
+      DrumActive_270: -1373259332
+      DrumActive_271: 342279900
+      DrumActive_272: 524798927
+      DrumActive_273: -82406490
+      DrumActive_274: 624209147
+      DrumActive_275: -541351612
+      DrumActive_276: 1938705351
+      DrumActive_277: 1073752404
+      DrumActive_278: -1778818265
+      DrumActive_279: 243420415
+      DrumActive_28: 195196946
+      DrumActive_280: -792165513
+      DrumActive_281: -1806081896
+      DrumActive_282: -791574147
+      DrumActive_283: 73734972
+      DrumActive_284: 2049009682
+      DrumActive_285: 2089964597
+      DrumActive_286: -1524845084
+      DrumActive_287: 1094175477
+      DrumActive_288: -632722745
+      DrumActive_289: -1057027550
+      DrumActive_29: -664565559
+      DrumActive_290: 2062495004
+      DrumActive_291: -844099284
+      DrumActive_292: 266743094
+      DrumActive_293: 2034401286
+      DrumActive_294: -517233509
+      DrumActive_295: 1709941812
+      DrumActive_296: -101109598
+      DrumActive_297: -2027878379
+      DrumActive_298: 774744976
+      DrumActive_299: 1968278237
+      DrumActive_3: 1511902002
+      DrumActive_30: 1206948543
+      DrumActive_300: -2111415757
+      DrumActive_301: -633130223
+      DrumActive_302: 1449103590
+      DrumActive_303: 177689108
+      DrumActive_304: -1190980761
+      DrumActive_305: -62290203
+      DrumActive_306: 1721298911
+      DrumActive_307: -1466905042
+      DrumActive_308: 8789783
+      DrumActive_309: 677654869
+      DrumActive_31: 1998652253
+      DrumActive_310: 63998642
+      DrumActive_311: -768331856
+      DrumActive_312: 777751303
+      DrumActive_32: 1958406366
+      DrumActive_33: -1410898483
+      DrumActive_34: 1987532981
+      DrumActive_35: 14601492
+      DrumActive_36: -1053591129
+      DrumActive_37: 875025273
+      DrumActive_38: 583078131
+      DrumActive_39: 839323454
+      DrumActive_4: -1316084201
+      DrumActive_40: 1663350996
+      DrumActive_41: 1073974959
+      DrumActive_42: -1895914147
+      DrumActive_43: 1179197488
+      DrumActive_44: -280680382
+      DrumActive_45: 2078732575
+      DrumActive_46: -1797872627
+      DrumActive_47: -845193675
+      DrumActive_48: 1166300167
+      DrumActive_49: 631755014
+      DrumActive_5: 1548916207
+      DrumActive_50: 1318756525
+      DrumActive_51: -1827284261
+      DrumActive_52: -1170230947
+      DrumActive_53: -1511054583
+      DrumActive_54: -1199846259
+      DrumActive_55: 1835682962
+      DrumActive_56: 761612127
+      DrumActive_57: -2108963836
+      DrumActive_58: 269171330
+      DrumActive_59: 152477334
+      DrumActive_6: 353678638
+      DrumActive_60: 153167688
+      DrumActive_61: 206605173
+      DrumActive_62: 749765815
+      DrumActive_63: 1666154138
+      DrumActive_64: 845093323
+      DrumActive_65: -1259636923
+      DrumActive_66: 460228975
+      DrumActive_67: 1732076852
+      DrumActive_68: -1527351795
+      DrumActive_69: -1798657731
+      DrumActive_7: -1184308506
+      DrumActive_70: 17523731
+      DrumActive_71: -74797325
+      DrumActive_72: -1458826334
+      DrumActive_73: 1376038663
+      DrumActive_74: 1241840583
+      DrumActive_75: 1491064690
+      DrumActive_76: 1042171475
+      DrumActive_77: -1311652509
+      DrumActive_78: 896892907
+      DrumActive_79: 1908403475
+      DrumActive_8: -1392629911
+      DrumActive_80: -2127019281
+      DrumActive_81: 1594482506
+      DrumActive_82: 1482622547
+      DrumActive_83: -154894060
+      DrumActive_84: 806145158
+      DrumActive_85: -143912559
+      DrumActive_86: 2129260995
+      DrumActive_87: 489833932
+      DrumActive_88: -321810520
+      DrumActive_89: -112736112
+      DrumActive_9: -663250644
+      DrumActive_90: 497015577
+      DrumActive_91: 107754491
+      DrumActive_92: -530835286
+      DrumActive_93: 462454865
+      DrumActive_94: 761906787
+      DrumActive_95: -1810914915
+      DrumActive_96: -572116262
+      DrumActive_97: 1036421285
+      DrumActive_98: 1437521486
+      DrumActive_99: 1518622267
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
