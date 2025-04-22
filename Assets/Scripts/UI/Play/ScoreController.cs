@@ -49,13 +49,6 @@ public class ScoreController : MonoBehaviour
                 return;
             ComboHit = 0;
         }
-        else if (hitResult == HitResult.Miss)
-        {
-            DeadGauge -= deadGaugeAmount;
-            if (DeadGauge < 0)
-                return;
-            ComboHit = 0;
-        }
         else if (hitResult == HitResult.Good)
             ScoreCalculation(_judgementData.GoodComboScore, _judgementData.GoodScore);
         else if (hitResult == HitResult.Perfect)
