@@ -21,7 +21,7 @@ public class ScoreController : MonoBehaviour
     
     private JudgementData _judgementData;
     
-    public PlayerController playerController;
+    public TimingManager timingManager;
     public NumberImage ScoreNumberImage;
     public NumberImage ComboNumberImage;
     public DeadGauge deadGauge;
@@ -44,7 +44,7 @@ public class ScoreController : MonoBehaviour
 
     private void Update()
     {
-        if (playerController.HitQueue.Count > 0)
+        if (timingManager.HitQueue.Count > 0)
         {
             ScoreUpdate();
             if (DeadGauge == 0)
@@ -66,7 +66,7 @@ public class ScoreController : MonoBehaviour
     
     private void ScoreUpdate()
     {
-        HitResult hitResult = playerController.HitQueue.Dequeue();
+        HitResult hitResult = timingManager.HitQueue.Dequeue();
         if (hitResult == HitResult.Bad)
         {
             DeadGauge -= deadGaugeAmount;
