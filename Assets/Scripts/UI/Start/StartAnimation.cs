@@ -1,6 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class StartAnimation : MonoBehaviour
 {
     [SerializeField]
@@ -23,9 +23,13 @@ public class StartAnimation : MonoBehaviour
 
     [SerializeField] 
     private RectTransform YutStick, Bell;
-    
-    private 
-    void OnEnable()
+
+    [SerializeField] 
+    private Image[] Lights;
+
+    [SerializeField] private RectTransform[] MoveObjects;
+    private float moveAmount = 50f;
+    private void OnEnable()
     {
         Sequence seq = DOTween.Sequence();
         seq.Append(Right.DOAnchorPosX(260f, 0.5f).SetEase(Ease.OutQuad));
@@ -134,6 +138,25 @@ public class StartAnimation : MonoBehaviour
         
         seq.Join(Bell.DOAnchorPosX(125f, 2f).SetEase(Ease.OutQuad));
         seq.Join(Bell.DOAnchorPosY( 130f, 2f).SetEase(Ease.OutQuad));
+
+        seq.AppendCallback(() =>
+        {
+            foreach (var light in Lights)
+            {
+               light.DOFade(0.3f, 0.5f)
+                    .SetLoops(-1, LoopType.Yoyo)
+                    .SetEase(Ease.InOutSine);
+            }
+            foreach (var moveObject in MoveObjects)
+            {
+                Vector2 startPos = moveObject.anchoredPosition;
+                Sequence LoopSequence = DOTween.Sequence();
+                LoopSequence.Append(moveObject.DOAnchorPosY(startPos.y + moveAmount, 0.5f).SetEase(Ease.InOutSine))
+                    .Append(moveObject.DOAnchorPosY(startPos.y, 0.5f).SetEase(Ease.InOutSine))
+                    .AppendInterval(1)
+                    .SetLoops(-1);
+            }
+        });
     }
     
     void OnDisable()
