@@ -43,14 +43,24 @@ namespace dokoh
         void Update()
         {
             activeChoice = choices[3];
+           // Execute Code
             // 곡 위로
-            if (drums.dataSet == DrumDataType.RightFace)
+            // if (drums.dataSet == DrumDataType.RightFace)
+            //     ScrollUp();
+            // // 곡 아래로
+            // else if (drums.dataSet == DrumDataType.LeftFace)
+            //     ScrollDown();
+            // // 곡 선택
+            // else if (drums.dataSet == DrumDataType.DobletFace)
+            //     DoChoice();
+            
+            if (testDrumInput.testInputType == DrumDataType.RightFace)
                 ScrollUp();
             // 곡 아래로
-            else if (drums.dataSet == DrumDataType.LeftFace)
+            else if (testDrumInput.testInputType == DrumDataType.LeftFace)
                 ScrollDown();
             // 곡 선택
-            else if (drums.dataSet == DrumDataType.DobletFace)
+            else if (testDrumInput.testInputType == DrumDataType.DobletFace)
                 DoChoice();
         }
 

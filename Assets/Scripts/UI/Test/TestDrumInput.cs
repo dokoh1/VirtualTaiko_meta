@@ -19,7 +19,7 @@ public class TestDrumInput : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Alpha3))
             testInputType = DrumDataType.LeftSide;
         else if (Input.GetKeyUp(KeyCode.Alpha4))
-            testInputType = DrumDataType.RightSide;
+            testInputType = DrumDataType.DobletFace;
         else if (Input.GetKeyUp(KeyCode.Alpha5))
             judgementData = JudgementDataType.Good;
         else if (Input.GetKeyUp(KeyCode.Alpha6))

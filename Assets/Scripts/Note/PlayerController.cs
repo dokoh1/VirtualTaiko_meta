@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -17,8 +15,8 @@ public class PlayerController : MonoBehaviour
     {
         while (true)
         {
-            // if (Input.GetKeyDown(KeyCode.Space))
-            if (drums.dataSet == DrumDataType.RightFace)
+            if (Input.GetKeyDown(KeyCode.Space))
+            // if (drums.dataSet == DrumDataType.RightFace)
             {
                 HitResult result = timingManager.CheckTiming();
                 
