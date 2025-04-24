@@ -10,7 +10,7 @@ public class DeadGauge : MonoBehaviour
     
     private readonly float _initFirstGauge = 200;
     private readonly float _initSecondGauge = 150;
-    private readonly float _duration = 0.1f;
+    private readonly float _duration = 0.2f;
     
     private float _saveDeadGauge = 350;
     void OnEnable()
