@@ -1,28 +1,18 @@
+using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 public class StartAnimation : MonoBehaviour
 {
-    [SerializeField]
-    private RectTransform Right, Left;
-    
-    [SerializeField]
-    private RectTransform BigRed, BigBlue, Drum, Title;
-    
-    [SerializeField]
-    private RectTransform CryStal1, CryStal2, CryStal3, CryStal4, CryStal5;
+    public RectTransform Right, Left, BigRed, BigBlue, Drum, Title;
+    public RectTransform YutStick, Bell;
 
-    [SerializeField]
-    private RectTransform Flower1, Flower2, Flower3, Flower4;
+    [Header("크리스탈, 꽃, 잎 오브젝트들")]
+    public List<RectTransform> Crystals;
+    public List<RectTransform> Flowers;
+    public List<RectTransform> Leafs;
 
-    [SerializeField] 
-    private RectTransform Leaf1, Leaf2;
-        
-    [SerializeField] 
-    private RectTransform BackGround;
-
-    [SerializeField] 
-    private RectTransform YutStick, Bell;
 
     [SerializeField] 
     private Image[] Lights;
@@ -32,113 +22,8 @@ public class StartAnimation : MonoBehaviour
     private void OnEnable()
     {
         Sequence seq = DOTween.Sequence();
-        seq.Append(Right.DOAnchorPosX(260f, 0.5f).SetEase(Ease.OutQuad));
-        seq.Append(Left.DOAnchorPosX(-240f, 0.5f).SetEase(Ease.OutQuad));
+        PlayUIAnimation(seq);
         
-        seq.Append(BigRed.DOAnchorPosX(-180f, 0.5f).SetEase(Ease.OutQuad));
-        seq.Join(BigRed.DOAnchorPosY(15f, 0.5f).SetEase(Ease.OutQuad));
-        seq.Join(BigRed.DOSizeDelta(new Vector2(250f, 230f), 0.5f).SetEase(Ease.OutQuad));
-        
-        seq.Append(BigBlue.DOAnchorPosX(180f, 0.5f).SetEase(Ease.OutQuad));
-        seq.Join(BigBlue.DOAnchorPosY(15f, 0.5f).SetEase(Ease.OutQuad));
-        seq.Join(BigBlue.DOSizeDelta(new Vector2(250, 230f), 0.5f).SetEase(Ease.OutQuad));
-        
-        seq.Append(Drum.DOSizeDelta(new Vector2(160f, 150f), 0.5f).SetEase(Ease.OutQuad));
-        seq.Join(Title.DOSizeDelta(new Vector2(300f, 130f), 0.5f).SetEase(Ease.OutQuad));
-        
-        //Effect 전
-        seq.Append(CryStal1.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal1.DOAnchorPosX(315f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal1.DOAnchorPosY( 0f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(CryStal2.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal2.DOAnchorPosX(-280f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal2.DOAnchorPosY( 178f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(CryStal3.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal3.DOAnchorPosX(-280f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal3.DOAnchorPosY( -150f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(CryStal4.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal4.DOAnchorPosX(-200f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal4.DOAnchorPosY( 130f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(CryStal5.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal5.DOAnchorPosX(-300f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal5.DOAnchorPosY( 0f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Flower1.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Flower1.DOAnchorPosX(180f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Flower1.DOAnchorPosY( 180f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Flower2.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Flower2.DOAnchorPosX(280f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Flower2.DOAnchorPosY( 90f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Flower3.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Flower3.DOAnchorPosX(40f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Flower3.DOAnchorPosY( 160f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Flower4.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Flower4.DOAnchorPosX(310f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Flower4.DOAnchorPosY( -90f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Leaf1.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Leaf1.DOAnchorPosX(90f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Leaf1.DOAnchorPosY( -200f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Leaf2.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Leaf2.DOAnchorPosX(-320f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Leaf2.DOAnchorPosY( -90f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(YutStick.DOSizeDelta(new Vector2(110f, 120f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(YutStick.DOAnchorPosX(-110f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(YutStick.DOAnchorPosY( 120f, 0.3f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Bell.DOSizeDelta(new Vector2(75f, 80f), 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Bell.DOAnchorPosX(110f, 0.3f).SetEase(Ease.OutQuad));
-        seq.Join(Bell.DOAnchorPosY( 120f, 0.3f).SetEase(Ease.OutQuad));
-        
-        //Effect 후
-        seq.Append(CryStal1.DOAnchorPosX(330f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal1.DOAnchorPosY( 10f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(CryStal2.DOAnchorPosX(-295f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal2.DOAnchorPosY( 188f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(CryStal3.DOAnchorPosX(-295f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal3.DOAnchorPosY( -170f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(CryStal4.DOAnchorPosX(-215f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal4.DOAnchorPosY( 140f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(CryStal5.DOAnchorPosX(-315f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(CryStal5.DOAnchorPosY( 10f, 2f).SetEase(Ease.OutQuad));
-
-        seq.Join(Flower1.DOAnchorPosX(195f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(Flower1.DOAnchorPosY( 190f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Flower2.DOAnchorPosX(295f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(Flower2.DOAnchorPosY( 100f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Flower3.DOAnchorPosX(55f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(Flower3.DOAnchorPosY( 170f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Flower4.DOAnchorPosX(325f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(Flower4.DOAnchorPosY( -80f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Leaf1.DOAnchorPosX(105f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(Leaf1.DOAnchorPosY( -210f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Leaf2.DOAnchorPosX(-335f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(Leaf2.DOAnchorPosY( -80f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(YutStick.DOAnchorPosX(-125f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(YutStick.DOAnchorPosY( 130f, 2f).SetEase(Ease.OutQuad));
-        
-        seq.Join(Bell.DOAnchorPosX(125f, 2f).SetEase(Ease.OutQuad));
-        seq.Join(Bell.DOAnchorPosY( 130f, 2f).SetEase(Ease.OutQuad));
-
         seq.AppendCallback(() =>
         {
             foreach (var light in Lights)
@@ -147,6 +32,7 @@ public class StartAnimation : MonoBehaviour
                     .SetLoops(-1, LoopType.Yoyo)
                     .SetEase(Ease.InOutSine);
             }
+            
             foreach (var moveObject in MoveObjects)
             {
                 Vector2 startPos = moveObject.anchoredPosition;
@@ -158,9 +44,115 @@ public class StartAnimation : MonoBehaviour
             }
         });
     }
-    
+    void PlayUIAnimation(Sequence seq)
+    {
+
+        // 기본 이동
+        seq.Append(Right.DOAnchorPosX(260f, 0.5f).SetEase(Ease.OutQuad));
+        seq.Append(Left.DOAnchorPosX(-240f, 0.5f).SetEase(Ease.OutQuad));
+
+        
+        // BigRed 등장
+        seq.Append(BigRed.DOAnchorPosX(-180f, 0.5f).SetEase(Ease.OutQuad));
+        seq.Join(BigRed.DOAnchorPosY(15f, 0.5f).SetEase(Ease.OutQuad));
+        seq.Join(BigRed.DOSizeDelta(new Vector2(250f, 230f), 0.5f).SetEase(Ease.OutQuad));
+        
+        // BigBlue 등장
+        AnimateFull(BigBlue, new Vector2(180f, 15f), new Vector2(250f, 230f), 0.5f, seq);
+
+        // Drum + Title 등장
+        AnimateSizeInit(Drum, new Vector2(160f, 150f), 0.5f, seq);
+        AnimateSize(Title, new Vector2(300f, 130f), 0.5f, seq);
+
+        // 초기 크리스탈/플라워/리프 애니메이션
+        AnimateGroup(Crystals, new Vector2[] {
+            new Vector2(315f, 0f), new Vector2(-280f, 178f), new Vector2(-280f, -150f),
+            new Vector2(-200f, 130f), new Vector2(-300f, 0f)
+        }, 0.3f, new Vector2(75f, 80f), seq);
+
+        AnimateGroup(Flowers, new Vector2[] {
+            new Vector2(180f, 180f), new Vector2(280f, 90f),
+            new Vector2(40f, 160f), new Vector2(310f, -90f)
+        }, 0.3f, new Vector2(75f, 80f), seq);
+
+        AnimateGroup(Leafs, new Vector2[] {
+            new Vector2(90f, -200f), new Vector2(-320f, -90f)
+        }, 0.3f, new Vector2(75f, 80f), seq);
+
+        AnimateFull(YutStick, new Vector2(-110f, 120f), new Vector2(110f, 120f), 0.3f, seq);
+        AnimateFull(Bell, new Vector2(110f, 120f), new Vector2(75f, 80f), 0.3f, seq);
+
+        // 이후 위치 이동
+        MoveGroup(Crystals, new Vector2[] {
+            new Vector2(330f, 10f), new Vector2(-295f, 188f), new Vector2(-295f, -170f),
+            new Vector2(-215f, 140f), new Vector2(-315f, 10f)
+        }, 2f, seq);
+
+        MoveGroup(Flowers, new Vector2[] {
+            new Vector2(195f, 190f), new Vector2(295f, 100f),
+            new Vector2(55f, 170f), new Vector2(325f, -80f)
+        }, 2f, seq);
+
+        MoveGroup(Leafs, new Vector2[] {
+            new Vector2(105f, -210f), new Vector2(-335f, -80f)
+        }, 2f, seq);
+
+        MovePosition(YutStick, new Vector2(-125f, 130f), 2f, seq);
+        MovePosition(Bell, new Vector2(125f, 130f), 2f, seq);
+    }
+
+    void AnimateFull(RectTransform target, Vector2 pos, Vector2 size, float time, Sequence seq)
+    {
+        seq.Join(target.DOAnchorPosX(pos.x, time).SetEase(Ease.OutQuad));
+        seq.Join(target.DOAnchorPosY(pos.y, time).SetEase(Ease.OutQuad));
+        seq.Join(target.DOSizeDelta(size, time).SetEase(Ease.OutQuad));
+    }
+
+    void AnimateSize(RectTransform target, Vector2 size, float time, Sequence seq)
+    {
+        seq.Join(target.DOSizeDelta(size, time).SetEase(Ease.OutQuad));
+    }
+    void AnimateSizeInit(RectTransform target, Vector2 size, float time, Sequence seq)
+    {
+        seq.Append(target.DOSizeDelta(size, time).SetEase(Ease.OutQuad));
+    }
+
+    void AnimateGroup(List<RectTransform> targets, Vector2[] positions, float time, Vector2 size, Sequence seq)
+    {
+        for (int i = 0; i < targets.Count && i < positions.Length; i++)
+        {
+            AnimateFull(targets[i], positions[i], size, time, seq);
+        }
+    }
+
+    void MoveGroup(List<RectTransform> targets, Vector2[] positions, float time, Sequence seq)
+    {
+        for (int i = 0; i < targets.Count && i < positions.Length; i++)
+        {
+            MovePosition(targets[i], positions[i], time, seq);
+        }
+    }
+
+    void MovePosition(RectTransform target, Vector2 pos, float time, Sequence seq)
+    {
+        seq.Join(target.DOAnchorPosX(pos.x, time).SetEase(Ease.OutQuad));
+        seq.Join(target.DOAnchorPosY(pos.y, time).SetEase(Ease.OutQuad));
+    }
     void OnDisable()
     {
-        
+        Right.anchoredPosition = new Vector2(-550f, -175f);
+        Left.anchoredPosition = new Vector2(-580f, -175f);
+        Init(BigRed);
+        Init(BigBlue);
+        Init(Drum);
+        Init(Title);
+        Init(YutStick);
+        Init(Bell);
+    }
+
+    void Init(RectTransform ObjectRect)
+    {
+        ObjectRect.anchoredPosition = new Vector2(0f, -100f);
+        ObjectRect.sizeDelta = new Vector2(0f, 0f);
     }
 }
