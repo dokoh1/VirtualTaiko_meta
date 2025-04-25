@@ -23,20 +23,52 @@ namespace dokoh
 
         private readonly float _moveDistance = 85f;
         private readonly float _moveDuration = 0.5f;
+        private readonly float _arrowDistance = 15f;
         private bool _isScrolling;
+        private Vector2 _startDownPos;
+        private Vector2 _startUpPos;
         
         private Dictionary<Image, Tween> activeTweens = new Dictionary<Image, Tween>();
+        private Sequence activeSequences;
 
         private void OnEnable()
         {
             foreach (var ActiveImage in choices[3].ActiveImages)
             {
-                ActiveImage.DOFade(0.3f, 1f)
+                Tween t = ActiveImage.DOFade(0.3f, 1f)
                     .SetLoops(-1, LoopType.Yoyo)
-                    .SetEase(Ease.InOutQuad);
+                    .SetEase(Ease.InOutQuad)
+                    .From(1f);
+                activeTweens[ActiveImage] = t;
             }
+            ArrowData arrowData = choices[3].ArrowData;
+            
+            _startDownPos = arrowData.DownArrowRect.anchoredPosition;
+            _startUpPos = arrowData.UpArrowRect.anchoredPosition;
+            ArrowAnimation();
         }
 
+        private void ArrowAnimation()
+        {
+            ArrowData arrowData = choices[3].ArrowData;
+            activeSequences = DOTween.Sequence();
+            activeSequences.Append(arrowData.DownArrow
+                .DOFade(0.1f, 2f)
+                .From(1f));
+            activeSequences.Join(arrowData.DownArrowRect
+                .DOAnchorPosY(arrowData.DownArrowRect.anchoredPosition.y - _arrowDistance, 2f)
+                .SetEase(Ease.Linear)
+                .From(_startDownPos));
+            activeSequences.Join(arrowData.UpArrow
+                .DOFade(0.1f, 2f)
+                .From(1f));
+            activeSequences.Join(arrowData.UpArrowRect
+                .DOAnchorPosY(arrowData.UpArrowRect.anchoredPosition.y + _arrowDistance, 2f)
+                .SetEase(Ease.Linear)
+                .From(_startUpPos));
+            activeSequences.SetLoops(-1);
+        }
+        
         private struct ChoiceAnimationData
         {
             public float CenterHeight;
@@ -144,17 +176,7 @@ namespace dokoh
                 }
                 else if (i == 3)
                 {
-                    foreach (var ActiveImage in choices[i].ActiveImages)
-                    {
-                        if (activeTweens.TryGetValue(ActiveImage, out var tween))
-                        {
-                            tween.Kill();
-                            var color = ActiveImage.color;
-                            color.a = 1f;
-                            ActiveImage.color = color;
-                        }
-                    }
-                    choices[i].ActiveFrame.SetActive(false);
+                    InitAnimations(choices[i]);
                     var data = new ChoiceAnimationData
                     {
                         CenterHeight = 70,
@@ -197,20 +219,16 @@ namespace dokoh
             choices[6].Text.text = choices[1].Text.text;
             choices[6].ChoiceType = choices[1].ChoiceType;
             choices[3].ActiveFrame.SetActive(true);
-            foreach (var ActiveImage in choices[3].ActiveImages)
-            {
-                Tween t = ActiveImage.DOFade(0.3f, 1f)
-                    .SetLoops(-1, LoopType.Yoyo)
-                    .SetEase(Ease.InOutQuad);
-                activeTweens[ActiveImage] = t;
-            }
+            ActiveFrameAnimation(choices[3]);
+            choices[3].ArrowData.Arrow.SetActive(true);
+            ArrowAnimation();
             _isScrolling = false;
         }
         
         private IEnumerator ScrollDownProcess()
         {
             _isScrolling = true;
-
+        
             Sequence sequence = DOTween.Sequence();
             for (int i = 0; i < choices.Count; i++)
             {
@@ -232,17 +250,7 @@ namespace dokoh
                 }
                 else if (i == 3)
                 {
-                    foreach (var ActiveImage in choices[i].ActiveImages)
-                    {
-                        if (activeTweens.TryGetValue(ActiveImage, out var tween))
-                        {
-                            tween.Kill();
-                            var color = ActiveImage.color;
-                            color.a = 1f;
-                            ActiveImage.color = color;
-                        }
-                    }
-                    choices[i].ActiveFrame.SetActive(false);
+                    InitAnimations(choices[i]);
                     var data = new ChoiceAnimationData
                     {
                         CenterHeight = 70,
@@ -281,14 +289,39 @@ namespace dokoh
             choices[0].Text.text = choices[5].Text.text;
             choices[0].ChoiceType = choices[5].ChoiceType;
             choices[3].ActiveFrame.SetActive(true);
-            foreach (var ActiveImage in choices[3].ActiveImages)
+            ActiveFrameAnimation(choices[3]);
+            choices[3].ArrowData.Arrow.SetActive(true);
+            ArrowAnimation();
+            _isScrolling = false;
+        }
+
+        private void ActiveFrameAnimation(ChoiceData choice)
+        {
+            foreach (var ActiveImage in choice.ActiveImages)
             {
                 Tween t = ActiveImage.DOFade(0.3f, 1f)
                     .SetLoops(-1, LoopType.Yoyo)
-                    .SetEase(Ease.InOutQuad);
+                    .SetEase(Ease.InOutQuad)
+                    .From(1f);
                 activeTweens[ActiveImage] = t;
             }
-            _isScrolling = false;
+            choice.ArrowData.Arrow.SetActive(true);
+        }
+        private void InitAnimations(ChoiceData choiceData)
+        {
+            foreach (var ActiveImage in choiceData.ActiveImages)
+            {
+                if (activeTweens.TryGetValue(ActiveImage, out var tween))
+                {
+                    tween.Kill();
+                    var color = ActiveImage.color;
+                    color.a = 1f;
+                    ActiveImage.color = color;
+                }
+            }
+            activeSequences.Kill();
+            choiceData.ArrowData.Arrow.SetActive(false);
+            choiceData.ActiveFrame.SetActive(false);
         }
         
         private void ApplyAnimation(Sequence sequence, ChoiceData choice, ChoiceAnimationData data)
@@ -334,9 +367,7 @@ namespace dokoh
             foreach (var choice in choices)
             {
                 if (choice.CardTrans.anchoredPosition.y > top.CardTrans.anchoredPosition.y)
-                {
                     top = choice;
-                }
             }
             return top;
         }
@@ -347,9 +378,7 @@ namespace dokoh
             foreach (var choice in choices)
             {
                 if (choice.CardTrans.anchoredPosition.y < bottom.CardTrans.anchoredPosition.y)
-                {
                     bottom = choice;
-                }
             }
             return bottom;
         }

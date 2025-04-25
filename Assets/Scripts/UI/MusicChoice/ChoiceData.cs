@@ -18,5 +18,6 @@ namespace dokoh
         public GameObject ActiveFrame;
         public Text Text;
         public Image[] ActiveImages;
+        public ArrowData ArrowData;
     }
 }

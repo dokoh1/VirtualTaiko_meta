@@ -43,7 +43,7 @@ public class StartAnimation : MonoBehaviour
                 LoopSequence.Append(moveObject.DOAnchorPosY(startPos.y + moveAmount, 0.5f).SetEase(Ease.InOutSine))
                     .Append(moveObject.DOAnchorPosY(startPos.y, 0.5f).SetEase(Ease.InOutSine))
                     .AppendInterval(1)
-                    .SetLoops(-1);
+                    .SetLoops(-1, LoopType.Yoyo);
             }
         });
     }
