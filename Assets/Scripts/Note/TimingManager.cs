@@ -20,6 +20,7 @@ public class TimingManager : MonoBehaviour
     private float goodRange = 0.7f;
     private float badRange = 1.05f;
 
+    // ReSharper disable Unity.PerformanceAnalysis
     public HitResult CheckTiming()
     {
         if (BoxNoteList.Count == 0) return HitResult.Bad;
@@ -27,8 +28,7 @@ public class TimingManager : MonoBehaviour
         GameObject closestNote = null;
         float closestDistance = float.MaxValue;
         float centerX = Center.position.x;
-
-        // 💡 가장 가까운 노트 찾기
+        
         foreach (var note in BoxNoteList)
         {
             float noteX = note.transform.position.x;
