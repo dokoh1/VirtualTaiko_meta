@@ -116,5 +116,9 @@ public class NoteManager1 : MonoBehaviour
         {
             HitResult result = timingManager.CheckTiming();
         }
+        else
+        {
+            HitResult result = HitResult.Bad;
+        }
     }
 }
