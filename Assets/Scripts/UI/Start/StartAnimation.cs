@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
@@ -7,6 +9,7 @@ public class StartAnimation : MonoBehaviour
 {
     public RectTransform Right, Left, BigRed, BigBlue, Drum, Title;
     public RectTransform YutStick, Bell;
+    public RectTransform AppendObject;
 
     [Header("크리스탈, 꽃, 잎 오브젝트들")]
     public List<RectTransform> Crystals;
@@ -44,9 +47,10 @@ public class StartAnimation : MonoBehaviour
             }
         });
     }
+    
     void PlayUIAnimation(Sequence seq)
     {
-
+        
         // 기본 이동
         seq.Append(Right.DOAnchorPosX(260f, 0.5f).SetEase(Ease.OutQuad));
         seq.Append(Left.DOAnchorPosX(-240f, 0.5f).SetEase(Ease.OutQuad));
@@ -63,8 +67,9 @@ public class StartAnimation : MonoBehaviour
         // Drum + Title 등장
         AnimateSizeInit(Drum, new Vector2(160f, 150f), 0.5f, seq);
         AnimateSize(Title, new Vector2(300f, 130f), 0.5f, seq);
-
+        
         // 초기 크리스탈/플라워/리프 애니메이션
+        DoAppend(seq, 0.3f);
         AnimateGroup(Crystals, new Vector2[] {
             new Vector2(315f, 0f), new Vector2(-280f, 178f), new Vector2(-280f, -150f),
             new Vector2(-200f, 130f), new Vector2(-300f, 0f)
@@ -78,11 +83,13 @@ public class StartAnimation : MonoBehaviour
         AnimateGroup(Leafs, new Vector2[] {
             new Vector2(90f, -200f), new Vector2(-320f, -90f)
         }, 0.3f, new Vector2(75f, 80f), seq);
-
+        
+        
         AnimateFull(YutStick, new Vector2(-110f, 120f), new Vector2(110f, 120f), 0.3f, seq);
         AnimateFull(Bell, new Vector2(110f, 120f), new Vector2(75f, 80f), 0.3f, seq);
 
         // 이후 위치 이동
+        DoAppend(seq, 2f);
         MoveGroup(Crystals, new Vector2[] {
             new Vector2(330f, 10f), new Vector2(-295f, 188f), new Vector2(-295f, -170f),
             new Vector2(-215f, 140f), new Vector2(-315f, 10f)
@@ -133,6 +140,10 @@ public class StartAnimation : MonoBehaviour
         }
     }
 
+    void DoAppend(Sequence seq, float time)
+    {
+        seq.Append(AppendObject.DOMoveX(AppendObject.position.x, time).SetEase(Ease.OutQuad));
+    }
     void MovePosition(RectTransform target, Vector2 pos, float time, Sequence seq)
     {
         seq.Join(target.DOAnchorPosX(pos.x, time).SetEase(Ease.OutQuad));
@@ -148,6 +159,9 @@ public class StartAnimation : MonoBehaviour
         Init(Title);
         Init(YutStick);
         Init(Bell);
+        InitList(Crystals);
+        InitList(Flowers);
+        InitList(Leafs);
     }
 
     void Init(RectTransform ObjectRect)
@@ -155,4 +169,17 @@ public class StartAnimation : MonoBehaviour
         ObjectRect.anchoredPosition = new Vector2(0f, -100f);
         ObjectRect.sizeDelta = new Vector2(0f, 0f);
     }
+
+    void InitList(List<RectTransform> list)
+    {
+        foreach (var obj in list)
+        {
+            obj.anchoredPosition = new Vector2(0f, -100f);
+            obj.sizeDelta = new Vector2(0f, 0f);
+        }
+    }
 }
+
+// 코드 정리
+// 1. DoAppend 라고 빈 오브젝트를 만들고 flag를 세운다.
+// 2. Random.Range 값을 이용해서 꽃,크리스탈,나뭇잎 코드를 메서드화 한다.

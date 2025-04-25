@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 namespace dokoh
 {
@@ -22,6 +25,18 @@ namespace dokoh
         private readonly float _moveDuration = 0.5f;
         private bool _isScrolling;
         
+        private Dictionary<Image, Tween> activeTweens = new Dictionary<Image, Tween>();
+
+        private void OnEnable()
+        {
+            foreach (var ActiveImage in choices[3].ActiveImages)
+            {
+                ActiveImage.DOFade(0.3f, 1f)
+                    .SetLoops(-1, LoopType.Yoyo)
+                    .SetEase(Ease.InOutQuad);
+            }
+        }
+
         private struct ChoiceAnimationData
         {
             public float CenterHeight;
@@ -129,6 +144,17 @@ namespace dokoh
                 }
                 else if (i == 3)
                 {
+                    foreach (var ActiveImage in choices[i].ActiveImages)
+                    {
+                        if (activeTweens.TryGetValue(ActiveImage, out var tween))
+                        {
+                            tween.Kill();
+                            var color = ActiveImage.color;
+                            color.a = 1f;
+                            ActiveImage.color = color;
+                        }
+                    }
+                    choices[i].ActiveFrame.SetActive(false);
                     var data = new ChoiceAnimationData
                     {
                         CenterHeight = 70,
@@ -155,8 +181,7 @@ namespace dokoh
             sequence.OnComplete(() => finished = true);
             yield return new WaitUntil(() => finished);
 
-            choices[5].ActiveFrame.SetActive(true);
-            choices[4].ActiveFrame.SetActive(false);
+            // choices[4].ActiveFrame.SetActive(false);
 
             var bottomChoice = GetBottomChoice();
             var topChoice = GetTopChoice();
@@ -171,6 +196,14 @@ namespace dokoh
 
             choices[6].Text.text = choices[1].Text.text;
             choices[6].ChoiceType = choices[1].ChoiceType;
+            choices[3].ActiveFrame.SetActive(true);
+            foreach (var ActiveImage in choices[3].ActiveImages)
+            {
+                Tween t = ActiveImage.DOFade(0.3f, 1f)
+                    .SetLoops(-1, LoopType.Yoyo)
+                    .SetEase(Ease.InOutQuad);
+                activeTweens[ActiveImage] = t;
+            }
             _isScrolling = false;
         }
         
@@ -199,6 +232,17 @@ namespace dokoh
                 }
                 else if (i == 3)
                 {
+                    foreach (var ActiveImage in choices[i].ActiveImages)
+                    {
+                        if (activeTweens.TryGetValue(ActiveImage, out var tween))
+                        {
+                            tween.Kill();
+                            var color = ActiveImage.color;
+                            color.a = 1f;
+                            ActiveImage.color = color;
+                        }
+                    }
+                    choices[i].ActiveFrame.SetActive(false);
                     var data = new ChoiceAnimationData
                     {
                         CenterHeight = 70,
@@ -225,8 +269,6 @@ namespace dokoh
             sequence.OnComplete(() => finished = true);
             yield return new WaitUntil(() => finished);
 
-            choices[3].ActiveFrame.SetActive(true);
-            choices[4].ActiveFrame.SetActive(false);
 
             var bottomChoice = GetBottomChoice();
             var topChoice = GetTopChoice();
@@ -238,6 +280,14 @@ namespace dokoh
 
             choices[0].Text.text = choices[5].Text.text;
             choices[0].ChoiceType = choices[5].ChoiceType;
+            choices[3].ActiveFrame.SetActive(true);
+            foreach (var ActiveImage in choices[3].ActiveImages)
+            {
+                Tween t = ActiveImage.DOFade(0.3f, 1f)
+                    .SetLoops(-1, LoopType.Yoyo)
+                    .SetEase(Ease.InOutQuad);
+                activeTweens[ActiveImage] = t;
+            }
             _isScrolling = false;
         }
         
