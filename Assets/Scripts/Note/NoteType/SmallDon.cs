@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Note : MonoBehaviour
+public class SmallDon : MonoBehaviour
 {
     public float notespeed = 300f;
     void Update()
