@@ -841,8 +841,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa068b441e81a7f419da5bf500e57f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DrumFace: {fileID: 2130580166}
-  DrumSide: {fileID: 845493561}
   Input: {fileID: 0}
 --- !u!224 &163658836
 RectTransform:
@@ -997,12 +995,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 567392d00cc34e948ab0199ce28b611b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Perfect: {fileID: 950134365}
-  Good: {fileID: 986447369}
-  Bad: {fileID: 447229911}
-  Hit: {fileID: 1891907604}
-  Combo: {fileID: 1062713323}
-  Score: {fileID: 1590673819}
+  Perfect: {fileID: 0}
+  Good: {fileID: 0}
+  Bad: {fileID: 0}
+  Hit: {fileID: 0}
+  Combo: {fileID: 0}
+  Score: {fileID: 0}
 --- !u!224 &175906644
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1964,7 +1962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a222fb21897df5f4bb412a05bb15f187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drums: {fileID: 2130580166}
+  drums: {fileID: 0}
 --- !u!50 &429412806
 Rigidbody2D:
   serializedVersion: 5
@@ -2066,7 +2064,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bpm: 150
   noteAppearLocation: {fileID: 2057943761}
-  notePrefab: {fileID: 5836283552510781738, guid: 9fcd993cc618b7e49a36eb341e47288c, type: 3}
+  SmallDon: {fileID: 5836283552510781738, guid: 9fcd993cc618b7e49a36eb341e47288c, type: 3}
+  BigDon: {fileID: 5836283552510781738, guid: 75802854b14e13f4c910d08caec8daa2, type: 3}
+  SmallKa: {fileID: 5836283552510781738, guid: 7733be0916e5fdc49b3ba7ce9a02b1ef, type: 3}
+  BigKa: {fileID: 5836283552510781738, guid: 66fd09afca5154f4e82916140718902d, type: 3}
+  noteType: 0
 --- !u!1 &447229910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2186,7 +2188,7 @@ MonoBehaviour:
   timingManager: {fileID: 429412808}
   ScoreNumberImage: {fileID: 92900849}
   ComboNumberImage: {fileID: 1063912951}
-  deadGauge: {fileID: 1439436432}
+  deadGauge: {fileID: 0}
 --- !u!224 &549716476
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2576,8 +2578,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bbf1116e0fb08e43a6b3b43ed9641e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drums: {fileID: 2130580166}
-  drumsSide: {fileID: 845493561}
+  testDrumInput: {fileID: 0}
+  drumsSide: {fileID: 0}
   LeftSide: {fileID: 1797253498}
   RightSide: {fileID: 1403666127}
   LeftFace: {fileID: 1924650759}
@@ -9549,8 +9551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d40ab9d8c955b594fbca94a3a6ac49d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneManager: {fileID: 406514888}
-  scoreManager: {fileID: 110951614}
+  sceneManager: {fileID: 0}
+  scoreManager: {fileID: 0}
 --- !u!4 &1717977153
 Transform:
   m_ObjectHideFlags: 0
