@@ -5,6 +5,12 @@ public class StartController : MonoBehaviour
     // public Drums DrumFace;
     // public DrumSide DrumSide;
     public TestDrumInput Input;
+    private bool isChanged;
+
+    void OnEnable()
+    {
+        isChanged = false;
+    }
     void Update()
     {
         //Execute Code
@@ -14,8 +20,9 @@ public class StartController : MonoBehaviour
         // }
         
         //Test Code
-        if (Input.testInputType == DrumDataType.RightFace)
+        if (!isChanged && Input.testInputType == DrumDataType.RightFace)
         {
+            isChanged = true;
             dokoh.System.SceneManager.LoadScene(SceneDataType.MusicChoice);
         }
     }

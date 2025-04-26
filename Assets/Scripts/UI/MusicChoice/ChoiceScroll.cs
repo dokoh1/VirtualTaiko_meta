@@ -20,6 +20,8 @@ namespace dokoh
         public Drums drums;
         
         private ChoiceAnimationData _animData;
+        public Animator _animator;
+        private readonly int HasHIsChoice = Animator.StringToHash("IsChoice");
 
         private readonly float _moveDistance = 85f;
         private readonly float _moveDuration = 0.5f;
@@ -27,10 +29,10 @@ namespace dokoh
         private bool _isScrolling;
         private Vector2 _startDownPos;
         private Vector2 _startUpPos;
+        private bool _isChanged;
         
         private Dictionary<Image, Tween> activeTweens = new Dictionary<Image, Tween>();
         private Sequence activeSequences;
-
         private void OnEnable()
         {
             foreach (var ActiveImage in choices[3].ActiveImages)
@@ -46,6 +48,7 @@ namespace dokoh
             _startDownPos = arrowData.DownArrowRect.anchoredPosition;
             _startUpPos = arrowData.UpArrowRect.anchoredPosition;
             ArrowAnimation();
+            _isChanged = false;
         }
 
         private void ArrowAnimation()
@@ -101,37 +104,56 @@ namespace dokoh
             // else if (drums.dataSet == DrumDataType.DobletFace)
             //     DoChoice();
             
-            if (testDrumInput.testInputType == DrumDataType.RightFace)
+            if (testDrumInput.testInputType == DrumDataType.RightFace && !_isChanged)
                 ScrollUp();
             // 곡 아래로
-            else if (testDrumInput.testInputType == DrumDataType.LeftFace)
+            else if (testDrumInput.testInputType == DrumDataType.LeftFace && !_isChanged)
                 ScrollDown();
             // 곡 선택
-            else if (testDrumInput.testInputType == DrumDataType.DobletFace)
+            else if (testDrumInput.testInputType == DrumDataType.DobletFace && !_isChanged)
                 DoChoice();
         }
 
         private void DoChoice()
         {
-            if (activeChoice.ChoiceType == ChoiceType.Music1)
-                dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
-            else if (activeChoice.ChoiceType == ChoiceType.Music2)
-                dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
-            else if (activeChoice.ChoiceType == ChoiceType.Music3)
-                dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
-            else if (activeChoice.ChoiceType == ChoiceType.BackToMenu)
-                dokoh.System.SceneManager.LoadScene(SceneDataType.Start);
-            else if (activeChoice.ChoiceType == ChoiceType.RandomMusic)
+            _isChanged = true;
+            InitAnimations(activeChoice);
+            Sequence seq = DOTween.Sequence();
+            Image[] ActiveImages = choices[3].ActiveImages;
+            foreach (var ActiveImage in ActiveImages)
             {
-                int rand = Random.Range(0, 3);
-                if (rand == 0)
-                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
-                else if (rand == 1)
-                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
-                else if (rand == 2)
-                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
+                seq.Join(ActiveImage.DOFade(1f, 0.1f)
+                    .From(0f)
+                    .SetLoops(4, LoopType.Yoyo)
+                    .SetEase(Ease.InOutQuad)); 
             }
-                
+
+            seq.InsertCallback(0f, () =>
+            {
+                _animator.SetBool(HasHIsChoice, true);
+            });
+
+            seq.AppendCallback(() =>
+            {
+                if (activeChoice.ChoiceType == ChoiceType.Music1)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
+                else if (activeChoice.ChoiceType == ChoiceType.Music2)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
+                else if (activeChoice.ChoiceType == ChoiceType.Music3)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
+                else if (activeChoice.ChoiceType == ChoiceType.BackToMenu)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Start);
+                else if (activeChoice.ChoiceType == ChoiceType.RandomMusic)
+                {
+                    int rand = Random.Range(0, 3);
+                    if (rand == 0)
+                        dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
+                    else if (rand == 1)
+                        dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
+                    else if (rand == 2)
+                        dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
+                }
+            });
         }
         private void ScrollDown()
         {
@@ -177,6 +199,8 @@ namespace dokoh
                 else if (i == 3)
                 {
                     InitAnimations(choices[i]);
+                    choices[i].ArrowData.Arrow.SetActive(false);
+                    choices[i].ActiveFrame.SetActive(false);
                     var data = new ChoiceAnimationData
                     {
                         CenterHeight = 70,
@@ -251,6 +275,8 @@ namespace dokoh
                 else if (i == 3)
                 {
                     InitAnimations(choices[i]);
+                    choices[i].ArrowData.Arrow.SetActive(false);
+                    choices[i].ActiveFrame.SetActive(false);
                     var data = new ChoiceAnimationData
                     {
                         CenterHeight = 70,
@@ -320,8 +346,6 @@ namespace dokoh
                 }
             }
             activeSequences.Kill();
-            choiceData.ArrowData.Arrow.SetActive(false);
-            choiceData.ActiveFrame.SetActive(false);
         }
         
         private void ApplyAnimation(Sequence sequence, ChoiceData choice, ChoiceAnimationData data)
