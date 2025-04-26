@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 namespace dokoh
 {
@@ -17,10 +20,57 @@ namespace dokoh
         public Drums drums;
         
         private ChoiceAnimationData _animData;
+        public Animator _animator;
+        private readonly int HasHIsChoice = Animator.StringToHash("IsChoice");
 
         private readonly float _moveDistance = 85f;
         private readonly float _moveDuration = 0.5f;
+        private readonly float _arrowDistance = 15f;
         private bool _isScrolling;
+        private Vector2 _startDownPos;
+        private Vector2 _startUpPos;
+        private bool _isChanged;
+        
+        private Dictionary<Image, Tween> activeTweens = new Dictionary<Image, Tween>();
+        private Sequence activeSequences;
+        private void OnEnable()
+        {
+            foreach (var ActiveImage in choices[3].ActiveImages)
+            {
+                Tween t = ActiveImage.DOFade(0.3f, 1f)
+                    .SetLoops(-1, LoopType.Yoyo)
+                    .SetEase(Ease.InOutQuad)
+                    .From(1f);
+                activeTweens[ActiveImage] = t;
+            }
+            ArrowData arrowData = choices[3].ArrowData;
+            
+            _startDownPos = arrowData.DownArrowRect.anchoredPosition;
+            _startUpPos = arrowData.UpArrowRect.anchoredPosition;
+            ArrowAnimation();
+            _isChanged = false;
+        }
+
+        private void ArrowAnimation()
+        {
+            ArrowData arrowData = choices[3].ArrowData;
+            activeSequences = DOTween.Sequence();
+            activeSequences.Append(arrowData.DownArrow
+                .DOFade(0.1f, 2f)
+                .From(1f));
+            activeSequences.Join(arrowData.DownArrowRect
+                .DOAnchorPosY(arrowData.DownArrowRect.anchoredPosition.y - _arrowDistance, 2f)
+                .SetEase(Ease.Linear)
+                .From(_startDownPos));
+            activeSequences.Join(arrowData.UpArrow
+                .DOFade(0.1f, 2f)
+                .From(1f));
+            activeSequences.Join(arrowData.UpArrowRect
+                .DOAnchorPosY(arrowData.UpArrowRect.anchoredPosition.y + _arrowDistance, 2f)
+                .SetEase(Ease.Linear)
+                .From(_startUpPos));
+            activeSequences.SetLoops(-1);
+        }
         
         private struct ChoiceAnimationData
         {
@@ -54,37 +104,56 @@ namespace dokoh
             // else if (drums.dataSet == DrumDataType.DobletFace)
             //     DoChoice();
             
-            if (testDrumInput.testInputType == DrumDataType.RightFace)
+            if (testDrumInput.testInputType == DrumDataType.RightFace && !_isChanged)
                 ScrollUp();
             // 곡 아래로
-            else if (testDrumInput.testInputType == DrumDataType.LeftFace)
+            else if (testDrumInput.testInputType == DrumDataType.LeftFace && !_isChanged)
                 ScrollDown();
             // 곡 선택
-            else if (testDrumInput.testInputType == DrumDataType.DobletFace)
+            else if (testDrumInput.testInputType == DrumDataType.DobletFace && !_isChanged)
                 DoChoice();
         }
 
         private void DoChoice()
         {
-            if (activeChoice.ChoiceType == ChoiceType.Music1)
-                dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
-            else if (activeChoice.ChoiceType == ChoiceType.Music2)
-                dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
-            else if (activeChoice.ChoiceType == ChoiceType.Music3)
-                dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
-            else if (activeChoice.ChoiceType == ChoiceType.BackToMenu)
-                dokoh.System.SceneManager.LoadScene(SceneDataType.Start);
-            else if (activeChoice.ChoiceType == ChoiceType.RandomMusic)
+            _isChanged = true;
+            InitAnimations(activeChoice);
+            Sequence seq = DOTween.Sequence();
+            Image[] ActiveImages = choices[3].ActiveImages;
+            foreach (var ActiveImage in ActiveImages)
             {
-                int rand = Random.Range(0, 3);
-                if (rand == 0)
-                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
-                else if (rand == 1)
-                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
-                else if (rand == 2)
-                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
+                seq.Join(ActiveImage.DOFade(1f, 0.1f)
+                    .From(0f)
+                    .SetLoops(4, LoopType.Yoyo)
+                    .SetEase(Ease.InOutQuad)); 
             }
-                
+
+            seq.InsertCallback(0f, () =>
+            {
+                _animator.SetBool(HasHIsChoice, true);
+            });
+
+            seq.AppendCallback(() =>
+            {
+                if (activeChoice.ChoiceType == ChoiceType.Music1)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
+                else if (activeChoice.ChoiceType == ChoiceType.Music2)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
+                else if (activeChoice.ChoiceType == ChoiceType.Music3)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
+                else if (activeChoice.ChoiceType == ChoiceType.BackToMenu)
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Start);
+                else if (activeChoice.ChoiceType == ChoiceType.RandomMusic)
+                {
+                    int rand = Random.Range(0, 3);
+                    if (rand == 0)
+                        dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
+                    else if (rand == 1)
+                        dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
+                    else if (rand == 2)
+                        dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
+                }
+            });
         }
         private void ScrollDown()
         {
@@ -129,6 +198,9 @@ namespace dokoh
                 }
                 else if (i == 3)
                 {
+                    InitAnimations(choices[i]);
+                    choices[i].ArrowData.Arrow.SetActive(false);
+                    choices[i].ActiveFrame.SetActive(false);
                     var data = new ChoiceAnimationData
                     {
                         CenterHeight = 70,
@@ -155,8 +227,7 @@ namespace dokoh
             sequence.OnComplete(() => finished = true);
             yield return new WaitUntil(() => finished);
 
-            choices[5].ActiveFrame.SetActive(true);
-            choices[4].ActiveFrame.SetActive(false);
+            // choices[4].ActiveFrame.SetActive(false);
 
             var bottomChoice = GetBottomChoice();
             var topChoice = GetTopChoice();
@@ -171,13 +242,17 @@ namespace dokoh
 
             choices[6].Text.text = choices[1].Text.text;
             choices[6].ChoiceType = choices[1].ChoiceType;
+            choices[3].ActiveFrame.SetActive(true);
+            ActiveFrameAnimation(choices[3]);
+            choices[3].ArrowData.Arrow.SetActive(true);
+            ArrowAnimation();
             _isScrolling = false;
         }
         
         private IEnumerator ScrollDownProcess()
         {
             _isScrolling = true;
-
+        
             Sequence sequence = DOTween.Sequence();
             for (int i = 0; i < choices.Count; i++)
             {
@@ -199,6 +274,9 @@ namespace dokoh
                 }
                 else if (i == 3)
                 {
+                    InitAnimations(choices[i]);
+                    choices[i].ArrowData.Arrow.SetActive(false);
+                    choices[i].ActiveFrame.SetActive(false);
                     var data = new ChoiceAnimationData
                     {
                         CenterHeight = 70,
@@ -225,8 +303,6 @@ namespace dokoh
             sequence.OnComplete(() => finished = true);
             yield return new WaitUntil(() => finished);
 
-            choices[3].ActiveFrame.SetActive(true);
-            choices[4].ActiveFrame.SetActive(false);
 
             var bottomChoice = GetBottomChoice();
             var topChoice = GetTopChoice();
@@ -238,7 +314,38 @@ namespace dokoh
 
             choices[0].Text.text = choices[5].Text.text;
             choices[0].ChoiceType = choices[5].ChoiceType;
+            choices[3].ActiveFrame.SetActive(true);
+            ActiveFrameAnimation(choices[3]);
+            choices[3].ArrowData.Arrow.SetActive(true);
+            ArrowAnimation();
             _isScrolling = false;
+        }
+
+        private void ActiveFrameAnimation(ChoiceData choice)
+        {
+            foreach (var ActiveImage in choice.ActiveImages)
+            {
+                Tween t = ActiveImage.DOFade(0.3f, 1f)
+                    .SetLoops(-1, LoopType.Yoyo)
+                    .SetEase(Ease.InOutQuad)
+                    .From(1f);
+                activeTweens[ActiveImage] = t;
+            }
+            choice.ArrowData.Arrow.SetActive(true);
+        }
+        private void InitAnimations(ChoiceData choiceData)
+        {
+            foreach (var ActiveImage in choiceData.ActiveImages)
+            {
+                if (activeTweens.TryGetValue(ActiveImage, out var tween))
+                {
+                    tween.Kill();
+                    var color = ActiveImage.color;
+                    color.a = 1f;
+                    ActiveImage.color = color;
+                }
+            }
+            activeSequences.Kill();
         }
         
         private void ApplyAnimation(Sequence sequence, ChoiceData choice, ChoiceAnimationData data)
@@ -284,9 +391,7 @@ namespace dokoh
             foreach (var choice in choices)
             {
                 if (choice.CardTrans.anchoredPosition.y > top.CardTrans.anchoredPosition.y)
-                {
                     top = choice;
-                }
             }
             return top;
         }
@@ -297,9 +402,7 @@ namespace dokoh
             foreach (var choice in choices)
             {
                 if (choice.CardTrans.anchoredPosition.y < bottom.CardTrans.anchoredPosition.y)
-                {
                     bottom = choice;
-                }
             }
             return bottom;
         }

@@ -17,5 +17,7 @@ namespace dokoh
         public RectTransform BadgeTrans;
         public GameObject ActiveFrame;
         public Text Text;
+        public Image[] ActiveImages;
+        public ArrowData ArrowData;
     }
 }
