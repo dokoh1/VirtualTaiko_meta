@@ -1949,7 +1949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c267d353396967418c42a369adefceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoneType: 0
+  zoneType: 3
 --- !u!114 &429412805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1962,7 +1962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a222fb21897df5f4bb412a05bb15f187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drums: {fileID: 0}
 --- !u!50 &429412806
 Rigidbody2D:
   serializedVersion: 5
@@ -2062,12 +2061,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f82fddc781edd8469e2dcd38831a7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 150
+  bpm: 100
   noteAppearLocation: {fileID: 2057943761}
   SmallDon: {fileID: 5836283552510781738, guid: 9fcd993cc618b7e49a36eb341e47288c, type: 3}
   BigDon: {fileID: 5836283552510781738, guid: 75802854b14e13f4c910d08caec8daa2, type: 3}
   SmallKa: {fileID: 5836283552510781738, guid: 7733be0916e5fdc49b3ba7ce9a02b1ef, type: 3}
   BigKa: {fileID: 5836283552510781738, guid: 66fd09afca5154f4e82916140718902d, type: 3}
+  timingManager: {fileID: 0}
   noteType: 0
 --- !u!1 &447229910
 GameObject:
