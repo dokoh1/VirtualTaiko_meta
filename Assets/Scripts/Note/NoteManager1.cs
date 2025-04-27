@@ -18,7 +18,7 @@ public class NoteManager1 : MonoBehaviour
     public GameObject BigDon;
     public GameObject SmallKa;
     public GameObject BigKa;
-    TimingManager timingManager;
+    public TimingManager timingManager;
 
     private void Start()
     {
@@ -31,34 +31,42 @@ public class NoteManager1 : MonoBehaviour
 
         if (currentTime >= 60d / bpm)
         {
-            GameObject noteToSpawn = null;
-
-            // 노트 타입에 맞는 프리팹을 할당
-            switch (noteType)
-            {
-                case NoteType.smallRed:
-                    noteToSpawn = SmallDon; // 작은 빨간 원
-                    break;
-                case NoteType.smallBlue:
-                    noteToSpawn = SmallKa; // 작은 파란 원
-                    break;
-                case NoteType.bigRed:
-                    noteToSpawn = BigDon; // 큰 빨간 원
-                    break;
-                case NoteType.bigBlue:
-                    noteToSpawn = BigKa; // 큰 파란 원
-                    break;
-            }
-
-            // 프리팹을 인스턴스화
-            if (noteToSpawn != null)
-            {
-                GameObject t_note = Instantiate(noteToSpawn, noteAppearLocation.position, Quaternion.identity);
-                t_note.transform.SetParent(noteAppearLocation);
-                timingManager.BoxNoteList.Add(t_note);
-            }
-
+            SpawnNote();
             currentTime -= 60d / bpm;
+        }
+    }
+
+    private void SpawnNote()
+    {
+        int random = UnityEngine.Random.Range(0, 4);
+        GameObject prefab = null;
+
+        switch ((NoteType)random)
+        {
+            case NoteType.smallRed:
+                prefab = SmallDon;
+                break;
+            case NoteType.smallBlue:
+                prefab = SmallKa;
+                break;
+            case NoteType.bigRed:
+                prefab = BigDon;
+                break;
+            case NoteType.bigBlue:
+                prefab = BigKa;
+                break;
+        }
+
+        if (prefab != null)
+        {
+            GameObject t_note = Instantiate(prefab, noteAppearLocation.position, Quaternion.identity);
+            t_note.transform.SetParent(noteAppearLocation);
+
+            // 여기서 NoteType 저장
+            NoteData noteData = t_note.AddComponent<NoteData>();
+            noteData.noteType = (NoteType)random;
+
+            timingManager.BoxNoteList.Add(t_note);
         }
     }
 
@@ -75,6 +83,7 @@ public class NoteManager1 : MonoBehaviour
 
     public void CheckHit(KeyCode hitKey)
     {
+        Debug.Log("CheckHit called with key: " + hitKey);
         bool isHit = false;
         switch (noteType)
         {
@@ -109,7 +118,6 @@ public class NoteManager1 : MonoBehaviour
                 }
 
                 break;
-
         }
 
         if (isHit)

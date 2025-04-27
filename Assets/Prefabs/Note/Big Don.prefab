@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8625887067566978466}
   - component: {fileID: 3602530416493375526}
   - component: {fileID: -6525504657616789867}
+  - component: {fileID: 152367057248956496}
   m_Layer: 5
   m_Name: Big Don
   m_TagString: Note
@@ -39,7 +40,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1158, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7451534185343142498
 CanvasRenderer:
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notespeed: 300
   currentZone: 3
+  noteType: 2
 --- !u!58 &8625887067566978466
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -211,3 +213,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &152367057248956496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5836283552510781738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f6da2bcb8c49d4e92d68aa7b228a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteType: 2
