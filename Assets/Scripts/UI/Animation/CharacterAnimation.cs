@@ -51,5 +51,6 @@ public class CharacterAnimation : MonoBehaviour
                 animator.SetTrigger("IsFirstAction");
             }
         }
+        
     }
 }
