@@ -100,6 +100,5 @@ public class TimingManager : MonoBehaviour
                 break;
         }
         Debug.Log(result);
-        // 여기에 점수 시스템, 콤보 처리, 이펙트 등 추가 가능
     }
 }

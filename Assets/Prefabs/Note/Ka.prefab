@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4fc40e3abde2540aa7fa70b421edb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notespeed: 300
+  notespeed: 500
   currentZone: 3
   noteType: 1
 --- !u!58 &8625887067566978466

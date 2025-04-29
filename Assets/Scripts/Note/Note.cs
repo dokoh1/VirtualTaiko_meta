@@ -51,7 +51,7 @@ public class Note : MonoBehaviour
                 break;
 
             case NoteType.bigRed:
-                if ((inputKey == KeyCode.S && inputKey == KeyCode.K)) // 둘 중 하나만 쳐도 판정
+                if ((inputKey == KeyCode.S && inputKey == KeyCode.K))
                     matched = true;
                 break;
 

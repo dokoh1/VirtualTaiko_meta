@@ -11,66 +11,96 @@ public enum NoteType
 
 public class NoteManager1 : MonoBehaviour
 {
-    public int bpm;
-    double currentTime = 0d;
-    public Transform noteAppearLocation;
+    public NoteMap noteMap;
+    
     public GameObject SmallDon;
     public GameObject BigDon;
     public GameObject SmallKa;
     public GameObject BigKa;
+    
+    public Transform noteAppearLocation;
     public TimingManager timingManager;
+    public int bpm;
+    double currentTime = 0d;
+    public AudioSource music;
+    
+    private float startTime;
+    public float noteSpawnOffset = 0f;
 
     private void Start()
     {
         timingManager = GetComponent<TimingManager>();
+        music.Play();
+        startTime = Time.time;
     }
 
     void Update()
     {
-        currentTime += Time.deltaTime;
+        if (noteMap == null || noteMap.notes == null)
+            return;
 
-        if (currentTime >= 60d / bpm)
+        if (timingManager.BoxNoteList.Count >= noteMap.notes.Count)
+            return;
+
+        int noteIndex = timingManager.BoxNoteList.Count;
+        Noteinfo nextNote = noteMap.notes[noteIndex];
+
+        if (music.time >= nextNote.spawntime)
         {
             SpawnNote();
-            currentTime -= 60d / bpm;
         }
     }
+
+
+    private int nextNoteIndex = 0;
 
     private void SpawnNote()
     {
-        int random = UnityEngine.Random.Range(0, 4);
-        GameObject prefab = null;
+        if (noteMap == null || noteMap.notes == null || nextNoteIndex >= noteMap.notes.Count)
+            return;
 
-        switch ((NoteType)random)
+        float currentTime = Time.time - startTime; // 음악 시작 후 흐른 시간
+
+        // 노트가 나타나야 할 시점인지 확인
+        while (nextNoteIndex < noteMap.notes.Count && noteMap.notes[nextNoteIndex].spawntime <= currentTime + noteSpawnOffset)
         {
-            case NoteType.smallRed:
-                prefab = SmallDon;
-                break;
-            case NoteType.smallBlue:
-                prefab = SmallKa;
-                break;
-            case NoteType.bigRed:
-                prefab = BigDon;
-                break;
-            case NoteType.bigBlue:
-                prefab = BigKa;
-                break;
-        }
+            Noteinfo noteInfo = noteMap.notes[nextNoteIndex];
+            GameObject prefab = null;
 
-        if (prefab != null)
-        {
-            GameObject t_note = Instantiate(prefab, noteAppearLocation.position, Quaternion.identity);
-            t_note.transform.SetParent(noteAppearLocation);
+            switch (noteInfo.notetype)
+            {
+                case NoteType.smallRed:
+                    prefab = SmallDon;
+                    break;
+                case NoteType.smallBlue:
+                    prefab = SmallKa;
+                    break;
+                case NoteType.bigRed:
+                    prefab = BigDon;
+                    break;
+                case NoteType.bigBlue:
+                    prefab = BigKa;
+                    break;
+            }
 
-            // 여기서 NoteType 저장
-            NoteData noteData = t_note.AddComponent<NoteData>();
-            noteData.noteType = (NoteType)random;
+            if (prefab != null)
+            {
+                GameObject t_note = Instantiate(prefab, noteAppearLocation.position, Quaternion.identity);
+                t_note.transform.SetParent(noteAppearLocation);
 
-            timingManager.BoxNoteList.Add(t_note);
+                NoteData noteData = t_note.AddComponent<NoteData>();
+                noteData.noteType = noteInfo.notetype;
+
+                timingManager.BoxNoteList.Add(t_note);
+            }
+
+            nextNoteIndex++;
         }
     }
 
 
+
+    
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Note"))
