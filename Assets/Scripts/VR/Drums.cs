@@ -1,14 +1,8 @@
 using System.Collections;
-using JetBrains.Annotations;
-using Unity.XR.Oculus.Input;
-using Unity.XR.OpenVR;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.UIElements;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.VFX;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
-using UnityEngine.XR.Interaction.Toolkit.Interactors;
+
 //  나중에 함수별로 코드 분리할 예정
 public class Drums : MonoBehaviour
 {
@@ -56,6 +50,12 @@ public class Drums : MonoBehaviour
     // 코루틴 리셋
     private Coroutine resetCoroutine = null;
 
+    // 파티클시스템
+    [SerializeField]
+    private VisualEffect RedWave;
+    [SerializeField]
+    private VisualEffect lightFace;
+
     private void Awake()
     {
         leftStick = LayerMask.NameToLayer("LeftStick");
@@ -68,6 +68,7 @@ public class Drums : MonoBehaviour
         Audio += UseStickVelocity;
         Audio += PlayAudio;
         Audio += ControllPitch;
+        Audio += PlayWaveParticle;
         
     }
 
@@ -156,6 +157,12 @@ public class Drums : MonoBehaviour
     private void PlayRightVibration()
     {
         rightControll.SendHapticImpulse(intensity * volum, duration);
+    }
+
+    private void PlayWaveParticle()
+    {
+      RedWave.Play();
+      lightFace.Play();
     }
 
 }

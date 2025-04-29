@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031020558}
   - component: {fileID: 1031020559}
   - component: {fileID: 1031020560}
+  - component: {fileID: 796909579736869746}
   m_Layer: 0
   m_Name: SM_garden_large
   m_TagString: Untagged
@@ -119,3 +120,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031020557}
   m_Mesh: {fileID: 4300000, guid: abc00000000012201142151037696033, type: 3}
+--- !u!65 &796909579736869746
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031020557}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.1544704, y: 0.14316149, z: 8.65201}
+  m_Center: {x: 0, y: 0.06300577, z: 0.00000023841858}

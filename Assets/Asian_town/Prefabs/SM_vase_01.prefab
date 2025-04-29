@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031019788}
   - component: {fileID: 1031019789}
   - component: {fileID: 1031019790}
+  - component: {fileID: 988847284102684673}
   m_Layer: 0
   m_Name: SM_vase_01
   m_TagString: Untagged
@@ -118,3 +119,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031019787}
   m_Mesh: {fileID: 4300000, guid: abc00000000005543604926666575637, type: 3}
+--- !u!136 &988847284102684673
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031019787}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.30317315
+  m_Height: 0.82274765
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.40636763, z: 0}

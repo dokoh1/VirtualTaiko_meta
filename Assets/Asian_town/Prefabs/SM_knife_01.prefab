@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031026563}
   - component: {fileID: 1031026564}
   - component: {fileID: 1031026565}
+  - component: {fileID: 4504443656602191477}
   m_Layer: 0
   m_Name: SM_knife_01
   m_TagString: Untagged
@@ -118,3 +119,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031026562}
   m_Mesh: {fileID: 4300000, guid: abc00000000004214233342841508326, type: 3}
+--- !u!65 &4504443656602191477
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031026562}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.016853347, y: 0.46415353, z: 0.101926}
+  m_Center: {x: 0.000000016298145, y: 0.10640126, z: 0.024122082}

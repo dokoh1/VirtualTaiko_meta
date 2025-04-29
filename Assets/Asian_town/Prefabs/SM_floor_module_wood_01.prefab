@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031014396}
   - component: {fileID: 1031014397}
   - component: {fileID: 1031014398}
+  - component: {fileID: 9106888322194980737}
   m_Layer: 0
   m_Name: SM_floor_module_wood_01
   m_TagString: Untagged
@@ -118,3 +119,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031014395}
   m_Mesh: {fileID: 4300000, guid: abc00000000007147002679755950080, type: 3}
+--- !u!65 &9106888322194980737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031014395}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.011009, y: 0.10000052, z: 3.0229604}
+  m_Center: {x: 1.5005721, y: 0.05000026, z: 1.5032524}

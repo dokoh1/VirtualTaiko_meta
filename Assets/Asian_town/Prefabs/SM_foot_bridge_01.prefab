@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031016711}
   - component: {fileID: 1031016712}
   - component: {fileID: 1031016713}
+  - component: {fileID: 8208121779898545976}
   m_Layer: 0
   m_Name: SM_foot_bridge_01
   m_TagString: Untagged
@@ -120,3 +121,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031016710}
   m_Mesh: {fileID: 4300000, guid: abc00000000008157298563867872865, type: 3}
+--- !u!65 &8208121779898545976
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031016710}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.4221015, y: 5.8853087, z: 3.0000005}
+  m_Center: {x: -2.488465, y: 2.8499548, z: 1.4999998}

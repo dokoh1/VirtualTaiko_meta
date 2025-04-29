@@ -43,6 +43,8 @@ GameObject:
   - component: {fileID: 1031012149}
   - component: {fileID: 1031012150}
   - component: {fileID: 1031012151}
+  - component: {fileID: 1104671603233152515}
+  - component: {fileID: 4163033146809038898}
   m_Layer: 0
   m_Name: SM_Torii_04
   m_TagString: Untagged
@@ -120,3 +122,45 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031012148}
   m_Mesh: {fileID: 4300000, guid: abc00000000005918619487930160097, type: 3}
+--- !u!65 &1104671603233152515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031012148}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.79, y: 8.713053, z: 0.89}
+  m_Center: {x: -0.0000010728836, y: 4.3565254, z: 2.65}
+--- !u!65 &4163033146809038898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031012148}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 8.713053, z: 0.89}
+  m_Center: {x: -0.0000010728836, y: 4.3565254, z: -2.66}

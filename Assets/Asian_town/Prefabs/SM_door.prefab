@@ -43,6 +43,9 @@ GameObject:
   - component: {fileID: 1031009916}
   - component: {fileID: 1031009917}
   - component: {fileID: 1031009918}
+  - component: {fileID: 7202551243305041384}
+  - component: {fileID: 7103540381106167677}
+  - component: {fileID: 5504419961834104808}
   m_Layer: 0
   m_Name: SM_door
   m_TagString: Untagged
@@ -121,3 +124,66 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031009915}
   m_Mesh: {fileID: 4300000, guid: abc00000000015368157665431554347, type: 3}
+--- !u!65 &7202551243305041384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031009915}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.590163, y: 3.6961246, z: 0.89}
+  m_Center: {x: 0.09999938, y: 1.8383751, z: -2.56}
+--- !u!65 &7103540381106167677
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031009915}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.590163, y: 3.6961246, z: 0.89}
+  m_Center: {x: 0.09999938, y: 1.8383751, z: -0.45}
+--- !u!65 &5504419961834104808
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031009915}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.590163, y: 0.79, z: 3}
+  m_Center: {x: 0.09999938, y: 3.27, z: -1.5000002}

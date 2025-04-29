@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031012019}
   - component: {fileID: 1031012020}
   - component: {fileID: 1031012021}
+  - component: {fileID: 1370735388704071506}
   m_Layer: 0
   m_Name: SM_fence_02
   m_TagString: Untagged
@@ -118,3 +119,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031012018}
   m_Mesh: {fileID: 4300000, guid: abc00000000014910783735299451751, type: 3}
+--- !u!65 &1370735388704071506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031012018}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.22690867, y: 0.9352866, z: 1.9}
+  m_Center: {x: -0.111397825, y: 0.46764317, z: 0.94999987}

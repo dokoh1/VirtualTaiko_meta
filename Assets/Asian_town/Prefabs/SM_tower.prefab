@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031017842}
   - component: {fileID: 1031017843}
   - component: {fileID: 1031017844}
+  - component: {fileID: 4183938144877438105}
   m_Layer: 0
   m_Name: SM_tower
   m_TagString: Untagged
@@ -122,3 +123,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031017841}
   m_Mesh: {fileID: 4300000, guid: abc00000000017120160812760315775, type: 3}
+--- !u!65 &4183938144877438105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031017841}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.8, y: 40.891987, z: 15.6}
+  m_Center: {x: -0.0000052452087, y: 20.410913, z: 0.08502293}

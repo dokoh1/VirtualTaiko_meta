@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031017579}
   - component: {fileID: 1031017580}
   - component: {fileID: 1031017581}
+  - component: {fileID: 5026178006921886477}
   m_Layer: 0
   m_Name: SM_floor_bricks_03
   m_TagString: Untagged
@@ -118,3 +119,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031017578}
   m_Mesh: {fileID: 4300000, guid: abc00000000010383850326039038198, type: 3}
+--- !u!65 &5026178006921886477
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031017578}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6346484, y: 0.09257636, z: 1.5382719}
+  m_Center: {x: -0.008053899, y: 0.0473759, z: 0.08234677}

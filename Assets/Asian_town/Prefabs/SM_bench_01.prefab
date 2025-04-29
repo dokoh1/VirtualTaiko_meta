@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031019747}
   - component: {fileID: 1031019748}
   - component: {fileID: 1031019749}
+  - component: {fileID: 5753227873120198107}
   m_Layer: 0
   m_Name: SM_bench_01
   m_TagString: Untagged
@@ -118,3 +119,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031019746}
   m_Mesh: {fileID: 4300000, guid: abc00000000015936173799860249676, type: 3}
+--- !u!65 &5753227873120198107
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031019746}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5803571, y: 1.0646474, z: 1.8845711}
+  m_Center: {x: -0.010865435, y: 0.5286473, z: 0}

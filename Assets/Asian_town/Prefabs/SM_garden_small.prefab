@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031012803}
   - component: {fileID: 1031012804}
   - component: {fileID: 1031012805}
+  - component: {fileID: 4280497786959285026}
   m_Layer: 0
   m_Name: SM_garden_small
   m_TagString: Untagged
@@ -119,3 +120,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031012802}
   m_Mesh: {fileID: 4300000, guid: abc00000000001904900748172379577, type: 3}
+--- !u!65 &4280497786959285026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031012802}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.7067672, y: 0.14316106, z: 1.7067672}
+  m_Center: {x: 0, y: 0.074974015, z: 0}

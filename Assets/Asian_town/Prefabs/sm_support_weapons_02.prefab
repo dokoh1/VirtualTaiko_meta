@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031024788}
   - component: {fileID: 1031024789}
   - component: {fileID: 1031024790}
+  - component: {fileID: 6579275985585754495}
   m_Layer: 0
   m_Name: sm_support_weapons_02
   m_TagString: Untagged
@@ -119,3 +120,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031024787}
   m_Mesh: {fileID: 4300000, guid: abc00000000017009816460633882671, type: 3}
+--- !u!65 &6579275985585754495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031024787}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.99874675, y: 1.5865883, z: 1.5868372}
+  m_Center: {x: -0.00034549832, y: 0.7855155, z: -0.0010476708}

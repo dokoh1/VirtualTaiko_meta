@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1031019779}
   - component: {fileID: 1031019780}
   - component: {fileID: 1031019781}
+  - component: {fileID: 2799080084219247204}
   m_Layer: 0
   m_Name: SM_stone_jar
   m_TagString: Untagged
@@ -118,3 +119,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031019778}
   m_Mesh: {fileID: 4300000, guid: abc00000000012134314039429314999, type: 3}
+--- !u!136 &2799080084219247204
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031019778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.37225977
+  m_Height: 0.80013305
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.3959323, z: 0}
