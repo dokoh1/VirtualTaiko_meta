@@ -33,6 +33,7 @@ namespace dokoh
         
         private Dictionary<Image, Tween> activeTweens = new Dictionary<Image, Tween>();
         private Sequence activeSequences;
+        // private Sequence Sequence;
         private void OnEnable()
         {
             foreach (var ActiveImage in choices[3].ActiveImages)
