@@ -392,6 +392,8 @@ MonoBehaviour:
   - {fileID: -1948361725, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: -1080573423, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   digitPrefab: {fileID: 954590042825429643, guid: f6fadbb73858a694788f8d554be32f88, type: 3}
+  sizeAmount: 0
+  duration: 0
 --- !u!114 &92900850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2072,7 +2074,7 @@ MonoBehaviour:
   timingManager: {fileID: 0}
   bpm: 147
   music: {fileID: 1495084663}
-  noteSpawnOffset: 0
+  noteSpawnOffset: 0.51
   noteType: 0
 --- !u!1 &447229910
 GameObject:
@@ -2116,6 +2118,8 @@ MonoBehaviour:
   - {fileID: -1948361725, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: -1080573423, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   digitPrefab: {fileID: 954590042825429643, guid: f6fadbb73858a694788f8d554be32f88, type: 3}
+  sizeAmount: 0
+  duration: 0
 --- !u!114 &447229912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2190,7 +2194,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2feaf9127dbf58d4883d2d6b5214a250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timingManager: {fileID: 429412808}
+  characterAnimation: {fileID: 0}
+  testTimingManager: {fileID: 0}
+  judgementEffect: {fileID: 0}
   ScoreNumberImage: {fileID: 92900849}
   ComboNumberImage: {fileID: 1063912951}
   deadGauge: {fileID: 0}
@@ -4907,6 +4913,8 @@ MonoBehaviour:
   - {fileID: -1948361725, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: -1080573423, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   digitPrefab: {fileID: 954590042825429643, guid: f6fadbb73858a694788f8d554be32f88, type: 3}
+  sizeAmount: 0
+  duration: 0
 --- !u!114 &950134366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5422,6 +5430,8 @@ MonoBehaviour:
   - {fileID: -1948361725, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: -1080573423, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   digitPrefab: {fileID: 954590042825429643, guid: f6fadbb73858a694788f8d554be32f88, type: 3}
+  sizeAmount: 0
+  duration: 0
 --- !u!114 &986447370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5868,6 +5878,8 @@ MonoBehaviour:
   - {fileID: -1948361725, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: -1080573423, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   digitPrefab: {fileID: 954590042825429643, guid: f6fadbb73858a694788f8d554be32f88, type: 3}
+  sizeAmount: 0
+  duration: 0
 --- !u!114 &1062713324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5955,6 +5967,8 @@ MonoBehaviour:
   - {fileID: -31628713, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: 1099820264, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   digitPrefab: {fileID: 6292928809565451374, guid: a93b2f1fd24f77e4e9108a1ebf4536a8, type: 3}
+  sizeAmount: 0
+  duration: 0
 --- !u!114 &1063912952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8864,6 +8878,8 @@ MonoBehaviour:
   - {fileID: -1948361725, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: -1080573423, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   digitPrefab: {fileID: 954590042825429643, guid: f6fadbb73858a694788f8d554be32f88, type: 3}
+  sizeAmount: 0
+  duration: 0
 --- !u!114 &1590673820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10826,6 +10842,8 @@ MonoBehaviour:
   - {fileID: -1948361725, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: -1080573423, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   digitPrefab: {fileID: 954590042825429643, guid: f6fadbb73858a694788f8d554be32f88, type: 3}
+  sizeAmount: 0
+  duration: 0
 --- !u!114 &1891907605
 MonoBehaviour:
   m_ObjectHideFlags: 0

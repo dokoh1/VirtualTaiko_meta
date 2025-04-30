@@ -3,8 +3,10 @@ using UnityEngine;
 
 public enum HitResult
 {
-    Perfect,
-    Good,
+    BigPerfect,
+    SmallPerfect,
+    BigGood,
+    SmallGood,
     Bad,
     None,
 }
@@ -46,19 +48,23 @@ public class TimingManager : MonoBehaviour
         float noteXPos = closestNote.transform.position.x;
         float distanceFromCenter = Mathf.Abs(noteXPos - centerX);
 
+        NoteData noteData = closestNote.GetComponent<NoteData>();
+
+        bool isBig = noteData.noteType == NoteType.bigRed || noteData.noteType == NoteType.bigBlue;
+
         HitResult result;
 
         if (distanceFromCenter <= perfectRange)
-            result = HitResult.Perfect;
+            result = isBig ? HitResult.BigPerfect : HitResult.SmallPerfect;
         else if (distanceFromCenter <= goodRange)
-            result = HitResult.Good;
+            result = isBig ? HitResult.BigGood : HitResult.SmallGood;
         else if (distanceFromCenter <= badRange)
             result = HitResult.Bad;
         else
         {
             result = HitResult.None;
             return result;
-        } 
+        }
 
         HitQueue.Enqueue(result);
         BoxNoteList.Remove(closestNote);
@@ -86,10 +92,16 @@ public class TimingManager : MonoBehaviour
         // 예시 처리
         switch (result)
         {
-            case HitResult.Perfect:
+            case HitResult.SmallPerfect:
                 isCheck = true;
                 break;
-            case HitResult.Good:
+            case HitResult.BigPerfect:    
+                isCheck = true;
+                break;
+            case HitResult.BigGood:
+                isCheck = true;
+                break;
+            case HitResult.SmallGood:
                 isCheck = true;
                 break;
             case HitResult.Bad:

@@ -17,7 +17,8 @@ public class NoteManager1 : MonoBehaviour
     public GameObject BigDon;
     public GameObject SmallKa;
     public GameObject BigKa;
-    
+
+    public GameObject currentNote;
     public Transform noteAppearLocation;
     public TimingManager timingManager;
     public int bpm;
@@ -118,7 +119,7 @@ public class NoteManager1 : MonoBehaviour
         switch (noteType)
         {
             case NoteType.smallRed:
-                if (hitKey == KeyCode.S && hitKey == KeyCode.K) // 왼쪽 면 타격
+                if (hitKey == KeyCode.S || hitKey == KeyCode.K) // 왼쪽 면 타격
                 {
                     isHit = true;
                 }
@@ -126,7 +127,7 @@ public class NoteManager1 : MonoBehaviour
                 break;
 
             case NoteType.smallBlue:
-                if (hitKey == KeyCode.L && hitKey == KeyCode.A) // 오른쪽 사이드 타격
+                if (hitKey == KeyCode.L || hitKey == KeyCode.A) // 오른쪽 사이드 타격
                 {
                     isHit = true;
                 }
@@ -134,7 +135,7 @@ public class NoteManager1 : MonoBehaviour
                 break;
 
             case NoteType.bigRed:
-                if (hitKey == KeyCode.S || hitKey == KeyCode.K) // 양쪽 안쪽 면 타격
+                if (hitKey == KeyCode.S && hitKey == KeyCode.K) // 양쪽 안쪽 면 타격
                 {
                     isHit = true;
                 }
@@ -142,7 +143,7 @@ public class NoteManager1 : MonoBehaviour
                 break;
 
             case NoteType.bigBlue:
-                if (hitKey == KeyCode.A || hitKey == KeyCode.L) // 양쪽 사이드 타격
+                if (hitKey == KeyCode.A && hitKey == KeyCode.L) // 양쪽 사이드 타격
                 {
                     isHit = true;
                 }
