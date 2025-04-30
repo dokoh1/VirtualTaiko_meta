@@ -4,7 +4,7 @@ using UnityEngine;
 public class DrumEffect : MonoBehaviour
 {
     [SerializeField]
-    private TestDrumInput testDrumInput;
+    // private TestDrumInput testDrumInput;
     private Drums drums;
     [SerializeField]
     private DrumSide drumsSide;
@@ -29,14 +29,14 @@ public class DrumEffect : MonoBehaviour
     void Update()
     {
         //TestCode
-        if (testDrumInput.testInputType == DrumDataType.LeftSide)
-            ShowDrumEffect(LeftSide);
-        else if (testDrumInput.testInputType == DrumDataType.RightSide)
-            ShowDrumEffect(RightSide);
-        else if (testDrumInput.testInputType == DrumDataType.LeftFace)
-            ShowDrumEffect(LeftFace);
-        else if (testDrumInput.testInputType == DrumDataType.RightFace)
-            ShowDrumEffect(RightFace);
+        // if (testDrumInput.testInputType == DrumDataType.LeftSide)
+        //     ShowDrumEffect(LeftSide);
+        // else if (testDrumInput.testInputType == DrumDataType.RightSide)
+        //     ShowDrumEffect(RightSide);
+        // else if (testDrumInput.testInputType == DrumDataType.LeftFace)
+        //     ShowDrumEffect(LeftFace);
+        // else if (testDrumInput.testInputType == DrumDataType.RightFace)
+        //     ShowDrumEffect(RightFace);
         
         //ExecuteCode
         // if (drumsSide.dataSet == DrumDataType.LeftSide)

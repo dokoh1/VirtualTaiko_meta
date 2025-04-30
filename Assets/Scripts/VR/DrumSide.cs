@@ -1,13 +1,8 @@
 using System.Collections;
-using JetBrains.Annotations;
-using Unity.XR.Oculus.Input;
-using Unity.XR.OpenVR;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.VFX;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
-using UnityEngine.XR.Interaction.Toolkit.Interactors;
+
 //  나중에 함수별로 코드 분리할 예정
 public class DrumSide : MonoBehaviour
 {
@@ -56,6 +51,12 @@ public class DrumSide : MonoBehaviour
     // 코루틴 리셋
     private Coroutine resetCoroutine = null;
 
+    // 파티클시스템
+    [SerializeField]
+    private VisualEffect BlueWave;
+    [SerializeField]
+    private VisualEffect lightFace;
+
     private void Awake()
     {
         leftStick = LayerMask.NameToLayer("LeftStick");
@@ -70,6 +71,7 @@ public class DrumSide : MonoBehaviour
         Audio += UseStickVelocity;
         Audio += PlayAudio;
         Audio += ControllPitch;
+        // Audio += PlayWaveParticle;
         
     }
 
@@ -86,6 +88,7 @@ public class DrumSide : MonoBehaviour
             //print(dataSet);
             PlayLeftVibration();
             Audio();
+            
         }
 
 
@@ -159,5 +162,11 @@ public class DrumSide : MonoBehaviour
     {
         rightControll.SendHapticImpulse(intensity * volum, duration);
     }
+
+    //   private void PlayWaveParticle()
+    // {
+    //   BlueWave.Play();
+    //   lightFace.Play();
+    // }
 
 }
