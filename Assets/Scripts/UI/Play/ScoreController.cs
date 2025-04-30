@@ -6,7 +6,6 @@ public class ScoreController : MonoBehaviour
     // public TestDrumInput testDrumInput;
     
     private int currentScore;
-    
     private int ComboHit;
     private int Hit;
     private int MaxCombo;
