@@ -67,7 +67,7 @@ public class Drums : MonoBehaviour
         Audio += UseStickVelocity;
         Audio += PlayAudio;
         Audio += ControllPitch;
-        // Audio += PlayWaveParticle;
+        Audio += PlayWaveParticle;
         
     }
 
@@ -118,13 +118,13 @@ public class Drums : MonoBehaviour
         leftHit = false;
         rightHit = false;
         dataSet = DrumDataType.NotHit;
-        //print(dataSet);
+        print(dataSet);
     }
 
 
     private void PlayAudio()
     {
-        source.PlayOneShot(clip, volum);
+        source.PlayOneShot(clip, volum * 1.5f);
     }
 
     private void UseStickVelocity()
@@ -158,10 +158,10 @@ public class Drums : MonoBehaviour
         rightControll.SendHapticImpulse(intensity * volum, duration);
     }
 
-    // private void PlayWaveParticle()
-    // {
-    //   RedWave.Play();
-    //   lightFace.Play();
-    // }
+    private void PlayWaveParticle()
+    {
+      RedWave.Play();
+      lightFace.Play();
+    }
 
 }

@@ -71,7 +71,7 @@ public class DrumSide : MonoBehaviour
         Audio += UseStickVelocity;
         Audio += PlayAudio;
         Audio += ControllPitch;
-        // Audio += PlayWaveParticle;
+        Audio += PlayWaveParticle;
         
     }
 
@@ -163,10 +163,10 @@ public class DrumSide : MonoBehaviour
         rightControll.SendHapticImpulse(intensity * volum, duration);
     }
 
-    //   private void PlayWaveParticle()
-    // {
-    //   BlueWave.Play();
-    //   lightFace.Play();
-    // }
+      private void PlayWaveParticle()
+    {
+      BlueWave.Play();
+      lightFace.Play();
+    }
 
 }
