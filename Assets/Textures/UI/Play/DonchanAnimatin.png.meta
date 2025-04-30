@@ -1,0 +1,778 @@
+fileFormatVersion: 2
+guid: 0705e5a987bd7ae4891703b3d8a156e9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FirstIdle_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 6591
+        width: 253
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e5008640ec57b4bb77ca6f18ce21a9
+      internalID: 716513057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirstIdle_2
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 6588
+        width: 255
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6246788379e4a418135b74859e2fd8
+      internalID: -778771173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirstIdle_3
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 6588
+        width: 253
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfe5fb8875ccfe448241e34b6e9ae9b
+      internalID: -114608418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirstIdle_4
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 6588
+        width: 256
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126f593afd43b414f82b1c072b6994a4
+      internalID: -224123597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirstAction_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 6308
+        width: 246
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6fbaaf822f52643bda415cc016af4c
+      internalID: -63947373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirstAction_2
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 6311
+        width: 259
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e050cf009e976f468fcfcb66d6ad417
+      internalID: 186740713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirstAction_3
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 6311
+        width: 306
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18453507fde62c54eb352be08c2d624d
+      internalID: 1860717004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sleep_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 6024
+        width: 257
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d804224a6a3de2346bf2263843e666aa
+      internalID: 1116007621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sleep_2
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 6024
+        width: 255
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d9fae53e56f48468e348c225e541ca
+      internalID: -2067068614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sleep_3
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 6001
+        width: 273
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220890bd87d06f14d961eac2cacc9313
+      internalID: -2051045961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondIdle_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 5727
+        width: 256
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0daa8419dab2bb6419ccd5a4baeb63e0
+      internalID: 168029123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondIdle_2
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 5737
+        width: 263
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0efc838c94c4f61478d15d5b3bf4e47b
+      internalID: -460918695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondIdle_3
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 5737
+        width: 253
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e113315028cfff448166ed468409c6e
+      internalID: -1270189709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondIdle_4
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 5740
+        width: 253
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c791697e6158946a6943c95e18c928
+      internalID: -1230151212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondAction_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 5470
+        width: 280
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f16a37c31bc5641b40577c39a8a55d
+      internalID: -366088767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondAction_2
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 5467
+        width: 247
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f11cc67a0c8c0428cfed095bce1c51
+      internalID: 906030055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondAction_3
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 5474
+        width: 284
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bcdcfa14f4e134d91c9905b858c2b3
+      internalID: -1372390707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondAction_4
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 5482
+        width: 260
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a47334006e15a448535035f06b4e3a
+      internalID: 1470269005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondAction_5
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 5470
+        width: 243
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511f807ff533c714c86578970f1cbdb0
+      internalID: -1687819454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondAction_6
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 5525
+        width: 291
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82371187c50c93e4298c110604b9272a
+      internalID: 1222259102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Third_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 5156
+        width: 274
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03110e48e5c58748925b000531659e4
+      internalID: -1399778062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Third_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 5156
+        width: 283
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99768a9bb4180ab42a43ead0d6806e36
+      internalID: 495725929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Third_3
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 5157
+        width: 314
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4727862f67b733543a9b87ccb1077b1e
+      internalID: 1506729134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Third_4
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 5162
+        width: 314
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e1bc09b74529b4fb42dc7000fe7b67
+      internalID: -965712898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Play18_96
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 5
+        width: 272
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06e3dedecc6a934aa06cf572a4a5b64
+      internalID: -610645592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7c5dc4f1057ad39468bfcbb76a6766e3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FirstAction_: -2067068614
+      FirstAction_1: -63947373
+      FirstAction_2: 186740713
+      FirstAction_3: 1860717004
+      FirstIdle_1: 716513057
+      FirstIdle_2: -778771173
+      FirstIdle_3: -114608418
+      FirstIdle_4: -224123597
+      Play18_24: -278203362
+      Play18_25: 1420834312
+      Play18_26: 1898471753
+      Play18_27: -480713518
+      Play18_28: -1020040380
+      Play18_29: -2048899685
+      Play18_30: -1518365094
+      Play18_31: 67347550
+      Play18_32: -1734373773
+      Play18_33: 1176737513
+      Play18_34: 26537832
+      Play18_35: -204490003
+      Play18_36: 653283338
+      Play18_37: -606473839
+      Play18_38: 534602575
+      Play18_39: -1331362223
+      Play18_40: 1941587036
+      Play18_41: 464439485
+      Play18_42: 1000315179
+      Play18_43: -1088721505
+      Play18_44: 212784600
+      Play18_45: -812443745
+      Play18_46: 1017047802
+      Play18_47: -1385959894
+      Play18_48: 1858402690
+      Play18_49: -1424495922
+      Play18_50: -1054264917
+      Play18_51: 286841843
+      Play18_52: 783637297
+      Play18_53: -1131295982
+      Play18_54: -1534487487
+      Play18_55: -1700560871
+      Play18_56: 313155083
+      Play18_57: 2129613236
+      Play18_58: -1063311622
+      Play18_59: -1470903331
+      Play18_60: 1689497677
+      Play18_61: -882758464
+      Play18_62: 13894577
+      Play18_63: 630339078
+      Play18_64: 1648523445
+      Play18_65: -795123322
+      Play18_66: -859735941
+      Play18_67: -1210416905
+      Play18_68: -1252562616
+      Play18_69: -1574398893
+      Play18_70: -962012399
+      Play18_71: -1836205757
+      Play18_72: -1399407525
+      Play18_73: 106893977
+      Play18_74: -723761778
+      Play18_75: -1301588486
+      Play18_76: 1411426098
+      Play18_77: -1890242346
+      Play18_78: 635318921
+      Play18_79: 1976475698
+      Play18_80: -1510182682
+      Play18_81: -1703559823
+      Play18_82: 1293459754
+      Play18_83: 2077296032
+      Play18_84: -1050148846
+      Play18_85: 634465576
+      Play18_86: -987820418
+      Play18_87: -1945395661
+      Play18_88: 1432878165
+      Play18_89: -410162383
+      Play18_90: 373819208
+      Play18_91: 351101583
+      Play18_92: -89352432
+      Play18_93: 1356667101
+      Play18_94: -1649039765
+      Play18_95: -95344690
+      Play18_96: -610645592
+      SecondAction_1: -366088767
+      SecondAction_2: 906030055
+      SecondAction_3: -1372390707
+      SecondAction_4: 1470269005
+      SecondAction_5: -1687819454
+      SecondAction_6: 1222259102
+      SecondIdle_1: 168029123
+      SecondIdle_2: -460918695
+      SecondIdle_3: -1270189709
+      SecondIdle_4: -1230151212
+      Sleep_1: 1116007621
+      Sleep_2: -2067068614
+      Sleep_3: -2051045961
+      Third_1: -1399778062
+      Third_2: 495725929
+      Third_3: 1506729134
+      Third_4: -965712898
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
