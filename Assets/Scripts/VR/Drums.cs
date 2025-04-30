@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.VFX;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
 
-//  나중에 함수별로 코드 분리할 예정
 public class Drums : MonoBehaviour
 {
 
