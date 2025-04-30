@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2398381636962373877}
   - component: {fileID: 8625887067566978466}
   - component: {fileID: 3602530416493375526}
-  - component: {fileID: 2228042740881820391}
   m_Layer: 5
   m_Name: Ka
   m_TagString: Note
@@ -91,9 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4fc40e3abde2540aa7fa70b421edb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notespeed: 500
+  notespeed: 300
   currentZone: 3
-  noteType: 1
 --- !u!58 &8625887067566978466
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -157,16 +155,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2228042740881820391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5836283552510781738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65f6da2bcb8c49d4e92d68aa7b228a14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noteType: 0

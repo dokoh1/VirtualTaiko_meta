@@ -3,10 +3,8 @@ using UnityEngine;
 
 public enum HitResult
 {
-    BigPerfect,
-    SmallPerfect,
-    BigGood,
-    SmallGood,
+    Perfect,
+    Good,
     Bad,
     None,
 }
@@ -30,7 +28,7 @@ public class TimingManager : MonoBehaviour
         GameObject closestNote = null;
         float closestDistance = float.MaxValue;
         float centerX = Center.position.x;
-    
+        
         foreach (var note in BoxNoteList)
         {
             float noteX = note.transform.position.x;
@@ -48,33 +46,28 @@ public class TimingManager : MonoBehaviour
         float noteXPos = closestNote.transform.position.x;
         float distanceFromCenter = Mathf.Abs(noteXPos - centerX);
 
-        NoteData noteData = closestNote.GetComponent<NoteData>();
-
-        bool isBig = noteData.noteType == NoteType.bigRed || noteData.noteType == NoteType.bigBlue;
-
         HitResult result;
 
         if (distanceFromCenter <= perfectRange)
-            result = isBig ? HitResult.BigPerfect : HitResult.SmallPerfect;
+            result = HitResult.Perfect;
         else if (distanceFromCenter <= goodRange)
-            result = isBig ? HitResult.BigGood : HitResult.SmallGood;
+            result = HitResult.Good;
         else if (distanceFromCenter <= badRange)
             result = HitResult.Bad;
         else
         {
             result = HitResult.None;
             return result;
-        }
-
+        } 
         HitQueue.Enqueue(result);
         BoxNoteList.Remove(closestNote);
         Destroy(closestNote);
         Debug.Log(result);
 
+        // ✅ Perfect, Good, Bad 판정일 때
+
         return result;
     }
-
-
     public void MissNote(GameObject note)
     {
         if (BoxNoteList.Contains(note))
@@ -86,31 +79,5 @@ public class TimingManager : MonoBehaviour
             Debug.Log(result);
         }
     }
-    public void ProcessResult(HitResult result)
-    {
-        bool isCheck = false;
-        // 예시 처리
-        switch (result)
-        {
-            case HitResult.SmallPerfect:
-                isCheck = true;
-                break;
-            case HitResult.BigPerfect:    
-                isCheck = true;
-                break;
-            case HitResult.BigGood:
-                isCheck = true;
-                break;
-            case HitResult.SmallGood:
-                isCheck = true;
-                break;
-            case HitResult.Bad:
-                isCheck = true;
-                break;
-            case HitResult.None:
-                isCheck = true;
-                break;
-        }
-        Debug.Log(result);
-    }
+
 }

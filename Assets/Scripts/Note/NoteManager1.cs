@@ -11,97 +11,58 @@ public enum NoteType
 
 public class NoteManager1 : MonoBehaviour
 {
-    public NoteMap noteMap;
-    
+    public int bpm;
+    double currentTime = 0d;
+    public Transform noteAppearLocation;
     public GameObject SmallDon;
     public GameObject BigDon;
     public GameObject SmallKa;
     public GameObject BigKa;
-
-    public GameObject currentNote;
-    public Transform noteAppearLocation;
-    public TimingManager timingManager;
-    public int bpm;
-    double currentTime = 0d;
-    public AudioSource music;
-    
-    private float startTime;
-    public float noteSpawnOffset = 0f;
+    TimingManager timingManager;
 
     private void Start()
     {
         timingManager = GetComponent<TimingManager>();
-        music.Play();
-        startTime = Time.time;
     }
 
     void Update()
     {
-        if (noteMap == null || noteMap.notes == null)
-            return;
+        currentTime += Time.deltaTime;
 
-        if (timingManager.BoxNoteList.Count >= noteMap.notes.Count)
-            return;
-
-        int noteIndex = timingManager.BoxNoteList.Count;
-        Noteinfo nextNote = noteMap.notes[noteIndex];
-
-        if (music.time >= nextNote.spawntime)
+        if (currentTime >= 60d / bpm)
         {
-            SpawnNote();
-        }
-    }
+            GameObject noteToSpawn = null;
 
-
-    private int nextNoteIndex = 0;
-
-    private void SpawnNote()
-    {
-        if (noteMap == null || noteMap.notes == null || nextNoteIndex >= noteMap.notes.Count)
-            return;
-
-        float currentTime = Time.time - startTime; // 음악 시작 후 흐른 시간
-
-        // 노트가 나타나야 할 시점인지 확인
-        while (nextNoteIndex < noteMap.notes.Count && noteMap.notes[nextNoteIndex].spawntime <= currentTime + noteSpawnOffset)
-        {
-            Noteinfo noteInfo = noteMap.notes[nextNoteIndex];
-            GameObject prefab = null;
-
-            switch (noteInfo.notetype)
+            // 노트 타입에 맞는 프리팹을 할당
+            switch (noteType)
             {
                 case NoteType.smallRed:
-                    prefab = SmallDon;
+                    noteToSpawn = SmallDon; // 작은 빨간 원
                     break;
                 case NoteType.smallBlue:
-                    prefab = SmallKa;
+                    noteToSpawn = SmallKa; // 작은 파란 원
                     break;
                 case NoteType.bigRed:
-                    prefab = BigDon;
+                    noteToSpawn = BigDon; // 큰 빨간 원
                     break;
                 case NoteType.bigBlue:
-                    prefab = BigKa;
+                    noteToSpawn = BigKa; // 큰 파란 원
                     break;
             }
 
-            if (prefab != null)
+            // 프리팹을 인스턴스화
+            if (noteToSpawn != null)
             {
-                GameObject t_note = Instantiate(prefab, noteAppearLocation.position, Quaternion.identity);
+                GameObject t_note = Instantiate(noteToSpawn, noteAppearLocation.position, Quaternion.identity);
                 t_note.transform.SetParent(noteAppearLocation);
-
-                NoteData noteData = t_note.AddComponent<NoteData>();
-                noteData.noteType = noteInfo.notetype;
-
                 timingManager.BoxNoteList.Add(t_note);
             }
 
-            nextNoteIndex++;
+            currentTime -= 60d / bpm;
         }
     }
 
 
-
-    
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Note"))
@@ -114,12 +75,11 @@ public class NoteManager1 : MonoBehaviour
 
     public void CheckHit(KeyCode hitKey)
     {
-        Debug.Log("CheckHit called with key: " + hitKey);
         bool isHit = false;
         switch (noteType)
         {
             case NoteType.smallRed:
-                if (hitKey == KeyCode.S || hitKey == KeyCode.K) // 왼쪽 면 타격
+                if (hitKey == KeyCode.S && hitKey == KeyCode.K) // 왼쪽 면 타격
                 {
                     isHit = true;
                 }
@@ -127,7 +87,7 @@ public class NoteManager1 : MonoBehaviour
                 break;
 
             case NoteType.smallBlue:
-                if (hitKey == KeyCode.L || hitKey == KeyCode.A) // 오른쪽 사이드 타격
+                if (hitKey == KeyCode.L && hitKey == KeyCode.A) // 오른쪽 사이드 타격
                 {
                     isHit = true;
                 }
@@ -135,7 +95,7 @@ public class NoteManager1 : MonoBehaviour
                 break;
 
             case NoteType.bigRed:
-                if (hitKey == KeyCode.S && hitKey == KeyCode.K) // 양쪽 안쪽 면 타격
+                if (hitKey == KeyCode.S || hitKey == KeyCode.K) // 양쪽 안쪽 면 타격
                 {
                     isHit = true;
                 }
@@ -143,12 +103,13 @@ public class NoteManager1 : MonoBehaviour
                 break;
 
             case NoteType.bigBlue:
-                if (hitKey == KeyCode.A && hitKey == KeyCode.L) // 양쪽 사이드 타격
+                if (hitKey == KeyCode.A || hitKey == KeyCode.L) // 양쪽 사이드 타격
                 {
                     isHit = true;
                 }
 
                 break;
+
         }
 
         if (isHit)
