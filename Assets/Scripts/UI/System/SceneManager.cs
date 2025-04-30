@@ -24,7 +24,7 @@ namespace dokoh
             fadeImage.color = color;
             foreach (SceneData sceneData in sceneObjects)
             {
-                if (sceneData.SceneDataType == SceneDataType.Music1)
+                if (sceneData.SceneDataType == SceneDataType.Start)
                 {
                     sceneData.SceneObject.SetActive(true);
                     currentScene = sceneData.SceneObject;
@@ -65,8 +65,6 @@ namespace dokoh
                     if (sceneData.SceneObject.activeSelf == true)
                         currentScene = sceneData.SceneObject;
             }
-            // currentScene.SetActive(false);
-            // nextScene.SetActive(true);
             FadeOut(1.5f, () =>
             {
                 currentScene.SetActive(false);

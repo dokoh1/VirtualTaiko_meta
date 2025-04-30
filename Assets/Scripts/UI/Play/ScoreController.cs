@@ -22,12 +22,16 @@ public class ScoreController : MonoBehaviour
     private JudgementData _judgementData;
     
     // public TimingManager timingManager;
+    public FireAnimation fireAnimation;
+    public GoblinAnimation goblinAnimation;
     public CharacterAnimation characterAnimation;
     public TestTimingManager testTimingManager;
     public JudgementEffect judgementEffect;
     public NumberImage ScoreNumberImage;
     public NumberImage ComboNumberImage;
     public DeadGauge deadGauge;
+    public FireworkAnimation fireworkAnimation;
+    public CloudAnimation cloudAnimation;
     
     private void OnEnable()
     {
@@ -66,6 +70,7 @@ public class ScoreController : MonoBehaviour
                     dokoh.System.ScoreManager.Bad = BadHit;
                     dokoh.System.SceneManager.LoadScene(SceneDataType.Result);
                 }
+                fireAnimation.SetIsFire(ComboHit);
                 characterAnimation.UpdateAnimator(ComboHit);
                 ScoreNumberImage.UpdateDisplay(currentScore);
                 ComboNumberImage.UpdateDisplay(ComboHit);
@@ -82,6 +87,7 @@ public class ScoreController : MonoBehaviour
         // if (hitResult == HitResult.Bad)
         if (hitResult == TestEnum.Bad)
         {
+            BadHit++;
             DeadGauge -= deadGaugeAmount;
             if (DeadGauge < 0)
                 return;
@@ -115,5 +121,14 @@ public class ScoreController : MonoBehaviour
             currentScore += score;
         if (DeadGauge < MaxDeadGauge)
             DeadGauge += deadGaugeAmount;
+        if (Hit == 30)
+            goblinAnimation.CreateGoblin();
+        else if (Hit == 60)
+        {
+            goblinAnimation.CreateGoblin();
+            cloudAnimation.ChangeImage();
+        }
+        if (ComboHit % 30 == 0 && ComboHit != 0)
+            fireworkAnimation.DoFireWork();
     }
 }
