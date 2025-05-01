@@ -56,7 +56,7 @@ public class DrumEffect : MonoBehaviour
     private IEnumerator FlashObject(GameObject obj)
     {
         obj.SetActive(true);
-        yield return new WaitForSeconds(0.2f); // 0.2초 대기
+        yield return new WaitForSeconds(0.2f);
         obj.SetActive(false);
     }
 

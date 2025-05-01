@@ -45,6 +45,8 @@ public class Drums : MonoBehaviour
     
     private bool leftHit = false;
     private bool rightHit = false;
+    private float _lastHitTime = float.MinValue;
+    private float _ignoreDuration = 0.1f;
     
     // 코루틴 리셋
     private Coroutine resetCoroutine = null;
@@ -75,6 +77,11 @@ public class Drums : MonoBehaviour
     {
         //print("true");
         estimator = other.GetComponent<VelocityEstimator>();
+        if (Time.time < _lastHitTime + _ignoreDuration)
+        {
+            return;
+        }
+        _lastHitTime = Time.time;
 
         //  데이터 저장
         if (other.gameObject.layer == leftStick)

@@ -17,6 +17,8 @@ namespace dokoh
         private GameObject currentScene;
         private GameObject nextScene;
         private Tween fadeTween;
+        private float _lastHitTime = float.MinValue;
+        private float _ignoreDuration = 0.1f;
         private void Awake()
         {
             Color color = fadeImage.color;
@@ -65,6 +67,11 @@ namespace dokoh
                     if (sceneData.SceneObject.activeSelf == true)
                         currentScene = sceneData.SceneObject;
             }
+
+            while (dokoh.System.DrumManager.dataSet.Count > 0)
+            {
+                System.DrumManager.dataSet.Dequeue();
+            }
             FadeOut(1.5f, () =>
             {
                 currentScene.SetActive(false);
@@ -74,6 +81,10 @@ namespace dokoh
                     fadeImage.gameObject.SetActive(false);
                 });
             });
+            while (dokoh.System.DrumManager.dataSet.Count > 0)
+            {
+                System.DrumManager.dataSet.Dequeue();
+            }
         }
     }
 }
