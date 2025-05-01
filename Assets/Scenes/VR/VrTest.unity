@@ -2065,14 +2065,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f82fddc781edd8469e2dcd38831a7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteMap: {fileID: 11400000, guid: 7b66954c13b559b44b391c562e806fb9, type: 2}
+  noteMap: {fileID: 11400000, guid: 155e29e62cec2c640952723335a27ef6, type: 2}
   SmallDon: {fileID: 5836283552510781738, guid: 9fcd993cc618b7e49a36eb341e47288c, type: 3}
   BigDon: {fileID: 5836283552510781738, guid: 75802854b14e13f4c910d08caec8daa2, type: 3}
   SmallKa: {fileID: 5836283552510781738, guid: 7733be0916e5fdc49b3ba7ce9a02b1ef, type: 3}
   BigKa: {fileID: 5836283552510781738, guid: 66fd09afca5154f4e82916140718902d, type: 3}
+  currentNote: {fileID: 0}
   noteAppearLocation: {fileID: 2057943761}
   timingManager: {fileID: 0}
-  bpm: 147
+  bpm: 123
   music: {fileID: 1495084663}
   noteSpawnOffset: 0.51
   noteType: 0
@@ -8121,8 +8122,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d39d56602e5d32c49bbdfdc19a5a68eb, type: 3}
-  m_Resource: {fileID: 8300000, guid: d39d56602e5d32c49bbdfdc19a5a68eb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2511c6ec4167cbb4b8457b910c4e3e71, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2511c6ec4167cbb4b8457b910c4e3e71, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
