@@ -4,10 +4,14 @@ public class StartController : MonoBehaviour
 {
     // public TestDrumInput Input;
     private bool isChanged;
+    public AudioClip BackgroundMusic;
+    public AudioClip SFXMusic;
 
     void OnEnable()
     {
         isChanged = false;
+        dokoh.System.AudioManager.PlayBGM(BackgroundMusic);
+        dokoh.System.AudioManager.PlaySFX(SFXMusic);
     }
     void Update()
     {

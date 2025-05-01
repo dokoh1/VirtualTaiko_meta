@@ -9,6 +9,10 @@ namespace dokoh
         public static SceneManager SceneManager => Instance?.sceneManager;
         [SerializeField] private SceneManager sceneManager;
 
+        public static AudioManager AudioManager => Instance?.audioManager;
+        [SerializeField] private AudioManager audioManager;
+
+        
         public static ScoreManager ScoreManager => Instance?.scoreManager;
         [SerializeField] private ScoreManager scoreManager;
         

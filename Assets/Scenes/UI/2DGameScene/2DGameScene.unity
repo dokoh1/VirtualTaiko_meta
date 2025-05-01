@@ -1440,7 +1440,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneManager: {fileID: 132342966}
+  audioManager: {fileID: 0}
   scoreManager: {fileID: 825168299}
+  drumManager: {fileID: 0}
 --- !u!4 &174054133
 Transform:
   m_ObjectHideFlags: 0
@@ -1456,6 +1458,7 @@ Transform:
   m_Children:
   - {fileID: 132342967}
   - {fileID: 825168300}
+  - {fileID: 561217568}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188886792
@@ -2182,8 +2185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bbf1116e0fb08e43a6b3b43ed9641e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testDrumInput: {fileID: 1515708308}
-  drumsSide: {fileID: 0}
   LeftSide: {fileID: 1863885340}
   RightSide: {fileID: 1717613651}
   LeftFace: {fileID: 188886792}
@@ -4764,6 +4765,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559648756}
   m_CullTransparentMesh: 1
+--- !u!1 &561217567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 561217568}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &561217568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561217567}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 174054133}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &561251845
 GameObject:
   m_ObjectHideFlags: 0
@@ -5283,8 +5315,6 @@ MonoBehaviour:
       DownArrow: {fileID: 533598304}
       UpArrowRect: {fileID: 1248504936}
       DownArrowRect: {fileID: 533598303}
-  testDrumInput: {fileID: 1515708308}
-  drums: {fileID: 0}
   _animator: {fileID: 1375690314}
 --- !u!114 &621086361
 MonoBehaviour:
@@ -6667,10 +6697,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2feaf9127dbf58d4883d2d6b5214a250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timingManager: {fileID: 0}
   fireAnimation: {fileID: 1531171089}
   goblinAnimation: {fileID: 699498597}
   characterAnimation: {fileID: 1963786536}
-  testTimingManager: {fileID: 1438642182}
   judgementEffect: {fileID: 1307120202}
   ScoreNumberImage: {fileID: 1462682990}
   ComboNumberImage: {fileID: 138893296}
@@ -7482,7 +7512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a222fb21897df5f4bb412a05bb15f187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drums: {fileID: 0}
 --- !u!50 &853165622
 Rigidbody2D:
   serializedVersion: 5
@@ -7582,12 +7611,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f82fddc781edd8469e2dcd38831a7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 60
-  noteAppearLocation: {fileID: 1459011646}
+  noteMap: {fileID: 0}
   SmallDon: {fileID: 5836283552510781738, guid: 9fcd993cc618b7e49a36eb341e47288c, type: 3}
   BigDon: {fileID: 5836283552510781738, guid: 75802854b14e13f4c910d08caec8daa2, type: 3}
   SmallKa: {fileID: 5836283552510781738, guid: 7733be0916e5fdc49b3ba7ce9a02b1ef, type: 3}
   BigKa: {fileID: 5836283552510781738, guid: 66fd09afca5154f4e82916140718902d, type: 3}
+  currentNote: {fileID: 0}
+  noteAppearLocation: {fileID: 1459011646}
+  timingManager: {fileID: 0}
+  bpm: 60
+  music: {fileID: 0}
+  noteSpawnOffset: 0
   noteType: 0
 --- !u!114 &861918645 stripped
 MonoBehaviour:
@@ -7661,7 +7695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa068b441e81a7f419da5bf500e57f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Input: {fileID: 1515708308}
+  StartClip: {fileID: 8300000, guid: 9befc2e585952044bba1226c5632d128, type: 3}
 --- !u!114 &868174586
 MonoBehaviour:
   m_ObjectHideFlags: 0
