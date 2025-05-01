@@ -27,6 +27,7 @@ public class DrumStick : MonoBehaviour
 
     public HapticImpulsePlayer leftControll;
     public HapticImpulsePlayer rightControll;
+    private bool canHit = true;
 
     private void Awake()
     {
@@ -44,9 +45,13 @@ public class DrumStick : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!canHit) return;
+
         if (other.gameObject.layer == Stick)
         {
+            canHit = false;
             Audio();
+            Invoke(nameof(ResetHit), 0.1f);
         }
     }
 
@@ -67,5 +72,10 @@ public class DrumStick : MonoBehaviour
     {
         leftControll.SendHapticImpulse(intensity, duration);
         rightControll.SendHapticImpulse(intensity, duration);
+    }
+
+    private void ResetHit()
+    {
+        canHit = true;
     }
 }
