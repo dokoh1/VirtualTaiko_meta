@@ -144,9 +144,9 @@ namespace dokoh
                 if (activeChoice.ChoiceType == ChoiceType.Music1)
                     dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
                 else if (activeChoice.ChoiceType == ChoiceType.Music2)
-                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
                 else if (activeChoice.ChoiceType == ChoiceType.Music3)
-                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
+                    dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
                 else if (activeChoice.ChoiceType == ChoiceType.BackToMenu)
                     dokoh.System.SceneManager.LoadScene(SceneDataType.Start);
                 else if (activeChoice.ChoiceType == ChoiceType.RandomMusic)
@@ -155,9 +155,9 @@ namespace dokoh
                     if (rand == 0)
                         dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
                     else if (rand == 1)
-                        dokoh.System.SceneManager.LoadScene(SceneDataType.Music2);
+                        dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
                     else if (rand == 2)
-                        dokoh.System.SceneManager.LoadScene(SceneDataType.Music3);
+                        dokoh.System.SceneManager.LoadScene(SceneDataType.Music1);
                 }
             });
         }

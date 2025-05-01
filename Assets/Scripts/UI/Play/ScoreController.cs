@@ -10,8 +10,6 @@ public class ScoreController : MonoBehaviour
     public AudioClip Combo_50;
     public AudioClip Combo_100;
     public AudioClip Combo_200;
-    public AudioClip SongClear;
-    public AudioClip SongFail;
     private int currentScore;
     private int ComboHit;
     private int Hit;
@@ -64,7 +62,6 @@ public class ScoreController : MonoBehaviour
         dokoh.System.ScoreManager.Perfect = PerfectHit;
         dokoh.System.ScoreManager.Good = GoodHit;
         dokoh.System.ScoreManager.Bad = BadHit;
-        dokoh.System.AudioManager.PlaySFX(SongFail);
         dokoh.System.SceneManager.LoadScene(SceneDataType.Result);
     }
     private void Update()
