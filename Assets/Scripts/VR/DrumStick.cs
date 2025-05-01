@@ -31,7 +31,7 @@ public class DrumStick : MonoBehaviour
 
     private void Awake()
     {
-        Stick = LayerMask.NameToLayer("StickBody");
+        Stick = LayerMask.NameToLayer("RightStick");
         source = GetComponent<AudioSource>();
 
     }
