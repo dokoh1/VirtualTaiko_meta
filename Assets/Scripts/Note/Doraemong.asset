@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4204731ca36479d489ba4a5240e39623, type: 3}
+  m_Name: Doraemong
+  m_EditorClassIdentifier: 
+  notes:
+  - spawntime: 0
+    notetype: 0
+  - spawntime: 1.9512
+    notetype: 0
+  - spawntime: 3.9024
+    notetype: 0
+  - spawntime: 4.878
+    notetype: 0
+  - spawntime: 5.8536
+    notetype: 0
+  - spawntime: 7.8048
+    notetype: 0
+  - spawntime: 9.756
+    notetype: 0
+  - spawntime: 11.7072
+    notetype: 0
+  - spawntime: 12.195
+    notetype: 0
+  - spawntime: 12.6828
+    notetype: 0
+  - spawntime: 13.1706
+    notetype: 0
+  - spawntime: 13.6584
+    notetype: 0
+  - spawntime: 14.1462
+    notetype: 0
+  - spawntime: 15.6096
+    notetype: 0
+  - spawntime: 17.5608
+    notetype: 0
+  - spawntime: 19.512
+    notetype: 0
+  - spawntime: 21.4632
+    notetype: 0
+  - spawntime: 23.4144
+    notetype: 0
+  - spawntime: 24.39
+    notetype: 0
+  - spawntime: 27.3168
+    notetype: 1
+  - spawntime: 28.2924
+    notetype: 1
+  - spawntime: 31.2192
+    notetype: 0
+  - spawntime: 33.1704
+    notetype: 0
+  - spawntime: 35.1216
+    notetype: 0
+  - spawntime: 37.0728
+    notetype: 0
+  - spawntime: 39.024
+    notetype: 0
+  - spawntime: 39.9996
+    notetype: 0
+  - spawntime: 42.9264
+    notetype: 0
+  - spawntime: 43.4142
+    notetype: 0
+  - spawntime: 43.902
+    notetype: 0
+  - spawntime: 44.3898
+    notetype: 0
+  - spawntime: 44.8776
+    notetype: 0
+  - spawntime: 46.8288
+    notetype: 0
+  - spawntime: 48.78
+    notetype: 0
+  - spawntime: 50.7312
+    notetype: 0
+  - spawntime: 52.6824
+    notetype: 0
+  - spawntime: 54.6336
+    notetype: 0
+  - spawntime: 55.6092
+    notetype: 0
+  - spawntime: 58.536
+    notetype: 1
+  - spawntime: 59.5116
+    notetype: 1
+  - spawntime: 62.4384
+    notetype: 0
+  - spawntime: 64.3896
+    notetype: 0
+  - spawntime: 66.3408
+    notetype: 0
+  - spawntime: 68.292
+    notetype: 0
+  - spawntime: 70.2432
+    notetype: 0
+  - spawntime: 71.2188
+    notetype: 0
+  - spawntime: 74.1456
+    notetype: 0
+  - spawntime: 74.6334
+    notetype: 0
+  - spawntime: 75.1212
+    notetype: 0
+  - spawntime: 75.609
+    notetype: 0
+  - spawntime: 76.0968
+    notetype: 0
+  - spawntime: 78.048
+    notetype: 0
+  - spawntime: 79.9992
+    notetype: 0
+  - spawntime: 81.9504
+    notetype: 0
+  - spawntime: 83.9016
+    notetype: 1
+  - spawntime: 85.8528
+    notetype: 0
+  - spawntime: 87.804
+    notetype: 0
+  - spawntime: 89.7552
+    notetype: 0
+  - spawntime: 91.7064
+    notetype: 1
+  - spawntime: 93.6576
+    notetype: 0
+  - spawntime: 95.6088
+    notetype: 0
+  - spawntime: 97.56
+    notetype: 0
+  - spawntime: 98.5356
+    notetype: 0
+  - spawntime: 99.5112
+    notetype: 0
+  - spawntime: 101.4524
+    notetype: 0
+  - spawntime: 103.4136
+    notetype: 0
+  - spawntime: 105.3648
+    notetype: 0
+  - spawntime: 106.3404
+    notetype: 0
+  - spawntime: 107.316
+    notetype: 0
+  - spawntime: 109.2672
+    notetype: 0
+  - spawntime: 110.2428
+    notetype: 0
+  - spawntime: 113.1696
+    notetype: 0
+  - spawntime: 114.1452
+    notetype: 0
+  - spawntime: 115.1208
+    notetype: 0
+  - spawntime: 117.072
+    notetype: 0
+  - spawntime: 118.0476
+    notetype: 0
+  - spawntime: 120.9744
+    notetype: 0
+  - spawntime: 121.95
+    notetype: 0
+  - spawntime: 122.9256
+    notetype: 0
+  - spawntime: 124.8768
+    notetype: 0
+  - spawntime: 125.8524
+    notetype: 0
+  - spawntime: 128.7792
+    notetype: 0
+  - spawntime: 129.7548
+    notetype: 0
+  - spawntime: 130.7304
+    notetype: 0
+  - spawntime: 132.6816
+    notetype: 2
+  - spawntime: 134.6328
+    notetype: 2
+  - spawntime: 136.584
+    notetype: 3
+  - spawntime: 137.5596
+    notetype: 3
+  - spawntime: 138.5352
+    notetype: 3
+  - spawntime: 140.4864
+    notetype: 0
+  - spawntime: 141.462
+    notetype: 0
+  - spawntime: 144.3888
+    notetype: 0
+  - spawntime: 145.3644
+    notetype: 0
+  - spawntime: 146.34
+    notetype: 0
+  - spawntime: 148.2912
+    notetype: 0
+  - spawntime: 149.2668
+    notetype: 0
+  - spawntime: 152.1936
+    notetype: 0
+  - spawntime: 153.1692
+    notetype: 0
+  - spawntime: 154.1448
+    notetype: 0
+  - spawntime: 156.096
+    notetype: 0
+  - spawntime: 157.0716
+    notetype: 0
+  - spawntime: 159.9984
+    notetype: 0
+  - spawntime: 160.974
+    notetype: 0
+  - spawntime: 161.9496
+    notetype: 0
+  - spawntime: 163.9008
+    notetype: 2
+  - spawntime: 165.852
+    notetype: 2
+  - spawntime: 167.8032
+    notetype: 2
+  - spawntime: 168.7788
+    notetype: 2
+  - spawntime: 169.7544
+    notetype: 2
+  - spawntime: 170.73
+    notetype: 2
+  - spawntime: 171.7056
+    notetype: 0
+  - spawntime: 172.1934
+    notetype: 0
+  - spawntime: 173.169
+    notetype: 0
+  - spawntime: 173.6568
+    notetype: 0
+  - spawntime: 174.1446
+    notetype: 0
+  - spawntime: 174.6324
+    notetype: 0
+  - spawntime: 175.1202
+    notetype: 0
+  - spawntime: 175.608
+    notetype: 0
+  - spawntime: 176.0958
+    notetype: 0
