@@ -11,6 +11,9 @@ namespace dokoh
 
         public static ScoreManager ScoreManager => Instance?.scoreManager;
         [SerializeField] private ScoreManager scoreManager;
+        
+        public static DrumManager DrumManager => Instance?.drumManager;
+        [SerializeField] private DrumManager drumManager;
 
         private void Awake()
         {
