@@ -22,8 +22,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - hitpoint
+  - Particle
   - StickBody
   - LeftStick
   - RightStick

@@ -1,15 +1,9 @@
 using System.Collections;
-using JetBrains.Annotations;
-using Unity.XR.Oculus.Input;
-using Unity.XR.OpenVR;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.UIElements;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.VFX;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
-using UnityEngine.XR.Interaction.Toolkit.Interactors;
-//  나중에 함수별로 코드 분리할 예정
+using System.Collections.Generic;
+
 public class Drums : MonoBehaviour
 {
 
@@ -48,13 +42,18 @@ public class Drums : MonoBehaviour
     [Range(0, 1f)]
     [SerializeField]
     private float delay = 0.2f;
-
-    public DrumDataType dataSet = DrumDataType.NotHit;
+    
     private bool leftHit = false;
     private bool rightHit = false;
     
     // 코루틴 리셋
     private Coroutine resetCoroutine = null;
+
+    // 파티클시스템
+    [SerializeField]
+    private VisualEffect RedWave;
+    [SerializeField]
+    private VisualEffect lightFace;
 
     private void Awake()
     {
@@ -68,6 +67,7 @@ public class Drums : MonoBehaviour
         Audio += UseStickVelocity;
         Audio += PlayAudio;
         Audio += ControllPitch;
+        Audio += PlayWaveParticle;
         
     }
 
@@ -80,7 +80,7 @@ public class Drums : MonoBehaviour
         if (other.gameObject.layer == leftStick)
         {
             leftHit = true;
-            dataSet = DrumDataType.LeftFace;
+            dokoh.System.DrumManager.AddQueue(DrumDataType.LeftFace);
             //print(dataSet);
             PlayLeftVibration();
             Audio();
@@ -90,7 +90,7 @@ public class Drums : MonoBehaviour
         if (other.gameObject.layer == rightStick)
         {
             rightHit = true;
-            dataSet = DrumDataType.RightFace;
+            dokoh.System.DrumManager.AddQueue(DrumDataType.RightFace);
             //print(dataSet);
             PlayRightVibration();
             Audio();
@@ -99,8 +99,7 @@ public class Drums : MonoBehaviour
 
         if (rightHit && leftHit)
         {
-            dataSet = DrumDataType.DobletFace;
-            //print(dataSet);
+            dokoh.System.DrumManager.AddQueue(DrumDataType.DobletFace);
             // Audio();
         }
 
@@ -117,14 +116,13 @@ public class Drums : MonoBehaviour
         yield return new WaitForSeconds(delay);
         leftHit = false;
         rightHit = false;
-        dataSet = DrumDataType.NotHit;
         //print(dataSet);
     }
 
 
     private void PlayAudio()
     {
-        source.PlayOneShot(clip, volum);
+        source.PlayOneShot(clip, volum * 1.5f);
     }
 
     private void UseStickVelocity()
@@ -156,6 +154,12 @@ public class Drums : MonoBehaviour
     private void PlayRightVibration()
     {
         rightControll.SendHapticImpulse(intensity * volum, duration);
+    }
+
+    private void PlayWaveParticle()
+    {
+      RedWave.Play();
+      lightFace.Play();
     }
 
 }

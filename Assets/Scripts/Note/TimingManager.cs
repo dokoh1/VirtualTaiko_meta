@@ -18,14 +18,17 @@ public class TimingManager : MonoBehaviour
     public Queue<HitResult> HitQueue = new Queue<HitResult>();
     
     [Header("판정 거리 기준 (중심 기준 거리)")]
-    private float perfectRange = 0.35f;
-    private float goodRange = 0.7f;
-    private float badRange = 1.05f;
+    // private float perfectRange = 0.35f;
+    // private float goodRange = 0.7f;
+    // private float badRange = 1.05f;
+    private float perfectRange = 0.1f;
+    private float goodRange = 0.2f;
+    private float badRange = 0.3f;
 
     // ReSharper disable Unity.PerformanceAnalysis
     public HitResult CheckTiming()
     {
-        if (BoxNoteList.Count == 0) return HitResult.Bad;
+        if (BoxNoteList.Count == 0) return HitResult.None;
 
         GameObject closestNote = null;
         float closestDistance = float.MaxValue;
@@ -43,7 +46,7 @@ public class TimingManager : MonoBehaviour
             }
         }
 
-        if (closestNote == null) return HitResult.Bad;
+        if (closestNote == null) return HitResult.None;
 
         float noteXPos = closestNote.transform.position.x;
         float distanceFromCenter = Mathf.Abs(noteXPos - centerX);

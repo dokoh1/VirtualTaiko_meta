@@ -3,11 +3,6 @@ using UnityEngine;
 
 public class DrumEffect : MonoBehaviour
 {
-    [SerializeField]
-    private TestDrumInput testDrumInput;
-    private Drums drums;
-    [SerializeField]
-    private DrumSide drumsSide;
    [SerializeField]
    private GameObject LeftSide;
    [SerializeField]
@@ -29,24 +24,29 @@ public class DrumEffect : MonoBehaviour
     void Update()
     {
         //TestCode
-        if (testDrumInput.testInputType == DrumDataType.LeftSide)
-            ShowDrumEffect(LeftSide);
-        else if (testDrumInput.testInputType == DrumDataType.RightSide)
-            ShowDrumEffect(RightSide);
-        else if (testDrumInput.testInputType == DrumDataType.LeftFace)
-            ShowDrumEffect(LeftFace);
-        else if (testDrumInput.testInputType == DrumDataType.RightFace)
-            ShowDrumEffect(RightFace);
+        // if (testDrumInput.testInputType == DrumDataType.LeftSide)
+        //     ShowDrumEffect(LeftSide);
+        // else if (testDrumInput.testInputType == DrumDataType.RightSide)
+        //     ShowDrumEffect(RightSide);
+        // else if (testDrumInput.testInputType == DrumDataType.LeftFace)
+        //     ShowDrumEffect(LeftFace);
+        // else if (testDrumInput.testInputType == DrumDataType.RightFace)
+        //     ShowDrumEffect(RightFace);
         
         //ExecuteCode
-        // if (drumsSide.dataSet == DrumDataType.LeftSide)
-        //     ShowDrumEffect(LeftSide);
-        // else if (drumsSide.dataSet == DrumDataType.RightSide)
-        //     ShowDrumEffect(RightSide);
-        // else if (drums.dataSet == DrumDataType.LeftFace)
-        //     ShowDrumEffect(LeftFace);
-        // else if (drums.dataSet == DrumDataType.RightFace)
-        //     ShowDrumEffect(RightFace);
+        DrumDataType drumDataType = dokoh.System.DrumManager.UseQueue();
+        if (drumDataType == DrumDataType.LeftSide)
+            ShowDrumEffect(LeftSide);
+        else if (drumDataType == DrumDataType.RightSide)
+            ShowDrumEffect(RightSide);
+        else if (drumDataType == DrumDataType.LeftFace)
+            ShowDrumEffect(LeftFace);
+        else if (drumDataType == DrumDataType.RightFace)
+            ShowDrumEffect(RightFace);
+        else if (drumDataType == DrumDataType.DobletFace)
+            ShowDrumDoubleEffect(LeftFace, RightFace);
+        else if (drumDataType == DrumDataType.Dobletside)
+            ShowDrumDoubleEffect(LeftSide, RightSide);
     }
 
     private void ShowDrumEffect(GameObject drum)
@@ -58,5 +58,18 @@ public class DrumEffect : MonoBehaviour
         obj.SetActive(true);
         yield return new WaitForSeconds(0.2f); // 0.2초 대기
         obj.SetActive(false);
+    }
+
+    private IEnumerator FlashObjects(GameObject obj, GameObject objTwo)
+    {
+        obj.SetActive(true);
+        objTwo.SetActive(true);
+        yield return new WaitForSeconds(0.2f);
+        obj.SetActive(false);
+        objTwo.SetActive(false);
+    }
+    private void ShowDrumDoubleEffect(GameObject drum, GameObject drumTwo)
+    {
+        StartCoroutine(FlashObjects(drum, drumTwo));
     }
 }

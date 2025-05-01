@@ -86,8 +86,7 @@ public class NoteManager1 : MonoBehaviour
 
             if (prefab != null)
             {
-                GameObject t_note = Instantiate(prefab, noteAppearLocation.position, Quaternion.identity);
-                t_note.transform.SetParent(noteAppearLocation);
+                GameObject t_note = Instantiate(prefab, noteAppearLocation);
 
                 NoteData noteData = t_note.AddComponent<NoteData>();
                 noteData.noteType = noteInfo.notetype;

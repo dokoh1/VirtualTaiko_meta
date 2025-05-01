@@ -1,13 +1,8 @@
 using System.Collections;
-using JetBrains.Annotations;
-using Unity.XR.Oculus.Input;
-using Unity.XR.OpenVR;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.VFX;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
-using UnityEngine.XR.Interaction.Toolkit.Interactors;
+
 //  나중에 함수별로 코드 분리할 예정
 public class DrumSide : MonoBehaviour
 {
@@ -48,13 +43,21 @@ public class DrumSide : MonoBehaviour
     [Range(0, 1f)]
     [SerializeField]
     private float delay = 0.2f;
-
-    public DrumDataType dataSet = DrumDataType.NotHit;
+    
     private bool leftHit = false;
     private bool rightHit = false;
     
     // 코루틴 리셋
     private Coroutine resetCoroutine = null;
+
+    // 파티클시스템
+    [SerializeField]
+    private VisualEffect BlueWave;
+    [SerializeField]
+    private VisualEffect lightFace;
+
+    private float _lastHitTime = float.MinValue;
+    private float _ignoreDuration = 0.1f;
 
     private void Awake()
     {
@@ -70,11 +73,18 @@ public class DrumSide : MonoBehaviour
         Audio += UseStickVelocity;
         Audio += PlayAudio;
         Audio += ControllPitch;
+        Audio += PlayWaveParticle;
         
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (Time.time < _lastHitTime + _ignoreDuration)
+        {
+            return;
+        }
+        _lastHitTime = Time.time;
+
         //print("true");
         estimator = other.GetComponent<VelocityEstimator>();
 
@@ -82,17 +92,18 @@ public class DrumSide : MonoBehaviour
         if (other.gameObject.layer == leftStick)
         {
             leftHit = true;
-            dataSet = DrumDataType.LeftSide;
+            dokoh.System.DrumManager.AddQueue(DrumDataType.LeftSide);
             //print(dataSet);
             PlayLeftVibration();
             Audio();
+            
         }
 
 
         if (other.gameObject.layer == rightStick)
         {
             rightHit = true;
-            dataSet = DrumDataType.RightSide;
+            dokoh.System.DrumManager.AddQueue(DrumDataType.RightSide);
             //print(dataSet);
             PlayRightVibration();
             Audio();
@@ -101,7 +112,7 @@ public class DrumSide : MonoBehaviour
 
         if (rightHit && leftHit)
         {
-            dataSet = DrumDataType.Dobletside;
+            dokoh.System.DrumManager.AddQueue(DrumDataType.Dobletside);
             //print(dataSet);
             // Audio();
         }
@@ -119,7 +130,6 @@ public class DrumSide : MonoBehaviour
         yield return new WaitForSeconds(delay);
         leftHit = false;
         rightHit = false;
-        dataSet = DrumDataType.NotHit;
         //print(dataSet);
     }
 
@@ -158,6 +168,12 @@ public class DrumSide : MonoBehaviour
     private void PlayRightVibration()
     {
         rightControll.SendHapticImpulse(intensity * volum, duration);
+    }
+
+      private void PlayWaveParticle()
+    {
+      BlueWave.Play();
+      lightFace.Play();
     }
 
 }

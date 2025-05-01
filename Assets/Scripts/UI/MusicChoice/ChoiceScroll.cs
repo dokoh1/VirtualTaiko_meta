@@ -16,8 +16,7 @@ namespace dokoh
         [FormerlySerializedAs("choiceList")] [SerializeField]
         private List<ChoiceData> choices = new();
 
-        [SerializeField] private TestDrumInput testDrumInput;
-        public Drums drums;
+        // [SerializeField] private TestDrumInput testDrumInput;
         
         private ChoiceAnimationData _animData;
         public Animator _animator;
@@ -96,23 +95,25 @@ namespace dokoh
             activeChoice = choices[3];
            // Execute Code
             // 곡 위로
-            // if (drums.dataSet == DrumDataType.RightFace)
-            //     ScrollUp();
-            // // 곡 아래로
-            // else if (drums.dataSet == DrumDataType.LeftFace)
-            //     ScrollDown();
-            // // 곡 선택
-            // else if (drums.dataSet == DrumDataType.DobletFace)
-            //     DoChoice();
-            
-            if (testDrumInput.testInputType == DrumDataType.RightFace && !_isChanged)
+            DrumDataType drumDataType = System.DrumManager.UseQueue();
+            if (drumDataType == DrumDataType.RightFace)
                 ScrollUp();
             // 곡 아래로
-            else if (testDrumInput.testInputType == DrumDataType.LeftFace && !_isChanged)
+            else if (drumDataType == DrumDataType.LeftFace)
                 ScrollDown();
             // 곡 선택
-            else if (testDrumInput.testInputType == DrumDataType.DobletFace && !_isChanged)
+            else if (drumDataType == DrumDataType.DobletFace)
                 DoChoice();
+            
+            //test
+            // if (testDrumInput.testInputType == DrumDataType.RightFace && !_isChanged)
+            //     ScrollUp();
+            // // 곡 아래로
+            // else if (testDrumInput.testInputType == DrumDataType.LeftFace && !_isChanged)
+            //     ScrollDown();
+            // // 곡 선택
+            // else if (testDrumInput.testInputType == DrumDataType.DobletFace && !_isChanged)
+            //     DoChoice();
         }
 
         private void DoChoice()

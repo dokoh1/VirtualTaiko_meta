@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: InGame_0
+      name: InGame_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2413
-        width: 1919
-        height: 1198
+        x: 4091
+        y: 3464
+        width: 1921
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,52 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39711b61a17dbe40b9dfc38be7d55eb
-      internalID: -619298940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: InGame_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 479
-        width: 1919
-        height: 1084
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41406c33e8d6c1145a34cd41d2efe5c5
-      internalID: 1064553430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: InGame_2
-      rect:
-        serializedVersion: 2
-        x: 2161
-        y: 2520
-        width: 1695
-        height: 1076
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab5ed8a1f880d534ab135a6abf219660
-      internalID: -2109968644
+      spriteID: 11883de89cd711e468b416b122482453
+      internalID: 170294840
       vertices: []
       indices: 
       edges: []
@@ -192,6 +148,7 @@ TextureImporter:
       InGame_0: -619298940
       InGame_1: 1064553430
       InGame_2: -2109968644
+      InGame_3: 170294840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
