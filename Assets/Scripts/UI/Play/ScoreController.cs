@@ -5,6 +5,13 @@ public class ScoreController : MonoBehaviour
 {
     // public TestDrumInput testDrumInput;
     
+    public AudioClip Combo_10;
+    public AudioClip Combo_30;
+    public AudioClip Combo_50;
+    public AudioClip Combo_100;
+    public AudioClip Combo_200;
+    public AudioClip SongClear;
+    public AudioClip SongFail;
     private int currentScore;
     private int ComboHit;
     private int Hit;
@@ -95,6 +102,7 @@ public class ScoreController : MonoBehaviour
                 //     dokoh.System.ScoreManager.Perfect = PerfectHit;
                 //     dokoh.System.ScoreManager.Good = GoodHit;
                 //     dokoh.System.ScoreManager.Bad = BadHit;
+                //     dokoh.System.AudioManager.PlaySFX(SongFail);
                 //     dokoh.System.SceneManager.LoadScene(SceneDataType.Result);
                 // }
                 fireAnimation.SetIsFire(ComboHit);
@@ -138,6 +146,17 @@ public class ScoreController : MonoBehaviour
            ScoreCalculation(_judgementData.GreatComboScore, _judgementData.GreatScore);
            PerfectHit++;
         }
+        if (ComboHit == 10)
+            dokoh.System.AudioManager.PlaySFX(Combo_10);
+        if (ComboHit == 30)
+            dokoh.System.AudioManager.PlaySFX(Combo_30);
+        if (ComboHit == 50)
+            dokoh.System.AudioManager.PlaySFX(Combo_50);
+        if (ComboHit == 100)
+            dokoh.System.AudioManager.PlaySFX(Combo_100);
+        if (ComboHit == 200)
+            dokoh.System.AudioManager.PlaySFX(Combo_200);
+
     }
 
     void ScoreCalculation(int comboScore, int score)

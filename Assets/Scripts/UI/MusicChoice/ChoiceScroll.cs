@@ -12,6 +12,9 @@ namespace dokoh
     public class ChoiceScroll : MonoBehaviour
     {
         private ChoiceData activeChoice;
+        public AudioClip ChooseClip;
+        public AudioClip MusicUpClip;
+        public AudioClip MusicDownClip;
 
         [FormerlySerializedAs("choiceList")] [SerializeField]
         private List<ChoiceData> choices = new();
@@ -120,6 +123,7 @@ namespace dokoh
         {
             _isChanged = true;
             InitAnimations(activeChoice);
+            dokoh.System.AudioManager.PlaySFX(ChooseClip);
             Sequence seq = DOTween.Sequence();
             Image[] ActiveImages = choices[3].ActiveImages;
             foreach (var ActiveImage in ActiveImages)
@@ -170,7 +174,6 @@ namespace dokoh
         {
             if (_isScrolling)
                 return;
-            
             StopAllCoroutines();
             StartCoroutine(ScrollUpProcess());
         }
@@ -178,7 +181,7 @@ namespace dokoh
         private IEnumerator ScrollUpProcess()
         {
             _isScrolling = true;
-
+            System.AudioManager.PlaySFX(MusicUpClip);
             Sequence sequence = DOTween.Sequence();
             for (int i = 0; i < choices.Count; i++)
             {
@@ -254,7 +257,7 @@ namespace dokoh
         private IEnumerator ScrollDownProcess()
         {
             _isScrolling = true;
-        
+            System.AudioManager.PlaySFX(MusicDownClip);
             Sequence sequence = DOTween.Sequence();
             for (int i = 0; i < choices.Count; i++)
             {

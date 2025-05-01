@@ -14,6 +14,15 @@ public class AudioManager : MonoBehaviour
             bgmSource.Play();
         }
     }
+    public void PlayBGMOne(AudioClip clip)
+    {
+        if (bgmSource.clip != clip)
+        {
+            bgmSource.clip = clip;
+            bgmSource.loop = false;
+            bgmSource.Play();
+        }
+    }
 
     public void PlaySFX(AudioClip clip)
     {

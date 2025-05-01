@@ -18,20 +18,21 @@ public class NoteManager1 : MonoBehaviour
     public GameObject SmallKa;
     public GameObject BigKa;
 
-    public GameObject currentNote;
+    private GameObject currentNote;
     public Transform noteAppearLocation;
-    public TimingManager timingManager;
+    private TimingManager timingManager;
     public int bpm;
+    public AudioClip PlayMusic;
     double currentTime = 0d;
-    public AudioSource music;
     
     private float startTime;
-    public float noteSpawnOffset = 0f;
+    public float noteSpawnOffset;
 
     private void Start()
     {
         timingManager = GetComponent<TimingManager>();
-        music.Play();
+        dokoh.System.AudioManager.PlayBGMOne(PlayMusic);
+        // music.Play();
         startTime = Time.time;
     }
 
@@ -46,7 +47,7 @@ public class NoteManager1 : MonoBehaviour
         int noteIndex = timingManager.BoxNoteList.Count;
         Noteinfo nextNote = noteMap.notes[noteIndex];
 
-        if (music.time >= nextNote.spawntime)
+        if (dokoh.System.AudioManager.bgmSource.time + noteSpawnOffset  >= nextNote.spawntime)
         {
             SpawnNote();
         }

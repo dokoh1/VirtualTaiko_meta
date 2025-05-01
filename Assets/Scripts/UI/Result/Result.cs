@@ -11,6 +11,7 @@ namespace dokoh
         [SerializeField] private NumberImage Hit;
         [SerializeField] private NumberImage Combo;
         [SerializeField] private NumberImage Score;
+        [SerializeField] private AudioClip resultBackground;
 
         private void OnEnable()
         {
@@ -20,6 +21,7 @@ namespace dokoh
             Hit.UpdateDisplay(dokoh.System.ScoreManager.Hit);
             Combo.UpdateDisplay(dokoh.System.ScoreManager.Combo);
             Score.UpdateDisplay(dokoh.System.ScoreManager.Score);
+            dokoh.System.AudioManager.PlayBGM(resultBackground);
         }
     }
 }

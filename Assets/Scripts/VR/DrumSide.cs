@@ -56,9 +56,6 @@ public class DrumSide : MonoBehaviour
     [SerializeField]
     private VisualEffect lightFace;
 
-    private float _lastHitTime = float.MinValue;
-    private float _ignoreDuration = 0.1f;
-
     private void Awake()
     {
         leftStick = LayerMask.NameToLayer("LeftStick");
@@ -79,11 +76,6 @@ public class DrumSide : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (Time.time < _lastHitTime + _ignoreDuration)
-        {
-            return;
-        }
-        _lastHitTime = Time.time;
 
         //print("true");
         estimator = other.GetComponent<VelocityEstimator>();
