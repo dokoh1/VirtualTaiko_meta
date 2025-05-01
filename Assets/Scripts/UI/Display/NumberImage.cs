@@ -52,7 +52,7 @@ public class NumberImage : MonoBehaviour
         seq = DOTween.Sequence();
         for (int i = 0; i < digits.Count; i++)
         {
-            var targetSize = new Vector2(baseSize.x, baseSize.y - sizeAmount);
+            var targetSize = new Vector2(baseSize.x, baseSize.y + sizeAmount);
             seq.Join(digits[i].DigitTransform.DOSizeDelta(targetSize, duration)
                 .SetLoops(2, LoopType.Yoyo)
                 .SetEase(Ease.OutCubic));

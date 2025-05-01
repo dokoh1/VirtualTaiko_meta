@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -462,7 +462,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DrumActive_234
+      name: Bad
       rect:
         serializedVersion: 2
         x: 3244
@@ -506,7 +506,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DrumActive_272
+      name: Good
       rect:
         serializedVersion: 2
         x: 3092
@@ -572,7 +572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DrumActive_304
+      name: Perfect
       rect:
         serializedVersion: 2
         x: 2737
@@ -607,6 +607,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      Bad: -1719821494
       DrumActive_0: 1371036071
       DrumActive_1: 502481884
       DrumActive_10: -1734030321
@@ -758,7 +759,6 @@ TextureImporter:
       DrumActive_231: -975116302
       DrumActive_232: 1104345062
       DrumActive_233: 609839904
-      DrumActive_234: -1719821494
       DrumActive_235: -1536755247
       DrumActive_236: -872454056
       DrumActive_237: -1798192028
@@ -800,7 +800,6 @@ TextureImporter:
       DrumActive_27: -274885995
       DrumActive_270: -1373259332
       DrumActive_271: 342279900
-      DrumActive_272: 524798927
       DrumActive_273: -82406490
       DrumActive_274: 624209147
       DrumActive_275: -541351612
@@ -836,7 +835,6 @@ TextureImporter:
       DrumActive_301: -633130223
       DrumActive_302: 1449103590
       DrumActive_303: 177689108
-      DrumActive_304: -1190980761
       DrumActive_305: -62290203
       DrumActive_306: 1721298911
       DrumActive_307: -1466905042
@@ -920,6 +918,8 @@ TextureImporter:
       DrumActive_97: 1036421285
       DrumActive_98: 1437521486
       DrumActive_99: 1518622267
+      Good: 524798927
+      Perfect: -1190980761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
