@@ -41,29 +41,29 @@ public class JudgementEffect : MonoBehaviour
 
     // }
     //execute
-    public IEnumerator EffectUpdate(HitResult result)
+    public IEnumerator EffectUpdate(TestEnum result)
     {
         yield return null;
-        if (result == HitResult.Bad)
+        if (result == TestEnum.Bad)
         {
             animator.SetTrigger("Bad");
         }
-        else if (result == HitResult.BigGood)
+        else if (result == TestEnum.GoodBig)
         {
             animator.SetTrigger("GoodBig");
             bellAnimation.CreateBell(Silver);
         }
-        else if (result == HitResult.SmallGood)
+        else if (result == TestEnum.GoodSmall)
         {
             animator.SetTrigger("GoodSmall");
             bellAnimation.CreateBell(Silver);
         }
-        else if (result == HitResult.BigPerfect)
+        else if (result == TestEnum.PerfectBig)
         {
             animator.SetTrigger("PerfectBig");
             bellAnimation.CreateBell(Gold);
         }
-        else if (result == HitResult.SmallPerfect)
+        else if (result == TestEnum.PerfectSmall)
         {
             animator.SetTrigger("PerfectSmall");
             bellAnimation.CreateBell(Gold);
