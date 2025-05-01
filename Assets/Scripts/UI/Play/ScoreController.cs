@@ -150,7 +150,7 @@ public class ScoreController : MonoBehaviour
             goblinAnimation.CreateGoblin();
             cloudAnimation.ChangeImage();
         }
-        if (ComboHit % 30 == 0 && ComboHit != 0)
+        if (ComboHit % 10 == 0 && ComboHit != 0)
             fireworkAnimation.DoFireWork();
     }
 }

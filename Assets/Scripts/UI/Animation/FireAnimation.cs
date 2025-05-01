@@ -16,7 +16,7 @@ public class FireAnimation : MonoBehaviour
       {
          animator.SetBool(HashIsFire, false);
       }
-      else if (Combohit == 30)
+      else if (Combohit == 10)
       {
          animator.SetBool(HashIsFire, true);
       }
