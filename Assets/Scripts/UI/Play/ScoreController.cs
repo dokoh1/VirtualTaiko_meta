@@ -38,6 +38,7 @@ public class ScoreController : MonoBehaviour
     public DeadGauge deadGauge;
     public FireworkAnimation fireworkAnimation;
     public CloudAnimation cloudAnimation;
+    public NoteManager1 noteManager1;
     
     private void OnEnable()
     {
@@ -50,40 +51,26 @@ public class ScoreController : MonoBehaviour
         BadHit = 0;
         DeadGauge = 350;
         MaxDeadGauge = 350;
-        deadGaugeAmount = 50;
+        deadGaugeAmount = 10;
         _judgementData = new();
         ScoreNumberImage.UpdateDisplay(currentScore);
     }
 
+    private void EndGame()
+    {
+        dokoh.System.ScoreManager.Score = currentScore;
+        dokoh.System.ScoreManager.Hit = Hit;
+        dokoh.System.ScoreManager.Combo = MaxCombo;
+        dokoh.System.ScoreManager.Perfect = PerfectHit;
+        dokoh.System.ScoreManager.Good = GoodHit;
+        dokoh.System.ScoreManager.Bad = BadHit;
+        dokoh.System.AudioManager.PlaySFX(SongFail);
+        dokoh.System.SceneManager.LoadScene(SceneDataType.Result);
+    }
     private void Update()
     {
-        // TEST
-        // if (testTimingManager.HitQueue.Count > 0)
-        // {
-        //     while (testTimingManager.HitQueue.Count > 0)
-        //     {
-        //         TestEnum hitResult = testTimingManager.HitQueue.Dequeue();
-        //         if (hitResult == TestEnum.None)
-        //             continue;
-        //         ScoreUpdate(hitResult);
-        //         if (DeadGauge == 0)
-        //         {
-        //             dokoh.System.ScoreManager.Score = currentScore;
-        //             dokoh.System.ScoreManager.Hit = Hit;
-        //             dokoh.System.ScoreManager.Combo = MaxCombo;
-        //             dokoh.System.ScoreManager.Perfect = PerfectHit;
-        //             dokoh.System.ScoreManager.Good = GoodHit;
-        //             dokoh.System.ScoreManager.Bad = BadHit;
-        //             dokoh.System.SceneManager.LoadScene(SceneDataType.Result);
-        //         }
-        //         fireAnimation.SetIsFire(ComboHit);
-        //         characterAnimation.UpdateAnimator(ComboHit);
-        //         ScoreNumberImage.UpdateDisplay(currentScore);
-        //         ComboNumberImage.UpdateDisplay(ComboHit);
-        //         deadGauge.DeadGaugeUpdate(DeadGauge);
-
-        //     }
-        // }
+        if (noteManager1.isMusicEnded)
+            EndGame();
 
         // EXECUTE
         if (timingManager.HitQueue.Count > 0)
@@ -94,25 +81,15 @@ public class ScoreController : MonoBehaviour
                 if (hitResult == HitResult.None)
                     continue;
                 ScoreUpdate(hitResult);
-                // if (DeadGauge == 0)
-                // {
-                //     dokoh.System.ScoreManager.Score = currentScore;
-                //     dokoh.System.ScoreManager.Hit = Hit;
-                //     dokoh.System.ScoreManager.Combo = MaxCombo;
-                //     dokoh.System.ScoreManager.Perfect = PerfectHit;
-                //     dokoh.System.ScoreManager.Good = GoodHit;
-                //     dokoh.System.ScoreManager.Bad = BadHit;
-                //     dokoh.System.AudioManager.PlaySFX(SongFail);
-                //     dokoh.System.SceneManager.LoadScene(SceneDataType.Result);
-                // }
-                fireAnimation.SetIsFire(ComboHit);
-                characterAnimation.UpdateAnimator(ComboHit);
-                ScoreNumberImage.UpdateDisplay(currentScore);
-                ComboNumberImage.UpdateDisplay(ComboHit);
-                deadGauge.DeadGaugeUpdate(DeadGauge);
-
+                if (DeadGauge == 0)
+                    EndGame();
             }
         }
+        fireAnimation.SetIsFire(ComboHit);
+        characterAnimation.UpdateAnimator(ComboHit);
+        ScoreNumberImage.UpdateDisplay(currentScore);
+        ComboNumberImage.UpdateDisplay(ComboHit);
+        deadGauge.DeadGaugeUpdate(DeadGauge);
     }
     
     private void ScoreUpdate(HitResult hitResult)

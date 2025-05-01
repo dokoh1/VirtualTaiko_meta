@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 public class StartAnimation : MonoBehaviour
 {
@@ -18,10 +15,13 @@ public class StartAnimation : MonoBehaviour
 
     private Sequence mainSeq;
     private Sequence LoopSequence;
+    [SerializeField] private Image[] GuideImages;
 
 
     [SerializeField] 
     private Image[] Lights;
+
+    [SerializeField] private Text guideText;
 
     [SerializeField] private RectTransform[] MoveObjects;
     private float moveAmount = 50f;
@@ -39,7 +39,18 @@ public class StartAnimation : MonoBehaviour
                     .SetLoops(-1, LoopType.Yoyo)
                     .SetEase(Ease.InOutSine);
             }
-            
+
+            foreach (var GuideImage in GuideImages)
+            {
+                GuideImage.DOFade(0.3f, 0.5f)
+                    .SetLoops(-1, LoopType.Yoyo)
+                    .SetEase(Ease.InOutQuad)
+                    .From(1f);
+            }
+            guideText.DOFade(0.3f, 0.5f)
+                .SetLoops(-1, LoopType.Yoyo)
+                .SetEase(Ease.InOutQuad)
+                .From(1f);
             foreach (var moveObject in MoveObjects)
             {
                 Vector2 startPos = moveObject.anchoredPosition;

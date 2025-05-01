@@ -27,7 +27,7 @@ public class NoteManager1 : MonoBehaviour
     
     private float startTime;
     public float noteSpawnOffset;
-
+    public bool isMusicEnded = false;
     private void Start()
     {
         timingManager = GetComponent<TimingManager>();
@@ -38,6 +38,9 @@ public class NoteManager1 : MonoBehaviour
 
     void Update()
     {
+        if (!isMusicEnded &&
+            dokoh.System.AudioManager.bgmSource.time >= dokoh.System.AudioManager.bgmSource.clip.length)
+            isMusicEnded = true;
         if (noteMap == null || noteMap.notes == null)
             return;
 

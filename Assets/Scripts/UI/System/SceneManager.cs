@@ -19,21 +19,34 @@ namespace dokoh
         private Tween fadeTween;
         private float _lastHitTime = float.MinValue;
         private float _ignoreDuration = 0.1f;
+        private bool _isGameStart = false;
         private void Awake()
         {
             Color color = fadeImage.color;
             color.a = 0;
             fadeImage.color = color;
-            foreach (SceneData sceneData in sceneObjects)
+        }
+
+        private void Update()
+        {
+            if (!_isGameStart)
             {
-                if (sceneData.SceneDataType == SceneDataType.Start)
+                DrumDataType drumDataType = System.DrumManager.UseQueue();
+                if (drumDataType != DrumDataType.NotHit)
                 {
-                    sceneData.SceneObject.SetActive(true);
-                    currentScene = sceneData.SceneObject;
+                    _isGameStart = true;
+                    foreach (SceneData sceneData in sceneObjects)
+                    {
+                        if (sceneData.SceneDataType == SceneDataType.Start)
+                        {
+                            sceneData.SceneObject.SetActive(true);
+                            currentScene = sceneData.SceneObject;
+                        }
+                        // if (sceneData.SceneDataType == SceneDataType.Music)
+                        else
+                            sceneData.SceneObject.SetActive(false);
+                    }
                 }
-                    // if (sceneData.SceneDataType == SceneDataType.Music)
-                else
-                    sceneData.SceneObject.SetActive(false);
             }
         }
         

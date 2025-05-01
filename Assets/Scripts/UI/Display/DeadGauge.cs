@@ -10,7 +10,7 @@ public class DeadGauge : MonoBehaviour
     
     private readonly float _initFirstGauge = 200;
     private readonly float _initSecondGauge = 150;
-    private readonly float _duration = 0.3f;
+    private readonly float _duration = 0.1f;
     
     private float _saveDeadGauge = 350;
     void OnEnable()
@@ -23,7 +23,6 @@ public class DeadGauge : MonoBehaviour
     {
         if (Mathf.Approximately(_saveDeadGauge, currentDeadGuage))
             return;
-        
         float value = currentDeadGuage;
         float amount = _saveDeadGauge - currentDeadGuage;
         
