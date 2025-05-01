@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class StartController : MonoBehaviour
 {
-    public Drums DrumFace;
-    public DrumSide DrumSide;
     // public TestDrumInput Input;
     private bool isChanged;
 

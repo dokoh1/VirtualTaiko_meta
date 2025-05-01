@@ -4,8 +4,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private NoteManager1 noteManager;
-    public Drums drums;
-    public DrumSide drumSide;
     private TimingManager timingManager;
 
     void Start()
@@ -22,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
             // 노트 타입 확인
             NoteType noteType = closestNote.GetComponent<Note>().noteType; // 노트의 타입을 확인한다고 가정
-
+            DrumDataType drumDataType = dokoh.System.DrumManager.UseQueue();
             // 입력된 키가 올바른지 체크
             if (noteType == NoteType.smallRed)
             {
@@ -32,7 +30,7 @@ public class PlayerController : MonoBehaviour
                 // if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.K))
 
                 //execute
-                if (drums.dataSet == DrumDataType.RightFace || drums.dataSet == DrumDataType.LeftFace)
+                if (drumDataType == DrumDataType.RightFace || drumDataType == DrumDataType.LeftFace)
                 {
                     // CheckHit(KeyCode.S, KeyCode.K); // 작은 빨간 노트는 S와 K로 체크
                     CheckHit();
@@ -45,7 +43,7 @@ public class PlayerController : MonoBehaviour
                 // if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.L))
                 
                 //execute
-                if (drumSide.dataSet == DrumDataType.RightSide || drumSide.dataSet == DrumDataType.LeftSide)
+                if (drumDataType== DrumDataType.RightSide || drumDataType== DrumDataType.LeftSide)
                 {
                     // CheckHit(KeyCode.A, KeyCode.L); // 작은 파란 노트는 A와 L로 체크
                     CheckHit();
@@ -58,7 +56,7 @@ public class PlayerController : MonoBehaviour
             else if (noteType == NoteType.bigRed)
             {
                 // 큰 빨간 노트는 S와 K를 동시에 눌렀을 때 체크
-                if (drums.dataSet == DrumDataType.DobletFace)
+                if (drumDataType == DrumDataType.DobletFace)
                 {
                     // CheckHit(KeyCode.S, KeyCode.K); // 큰 빨간 노트는 S와 K 동시에 눌렀을 때 체크
                     CheckHit();
@@ -71,7 +69,7 @@ public class PlayerController : MonoBehaviour
             else if (noteType == NoteType.bigBlue)
             {
                 // 큰 파란 노트는 A와 L을 동시에 눌렀을 때 체크
-                if (drums.dataSet == DrumDataType.Dobletside)
+                if (drumDataType == DrumDataType.Dobletside)
                 {
                     // CheckHit(KeyCode.A, KeyCode.L); // 큰 파란 노트는 A와 L 동시에 눌렀을 때 체크
                     CheckHit();

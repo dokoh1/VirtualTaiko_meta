@@ -42,8 +42,7 @@ public class Drums : MonoBehaviour
     [Range(0, 1f)]
     [SerializeField]
     private float delay = 0.2f;
-
-    public DrumDataType dataSet = DrumDataType.NotHit;
+    
     private bool leftHit = false;
     private bool rightHit = false;
     
