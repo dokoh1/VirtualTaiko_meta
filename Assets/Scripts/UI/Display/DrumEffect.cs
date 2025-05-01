@@ -3,11 +3,6 @@ using UnityEngine;
 
 public class DrumEffect : MonoBehaviour
 {
-    [SerializeField]
-    // private TestDrumInput testDrumInput;
-    private Drums drums;
-    [SerializeField]
-    private DrumSide drumsSide;
    [SerializeField]
    private GameObject LeftSide;
    [SerializeField]
@@ -39,17 +34,18 @@ public class DrumEffect : MonoBehaviour
         //     ShowDrumEffect(RightFace);
         
         //ExecuteCode
-        if (drumsSide.dataSet == DrumDataType.LeftSide)
+        DrumDataType drumDataType = dokoh.System.DrumManager.UseQueue();
+        if (drumDataType == DrumDataType.LeftSide)
             ShowDrumEffect(LeftSide);
-        else if (drumsSide.dataSet == DrumDataType.RightSide)
+        else if (drumDataType == DrumDataType.RightSide)
             ShowDrumEffect(RightSide);
-        else if (drums.dataSet == DrumDataType.LeftFace)
+        else if (drumDataType == DrumDataType.LeftFace)
             ShowDrumEffect(LeftFace);
-        else if (drums.dataSet == DrumDataType.RightFace)
+        else if (drumDataType == DrumDataType.RightFace)
             ShowDrumEffect(RightFace);
-        else if (drums.dataSet == DrumDataType.DobletFace)
+        else if (drumDataType == DrumDataType.DobletFace)
             ShowDrumDoubleEffect(LeftFace, RightFace);
-        else if (drumsSide.dataSet == DrumDataType.Dobletside)
+        else if (drumDataType == DrumDataType.Dobletside)
             ShowDrumDoubleEffect(LeftSide, RightSide);
     }
 

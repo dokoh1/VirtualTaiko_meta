@@ -43,8 +43,7 @@ public class DrumSide : MonoBehaviour
     [Range(0, 1f)]
     [SerializeField]
     private float delay = 0.2f;
-
-    public DrumDataType dataSet = DrumDataType.NotHit;
+    
     private bool leftHit = false;
     private bool rightHit = false;
     
@@ -93,8 +92,7 @@ public class DrumSide : MonoBehaviour
         if (other.gameObject.layer == leftStick)
         {
             leftHit = true;
-            dataSet = DrumDataType.LeftSide;
-            
+            dokoh.System.DrumManager.AddQueue(DrumDataType.LeftSide);
             //print(dataSet);
             PlayLeftVibration();
             Audio();
@@ -105,7 +103,7 @@ public class DrumSide : MonoBehaviour
         if (other.gameObject.layer == rightStick)
         {
             rightHit = true;
-            dataSet = DrumDataType.RightSide;
+            dokoh.System.DrumManager.AddQueue(DrumDataType.RightSide);
             //print(dataSet);
             PlayRightVibration();
             Audio();
@@ -114,7 +112,7 @@ public class DrumSide : MonoBehaviour
 
         if (rightHit && leftHit)
         {
-            dataSet = DrumDataType.Dobletside;
+            dokoh.System.DrumManager.AddQueue(DrumDataType.Dobletside);
             //print(dataSet);
             // Audio();
         }
@@ -132,7 +130,6 @@ public class DrumSide : MonoBehaviour
         yield return new WaitForSeconds(delay);
         leftHit = false;
         rightHit = false;
-        dataSet = DrumDataType.NotHit;
         //print(dataSet);
     }
 

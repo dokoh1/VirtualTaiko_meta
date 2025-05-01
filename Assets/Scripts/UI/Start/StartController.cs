@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class StartController : MonoBehaviour
 {
-    public Drums DrumFace;
-    public DrumSide DrumSide;
     // public TestDrumInput Input;
     private bool isChanged;
 
@@ -14,7 +12,8 @@ public class StartController : MonoBehaviour
     void Update()
     {
         //Execute Code
-        if (!isChanged && DrumFace.dataSet == DrumDataType.RightFace)
+        DrumDataType drumDataType = dokoh.System.DrumManager.UseQueue();
+        if (drumDataType == DrumDataType.RightFace)
         {
             isChanged = true;
             dokoh.System.SceneManager.LoadScene(SceneDataType.MusicChoice);
