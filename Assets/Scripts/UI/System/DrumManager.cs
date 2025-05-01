@@ -13,6 +13,9 @@ public class DrumManager : MonoBehaviour
 
     public DrumDataType UseQueue()
     {
-        return dataSet.Dequeue();
+        if (dataSet.Count > 0)
+            return dataSet.Dequeue();
+        else
+            return DrumDataType.NotHit;
     }
 }
