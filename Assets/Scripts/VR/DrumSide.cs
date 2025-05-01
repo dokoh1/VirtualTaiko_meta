@@ -56,6 +56,9 @@ public class DrumSide : MonoBehaviour
     [SerializeField]
     private VisualEffect lightFace;
 
+    private float _lastHitTime = float.MinValue;
+    private float _ignoreDuration = 0.1f;
+
     private void Awake()
     {
         leftStick = LayerMask.NameToLayer("LeftStick");
@@ -70,12 +73,18 @@ public class DrumSide : MonoBehaviour
         Audio += UseStickVelocity;
         Audio += PlayAudio;
         Audio += ControllPitch;
-        // Audio += PlayWaveParticle;
+        Audio += PlayWaveParticle;
         
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (Time.time < _lastHitTime + _ignoreDuration)
+        {
+            return;
+        }
+        _lastHitTime = Time.time;
+
         //print("true");
         estimator = other.GetComponent<VelocityEstimator>();
 
@@ -161,10 +170,10 @@ public class DrumSide : MonoBehaviour
         rightControll.SendHapticImpulse(intensity * volum, duration);
     }
 
-    //   private void PlayWaveParticle()
-    // {
-    //   BlueWave.Play();
-    //   lightFace.Play();
-    // }
+      private void PlayWaveParticle()
+    {
+      BlueWave.Play();
+      lightFace.Play();
+    }
 
 }

@@ -15,6 +15,9 @@ public class HitAllCollider : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("hitpoint"))
+        return;
+        
         Debug.Log($"충돌 발생! 상대 오브젝트: {collision.gameObject.name}");
 
         // rb.linearVelocity = Vector3.zero;    // 이동 속도 0

@@ -17,6 +17,7 @@ public class StartController : MonoBehaviour
         DrumDataType drumDataType = dokoh.System.DrumManager.UseQueue();
         if (drumDataType == DrumDataType.RightFace)
         {
+            isChanged = true;
             dokoh.System.SceneManager.LoadScene(SceneDataType.MusicChoice);
         }
         

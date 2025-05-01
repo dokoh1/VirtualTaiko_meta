@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.VFX;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
+using System.Collections.Generic;
 
 public class Drums : MonoBehaviour
 {
@@ -41,7 +42,8 @@ public class Drums : MonoBehaviour
     [Range(0, 1f)]
     [SerializeField]
     private float delay = 0.2f;
-    
+
+    public DrumDataType dataSet = DrumDataType.NotHit;
     private bool leftHit = false;
     private bool rightHit = false;
     
@@ -66,7 +68,7 @@ public class Drums : MonoBehaviour
         Audio += UseStickVelocity;
         Audio += PlayAudio;
         Audio += ControllPitch;
-        // Audio += PlayWaveParticle;
+        Audio += PlayWaveParticle;
         
     }
 
@@ -121,7 +123,7 @@ public class Drums : MonoBehaviour
 
     private void PlayAudio()
     {
-        source.PlayOneShot(clip, volum);
+        source.PlayOneShot(clip, volum * 1.5f);
     }
 
     private void UseStickVelocity()
@@ -155,10 +157,10 @@ public class Drums : MonoBehaviour
         rightControll.SendHapticImpulse(intensity * volum, duration);
     }
 
-    // private void PlayWaveParticle()
-    // {
-    //   RedWave.Play();
-    //   lightFace.Play();
-    // }
+    private void PlayWaveParticle()
+    {
+      RedWave.Play();
+      lightFace.Play();
+    }
 
 }

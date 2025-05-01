@@ -31,44 +31,44 @@ public class Note : MonoBehaviour
     }
 
     // 🔹 입력 판정 처리 함수
-    public void TryHit(KeyCode inputKey, TimingManager timingManager)
-    {
-        if (isHit || currentZone == HitResult.Bad)
-            return;
+    // public void TryHit(KeyCode inputKey, TimingManager timingManager)
+    // {
+    //     if (isHit || currentZone == HitResult.Bad)
+    //         return;
 
-        bool matched = false;
+    //     bool matched = false;
 
-        switch (noteType)
-        {
-            case NoteType.smallRed:
-                if (inputKey == KeyCode.S || inputKey == KeyCode.K)
-                    matched = true;
-                break;
+    //     switch (noteType)
+    //     {
+    //         case NoteType.smallRed:
+    //             if (inputKey == KeyCode.S || inputKey == KeyCode.K)
+    //                 matched = true;
+    //             break;
 
-            case NoteType.smallBlue:
-                if (inputKey == KeyCode.A || inputKey == KeyCode.L)
-                    matched = true;
-                break;
+    //         case NoteType.smallBlue:
+    //             if (inputKey == KeyCode.A || inputKey == KeyCode.L)
+    //                 matched = true;
+    //             break;
 
-            case NoteType.bigRed:
-                if ((inputKey == KeyCode.S && inputKey == KeyCode.K))
-                    matched = true;
-                break;
+    //         case NoteType.bigRed:
+    //             if ((inputKey == KeyCode.S && inputKey == KeyCode.K))
+    //                 matched = true;
+    //             break;
 
-            case NoteType.bigBlue:
-                if ((inputKey == KeyCode.A && inputKey == KeyCode.L))
-                    matched = true;
-                break;
-        }
+    //         case NoteType.bigBlue:
+    //             if ((inputKey == KeyCode.A && inputKey == KeyCode.L))
+    //                 matched = true;
+    //             break;
+    //     }
 
-        if (matched)
-        {
-            HitResult result = currentZone;
-            Debug.Log($"{noteType} Hit! Zone: {currentZone} → Result: {result}");
+    //     if (matched)
+    //     {
+    //         HitResult result = currentZone;
+    //         Debug.Log($"{noteType} Hit! Zone: {currentZone} → Result: {result}");
 
-            timingManager.ProcessResult(result);
-            isHit = true;
-            Destroy(gameObject);
-        }
-    }
+    //         timingManager.ProcessResult(result);
+    //         isHit = true;
+    //         Destroy(gameObject);
+    //     }
+    // }
 }
