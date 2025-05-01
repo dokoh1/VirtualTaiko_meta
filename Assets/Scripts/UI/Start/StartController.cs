@@ -14,8 +14,9 @@ public class StartController : MonoBehaviour
     void Update()
     {
         //Execute Code
-        if (DrumFace.dataSet == DrumDataType.RightFace)
+        if (!isChanged && DrumFace.dataSet == DrumDataType.RightFace)
         {
+            isChanged = true;
             dokoh.System.SceneManager.LoadScene(SceneDataType.MusicChoice);
         }
         

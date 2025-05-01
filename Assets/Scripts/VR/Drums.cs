@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.VFX;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
+using System.Collections.Generic;
 
 public class Drums : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class Drums : MonoBehaviour
     private float delay = 0.2f;
 
     public DrumDataType dataSet = DrumDataType.NotHit;
+
+    // public Queue<DrumDataType> dataQueue;
     private bool leftHit = false;
     private bool rightHit = false;
     
@@ -81,6 +84,7 @@ public class Drums : MonoBehaviour
         {
             leftHit = true;
             dataSet = DrumDataType.LeftFace;
+            // dataQueue.Enqueue(DrumDataType.LeftFace);
             //print(dataSet);
             PlayLeftVibration();
             Audio();
@@ -91,6 +95,7 @@ public class Drums : MonoBehaviour
         {
             rightHit = true;
             dataSet = DrumDataType.RightFace;
+            // dataQueue.Enqueue(DrumDataType.RightFace);
             //print(dataSet);
             PlayRightVibration();
             Audio();
@@ -100,6 +105,7 @@ public class Drums : MonoBehaviour
         if (rightHit && leftHit)
         {
             dataSet = DrumDataType.DobletFace;
+            // dataQueue.Enqueue(DrumDataType.DobletFace);
             print(dataSet);
             // Audio();
         }

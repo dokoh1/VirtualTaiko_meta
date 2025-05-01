@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -12,9 +13,9 @@ public class PlayerController : MonoBehaviour
         timingManager = FindFirstObjectByType<TimingManager>();
         noteManager = FindObjectOfType<NoteManager1>();
     }
-
-    void Update()
+    private IEnumerator InputCheck()
     {
+        yield return new WaitForSeconds(0.2f);
         if (timingManager.BoxNoteList.Count > 0) // 노트가 있을 때만 체크
         {
             GameObject closestNote = timingManager.BoxNoteList[0]; // 가장 가까운 노트 선택 (0번)
@@ -77,6 +78,10 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+    void Update()
+    {
+        StartCoroutine(InputCheck());   
     }
 
     // 올바른 키 입력에 대한 판정 처리

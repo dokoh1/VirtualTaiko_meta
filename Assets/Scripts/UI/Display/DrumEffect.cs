@@ -39,14 +39,18 @@ public class DrumEffect : MonoBehaviour
         //     ShowDrumEffect(RightFace);
         
         //ExecuteCode
-        // if (drumsSide.dataSet == DrumDataType.LeftSide)
-        //     ShowDrumEffect(LeftSide);
-        // else if (drumsSide.dataSet == DrumDataType.RightSide)
-        //     ShowDrumEffect(RightSide);
-        // else if (drums.dataSet == DrumDataType.LeftFace)
-        //     ShowDrumEffect(LeftFace);
-        // else if (drums.dataSet == DrumDataType.RightFace)
-        //     ShowDrumEffect(RightFace);
+        if (drumsSide.dataSet == DrumDataType.LeftSide)
+            ShowDrumEffect(LeftSide);
+        else if (drumsSide.dataSet == DrumDataType.RightSide)
+            ShowDrumEffect(RightSide);
+        else if (drums.dataSet == DrumDataType.LeftFace)
+            ShowDrumEffect(LeftFace);
+        else if (drums.dataSet == DrumDataType.RightFace)
+            ShowDrumEffect(RightFace);
+        else if (drums.dataSet == DrumDataType.DobletFace)
+            ShowDrumDoubleEffect(LeftFace, RightFace);
+        else if (drumsSide.dataSet == DrumDataType.Dobletside)
+            ShowDrumDoubleEffect(LeftSide, RightSide);
     }
 
     private void ShowDrumEffect(GameObject drum)
@@ -58,5 +62,18 @@ public class DrumEffect : MonoBehaviour
         obj.SetActive(true);
         yield return new WaitForSeconds(0.2f); // 0.2초 대기
         obj.SetActive(false);
+    }
+
+    private IEnumerator FlashObjects(GameObject obj, GameObject objTwo)
+    {
+        obj.SetActive(true);
+        objTwo.SetActive(true);
+        yield return new WaitForSeconds(0.2f);
+        obj.SetActive(false);
+        objTwo.SetActive(false);
+    }
+    private void ShowDrumDoubleEffect(GameObject drum, GameObject drumTwo)
+    {
+        StartCoroutine(FlashObjects(drum, drumTwo));
     }
 }
