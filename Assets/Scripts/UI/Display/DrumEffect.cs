@@ -20,10 +20,8 @@ public class DrumEffect : MonoBehaviour
        RightFace.SetActive(false);
    }
 
-    // Update is called once per frame
-    void Update()
+    public void DrumEffectInput(DrumDataType drumDataType)
     {
-        DrumDataType drumDataType = dokoh.System.DrumManager.UseQueue();
         if (drumDataType == DrumDataType.LeftSide)
             ShowDrumEffect(LeftSide);
         else if (drumDataType == DrumDataType.RightSide)
