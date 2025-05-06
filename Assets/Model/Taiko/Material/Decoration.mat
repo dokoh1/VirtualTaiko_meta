@@ -112,7 +112,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _ColorPower: 35
+    - _ColorPower: 1
     - _ColorSpeed: 1000
     - _Cull: 2
     - _Cutoff: 0.5
@@ -150,7 +150,7 @@ Material:
     - _til: 1040.38
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 6.498019, g: 3.0957544, b: 3.0957544, a: 1}
+    - _Color: {r: 5.9921565, g: 2.8547537, b: 2.8547537, a: 1}
     - _EmissionColor: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

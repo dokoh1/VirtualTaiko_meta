@@ -26,11 +26,11 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _Float: 40
+    - _Float: 1
     - _Speed: 10
     - _h: 0
     - _saturation: 1
-    - _spritemm: 100
+    - _spritemm: 2
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
