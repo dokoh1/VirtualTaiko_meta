@@ -148,8 +148,9 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     - _metallic: 1
-    - _roughness: 0.6
+    - _roughness: 0.8
     - _saturation: 1
+    - _woodli: 1.48
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
