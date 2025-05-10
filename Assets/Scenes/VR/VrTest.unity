@@ -843,8 +843,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa068b441e81a7f419da5bf500e57f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DrumFace: {fileID: 2130580166}
-  DrumSide: {fileID: 845493561}
 --- !u!224 &163658836
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1779,6 +1777,7 @@ MonoBehaviour:
     SceneObject: {fileID: 771046769}
   - SceneDataType: 5
     SceneObject: {fileID: 175906642}
+  fadeImage: {fileID: 0}
 --- !u!4 &406514889
 Transform:
   m_ObjectHideFlags: 0
@@ -1966,8 +1965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a222fb21897df5f4bb412a05bb15f187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drums: {fileID: 2130580166}
-  drumSide: {fileID: 845493561}
 --- !u!50 &429412806
 Rigidbody2D:
   serializedVersion: 5
@@ -2067,7 +2064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f82fddc781edd8469e2dcd38831a7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteMap: {fileID: 11400000, guid: 7b66954c13b559b44b391c562e806fb9, type: 2}
+  noteMap: {fileID: 11400000, guid: e7aaae1ed8438614bbfcec2bec24ae58, type: 2}
   SmallDon: {fileID: 5836283552510781738, guid: 9fcd993cc618b7e49a36eb341e47288c, type: 3}
   BigDon: {fileID: 5836283552510781738, guid: 75802854b14e13f4c910d08caec8daa2, type: 3}
   SmallKa: {fileID: 5836283552510781738, guid: 7733be0916e5fdc49b3ba7ce9a02b1ef, type: 3}
@@ -2075,7 +2072,7 @@ MonoBehaviour:
   currentNote: {fileID: 0}
   noteAppearLocation: {fileID: 2057943761}
   timingManager: {fileID: 0}
-  bpm: 147
+  bpm: 123
   music: {fileID: 1495084663}
   noteSpawnOffset: 0.51
   noteType: 0
@@ -2198,8 +2195,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timingManager: {fileID: 429412808}
+  fireAnimation: {fileID: 0}
+  goblinAnimation: {fileID: 0}
+  characterAnimation: {fileID: 0}
+  judgementEffect: {fileID: 0}
   ScoreNumberImage: {fileID: 92900849}
   ComboNumberImage: {fileID: 1063912951}
+  deadGauge: {fileID: 0}
+  fireworkAnimation: {fileID: 0}
+  cloudAnimation: {fileID: 0}
 --- !u!224 &549716476
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2589,8 +2593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bbf1116e0fb08e43a6b3b43ed9641e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drums: {fileID: 0}
-  drumsSide: {fileID: 0}
   LeftSide: {fileID: 1797253498}
   RightSide: {fileID: 1403666127}
   LeftFace: {fileID: 1924650759}
@@ -2993,8 +2995,6 @@ MonoBehaviour:
       DownArrow: {fileID: 0}
       UpArrowRect: {fileID: 0}
       DownArrowRect: {fileID: 0}
-  testDrumInput: {fileID: 0}
-  drums: {fileID: 2130580166}
   _animator: {fileID: 0}
 --- !u!224 &639923110
 RectTransform:
@@ -4622,7 +4622,6 @@ MonoBehaviour:
   intensity: 0.5
   duration: 0.2
   delay: 0.2
-  dataSet: 6
   BlueWave: {fileID: 0}
   lightFace: {fileID: 0}
 --- !u!4 &845493562 stripped
@@ -6148,7 +6147,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -619298940, guid: 2552476b2964be94585d891678d24d85, type: 3}
+  m_Sprite: {fileID: 955153517, guid: 6f8fd4596c3f7434782d72935726416b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8123,8 +8122,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d39d56602e5d32c49bbdfdc19a5a68eb, type: 3}
-  m_Resource: {fileID: 8300000, guid: d39d56602e5d32c49bbdfdc19a5a68eb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e64d921dfe0c6674ab3180a5742623f4, type: 3}
+  m_Resource: {fileID: 8300000, guid: e64d921dfe0c6674ab3180a5742623f4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
@@ -9759,6 +9758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneManager: {fileID: 406514888}
   scoreManager: {fileID: 110951614}
+  drumManager: {fileID: 0}
 --- !u!4 &1717977153
 Transform:
   m_ObjectHideFlags: 0
@@ -12136,7 +12136,6 @@ MonoBehaviour:
   intensity: 0.5
   duration: 0.4
   delay: 0.2
-  dataSet: 6
   RedWave: {fileID: 0}
   lightFace: {fileID: 0}
 --- !u!64 &2130580167

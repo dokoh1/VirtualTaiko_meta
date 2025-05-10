@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewNoteMap", menuName = "Taiko/Note Map")]
-public class NoteMap : ScriptableObject
+public class NoteMap1 : ScriptableObject
 {
     public List<Noteinfo> notes = new List<Noteinfo>()
     {
