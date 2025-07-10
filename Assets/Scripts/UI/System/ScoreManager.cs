@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace dokoh
+namespace Single
 {
     public class ScoreManager : MonoBehaviour
     {

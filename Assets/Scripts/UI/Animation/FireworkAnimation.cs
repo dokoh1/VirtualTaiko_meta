@@ -9,8 +9,6 @@ public class FireworkAnimation : MonoBehaviour
     public void DoFireWork()
     {
         foreach (var animator in animators)
-        {
             animator.SetTrigger("IsFireWork");
-        }
     }
 }

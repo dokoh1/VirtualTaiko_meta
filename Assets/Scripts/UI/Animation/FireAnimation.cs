@@ -2,26 +2,21 @@ using UnityEngine;
 
 public class FireAnimation : MonoBehaviour
 {
-   private Animator animator;
-   private readonly int HashIsFire = Animator.StringToHash("IsFire");
+   private Animator _animator;
+   private readonly int _hashIsFire = Animator.StringToHash("IsFire");
 
    private void Awake()
    {
-      animator = GetComponent<Animator>();
+      _animator = GetComponent<Animator>();
    }
 
-   public void SetIsFire(int Combohit)
+   public void SetIsFire(int comboHit)
    {
-      if (Combohit == 0)
-      {
-         animator.SetBool(HashIsFire, false);
-      }
-      else if (Combohit == 10)
-      {
-         animator.SetBool(HashIsFire, true);
-      }
+      if (comboHit == (int)ComboState.ComboInit)
+         _animator.SetBool(_hashIsFire, false);
+      else if (comboHit == (int)ComboState.Combo10)
+         _animator.SetBool(_hashIsFire, true);
    }
-
-
-
 }
+
+

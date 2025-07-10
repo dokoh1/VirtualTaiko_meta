@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace dokoh
+namespace Single
 {
     [Serializable]
     public class SceneData

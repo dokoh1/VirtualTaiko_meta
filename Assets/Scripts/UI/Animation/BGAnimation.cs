@@ -1,20 +1,15 @@
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.Serialization;
 
 public class BGAnimation : MonoBehaviour
 {
     [SerializeField]
     protected RectTransform backgrounds;
-    protected DOTween Tween;
-
     [SerializeField]
     protected float duration;
-
     [SerializeField]
     protected float moveAmount;
-
-
+    
     protected virtual void OnEnable()
     {
         BackGroundMove();
@@ -33,3 +28,4 @@ public class BGAnimation : MonoBehaviour
         DOTween.Kill(backgrounds);
     }
 }
+

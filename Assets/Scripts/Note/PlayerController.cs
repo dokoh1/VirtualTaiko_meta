@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     private NoteManager1 noteManager;
     private TimingManager timingManager;
     public DrumEffect drumEffect;
+    public TestDrumInput testDrumInput;
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
             // 노트 타입 확인
             NoteType noteType = closestNote.GetComponent<Note>().noteType; // 노트의 타입을 확인한다고 가정
-            DrumDataType drumDataType = dokoh.System.DrumManager.UseQueue();
+            // DrumDataType drumDataType = dokoh.System.DrumManager.UseQueue();
             // 입력된 키가 올바른지 체크
             if (noteType == NoteType.smallRed)
             {
@@ -30,7 +31,8 @@ public class PlayerController : MonoBehaviour
                 // if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.K))
 
                 //execute
-                if (drumDataType == DrumDataType.RightFace || drumDataType == DrumDataType.LeftFace)
+                // if (drumDataType == DrumDataType.RightFace || drumDataType == DrumDataType.LeftFace)
+                if (testDrumInput.testInputType == DrumDataType.LeftFace || testDrumInput.testInputType == DrumDataType.RightFace)
                 {
                     // CheckHit(KeyCode.S, KeyCode.K); // 작은 빨간 노트는 S와 K로 체크
                     CheckHit();
@@ -43,7 +45,8 @@ public class PlayerController : MonoBehaviour
                 // if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.L))
                 
                 //execute
-                if (drumDataType== DrumDataType.RightSide || drumDataType== DrumDataType.LeftSide)
+                // if (drumDataType== DrumDataType.RightSide || drumDataType== DrumDataType.LeftSide)
+                if (testDrumInput.testInputType == DrumDataType.LeftSide || testDrumInput.testInputType == DrumDataType.RightSide)
                 {
                     // CheckHit(KeyCode.A, KeyCode.L); // 작은 파란 노트는 A와 L로 체크
                     CheckHit();
@@ -56,7 +59,8 @@ public class PlayerController : MonoBehaviour
             else if (noteType == NoteType.bigRed)
             {
                 // 큰 빨간 노트는 S와 K를 동시에 눌렀을 때 체크
-                if (drumDataType == DrumDataType.DobletFace)
+                // if (drumDataType == DrumDataType.DobletFace)
+                if (testDrumInput.testInputType == DrumDataType.DobletFace)
                 {
                     // CheckHit(KeyCode.S, KeyCode.K); // 큰 빨간 노트는 S와 K 동시에 눌렀을 때 체크
                     CheckHit();
@@ -69,13 +73,15 @@ public class PlayerController : MonoBehaviour
             else if (noteType == NoteType.bigBlue)
             {
                 // 큰 파란 노트는 A와 L을 동시에 눌렀을 때 체크
-                if (drumDataType == DrumDataType.Dobletside)
+                // if (drumDataType == DrumDataType.Dobletside)
+                if (testDrumInput.testInputType == DrumDataType.Dobletside)
                 {
                     // CheckHit(KeyCode.A, KeyCode.L); // 큰 파란 노트는 A와 L 동시에 눌렀을 때 체크
                     CheckHit();
                 }
             }
-            drumEffect.DrumEffectInput(drumDataType);
+            // drumEffect.DrumEffectInput(drumDataType);
+            drumEffect.DrumEffectInput(testDrumInput.testInputType);
         }   
     }
 

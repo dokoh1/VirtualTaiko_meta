@@ -1,33 +1,27 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class StartController : MonoBehaviour
 {
     // public TestDrumInput Input;
-    private bool isChanged;
-    public AudioClip BackgroundMusic;
-    public AudioClip SFXMusic;
+    private bool _isChanged;
+    public AudioClip backgroundMusic;
+    public AudioClip sfxMusic;
 
     void OnEnable()
     {
-        isChanged = false;
-        dokoh.System.AudioManager.PlayBGM(BackgroundMusic);
-        dokoh.System.AudioManager.PlaySFX(SFXMusic);
+        _isChanged = false;
+        Single.System.AudioManager.PlayBGM(backgroundMusic);
+        Single.System.AudioManager.PlaySFX(sfxMusic);
     }
     void Update()
     {
         //Execute Code
-        DrumDataType drumDataType = dokoh.System.DrumManager.UseQueue();
-        if (drumDataType == DrumDataType.RightFace)
+        DrumDataType drumDataType = Single.System.DrumManager.UseQueue();
+        if (drumDataType == DrumDataType.RightFace || drumDataType == DrumDataType.LeftFace)
         {
-            isChanged = true;
-            dokoh.System.SceneManager.LoadScene(SceneDataType.MusicChoice);
+            _isChanged = true;
+            Single.System.SceneManager.LoadScene(SceneDataType.MusicChoice);
         }
-        
-        //Test Code
-        // if (!isChanged && Input.testInputType == DrumDataType.RightFace)
-        // {
-        //     isChanged = true;
-        //     dokoh.System.SceneManager.LoadScene(SceneDataType.MusicChoice);
-        // }
     }
 }

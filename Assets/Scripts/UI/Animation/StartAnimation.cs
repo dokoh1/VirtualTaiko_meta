@@ -2,197 +2,207 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class StartAnimation : MonoBehaviour
 {
-    public RectTransform Right, Left, BigRed, BigBlue, Drum, Title;
-    public RectTransform YutStick, Bell;
-    public RectTransform AppendObject;
-
+    [SerializeField] private RectTransform right, left, bigRed, bigBlue, drum, title;
+    [SerializeField] private RectTransform yutStick, bell;
+    [SerializeField] private RectTransform appendObject;
+    
     [Header("크리스탈, 꽃, 잎 오브젝트들")]
-    public List<RectTransform> Crystals;
-    public List<RectTransform> Flowers;
-    public List<RectTransform> Leafs;
+    [SerializeField]
+    private List<RectTransform> crystals, flowers, leafs;
 
-    private Sequence mainSeq;
-    private Sequence LoopSequence;
-    [SerializeField] private Image[] GuideImages;
-
-
+    private Sequence _mainSeq;
+    private Sequence _loopSequence;
+    
     [SerializeField] 
-    private Image[] Lights;
+    private Image[] guideImages;
+    
+    [SerializeField] 
+    private Image[] lights;
 
     [SerializeField] private Text guideText;
+    [SerializeField] private RectTransform[] moveObjects;
+    
+    private readonly float _moveAmount = 50f;
+    private readonly Vector2 _initPosition = new(0f, -100f);
+    private readonly Vector2 _initSize = new(0f, 0f);
+    private readonly float _moveTime = 0.5f;
+    private readonly float _slowMoveTime = 2f;
+    private readonly float _minFade = 0.3f;
+    private readonly float _maxFade = 1f;
+    private readonly float _minX = -300f;
+    private readonly float _maxX = 300f;
+    private readonly float _minY = -150f;
+    private readonly float _maxY = 150f;
+    private readonly Vector2 _elementSize = new(75f, 80f);
+    private readonly float _elementMoveAmount = 15f;
 
-    [SerializeField] private RectTransform[] MoveObjects;
-    private float moveAmount = 50f;
-    private void OnEnable()
+    private void LightFade()
     {
-        mainSeq = DOTween.Sequence();
-        LoopSequence = DOTween.Sequence();
-        PlayUIAnimation();
-        
-        mainSeq.AppendCallback(() =>
+        foreach (var light in lights)
         {
-            foreach (var light in Lights)
-            {
-               light.DOFade(0.3f, 0.5f)
-                    .SetLoops(-1, LoopType.Yoyo)
-                    .SetEase(Ease.InOutSine);
-            }
+            light.DOFade(_minFade, _moveTime)
+                .SetLoops(-1, LoopType.Yoyo)
+                .SetEase(Ease.InOutSine)
+                .From(_maxFade);
+        }
+    }
 
-            foreach (var GuideImage in GuideImages)
-            {
-                GuideImage.DOFade(0.3f, 0.5f)
-                    .SetLoops(-1, LoopType.Yoyo)
-                    .SetEase(Ease.InOutQuad)
-                    .From(1f);
-            }
-            guideText.DOFade(0.3f, 0.5f)
+    private void GuideFade()
+    {
+        foreach (var guideImage in guideImages)
+        {
+            guideImage.DOFade(_minFade, _moveTime)
                 .SetLoops(-1, LoopType.Yoyo)
                 .SetEase(Ease.InOutQuad)
-                .From(1f);
-            foreach (var moveObject in MoveObjects)
-            {
-                Vector2 startPos = moveObject.anchoredPosition;
-                LoopSequence = DOTween.Sequence();
-                LoopSequence.Append(moveObject.DOAnchorPosY(startPos.y + moveAmount, 0.5f).SetEase(Ease.InOutSine))
-                    .Append(moveObject.DOAnchorPosY(startPos.y, 0.5f).SetEase(Ease.InOutSine))
-                    .AppendInterval(1)
-                    .SetLoops(-1, LoopType.Yoyo);
-            }
+                .From(_maxFade);
+        }
+            
+        guideText.DOFade(_minFade, _moveTime)
+            .SetLoops(-1, LoopType.Yoyo)
+            .SetEase(Ease.InOutQuad)
+            .From(_maxFade);
+    }
+
+    private void ObjectMove()
+    {
+        foreach (var moveObject in moveObjects)
+        {
+            Vector2 startPos = moveObject.anchoredPosition;
+            _loopSequence = DOTween.Sequence();
+            _loopSequence.Append(moveObject.DOAnchorPosY(startPos.y + _moveAmount, _moveTime).SetEase(Ease.InOutSine))
+                .Append(moveObject.DOAnchorPosY(startPos.y, _moveTime).SetEase(Ease.InOutSine))
+                .AppendInterval(1)
+                .SetLoops(-1, LoopType.Yoyo);
+        }
+    }
+    
+    private void OnEnable()
+    {
+        _mainSeq = DOTween.Sequence();
+        _loopSequence = DOTween.Sequence();
+        PlayUIAnimation();
+        
+        _mainSeq.AppendCallback(() =>
+        {
+            LightFade();
+            GuideFade();
+            ObjectMove();
         });
     }
     
     void PlayUIAnimation()
     {
-        
         // 기본 이동
-        mainSeq.Append(Right.DOAnchorPosX(260f, 0.5f).SetEase(Ease.OutQuad));
-        mainSeq.Append(Left.DOAnchorPosX(-240f, 0.5f).SetEase(Ease.OutQuad));
-
+        _mainSeq.Append(right.DOAnchorPosX(260f, _moveTime).SetEase(Ease.OutQuad));
+        _mainSeq.Append(left.DOAnchorPosX(-240f, _moveTime).SetEase(Ease.OutQuad));
         
         // BigRed 등장
-        mainSeq.Append(BigRed.DOAnchorPosX(-180f, 0.5f).SetEase(Ease.OutQuad));
-        mainSeq.Join(BigRed.DOAnchorPosY(15f, 0.5f).SetEase(Ease.OutQuad));
-        mainSeq.Join(BigRed.DOSizeDelta(new Vector2(250f, 230f), 0.5f).SetEase(Ease.OutQuad));
+        DoAppend(_moveTime);
+        AnimateFull(bigRed, new Vector2(-180f, 15f), new Vector2(250f, 230f), _moveTime);
         
         // BigBlue 등장
-        AnimateFull(BigBlue, new Vector2(180f, 15f), new Vector2(250f, 230f), 0.5f);
+        DoAppend(_moveTime);
+        AnimateFull(bigBlue, new Vector2(180f, 15f), new Vector2(250f, 230f), _moveTime);
 
         // Drum + Title 등장
-        AnimateSizeInit(Drum, new Vector2(160f, 150f), 0.5f);
-        AnimateSize(Title, new Vector2(300f, 130f), 0.5f);
+        DoAppend(_moveTime);
+        AnimateSize(drum, new Vector2(160f, 150f), _moveTime);
+        AnimateSize(title, new Vector2(300f, 130f), _moveTime);
         
         // 초기 크리스탈/플라워/리프 애니메이션
-        DoAppend(0.3f);
-        AnimateGroup(Crystals, new Vector2[] {
-            new Vector2(315f, 0f), new Vector2(-280f, 178f), new Vector2(-280f, -150f),
-            new Vector2(-200f, 130f), new Vector2(-300f, 0f)
-        }, 0.3f, new Vector2(75f, 80f));
-
-        AnimateGroup(Flowers, new Vector2[] {
-            new Vector2(180f, 180f), new Vector2(280f, 90f),
-            new Vector2(40f, 160f), new Vector2(310f, -90f)
-        }, 0.3f, new Vector2(75f, 80f));
-
-        AnimateGroup(Leafs, new Vector2[] {
-            new Vector2(90f, -200f), new Vector2(-320f, -90f)
-        }, 0.3f, new Vector2(75f, 80f));
+        DoAppend(_moveTime);
+        AnimateGroup(crystals, _moveTime, _elementSize);
+        AnimateGroup(flowers, _moveTime, _elementSize);
+        AnimateGroup(leafs, _moveTime, _elementSize);
         
-        
-        AnimateFull(YutStick, new Vector2(-110f, 120f), new Vector2(110f, 120f), 00.3f);
-        AnimateFull(Bell, new Vector2(110f, 120f), new Vector2(75f, 80f), 0.3f);
+        AnimateFull(yutStick, new Vector2(-110f, 120f), _elementSize, _moveTime);
+        AnimateFull(bell, new Vector2(110f, 120f), _elementSize, _moveTime);
 
         // 이후 위치 이동
-        DoAppend(2f);
-        MoveGroup(Crystals, new Vector2[] {
-            new Vector2(330f, 10f), new Vector2(-295f, 188f), new Vector2(-295f, -170f),
-            new Vector2(-215f, 140f), new Vector2(-315f, 10f)
-        }, 2f);
+        DoAppend(_slowMoveTime);
+        MoveGroup(crystals, _slowMoveTime);
+        MoveGroup(flowers, _slowMoveTime);
+        MoveGroup(leafs, _slowMoveTime);
 
-        MoveGroup(Flowers, new Vector2[] {
-            new Vector2(195f, 190f), new Vector2(295f, 100f),
-            new Vector2(55f, 170f), new Vector2(325f, -80f)
-        }, 2f);
-
-        MoveGroup(Leafs, new Vector2[] {
-            new Vector2(105f, -210f), new Vector2(-335f, -80f)
-        }, 2f);
-
-        MovePosition(YutStick, new Vector2(-125f, 130f), 2f);
-        MovePosition(Bell, new Vector2(125f, 130f), 2f);
+        MovePosition(yutStick, new Vector2(-125f, 130f), _slowMoveTime);
+        MovePosition(bell, new Vector2(125f, 130f), _slowMoveTime);
     }
 
     void AnimateFull(RectTransform target, Vector2 pos, Vector2 size, float time)
     {
-        mainSeq.Join(target.DOAnchorPosX(pos.x, time).SetEase(Ease.OutQuad));
-        mainSeq.Join(target.DOAnchorPosY(pos.y, time).SetEase(Ease.OutQuad));
-        mainSeq.Join(target.DOSizeDelta(size, time).SetEase(Ease.OutQuad));
+        _mainSeq.Join(target.DOAnchorPosX(pos.x, time).SetEase(Ease.OutQuad));
+        _mainSeq.Join(target.DOAnchorPosY(pos.y, time).SetEase(Ease.OutQuad));
+        _mainSeq.Join(target.DOSizeDelta(size, time).SetEase(Ease.OutQuad));
     }
 
     void AnimateSize(RectTransform target, Vector2 size, float time)
     {
-        mainSeq.Join(target.DOSizeDelta(size, time).SetEase(Ease.OutQuad));
-    }
-    void AnimateSizeInit(RectTransform target, Vector2 size, float time)
-    {
-        mainSeq.Append(target.DOSizeDelta(size, time).SetEase(Ease.OutQuad));
+        _mainSeq.Join(target.DOSizeDelta(size, time).SetEase(Ease.OutQuad));
     }
 
-    void AnimateGroup(List<RectTransform> targets, Vector2[] positions, float time, Vector2 size)
+    void AnimateGroup(List<RectTransform> targets, float time, Vector2 size)
     {
-        for (int i = 0; i < targets.Count && i < positions.Length; i++)
+        for (int i = 0; i < targets.Count; i++)
         {
-            AnimateFull(targets[i], positions[i], size, time);
+            Vector2 randomPos = new Vector2(Random.Range(_minX, _maxX), Random.Range(_minY, _maxY));
+            AnimateFull(targets[i], randomPos, size, time);
+            targets[i].anchoredPosition = randomPos;
         }
     }
 
-    void MoveGroup(List<RectTransform> targets, Vector2[] positions, float time)
+    void MoveGroup(List<RectTransform> targets, float time)
     {
-        for (int i = 0; i < targets.Count && i < positions.Length; i++)
+        
+        for (int i = 0; i < targets.Count; i++)
         {
-            MovePosition(targets[i], positions[i], time);
+            float xmoveAmount = targets[i].anchoredPosition.x < 0 ? -_elementMoveAmount : _elementMoveAmount;
+            float ymoveAmount = targets[i].anchoredPosition.y < 0 ? -_elementMoveAmount : _elementMoveAmount;
+            Vector2 movePos = new Vector2(targets[i].anchoredPosition.x + xmoveAmount, targets[i].anchoredPosition.y + ymoveAmount);
+            MovePosition(targets[i], movePos, time);
         }
     }
 
     void DoAppend(float time)
     {
-        mainSeq.Append(AppendObject.DOMoveX(AppendObject.position.x, time).SetEase(Ease.OutQuad));
+        _mainSeq.Append(appendObject.DOMoveX(appendObject.position.x, time).SetEase(Ease.OutQuad));
     }
     void MovePosition(RectTransform target, Vector2 pos, float time)
     {
-        mainSeq.Join(target.DOAnchorPosX(pos.x, time).SetEase(Ease.OutQuad));
-        mainSeq.Join(target.DOAnchorPosY(pos.y, time).SetEase(Ease.OutQuad));
+        _mainSeq.Join(target.DOAnchorPosX(pos.x, time).SetEase(Ease.OutQuad));
+        _mainSeq.Join(target.DOAnchorPosY(pos.y, time).SetEase(Ease.OutQuad));
     }
     void OnDisable()
     {
-        Right.anchoredPosition = new Vector2(-550f, -175f);
-        Left.anchoredPosition = new Vector2(-580f, -175f);
-        Init(BigRed);
-        Init(BigBlue);
-        Init(Drum);
-        Init(Title);
-        Init(YutStick);
-        Init(Bell);
-        InitList(Crystals);
-        InitList(Flowers);
-        InitList(Leafs);
-        mainSeq.Kill();
-        LoopSequence.Kill();
+        right.anchoredPosition = new Vector2(-550f, -175f);
+        left.anchoredPosition = new Vector2(-580f, -175f);
+        Init(bigRed);
+        Init(bigBlue);
+        Init(drum);
+        Init(title);
+        Init(yutStick);
+        Init(bell);
+        InitList(crystals);
+        InitList(flowers);
+        InitList(leafs);
+        _mainSeq.Kill();
+        _loopSequence.Kill();
     }
 
     void Init(RectTransform ObjectRect)
     {
-        ObjectRect.anchoredPosition = new Vector2(0f, -100f);
-        ObjectRect.sizeDelta = new Vector2(0f, 0f);
+        ObjectRect.anchoredPosition = _initPosition;
+        ObjectRect.sizeDelta = _initSize;
     }
 
     void InitList(List<RectTransform> list)
     {
         foreach (var obj in list)
         {
-            obj.anchoredPosition = new Vector2(0f, -100f);
-            obj.sizeDelta = new Vector2(0f, 0f);
+            obj.anchoredPosition = _initPosition;
+            obj.sizeDelta = _initSize;
         }
     }
 }

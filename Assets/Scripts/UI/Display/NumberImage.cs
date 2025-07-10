@@ -1,69 +1,96 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class NumberImage : MonoBehaviour
 {
-    public Sprite[] digitSprites;
-    public GameObject digitPrefab;
-    private List<NumberData> digits = new();
-    private Sequence seq;
-    public float sizeAmount;
-    public float duration;
-    private int saveScore;
-    private float originalWidth;
-    private float originalHeight;
+    [SerializeField] private float sizeAmount;
+    [SerializeField] private float duration;
 
+    [SerializeField] private Sprite[] digitSprites;
+    [SerializeField] private GameObject digitPrefab;
+
+    private List<NumberData> _digits = new();
+    private Sequence _seq;
+    private int _saveScore = -1;
+    private Vector2 _digitBaseSize;
+
+    private void Awake()
+    {
+        if (digitPrefab != null)
+        {
+            RectTransform rt = digitPrefab.GetComponent<RectTransform>();
+            _digitBaseSize = rt != null ? rt.sizeDelta : new Vector2(50, 50); // fallback size
+        }
+    }
 
     public void UpdateDisplay(int currentScore)
     {
-        if (saveScore == currentScore) return;
-        int value = currentScore;
-        int needed = Mathf.Max(1, value == 0 ? 1 : (int)Mathf.Floor(Mathf.Log10(value)) + 1);
-        
-        while (digits.Count < needed)
+        if (_saveScore == currentScore) return;
+
+        int digitCount = GetDigitCount(currentScore);
+        AdjustDigitList(digitCount);
+        AnimateDigits();
+        UpdateDigitSprites(currentScore);
+
+        _saveScore = currentScore;
+    }
+
+    private int GetDigitCount(int value)
+    {
+        return Mathf.Max(1, value == 0 ? 1 : (int)Mathf.Floor(Mathf.Log10(value)) + 1);
+    }
+
+    private void AdjustDigitList(int count)
+    {
+        while (_digits.Count < count)
         {
             var go = Instantiate(digitPrefab, transform);
-            NumberData data = new();
-            data.DigitImage = go.GetComponent<Image>();
-            data.DigitTransform = go.GetComponent<RectTransform>();
-            originalWidth = data.DigitTransform.sizeDelta.x;
-            originalHeight = data.DigitTransform.sizeDelta.y;
-            digits.Add(data);
-        }
-        
-        while (digits.Count > needed)
-        {
-            Destroy(digits[digits.Count - 1].DigitImage.gameObject);
-            digits.RemoveAt(digits.Count - 1);
-        }
-        Vector2 baseSize = new(originalWidth, originalHeight);
-        if (seq != null && seq.IsActive())
-        {
-            seq.Kill();
+            var data = new NumberData
+            {
+                DigitImage = go.GetComponent<Image>(),
+                DigitTransform = go.GetComponent<RectTransform>()
+            };
+            _digits.Add(data);
         }
 
-        for (int i = 0; i < digits.Count; i++)
+        while (_digits.Count > count)
         {
-            digits[i].DigitTransform.sizeDelta = baseSize;
+            Destroy(_digits[^1].DigitImage.gameObject);
+            _digits.RemoveAt(_digits.Count - 1);
         }
-        seq = DOTween.Sequence();
-        for (int i = 0; i < digits.Count; i++)
+
+        foreach (var digit in _digits)
         {
-            var targetSize = new Vector2(baseSize.x, baseSize.y + sizeAmount);
-            seq.Join(digits[i].DigitTransform.DOSizeDelta(targetSize, duration)
+            digit.DigitTransform.sizeDelta = _digitBaseSize;
+        }
+    }
+
+    private void AnimateDigits()
+    {
+        if (_seq != null && _seq.IsActive())
+            _seq.Kill();
+
+        _seq = DOTween.Sequence();
+
+        Vector2 targetSize = _digitBaseSize + new Vector2(0, sizeAmount);
+        foreach (var digit in _digits)
+        {
+            _seq.Join(digit.DigitTransform
+                .DOSizeDelta(targetSize, duration)
                 .SetLoops(2, LoopType.Yoyo)
                 .SetEase(Ease.OutCubic));
         }
-        for (int i = digits.Count - 1; i >= 0; i--)
+    }
+
+    private void UpdateDigitSprites(int value)
+    {
+        for (int i = _digits.Count - 1; i >= 0; i--)
         {
             int digit = value % 10;
-            digits[i].DigitImage.sprite = digitSprites[digit];
+            _digits[i].DigitImage.sprite = digitSprites[digit];
             value /= 10;
         }
-
-        saveScore = value;
     }
 }

@@ -2,55 +2,53 @@ using UnityEngine;
 
 public class CharacterAnimation : MonoBehaviour
 {
-    private bool IsThirldIdle;
-    private bool IsSecondIdle;
-
-    private Animator animator;
+    private Animator _animator;
     
-    private readonly int HashSecondIdle = Animator.StringToHash("IsSecondIdle");
-    private readonly int HashThirdIdle = Animator.StringToHash("IsThirdIdle");
+    private readonly int _hashSecondIdle = Animator.StringToHash("IsSecondIdle");
+    private readonly int _hashThirdIdle = Animator.StringToHash("IsThirdIdle");
+    private readonly int _hashFirstAction = Animator.StringToHash("IsFirstAction");
+    private readonly int _hashSecondAction = Animator.StringToHash("IsSecondAction");
+    
     private void Awake()
     {
-        animator = GetComponent<Animator>();
-        IsThirldIdle = false;
-        IsSecondIdle = false;
+        _animator = GetComponent<Animator>();
     }
 
     public void UpdateAnimator(int currentHit)
     {
+        ResetIdleStatesIfNeeded(currentHit);
+
+        if (currentHit == (int)ComboState.Combo50)
+            _animator.SetBool(_hashThirdIdle, true);
+        else if (currentHit == (int)ComboState.Combo100)
+            _animator.SetBool(_hashSecondIdle, true);
+
+        if (ShouldTriggerAction(currentHit))
+        {
+            if (IsSecondIdle())
+                _animator.SetTrigger(_hashSecondAction);
+            else
+                _animator.SetTrigger(_hashFirstAction);
+        }
+    }
+
+    private void ResetIdleStatesIfNeeded(int currentHit)
+    {
         if (currentHit == 0)
         {
-            IsThirldIdle = false;
-            IsSecondIdle = false;
-            animator.SetBool(HashThirdIdle, false);
-            animator.SetBool(HashSecondIdle, false);
+            _animator.SetBool(_hashThirdIdle, false);
+            _animator.SetBool(_hashSecondIdle, false);
         }
+    }
+    
+    private bool IsSecondIdle()
+    {
+        return _animator.GetBool(_hashSecondIdle); // Animator에 저장된 상태 참조
+    }
 
-        if (currentHit == 100)
-        {
-            IsThirldIdle = true;
-            animator.SetBool(HashThirdIdle, true);
-        }
-        else if (currentHit == 50)
-        {
-            IsSecondIdle = true;
-            animator.SetBool(HashSecondIdle, true);
-        }
-
-        if (IsSecondIdle)
-        {
-            if (currentHit % 10 == 0 && currentHit != 0)
-            {
-                animator.SetTrigger("IsSecondAction");
-            }
-        }
-        else if (!IsSecondIdle)
-        {
-            if (currentHit % 10 == 0 && currentHit != 0)
-            {
-                animator.SetTrigger("IsFirstAction");
-            }
-        }
-        
+    private bool ShouldTriggerAction(int currentHit)
+    {
+        return currentHit != 0 && currentHit % 10 == 0;
     }
 }
+

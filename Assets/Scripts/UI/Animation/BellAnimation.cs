@@ -3,20 +3,26 @@ using UnityEngine;
 
 public class BellAnimation : MonoBehaviour
 {
-    public GameObject Scene;
-    private readonly float destination = 435f;
-    private readonly float duration = 3f;
+    public GameObject scene;
 
-    public void CreateBell(GameObject Bell)
+    private readonly float _bellDestination = 435f;
+    private readonly float _bellDuration = 3f;
+
+    public void DoAnimation(GameObject bell)
     {
-        var go = Instantiate(Bell, Scene.transform);
+        var go = Instantiate(bell, scene.transform);
         var goRectTransform = go.GetComponent<RectTransform>();
-        Sequence seq  = DOTween.Sequence();
-        seq.Join(goRectTransform.DOAnchorPosX(destination, duration)
-            .SetEase(Ease.Linear));
-        seq.AppendCallback(() =>
-        {
-            Destroy(go);
-        });
+        Sequence seq = DOTween.Sequence();
+
+        seq.Join(goRectTransform.DOAnchorPosX(_bellDestination, _bellDuration)
+                .SetEase(Ease.Linear))
+            .SetId("Bell");
+        seq.AppendCallback(() => { Destroy(go); });
+    }
+
+    private void OnDisable()
+    {
+        DOTween.Kill("Bell");
     }
 }
+

@@ -1858,6 +1858,7 @@ MonoBehaviour:
       UpArrowRect: {fileID: 434652645}
       DownArrowRect: {fileID: 1421547597}
   _animator: {fileID: 1886950327}
+  testDrumInput: {fileID: 0}
 --- !u!1001 &157701945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3268,6 +3269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BackgroundMusic: {fileID: 8300000, guid: fdf40ef0c8956fe41ad6edae6ba09772, type: 3}
   SFXMusic: {fileID: 8300000, guid: 9befc2e585952044bba1226c5632d128, type: 3}
+  testDrumInput: {fileID: 0}
 --- !u!1 &217197222 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5025556930239919904, guid: 42ef395f61ba56b4b8f865871ef10c3c, type: 3}
@@ -4754,6 +4756,7 @@ MonoBehaviour:
   RightSide: {fileID: 2146722328}
   LeftFace: {fileID: 1538916004}
   RightFace: {fileID: 184238839}
+  testDrumInput: {fileID: 0}
 --- !u!1001 &321821604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11843,7 +11846,6 @@ MonoBehaviour:
   sceneManager: {fileID: 1658947090}
   audioManager: {fileID: 1428309135}
   scoreManager: {fileID: 79882034}
-  drumManager: {fileID: 2102990061}
 --- !u!4 &805467296
 Transform:
   m_ObjectHideFlags: 0
@@ -13977,6 +13979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumEffect: {fileID: 312115523}
+  testDrumInput: {fileID: 0}
 --- !u!50 &927811135
 Rigidbody2D:
   serializedVersion: 5
@@ -201288,6 +201291,7 @@ MonoBehaviour:
   - SceneDataType: 5
     SceneObject: {fileID: 1632763252}
   fadeImage: {fileID: 1163565442}
+  testDrumInput: {fileID: 0}
 --- !u!4 &1658947091
 Transform:
   m_ObjectHideFlags: 0

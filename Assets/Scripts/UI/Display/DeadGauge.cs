@@ -1,49 +1,50 @@
-using DG.Tweening;
 using UnityEngine;
+using DG.Tweening;
 
 public class DeadGauge : MonoBehaviour
 {
     [SerializeField]
-    private RectTransform FirstGauge;
+    private RectTransform firstGauge;
     [SerializeField]
-    private RectTransform SecondGauge;
-    
-    private readonly float _initFirstGauge = 200;
-    private readonly float _initSecondGauge = 150;
-    private readonly float _duration = 0.1f;
-    
-    private float _saveDeadGauge = 350;
+    private RectTransform secondGauge;
+
+    private const float MaxGauge = 350f;
+    private const float InitFirstGauge = 200f;
+    private const float InitSecondGauge = 150f;
+    private const float AnimationDuration = 0.1f;
+
+    private float _savedDeadGauge = MaxGauge;
+
     void OnEnable()
     {
-        FirstGauge.sizeDelta = new Vector2(_initFirstGauge, FirstGauge.sizeDelta.y);
-        SecondGauge.sizeDelta = new Vector2(_initSecondGauge, SecondGauge.sizeDelta.y);
+        SetGaugeSize(firstGauge, InitFirstGauge);
+        SetGaugeSize(secondGauge, InitSecondGauge);
     }
 
-    public void DeadGaugeUpdate(float currentDeadGuage)
+    public void DeadGaugeUpdate(float currentDeadGauge)
     {
-        if (Mathf.Approximately(_saveDeadGauge, currentDeadGuage))
+        if (Mathf.Approximately(_savedDeadGauge, currentDeadGauge))
             return;
-        float value = currentDeadGuage;
-        float amount = _saveDeadGauge - currentDeadGuage;
+
+        if (currentDeadGauge > MaxGauge)
+            return;
+
+        float delta = _savedDeadGauge - currentDeadGauge;
+        RectTransform targetGauge = (currentDeadGauge >= InitFirstGauge) ? secondGauge : firstGauge;
         
-        // DeadGauge 증가
-        if (amount < 0)
-        {
-            if (currentDeadGuage > 350)
-                return;
-            if (value > _initFirstGauge)
-                SecondGauge.DOSizeDelta(new Vector2(SecondGauge.sizeDelta.x - amount, SecondGauge.sizeDelta.y), _duration);
-            else
-                FirstGauge.DOSizeDelta(new Vector2(FirstGauge.sizeDelta.x - amount, FirstGauge.sizeDelta.y), _duration);
-        }
-        //DeadGauge 감소
-        else
-        {
-            if (value >= _initFirstGauge)
-                SecondGauge.DOSizeDelta(new Vector2(SecondGauge.sizeDelta.x - amount, SecondGauge.sizeDelta.y), _duration);
-            else
-                FirstGauge.DOSizeDelta(new Vector2(FirstGauge.sizeDelta.x - amount, FirstGauge.sizeDelta.y), _duration);
-        }
-        _saveDeadGauge = currentDeadGuage;
+        float newWidth = targetGauge.sizeDelta.x - delta;
+        SetGaugeSizeAnimated(targetGauge, newWidth);
+
+        _savedDeadGauge = currentDeadGauge;
+    }
+
+    private void SetGaugeSize(RectTransform gauge, float width)
+    {
+        gauge.sizeDelta = new Vector2(width, gauge.sizeDelta.y);
+    }
+
+    private void SetGaugeSizeAnimated(RectTransform gauge, float width)
+    {
+        gauge.DOSizeDelta(new Vector2(width, gauge.sizeDelta.y), AnimationDuration);
     }
 }

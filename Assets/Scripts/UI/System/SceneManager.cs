@@ -4,7 +4,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace dokoh
+namespace Single
 {
     public class SceneManager : MonoBehaviour
     {
@@ -20,6 +20,7 @@ namespace dokoh
         private float _lastHitTime = float.MinValue;
         private float _ignoreDuration = 0.1f;
         private bool _isGameStart = false;
+        public TestDrumInput testDrumInput;
         private void Awake()
         {
             Color color = fadeImage.color;
@@ -31,8 +32,9 @@ namespace dokoh
         {
             if (!_isGameStart)
             {
-                DrumDataType drumDataType = System.DrumManager.UseQueue();
-                if (drumDataType != DrumDataType.NotHit)
+                // DrumDataType drumDataType = System.DrumManager.UseQueue();
+                // if (drumDataType.testInputType != DrumDataType.NotHit)
+                if (testDrumInput.testInputType != DrumDataType.NotHit)
                 {
                     _isGameStart = true;
                     foreach (SceneData sceneData in sceneObjects)
@@ -42,7 +44,6 @@ namespace dokoh
                             sceneData.SceneObject.SetActive(true);
                             currentScene = sceneData.SceneObject;
                         }
-                        // if (sceneData.SceneDataType == SceneDataType.Music)
                         else
                             sceneData.SceneObject.SetActive(false);
                     }
@@ -80,11 +81,6 @@ namespace dokoh
                     if (sceneData.SceneObject.activeSelf == true)
                         currentScene = sceneData.SceneObject;
             }
-
-            while (dokoh.System.DrumManager.dataSet.Count > 0)
-            {
-                System.DrumManager.dataSet.Dequeue();
-            }
             FadeOut(1.5f, () =>
             {
                 currentScene.SetActive(false);
@@ -94,10 +90,6 @@ namespace dokoh
                     fadeImage.gameObject.SetActive(false);
                 });
             });
-            while (dokoh.System.DrumManager.dataSet.Count > 0)
-            {
-                System.DrumManager.dataSet.Dequeue();
-            }
         }
     }
 }

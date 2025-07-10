@@ -84,7 +84,7 @@ public class DrumSide : MonoBehaviour
         if (other.gameObject.layer == leftStick)
         {
             leftHit = true;
-            dokoh.System.DrumManager.AddQueue(DrumDataType.LeftSide);
+            // dokoh.System.DrumManager.AddQueue(DrumDataType.LeftSide);
             //print(dataSet);
             PlayLeftVibration();
             Audio();
@@ -95,7 +95,7 @@ public class DrumSide : MonoBehaviour
         if (other.gameObject.layer == rightStick)
         {
             rightHit = true;
-            dokoh.System.DrumManager.AddQueue(DrumDataType.RightSide);
+            // dokoh.System.DrumManager.AddQueue(DrumDataType.RightSide);
             //print(dataSet);
             PlayRightVibration();
             Audio();
@@ -104,7 +104,7 @@ public class DrumSide : MonoBehaviour
 
         if (rightHit && leftHit)
         {
-            dokoh.System.DrumManager.AddQueue(DrumDataType.Dobletside);
+            // dokoh.System.DrumManager.AddQueue(DrumDataType.Dobletside);
             //print(dataSet);
             // Audio();
         }

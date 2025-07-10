@@ -1,62 +1,55 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DrumEffect : MonoBehaviour
 {
-   [SerializeField]
-   private GameObject LeftSide;
-   [SerializeField]
-   private GameObject RightSide;
-   [SerializeField]
-   private GameObject LeftFace;
-   [SerializeField]
-   private GameObject RightFace;
+    [SerializeField] private GameObject leftSide;
+    [SerializeField] private GameObject rightSide;
+    [SerializeField] private GameObject leftFace;
+    [SerializeField] private GameObject rightFace;
 
-   void OnEnable()
-   {
-       LeftSide.SetActive(false);
-       RightSide.SetActive(false);
-       LeftFace.SetActive(false);
-       RightFace.SetActive(false);
-   }
+    private Dictionary<DrumDataType, GameObject[]> _effectMap;
+    private const float FlashDuration = 0.2f;
+
+    private void Awake()
+    {
+        _effectMap = new Dictionary<DrumDataType, GameObject[]>
+        {
+            { DrumDataType.LeftSide, new[] { leftSide } },
+            { DrumDataType.RightSide, new[] { rightSide } },
+            { DrumDataType.LeftFace, new[] { leftFace } },
+            { DrumDataType.RightFace, new[] { rightFace } },
+            { DrumDataType.DobletFace, new[] { leftFace, rightFace } },
+            { DrumDataType.Dobletside, new[] { leftSide, rightSide } },
+        };
+    }
+
+    private void OnEnable()
+    {
+        foreach (var objs in _effectMap.Values)
+        {
+            foreach (var obj in objs)
+                obj.SetActive(false);
+        }
+    }
 
     public void DrumEffectInput(DrumDataType drumDataType)
     {
-        if (drumDataType == DrumDataType.LeftSide)
-            ShowDrumEffect(LeftSide);
-        else if (drumDataType == DrumDataType.RightSide)
-            ShowDrumEffect(RightSide);
-        else if (drumDataType == DrumDataType.LeftFace)
-            ShowDrumEffect(LeftFace);
-        else if (drumDataType == DrumDataType.RightFace)
-            ShowDrumEffect(RightFace);
-        else if (drumDataType == DrumDataType.DobletFace)
-            ShowDrumDoubleEffect(LeftFace, RightFace);
-        else if (drumDataType == DrumDataType.Dobletside)
-            ShowDrumDoubleEffect(LeftSide, RightSide);
+        if (_effectMap.TryGetValue(drumDataType, out var drums))
+        {
+            StartCoroutine(FlashObjects(drums));
+        }
     }
 
-    private void ShowDrumEffect(GameObject drum)
+    private IEnumerator FlashObjects(GameObject[] objects)
     {
-        StartCoroutine(FlashObject(drum));
-    }
-    private IEnumerator FlashObject(GameObject obj)
-    {
-        obj.SetActive(true);
-        yield return new WaitForSeconds(0.2f);
-        obj.SetActive(false);
-    }
+        foreach (var obj in objects)
+            obj.SetActive(true);
 
-    private IEnumerator FlashObjects(GameObject obj, GameObject objTwo)
-    {
-        obj.SetActive(true);
-        objTwo.SetActive(true);
-        yield return new WaitForSeconds(0.2f);
-        obj.SetActive(false);
-        objTwo.SetActive(false);
-    }
-    private void ShowDrumDoubleEffect(GameObject drum, GameObject drumTwo)
-    {
-        StartCoroutine(FlashObjects(drum, drumTwo));
+        yield return new WaitForSeconds(FlashDuration);
+
+        foreach (var obj in objects)
+            obj.SetActive(false);
     }
 }

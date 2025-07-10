@@ -31,7 +31,7 @@ public class NoteManager1 : MonoBehaviour
     private void Start()
     {
         timingManager = GetComponent<TimingManager>();
-        dokoh.System.AudioManager.PlayBGMOne(PlayMusic);
+        Single.System.AudioManager.PlayBGMOne(PlayMusic);
         // music.Play();
         startTime = Time.time;
     }
@@ -39,7 +39,7 @@ public class NoteManager1 : MonoBehaviour
     void Update()
     {
         if (!isMusicEnded &&
-            dokoh.System.AudioManager.bgmSource.time >= dokoh.System.AudioManager.bgmSource.clip.length)
+            Single.System.AudioManager.bgmSource.time >= Single.System.AudioManager.bgmSource.clip.length)
             isMusicEnded = true;
         if (noteMap == null || noteMap.notes == null)
             return;
@@ -50,7 +50,7 @@ public class NoteManager1 : MonoBehaviour
         int noteIndex = timingManager.BoxNoteList.Count;
         Noteinfo nextNote = noteMap.notes[noteIndex];
 
-        if (dokoh.System.AudioManager.bgmSource.time + noteSpawnOffset  >= nextNote.spawntime)
+        if (Single.System.AudioManager.bgmSource.time + noteSpawnOffset  >= nextNote.spawntime)
         {
             SpawnNote();
         }

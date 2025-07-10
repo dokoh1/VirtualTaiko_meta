@@ -1,28 +1,40 @@
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class VaneAnimation : MonoBehaviour
 {
     public RectTransform rectTransform;
-    public List<RectTransform> Vanes = new();
+    [FormerlySerializedAs("Vanes")] public List<RectTransform> vanes = new();
     
-    private Vector2 moveOffset = new(4000, 0);
-    private float moveDuration = 15f;
+    private readonly Vector2 _moveOffset = new(4000, 0);
+    private readonly float _moveDuration = 15f;
     private void OnEnable()
     {
-        foreach (var vane in Vanes)
+        RotateAnimation();
+        MoveAnimation();
+    }
+
+    private void RotateAnimation()
+    {
+        foreach (var vane in vanes)
         {
             vane.DORotate(new Vector3(0, 0, 360), 1f, RotateMode.FastBeyond360)
                 .SetEase(Ease.Linear)
                 .SetLoops(-1);
         }
+    }
 
-        rectTransform.DOAnchorPos(rectTransform.anchoredPosition + moveOffset, moveDuration)
-            .SetEase(Ease.Linear)
-            .SetLoops(-1, LoopType.Restart);
-
-
+    private void MoveAnimation()
+    {
+        Sequence moveSequence = DOTween.Sequence();
+        moveSequence.Append(
+            rectTransform.DOAnchorPos(rectTransform.anchoredPosition + _moveOffset, _moveDuration)
+                .SetEase(Ease.Linear)
+        );
+        moveSequence.AppendInterval(5f);
+        moveSequence.SetLoops(-1, LoopType.Restart);
     }
     
 }

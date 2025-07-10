@@ -1,15 +1,17 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class JudgementData
+[CreateAssetMenu(menuName = "Game/JudgementData")]
+public class JudgementData : ScriptableObject
 {
-    public int RapidHitScore = 50;
-    public int GreatScore = 50;
-    public int GoodScore = 30;
-    public int BadScore = 0;
+    public int rapidHitScore;
+    public int greatScore;
+    public int goodScore;
+    public int badScore;
     
     //Combo 점수
-    public int RapidHitComboScore = 75;
-    public int GreatComboScore = 75;
-    public int GoodComboScore = 45;
-    public int BadComboScore = 0;
+    public int rapidHitComboScore;
+    public int greatComboScore;
+    public int goodComboScore;
+    public int badComboScore;
 }
