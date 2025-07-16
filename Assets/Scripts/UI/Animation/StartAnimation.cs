@@ -24,29 +24,16 @@ public class StartAnimation : MonoBehaviour
 
     [SerializeField] private Text guideText;
     [SerializeField] private RectTransform[] moveObjects;
-    
-    private readonly float _moveAmount = 50f;
-    private readonly Vector2 _initPosition = new(0f, -100f);
-    private readonly Vector2 _initSize = new(0f, 0f);
-    private readonly float _moveTime = 0.5f;
-    private readonly float _slowMoveTime = 2f;
-    private readonly float _minFade = 0.3f;
-    private readonly float _maxFade = 1f;
-    private readonly float _minX = -300f;
-    private readonly float _maxX = 300f;
-    private readonly float _minY = -150f;
-    private readonly float _maxY = 150f;
-    private readonly Vector2 _elementSize = new(75f, 80f);
-    private readonly float _elementMoveAmount = 15f;
 
+    [SerializeField] private StartAnimationSettings _settings;
     private void LightFade()
     {
         foreach (var light in lights)
         {
-            light.DOFade(_minFade, _moveTime)
+            light.DOFade(_settings.minFade, _settings.moveTime)
                 .SetLoops(-1, LoopType.Yoyo)
                 .SetEase(Ease.InOutSine)
-                .From(_maxFade);
+                .From(_settings.maxFade);
         }
     }
 
@@ -54,16 +41,16 @@ public class StartAnimation : MonoBehaviour
     {
         foreach (var guideImage in guideImages)
         {
-            guideImage.DOFade(_minFade, _moveTime)
+            guideImage.DOFade(_settings.minFade, _settings.moveTime)
                 .SetLoops(-1, LoopType.Yoyo)
                 .SetEase(Ease.InOutQuad)
-                .From(_maxFade);
+                .From(_settings.maxFade);
         }
             
-        guideText.DOFade(_minFade, _moveTime)
+        guideText.DOFade(_settings.minFade, _settings.moveTime)
             .SetLoops(-1, LoopType.Yoyo)
             .SetEase(Ease.InOutQuad)
-            .From(_maxFade);
+            .From(_settings.maxFade);
     }
 
     private void ObjectMove()
@@ -72,8 +59,8 @@ public class StartAnimation : MonoBehaviour
         {
             Vector2 startPos = moveObject.anchoredPosition;
             _loopSequence = DOTween.Sequence();
-            _loopSequence.Append(moveObject.DOAnchorPosY(startPos.y + _moveAmount, _moveTime).SetEase(Ease.InOutSine))
-                .Append(moveObject.DOAnchorPosY(startPos.y, _moveTime).SetEase(Ease.InOutSine))
+            _loopSequence.Append(moveObject.DOAnchorPosY(startPos.y + _settings.objectMoveAmount, _settings.moveTime).SetEase(Ease.InOutSine))
+                .Append(moveObject.DOAnchorPosY(startPos.y, _settings.moveTime).SetEase(Ease.InOutSine))
                 .AppendInterval(1)
                 .SetLoops(-1, LoopType.Yoyo);
         }
@@ -96,39 +83,39 @@ public class StartAnimation : MonoBehaviour
     void PlayUIAnimation()
     {
         // 기본 이동
-        _mainSeq.Append(right.DOAnchorPosX(260f, _moveTime).SetEase(Ease.OutQuad));
-        _mainSeq.Append(left.DOAnchorPosX(-240f, _moveTime).SetEase(Ease.OutQuad));
+        _mainSeq.Append(right.DOAnchorPosX(260f, _settings.moveTime).SetEase(Ease.OutQuad));
+        _mainSeq.Append(left.DOAnchorPosX(-240f, _settings.moveTime).SetEase(Ease.OutQuad));
         
         // BigRed 등장
-        DoAppend(_moveTime);
-        AnimateFull(bigRed, new Vector2(-180f, 15f), new Vector2(250f, 230f), _moveTime);
+        DoAppend(_settings.moveTime);
+        AnimateFull(bigRed, new Vector2(-180f, 15f), new Vector2(250f, 230f), _settings.moveTime);
         
         // BigBlue 등장
-        DoAppend(_moveTime);
-        AnimateFull(bigBlue, new Vector2(180f, 15f), new Vector2(250f, 230f), _moveTime);
+        DoAppend(_settings.moveTime);
+        AnimateFull(bigBlue, new Vector2(180f, 15f), new Vector2(250f, 230f), _settings.moveTime);
 
         // Drum + Title 등장
-        DoAppend(_moveTime);
-        AnimateSize(drum, new Vector2(160f, 150f), _moveTime);
-        AnimateSize(title, new Vector2(300f, 130f), _moveTime);
+        DoAppend(_settings.moveTime);
+        AnimateSize(drum, new Vector2(160f, 150f), _settings.moveTime);
+        AnimateSize(title, new Vector2(300f, 130f), _settings.moveTime);
         
         // 초기 크리스탈/플라워/리프 애니메이션
-        DoAppend(_moveTime);
-        AnimateGroup(crystals, _moveTime, _elementSize);
-        AnimateGroup(flowers, _moveTime, _elementSize);
-        AnimateGroup(leafs, _moveTime, _elementSize);
+        DoAppend(_settings.moveTime);
+        AnimateGroup(crystals, _settings.moveTime, _settings.elementSize);
+        AnimateGroup(flowers, _settings.moveTime, _settings.elementSize);
+        AnimateGroup(leafs, _settings.moveTime, _settings.elementSize);
         
-        AnimateFull(yutStick, new Vector2(-110f, 120f), _elementSize, _moveTime);
-        AnimateFull(bell, new Vector2(110f, 120f), _elementSize, _moveTime);
+        AnimateFull(yutStick, new Vector2(-110f, 120f), _settings.elementSize, _settings.moveTime);
+        AnimateFull(bell, new Vector2(110f, 120f), _settings.elementSize, _settings.moveTime);
 
         // 이후 위치 이동
-        DoAppend(_slowMoveTime);
-        MoveGroup(crystals, _slowMoveTime);
-        MoveGroup(flowers, _slowMoveTime);
-        MoveGroup(leafs, _slowMoveTime);
+        DoAppend(_settings.slowMoveTime);
+        MoveGroup(crystals, _settings.slowMoveTime);
+        MoveGroup(flowers, _settings.slowMoveTime);
+        MoveGroup(leafs, _settings.slowMoveTime);
 
-        MovePosition(yutStick, new Vector2(-125f, 130f), _slowMoveTime);
-        MovePosition(bell, new Vector2(125f, 130f), _slowMoveTime);
+        MovePosition(yutStick, new Vector2(-125f, 130f), _settings.slowMoveTime);
+        MovePosition(bell, new Vector2(125f, 130f), _settings.slowMoveTime);
     }
 
     void AnimateFull(RectTransform target, Vector2 pos, Vector2 size, float time)
@@ -147,7 +134,7 @@ public class StartAnimation : MonoBehaviour
     {
         for (int i = 0; i < targets.Count; i++)
         {
-            Vector2 randomPos = new Vector2(Random.Range(_minX, _maxX), Random.Range(_minY, _maxY));
+            Vector2 randomPos = new Vector2(Random.Range(_settings.minX, _settings.maxX), Random.Range(_settings.minY, _settings.maxY));
             AnimateFull(targets[i], randomPos, size, time);
             targets[i].anchoredPosition = randomPos;
         }
@@ -158,8 +145,8 @@ public class StartAnimation : MonoBehaviour
         
         for (int i = 0; i < targets.Count; i++)
         {
-            float xmoveAmount = targets[i].anchoredPosition.x < 0 ? -_elementMoveAmount : _elementMoveAmount;
-            float ymoveAmount = targets[i].anchoredPosition.y < 0 ? -_elementMoveAmount : _elementMoveAmount;
+            float xmoveAmount = targets[i].anchoredPosition.x < 0 ? -_settings.elementMoveAmount : _settings.elementMoveAmount;
+            float ymoveAmount = targets[i].anchoredPosition.y < 0 ? -_settings.elementMoveAmount : _settings.elementMoveAmount;
             Vector2 movePos = new Vector2(targets[i].anchoredPosition.x + xmoveAmount, targets[i].anchoredPosition.y + ymoveAmount);
             MovePosition(targets[i], movePos, time);
         }
@@ -193,16 +180,16 @@ public class StartAnimation : MonoBehaviour
 
     void Init(RectTransform ObjectRect)
     {
-        ObjectRect.anchoredPosition = _initPosition;
-        ObjectRect.sizeDelta = _initSize;
+        ObjectRect.anchoredPosition = _settings.initPosition;
+        ObjectRect.sizeDelta = _settings.initSize;
     }
 
     void InitList(List<RectTransform> list)
     {
         foreach (var obj in list)
         {
-            obj.anchoredPosition = _initPosition;
-            obj.sizeDelta = _initSize;
+            obj.anchoredPosition = _settings.initPosition;
+            obj.sizeDelta = _settings.initSize;
         }
     }
 }

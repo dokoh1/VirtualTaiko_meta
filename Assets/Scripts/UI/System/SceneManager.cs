@@ -13,41 +13,20 @@ namespace Single
 
         [SerializeField] private Image fadeImage;
         private readonly float duration = 1f;
-
-        private GameObject currentScene;
-        private GameObject nextScene;
+        
         private Tween fadeTween;
-        private float _lastHitTime = float.MinValue;
-        private float _ignoreDuration = 0.1f;
-        private bool _isGameStart = false;
-        public TestDrumInput testDrumInput;
+
         private void Awake()
         {
             Color color = fadeImage.color;
             color.a = 0;
             fadeImage.color = color;
-        }
-
-        private void Update()
-        {
-            if (!_isGameStart)
+            foreach (SceneData sceneData in sceneObjects)
             {
-                // DrumDataType drumDataType = System.DrumManager.UseQueue();
-                // if (drumDataType.testInputType != DrumDataType.NotHit)
-                if (testDrumInput.testInputType != DrumDataType.NotHit)
-                {
-                    _isGameStart = true;
-                    foreach (SceneData sceneData in sceneObjects)
-                    {
-                        if (sceneData.SceneDataType == SceneDataType.Start)
-                        {
-                            sceneData.SceneObject.SetActive(true);
-                            currentScene = sceneData.SceneObject;
-                        }
-                        else
-                            sceneData.SceneObject.SetActive(false);
-                    }
-                }
+                if (sceneData.SceneDataType == SceneDataType.Start)
+                    sceneData.SceneObject.SetActive(true);
+                else
+                    sceneData.SceneObject.SetActive(false);
             }
         }
         
@@ -73,23 +52,48 @@ namespace Single
         
         public void LoadScene(SceneDataType sceneDataType)
         {
+            GameObject previousScene = null;
+            GameObject targetScene = null;
+            // Debug.Log(sceneDataType);
             foreach (SceneData sceneData in sceneObjects)
             {
+                if (sceneData.SceneObject.activeSelf)
+                    previousScene = sceneData.SceneObject;
                 if (sceneData.SceneDataType == sceneDataType)
-                    nextScene = sceneData.SceneObject;
-                else
-                    if (sceneData.SceneObject.activeSelf == true)
-                        currentScene = sceneData.SceneObject;
-            }
-            FadeOut(1.5f, () =>
-            {
-                currentScene.SetActive(false);
-                nextScene.SetActive(true);
-                FadeIn(1.5f, () =>
                 {
-                    fadeImage.gameObject.SetActive(false);
+                    targetScene = sceneData.SceneObject;
+                }
+            }
+            if (targetScene == null)
+            {
+                Debug.LogError($"Scene data type {sceneDataType} not found");
+                return;
+            }
+
+            if (targetScene != null)
+            {
+                Debug.Log("Loading scene " + targetScene.name);
+            }
+            if (previousScene != null)
+            {
+                Debug.Log($"previousScene: {previousScene.name}");
+            }
+            if (previousScene != null && previousScene != targetScene)
+            {
+                FadeOut(1.5f, () =>
+                {
+                    previousScene.SetActive(false);
+                    targetScene.SetActive(true);
+                    FadeIn(1.5f, () =>
+                    {
+                        fadeImage.gameObject.SetActive(false);
+                    });
                 });
-            });
+            }
+            else if (previousScene == null)
+            {
+                targetScene.SetActive(true);
+            }
         }
     }
 }

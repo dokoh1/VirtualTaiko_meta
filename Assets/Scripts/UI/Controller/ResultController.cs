@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Result  : MonoBehaviour
+public class ResultController  : MonoBehaviour
 {
     [SerializeField] private NumberImage perfect;
     [SerializeField] private NumberImage good;

@@ -7,30 +7,33 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-public class ChoiceScroll : MonoBehaviour
+public class ChoiceView : MonoBehaviour
 {
+    // AudioClip
     public AudioClip chooseClip;
     public AudioClip musicUpClip;
     public AudioClip musicDownClip;
-
+    
+    // 사용자 입력을 Presenter에게 알리기 위한 이벤트
+    public event Action OnScrollUpRequested;
+    public event Action OnScrollDownRequested;
+    public event Action<ChoiceType> OnChoiceMadeRequested;
+    
+    // UI
     [FormerlySerializedAs("choiceList")] [SerializeField]
     private List<ChoiceData> choices = new();
+    
+    public ChoiceAnimationSettings _settings;
 
-    // [SerializeField] private TestDrumInput testDrumInput;
-
-    private ChoiceAnimationData _animData;
     public Animator _animator;
     private readonly int HasHIsChoice = Animator.StringToHash("IsChoice");
-
-    private readonly float _moveDistance = 85f;
-    private readonly float _moveDuration = 0.5f;
-    private readonly float _arrowDistance = 15f;
+    
     private bool _isScrolling;
+    private bool _isChanged;
+    
     private ChoiceData _activeChoice;
     private Vector2 _startDownPos;
     private Vector2 _startUpPos;
-    private bool _isChanged;
-    public TestDrumInput testDrumInput;
 
     private Dictionary<Image, Tween> activeTweens = new Dictionary<Image, Tween>();
 
@@ -64,30 +67,17 @@ public class ChoiceScroll : MonoBehaviour
             .DOFade(0.1f, 2f)
             .From(1f));
         activeSequences.Join(arrowData.DownArrowRect
-            .DOAnchorPosY(arrowData.DownArrowRect.anchoredPosition.y - _arrowDistance, 2f)
+            .DOAnchorPosY(arrowData.DownArrowRect.anchoredPosition.y - _settings.arrowDistance, 2f)
             .SetEase(Ease.Linear)
             .From(_startDownPos));
         activeSequences.Join(arrowData.UpArrow
             .DOFade(0.1f, 2f)
             .From(1f));
         activeSequences.Join(arrowData.UpArrowRect
-            .DOAnchorPosY(arrowData.UpArrowRect.anchoredPosition.y + _arrowDistance, 2f)
+            .DOAnchorPosY(arrowData.UpArrowRect.anchoredPosition.y + _settings.arrowDistance, 2f)
             .SetEase(Ease.Linear)
             .From(_startUpPos));
         activeSequences.SetLoops(-1);
-    }
-
-    private struct ChoiceAnimationData
-    {
-        public float CenterHeight;
-        public float TopPosY;
-        public float TopHeight;
-        public float BottomHeight;
-        public float BottomPosY;
-        public float InHeight;
-        public Vector2 CrownSize;
-        public Vector2 BadgeSize;
-        public float ActiveDistance;
     }
 
     void Start()
@@ -98,31 +88,14 @@ public class ChoiceScroll : MonoBehaviour
     void Update()
     {
         _activeChoice = choices[3];
-        // Execute Code
-        // 곡 위로
-        // DrumDataType drumDataType = System.DrumManager.UseQueue();
+        DrumDataType drumDataType = InputManager.Instance.GetInput();
 
-        // if (drumDataType == DrumDataType.RightFace)
-        if (testDrumInput.testInputType == DrumDataType.RightFace)
-            ScrollUp();
-        // 곡 아래로
-        // else if (drumDataType == DrumDataType.LeftFace)
-        else if (testDrumInput.testInputType == DrumDataType.LeftFace)
-            ScrollDown();
-        // 곡 선택
-        // else if (drumDataType == DrumDataType.DobletFace)
-        else if (testDrumInput.testInputType == DrumDataType.DobletFace)
+        if (drumDataType == DrumDataType.RightFace)
+            ScrollUpAnimation();
+        else if (drumDataType == DrumDataType.LeftFace)
+            ScrollDownAnimation();
+        else if (drumDataType == DrumDataType.DobletFace)
             DoChoice();
-
-        //test
-        // if (testDrumInput.testInputType == DrumDataType.RightFace && !_isChanged)
-        //     ScrollUp();
-        // // 곡 아래로
-        // else if (testDrumInput.testInputType == DrumDataType.LeftFace && !_isChanged)
-        //     ScrollDown();
-        // // 곡 선택
-        // else if (testDrumInput.testInputType == DrumDataType.DobletFace && !_isChanged)
-        //     DoChoice();
     }
 
     private void DoChoice()
@@ -165,7 +138,7 @@ public class ChoiceScroll : MonoBehaviour
         });
     }
 
-    private void ScrollDown()
+    public void ScrollDownAnimation()
     {
         if (_isScrolling)
             return;
@@ -174,7 +147,7 @@ public class ChoiceScroll : MonoBehaviour
         StartCoroutine(ScrollDownProcess());
     }
 
-    private void ScrollUp()
+    public void ScrollUpAnimation()
     {
         if (_isScrolling)
             return;
@@ -189,45 +162,20 @@ public class ChoiceScroll : MonoBehaviour
         Sequence sequence = DOTween.Sequence();
         for (int i = 0; i < choices.Count; i++)
         {
+            float activeDistance = 120f;
             if (i == 4)
-            {
-                var data = new ChoiceAnimationData
-                {
-                    CenterHeight = 100,
-                    TopPosY = +20,
-                    TopHeight = 20,
-                    BottomHeight = 20,
-                    BottomPosY = -20,
-                    InHeight = 110,
-                    CrownSize = new Vector2(30, 30),
-                    BadgeSize = new Vector2(30, 30),
-                    ActiveDistance = 120
-                };
-                ApplyAnimation(sequence, choices[i], data);
-            }
+                ApplyAnimation(sequence, choices[i], _settings.activeCard, activeDistance);
             else if (i == 3)
             {
                 InitAnimations(choices[i]);
                 choices[i].ArrowData.Arrow.SetActive(false);
                 choices[i].ActiveFrame.SetActive(false);
-                var data = new ChoiceAnimationData
-                {
-                    CenterHeight = 70,
-                    TopPosY = -20,
-                    TopHeight = 10,
-                    BottomHeight = 10,
-                    BottomPosY = +20,
-                    InHeight = 60,
-                    CrownSize = new Vector2(20, 20),
-                    BadgeSize = new Vector2(20, 20),
-                    ActiveDistance = 120
-                };
-                ApplyAnimation(sequence, choices[i], data);
+                ApplyAnimation(sequence, choices[i], _settings.notActiveCard, activeDistance);
             }
             else
             {
                 sequence.Join(choices[i].CardTrans
-                    .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y + _moveDistance, _moveDuration)
+                    .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y + _settings.moveDistance, _settings.moveDuration)
                     .SetEase(Ease.InOutQuad));
             }
         }
@@ -241,7 +189,7 @@ public class ChoiceScroll : MonoBehaviour
         var bottomChoice = GetBottomChoice();
         var topChoice = GetTopChoice();
 
-        float bottomChoiceRectY = bottomChoice.CardTrans.anchoredPosition.y - _moveDistance;
+        float bottomChoiceRectY = bottomChoice.CardTrans.anchoredPosition.y - _settings.moveDistance;
 
         topChoice.CardTrans.anchoredPosition =
             new Vector2(topChoice.CardTrans.anchoredPosition.x, bottomChoiceRectY);
@@ -257,7 +205,7 @@ public class ChoiceScroll : MonoBehaviour
         ArrowAnimation();
         _isScrolling = false;
     }
-
+    
     private IEnumerator ScrollDownProcess()
     {
         _isScrolling = true;
@@ -265,49 +213,26 @@ public class ChoiceScroll : MonoBehaviour
         Sequence sequence = DOTween.Sequence();
         for (int i = 0; i < choices.Count; i++)
         {
+            float activeDistance = -120f;
             if (i == 2)
             {
-                var data = new ChoiceAnimationData
-                {
-                    CenterHeight = 100,
-                    TopPosY = +20,
-                    TopHeight = 20,
-                    BottomHeight = 20,
-                    BottomPosY = -20,
-                    InHeight = 110,
-                    CrownSize = new Vector2(30, 30),
-                    BadgeSize = new Vector2(30, 30),
-                    ActiveDistance = -120
-                };
-                ApplyAnimation(sequence, choices[i], data);
+                ApplyAnimation(sequence, choices[i], _settings.activeCard, activeDistance);
             }
             else if (i == 3)
             {
                 InitAnimations(choices[i]);
                 choices[i].ArrowData.Arrow.SetActive(false);
                 choices[i].ActiveFrame.SetActive(false);
-                var data = new ChoiceAnimationData
-                {
-                    CenterHeight = 70,
-                    TopPosY = -20,
-                    TopHeight = 10,
-                    BottomHeight = 10,
-                    BottomPosY = +20,
-                    InHeight = 60,
-                    CrownSize = new Vector2(20, 20),
-                    BadgeSize = new Vector2(20, 20),
-                    ActiveDistance = -120
-                };
-                ApplyAnimation(sequence, choices[i], data);
+                ApplyAnimation(sequence, choices[i], _settings.notActiveCard, activeDistance);
             }
             else
             {
                 sequence.Join(choices[i].CardTrans
-                    .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y - _moveDistance, _moveDuration)
+                    .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y - _settings.moveDistance, _settings.moveDuration)
                     .SetEase(Ease.InOutQuad));
             }
         }
-
+        
         bool finished = false;
         sequence.OnComplete(() => finished = true);
         yield return new WaitUntil(() => finished);
@@ -315,7 +240,7 @@ public class ChoiceScroll : MonoBehaviour
 
         var bottomChoice = GetBottomChoice();
         var topChoice = GetTopChoice();
-        float topChoiceRectY = topChoice.CardTrans.anchoredPosition.y + _moveDistance;
+        float topChoiceRectY = topChoice.CardTrans.anchoredPosition.y + _settings.moveDistance;
         bottomChoice.CardTrans.anchoredPosition =
             new Vector2(bottomChoice.CardTrans.anchoredPosition.x, topChoiceRectY);
         choices.Remove(bottomChoice);
@@ -360,39 +285,40 @@ public class ChoiceScroll : MonoBehaviour
         activeSequences.Kill();
     }
 
-    private void ApplyAnimation(Sequence sequence, ChoiceData choice, ChoiceAnimationData data)
+    private void ApplyAnimation(Sequence sequence, ChoiceData choice, ChoiceCardSettings data, float distance)
     {
         sequence.Join(choice.CenterTrans
-            .DOSizeDelta(new Vector2(choice.CenterTrans.sizeDelta.x, data.CenterHeight), _moveDuration)
+            .DOSizeDelta(new Vector2(choice.CenterTrans.sizeDelta.x, data.CenterHeight), _settings.moveDuration)
             .SetEase(Ease.InOutQuad));
 
         sequence.Join(choice.TopTrans
-            .DOAnchorPosY(choice.TopTrans.anchoredPosition.y + data.TopPosY, _moveDuration)
+            .DOAnchorPosY(choice.TopTrans.anchoredPosition.y + data.TopPosY, _settings.moveDuration)
             .SetEase(Ease.InOutQuad));
         sequence.Join(choice.TopTrans
-            .DOSizeDelta(new Vector2(choice.TopTrans.sizeDelta.x, data.TopHeight), _moveDuration)
+            .DOSizeDelta(new Vector2(choice.TopTrans.sizeDelta.x, data.TopHeight), _settings.moveDuration)
             .SetEase(Ease.InOutQuad));
 
         sequence.Join(choice.BottomTrans
-            .DOSizeDelta(new Vector2(choice.BottomTrans.sizeDelta.x, data.BottomHeight), _moveDuration)
+            .DOSizeDelta(new Vector2(choice.BottomTrans.sizeDelta.x, data.BottomHeight), _settings.moveDuration)
             .SetEase(Ease.InOutQuad));
         sequence.Join(choice.BottomTrans
-            .DOAnchorPosY(choice.BottomTrans.anchoredPosition.y + data.BottomPosY, _moveDuration)
+            .DOAnchorPosY(choice.BottomTrans.anchoredPosition.y + data.BottomPosY, _settings.moveDuration)
             .SetEase(Ease.InOutQuad));
 
         sequence.Join(choice.InTrans
-            .DOSizeDelta(new Vector2(choice.InTrans.sizeDelta.x, data.InHeight), _moveDuration)
+            .DOSizeDelta(new Vector2(choice.InTrans.sizeDelta.x, data.InHeight), _settings.moveDuration)
             .SetEase(Ease.InOutQuad));
 
         sequence.Join(choice.CardTrans
-            .DOAnchorPosY(choice.CardTrans.anchoredPosition.y + data.ActiveDistance, _moveDuration)
+            .DOAnchorPosY(choice.CardTrans.anchoredPosition.y + distance, _settings.moveDuration)
             .SetEase(Ease.InOutQuad));
-
+        Vector2 Crown = new Vector2(data.CrownSizeX, data.CrownSizeY);
+        Vector2 Badge = new Vector2(data.BadgeSizeX, data.BadgeSizeY);
         sequence.Join(choice.CrownTrans
-            .DOSizeDelta(data.CrownSize, _moveDuration)
+            .DOSizeDelta(Crown, _settings.moveDuration)
             .SetEase(Ease.InOutQuad));
         sequence.Join(choice.BadgeTrans
-            .DOSizeDelta(data.BadgeSize, _moveDuration)
+            .DOSizeDelta(Badge, _settings.moveDuration)
             .SetEase(Ease.InOutQuad));
     }
 

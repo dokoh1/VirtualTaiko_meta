@@ -30,8 +30,19 @@ public class JudgementEffect : MonoBehaviour
 
         _useSilver = new HashSet<HitResult> { HitResult.BigGood, HitResult.SmallGood };
         _useGold = new HashSet<HitResult> { HitResult.BigPerfect, HitResult.SmallPerfect };
+        
+        GameEvents.OnNoteHit += HandleNoteHit;
     }
 
+    private void OnDisable()
+    {
+        GameEvents.OnNoteHit -= HandleNoteHit;
+    }
+
+    private void HandleNoteHit(HitResult result, ScoreData scoreData)
+    {
+        StartCoroutine(EffectUpdate(result));
+    }
     public IEnumerator EffectUpdate(HitResult result)
     {
         yield return null;

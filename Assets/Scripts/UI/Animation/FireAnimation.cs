@@ -9,12 +9,21 @@ public class FireAnimation : MonoBehaviour
    {
       _animator = GetComponent<Animator>();
    }
-
-   public void SetIsFire(int comboHit)
+   private void OnEnable()
    {
-      if (comboHit == (int)ComboState.ComboInit)
+      GameEvents.OnComboUpdated += HandleComboUpdated;
+   }
+
+   private void OnDisable()
+   {
+      GameEvents.OnComboUpdated -= HandleComboUpdated;
+   }
+
+   private void HandleComboUpdated(int combo)
+   {
+      if (combo == (int)ComboState.ComboInit)
          _animator.SetBool(_hashIsFire, false);
-      else if (comboHit == (int)ComboState.Combo10)
+      else if (combo == (int)ComboState.Combo10)
          _animator.SetBool(_hashIsFire, true);
    }
 }

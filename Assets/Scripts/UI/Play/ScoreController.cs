@@ -10,10 +10,6 @@ public class ScoreController : MonoBehaviour
     private JudgementData _judgementData;
 
     private ScoreData _scoreData;
- 
-    public EffectManager effectManager;
-    public AudioFeedback audioFeedback;
-    public GameOverHandler gameOverHandler;
     
     private void OnEnable()
     {
@@ -24,7 +20,9 @@ public class ScoreController : MonoBehaviour
     {
         if (noteManager1.isMusicEnded || _scoreData.isDead)
         {
-            gameOverHandler.EndGame(_scoreData);
+            GameEvents.TriggerOnGameOver(_scoreData);
+            this.enabled = false;
+            // gameOverHandler.EndGame(_scoreData);
             return;
         }
 
@@ -33,11 +31,22 @@ public class ScoreController : MonoBehaviour
             var hit = timingManager.HitQueue.Dequeue();
             if (hit == HitResult.None)
                 continue;
+
+            int oldCombo = _scoreData.combo;
+            int oldScore = _scoreData.score;
+            float oldGauge = _scoreData.deadGuage;
             
             _scoreData.ApplyHit(hit, _judgementData);
-            effectManager.OnHit(hit, _scoreData);
-            audioFeedback.PlayComboSound(_scoreData.combo);
+
+            GameEvents.TriggerOnNoteHit(hit, _scoreData);
+
+            if (oldScore != _scoreData.score)
+                GameEvents.TriggerOnScoreUpdated(_scoreData.score);
+            if (oldCombo != _scoreData.combo)
+                GameEvents.TriggerOnComboUpdated(_scoreData.combo);
+            if (oldGauge != _scoreData.deadGuage)
+                GameEvents.TriggerOnDeadGauge(_scoreData.deadGuage);
         }
-        effectManager.UpdateUI(_scoreData);
+
     }
 }

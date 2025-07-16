@@ -20,8 +20,17 @@ public class GoblinAnimation : MonoBehaviour
         _goblins.Add(initGoblin);
         _initGoblinRect = initGoblin.GetComponent<RectTransform>();
     }
-    
-    public void CreateGoblin()
+
+    private void OnEnable()
+    {
+        GameEvents.OnNoteHit += HandleNoteHit;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.OnNoteHit -= HandleNoteHit;
+    }
+    private void CreateGoblin()
     {
         Vector2 offset = _goblins.Count == 1 ? new Vector2(-150f, 0f) : new Vector2(150f, 0f);
         Vector2 goblinPos = _initGoblinRect.anchoredPosition + offset;
@@ -36,6 +45,13 @@ public class GoblinAnimation : MonoBehaviour
         _goblins.Add(goblin);
     }
 
+    private void HandleNoteHit(HitResult result, ScoreData scoreData)
+    {
+        if (scoreData.hit == 30 || scoreData.hit == 60)
+        {
+            CreateGoblin();
+        }
+    }
     private IEnumerator IdleInit()
     {
         float goblinAnimationTime = animationClip.length / animationClip.frameRate;

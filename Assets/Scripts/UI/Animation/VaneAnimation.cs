@@ -6,10 +6,9 @@ using UnityEngine.Serialization;
 public class VaneAnimation : MonoBehaviour
 {
     public RectTransform rectTransform;
+    [SerializeField] private VaneAnimationSettings _settings;
     [FormerlySerializedAs("Vanes")] public List<RectTransform> vanes = new();
     
-    private readonly Vector2 _moveOffset = new(4000, 0);
-    private readonly float _moveDuration = 15f;
     private void OnEnable()
     {
         RotateAnimation();
@@ -20,7 +19,7 @@ public class VaneAnimation : MonoBehaviour
     {
         foreach (var vane in vanes)
         {
-            vane.DORotate(new Vector3(0, 0, 360), 1f, RotateMode.FastBeyond360)
+            vane.DORotate(_settings.roationAngle, _settings.rotationDuration, RotateMode.FastBeyond360)
                 .SetEase(Ease.Linear)
                 .SetLoops(-1);
         }
@@ -30,10 +29,10 @@ public class VaneAnimation : MonoBehaviour
     {
         Sequence moveSequence = DOTween.Sequence();
         moveSequence.Append(
-            rectTransform.DOAnchorPos(rectTransform.anchoredPosition + _moveOffset, _moveDuration)
+            rectTransform.DOAnchorPos(rectTransform.anchoredPosition + _settings.moveOffset, _settings.moveDuration)
                 .SetEase(Ease.Linear)
         );
-        moveSequence.AppendInterval(5f);
+        moveSequence.AppendInterval(_settings.moveAppendInterval);
         moveSequence.SetLoops(-1, LoopType.Restart);
     }
     

@@ -14,10 +14,15 @@ public class CharacterAnimation : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    public void UpdateAnimator(int currentHit)
+    private void OnEnable()
+    {
+        GameEvents.OnComboUpdated += HandleComboUpdated;
+    }
+
+    private void HandleComboUpdated(int currentHit)
     {
         ResetIdleStatesIfNeeded(currentHit);
-
+        
         if (currentHit == (int)ComboState.Combo50)
             _animator.SetBool(_hashThirdIdle, true);
         else if (currentHit == (int)ComboState.Combo100)
@@ -43,7 +48,7 @@ public class CharacterAnimation : MonoBehaviour
     
     private bool IsSecondIdle()
     {
-        return _animator.GetBool(_hashSecondIdle); // Animator에 저장된 상태 참조
+        return _animator.GetBool(_hashSecondIdle);
     }
 
     private bool ShouldTriggerAction(int currentHit)

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937605d4dec64de58887b9570d52390d, type: 3}
+  m_Name: ChoiceAnimationSettings
+  m_EditorClassIdentifier: 
+  moveDistance: 85
+  moveDuration: 0.5
+  arrowDistance: 15
+  activeImageFadeDuration: 1
+  activeImageMinFade: 0.3
+  activeImageMaxFade: 1
+  activeCard:
+    CenterHeight: 100
+    TopPosY: 20
+    TopHeight: 20
+    BottomPosY: -20
+    BottomHeight: 20
+    InHeight: 110
+    CrownSizeX: 30
+    CrownSizeY: 30
+    BadgeSizeX: 30
+    BadgeSizeY: 30
+    activeDistance: -120
+  notActiveCard:
+    CenterHeight: 70
+    TopPosY: -20
+    TopHeight: 10
+    BottomPosY: 20
+    BottomHeight: 10
+    InHeight: 60
+    CrownSizeX: 20
+    CrownSizeY: 20
+    BadgeSizeX: 20
+    BadgeSizeY: 20
+    activeDistance: -120

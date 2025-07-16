@@ -117,7 +117,6 @@ public class NoteManager1 : MonoBehaviour
 
     public void CheckHit(KeyCode hitKey)
     {
-        Debug.Log("CheckHit called with key: " + hitKey);
         bool isHit = false;
         switch (noteType)
         {

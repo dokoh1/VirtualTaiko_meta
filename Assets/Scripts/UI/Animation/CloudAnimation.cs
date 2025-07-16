@@ -18,8 +18,23 @@ public class CloudAnimation : BGAnimation
     {
         base.OnEnable();
         CloudMove();
+        GameEvents.OnNoteHit += HandleNoteHit;
     }
 
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+        DOTween.Kill(clouds);
+        GameEvents.OnNoteHit -= HandleNoteHit;
+    }
+
+    private void HandleNoteHit(HitResult result, ScoreData scoreData)
+    {
+        if (scoreData.hit == 60)
+        {
+            ChangeImage();
+        }
+    }
     private void CloudMove()
     {
         clouds.DOAnchorPosY(clouds.anchoredPosition.y + moveAmount, duration)
@@ -35,12 +50,6 @@ public class CloudAnimation : BGAnimation
 
         foreach (var image in backgroundSprites)
             image.sprite = backgroundImage;
-    }
-
-    protected override void OnDisable()
-    {
-        base.OnDisable();
-        DOTween.Kill(clouds);
     }
 }
 

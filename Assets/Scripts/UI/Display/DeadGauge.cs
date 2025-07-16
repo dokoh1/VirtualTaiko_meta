@@ -8,29 +8,34 @@ public class DeadGauge : MonoBehaviour
     [SerializeField]
     private RectTransform secondGauge;
 
-    private const float MaxGauge = 350f;
-    private const float InitFirstGauge = 200f;
-    private const float InitSecondGauge = 150f;
-    private const float AnimationDuration = 0.1f;
+    [SerializeField] 
+    private DeadGaugeSettings _settings;
 
-    private float _savedDeadGauge = MaxGauge;
+    private float _savedDeadGauge;
 
     void OnEnable()
     {
-        SetGaugeSize(firstGauge, InitFirstGauge);
-        SetGaugeSize(secondGauge, InitSecondGauge);
+        _savedDeadGauge = _settings.maxGauge;
+        SetGaugeSize(firstGauge, _settings.initFirstGauge);
+        SetGaugeSize(secondGauge, _settings.initSecondGauge);
+        GameEvents.OnDeadGauge += HandleDeadGaugeUpdated;
     }
 
-    public void DeadGaugeUpdate(float currentDeadGauge)
+    void OnDisable()
+    {
+        GameEvents.OnDeadGauge -= HandleDeadGaugeUpdated;
+    }
+
+    public void HandleDeadGaugeUpdated(float currentDeadGauge)
     {
         if (Mathf.Approximately(_savedDeadGauge, currentDeadGauge))
             return;
 
-        if (currentDeadGauge > MaxGauge)
+        if (currentDeadGauge > _settings.maxGauge)
             return;
 
         float delta = _savedDeadGauge - currentDeadGauge;
-        RectTransform targetGauge = (currentDeadGauge >= InitFirstGauge) ? secondGauge : firstGauge;
+        RectTransform targetGauge = (currentDeadGauge >= _settings.initFirstGauge) ? secondGauge : firstGauge;
         
         float newWidth = targetGauge.sizeDelta.x - delta;
         SetGaugeSizeAnimated(targetGauge, newWidth);
@@ -45,6 +50,6 @@ public class DeadGauge : MonoBehaviour
 
     private void SetGaugeSizeAnimated(RectTransform gauge, float width)
     {
-        gauge.DOSizeDelta(new Vector2(width, gauge.sizeDelta.y), AnimationDuration);
+        gauge.DOSizeDelta(new Vector2(width, gauge.sizeDelta.y), _settings.animationDuration);
     }
 }

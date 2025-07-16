@@ -14,7 +14,7 @@ public class BGAnimation : MonoBehaviour
     {
         BackGroundMove();
     }
-
+    
     protected void BackGroundMove()
     {
         backgrounds.DOAnchorPosX(backgrounds.anchoredPosition.x + moveAmount, duration)
