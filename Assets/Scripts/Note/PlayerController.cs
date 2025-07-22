@@ -27,14 +27,14 @@ public class PlayerController : MonoBehaviour
         {
             if (drumDataType == DrumDataType.RightFace || drumDataType == DrumDataType.LeftFace)
             {
-                CheckHit();
+                timingManager.CheckTiming();
             }
         }
         else if (noteType == NoteType.smallBlue)
         {
             if (drumDataType== DrumDataType.RightSide || drumDataType== DrumDataType.LeftSide)
             {
-                CheckHit();
+                timingManager.CheckTiming();
             }
         }
         // test
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
             if (drumDataType == DrumDataType.DobletFace)
             {
                 // CheckHit(KeyCode.S, KeyCode.K); // 큰 빨간 노트는 S와 K 동시에 눌렀을 때 체크
-                CheckHit();
+                timingManager.CheckTiming();
             }
         }
         //test
@@ -60,24 +60,11 @@ public class PlayerController : MonoBehaviour
             if (drumDataType == DrumDataType.Dobletside)
             {
                 // CheckHit(KeyCode.A, KeyCode.L); // 큰 파란 노트는 A와 L 동시에 눌렀을 때 체크
-                CheckHit();
+                timingManager.CheckTiming();
             }
         }
         // drumEffect.DrumEffectInput(drumDataType);
         drumEffect.DrumEffectInput(drumDataType);
     
-    }
-
-    // 올바른 키 입력에 대한 판정 처리
-    // private void CheckHit(KeyCode key1, KeyCode key2)
-    private void CheckHit()
-    {
-        // 작은 노트는 하나만 눌려도 판정 (key1, key2 중 하나가 눌리면)
-        // if (Input.GetKeyDown(key1) || Input.GetKeyDown(key2))
-        // {
-            // 판정 코드 (예시로 타이밍 체크)
-            HitResult result = timingManager.CheckTiming();
-            timingManager.ProcessResult(result);
-        // }
     }
 }

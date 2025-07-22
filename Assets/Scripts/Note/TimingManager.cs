@@ -82,31 +82,4 @@ public class TimingManager : MonoBehaviour
             Destroy(note);
         }
     }
-    public void ProcessResult(HitResult result)
-    {
-        bool isCheck = false;
-        // 예시 처리
-        switch (result)
-        {
-            case HitResult.SmallPerfect:
-                isCheck = true;
-                break;
-            case HitResult.BigPerfect:    
-                isCheck = true;
-                break;
-            case HitResult.BigGood:
-                isCheck = true;
-                break;
-            case HitResult.SmallGood:
-                isCheck = true;
-                break;
-            case HitResult.Bad:
-                isCheck = true;
-                break;
-            case HitResult.None:
-                isCheck = true;
-                break;
-        }
-        Debug.Log(result);
-    }
 }

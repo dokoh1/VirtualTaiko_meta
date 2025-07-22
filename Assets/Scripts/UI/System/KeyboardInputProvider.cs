@@ -4,6 +4,10 @@ public class KeyboardInputProvider : MonoBehaviour, IInputProvider
 {
     private DrumDataType _currentInput;
 
+    void Awake()
+    {
+        _currentInput = DrumDataType.NotHit;
+    }
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.Alpha1))

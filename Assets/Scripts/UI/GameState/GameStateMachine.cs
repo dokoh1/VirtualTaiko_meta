@@ -5,6 +5,9 @@ namespace Single
     public class GameStateMachine : MonoBehaviour
     {
         public static GameStateMachine instance { get; private set; }
+        [SerializeField] private StartController startController;
+        [SerializeField] private ChoicePresenter choicePresenter;
+        [SerializeField] private ResultController resultController;
 
         private IGameState _currentState;
 
@@ -21,7 +24,7 @@ namespace Single
 
         private void Start()
         {
-            ChangeState(new StartState());
+            ChangeStartState();
         }
 
         private void Update()
@@ -29,6 +32,20 @@ namespace Single
             _currentState?.Execute();
         }
 
+        public void ChangeToMusicChoiceState()
+        {
+            ChangeState(new MusicChoiceState(choicePresenter));
+        }
+
+        public void ChangeStartState()
+        {
+            ChangeState(new StartState(startController));
+        }
+
+        public void ChanageResultState(ScoreData scoreData)
+        {
+            ChangeState(new ResultState(scoreData, resultController));
+        }
         public void ChangeState(IGameState newState)
         {
             _currentState?.Exit();

@@ -907,7 +907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b5d4cf01a48b684e85adcf4111f50c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 0}
+  _settings: {fileID: 11400000, guid: 978f42e598afd1a49acadb78b89b4352, type: 2}
   digitSprites:
   - {fileID: 599773773, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: 286073646, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
@@ -1628,7 +1628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b5d4cf01a48b684e85adcf4111f50c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 0}
+  _settings: {fileID: 11400000, guid: 978f42e598afd1a49acadb78b89b4352, type: 2}
   digitSprites:
   - {fileID: 599773773, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: 286073646, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
@@ -3435,7 +3435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b5d4cf01a48b684e85adcf4111f50c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 0}
+  _settings: {fileID: 11400000, guid: 978f42e598afd1a49acadb78b89b4352, type: 2}
   digitSprites:
   - {fileID: 599773773, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: 286073646, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
@@ -4112,6 +4112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4887d457846749af818dc4473b2dcbfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startController: {fileID: 1709591000}
+  choicePresenter: {fileID: 1403400771}
+  resultController: {fileID: 1276906211}
 --- !u!4 &351515382
 Transform:
   m_ObjectHideFlags: 0
@@ -5014,7 +5017,6 @@ MonoBehaviour:
   PlayMusic: {fileID: 8300000, guid: d39d56602e5d32c49bbdfdc19a5a68eb, type: 3}
   noteSpawnOffset: 3.6
   isMusicEnded: 0
-  noteType: 0
 --- !u!1 &444427260
 GameObject:
   m_ObjectHideFlags: 0
@@ -7228,6 +7230,7 @@ RectTransform:
   - {fileID: 730024662}
   - {fileID: 8584303}
   - {fileID: 1186036521}
+  - {fileID: 1403400769}
   m_Father: {fileID: 415758080}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7313,9 +7316,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fde48df90cb82f49872449461e9adeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chooseClip: {fileID: 8300000, guid: 1bdc98e45218b25429ff9e9dbde82e30, type: 3}
-  musicUpClip: {fileID: 8300000, guid: 8d2bcc5652de8094db62807f8e1888d9, type: 3}
-  musicDownClip: {fileID: 8300000, guid: a1c02ce05fbec644c80e05fb0a523863, type: 3}
+  ChooseMusic: {fileID: 8300000, guid: 1bdc98e45218b25429ff9e9dbde82e30, type: 3}
+  UpScrollMusic: {fileID: 8300000, guid: 8d2bcc5652de8094db62807f8e1888d9, type: 3}
+  DownScrollMusic: {fileID: 8300000, guid: a1c02ce05fbec644c80e05fb0a523863, type: 3}
   choices:
   - ChoiceType: 4
     CardTrans: {fileID: 548229444}
@@ -12939,7 +12942,7 @@ MonoBehaviour:
     SceneObject: {fileID: 1747236695}
   - SceneDataType: 2
     SceneObject: {fileID: 1747236695}
-  - SceneDataType: 3
+  - SceneDataType: 5
     SceneObject: {fileID: 1276906209}
   fadeImage: {fileID: 1303269109}
 --- !u!4 &1233194127
@@ -14459,6 +14462,84 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8275934059721422882, guid: 8d0ff028e50c40843a44c7bfc81d3b22, type: 3}
   m_PrefabInstance: {fileID: 1395330338}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1403400768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403400769}
+  - component: {fileID: 1403400771}
+  - component: {fileID: 1403400770}
+  m_Layer: 5
+  m_Name: ChoicePresenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1403400769
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403400768}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 689349628}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1403400770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403400768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40859e3397734042b341b6feb12601c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicChoices:
+  - Title: Random Music
+    ChoiceType: 4
+  - Title: Back To Menu
+    ChoiceType: 0
+  - Title: Music1
+    ChoiceType: 1
+  - Title: Music2
+    ChoiceType: 2
+  - Title: Music3
+    ChoiceType: 3
+  - Title: Random Music
+    ChoiceType: 4
+  - Title: Back To Menu
+    ChoiceType: 0
+--- !u!114 &1403400771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403400768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06540d23ae044138aa6583e40814b4d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _choiceView: {fileID: 689349633}
+  _choiceModel: {fileID: 1403400770}
 --- !u!1001 &1418307741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14867,7 +14948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b5d4cf01a48b684e85adcf4111f50c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 0}
+  _settings: {fileID: 11400000, guid: 978f42e598afd1a49acadb78b89b4352, type: 2}
   digitSprites:
   - {fileID: 599773773, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: 286073646, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
@@ -16250,7 +16331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstGauge: {fileID: 2079453756}
   secondGauge: {fileID: 868154485}
-  _settings: {fileID: 0}
+  _settings: {fileID: 11400000, guid: 0250a865c1f5f4d40b337f6e0d626815, type: 2}
 --- !u!1001 &1535679038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16639,7 +16720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b5d4cf01a48b684e85adcf4111f50c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 0}
+  _settings: {fileID: 11400000, guid: 978f42e598afd1a49acadb78b89b4352, type: 2}
   digitSprites:
   - {fileID: 599773773, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: 286073646, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
@@ -18575,7 +18656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1709590995
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21827,7 +21908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b5d4cf01a48b684e85adcf4111f50c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settings: {fileID: 0}
+  _settings: {fileID: 11400000, guid: 978f42e598afd1a49acadb78b89b4352, type: 2}
   digitSprites:
   - {fileID: 599773773, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}
   - {fileID: 286073646, guid: 2e0d95d8474e5b0439a6497dedcd69eb, type: 3}

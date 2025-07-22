@@ -10,14 +10,14 @@ using Random = UnityEngine.Random;
 public class ChoiceView : MonoBehaviour
 {
     // AudioClip
-    public AudioClip chooseClip;
-    public AudioClip musicUpClip;
-    public AudioClip musicDownClip;
+    public AudioClip ChooseMusic;
+    public AudioClip UpScrollMusic;
+    public AudioClip DownScrollMusic;
     
     // 사용자 입력을 Presenter에게 알리기 위한 이벤트
     public event Action OnScrollUpRequested;
     public event Action OnScrollDownRequested;
-    public event Action<ChoiceType> OnChoiceMadeRequested;
+    public event Action OnChoiceMadeRequested;
     
     // UI
     [FormerlySerializedAs("choiceList")] [SerializeField]
@@ -27,10 +27,7 @@ public class ChoiceView : MonoBehaviour
 
     public Animator _animator;
     private readonly int HasHIsChoice = Animator.StringToHash("IsChoice");
-    
-    private bool _isScrolling;
-    private bool _isChanged;
-    
+    private bool _isAnimating = false;
     private ChoiceData _activeChoice;
     private Vector2 _startDownPos;
     private Vector2 _startUpPos;
@@ -38,30 +35,161 @@ public class ChoiceView : MonoBehaviour
     private Dictionary<Image, Tween> activeTweens = new Dictionary<Image, Tween>();
 
     private Sequence activeSequences;
-
-    // private Sequence Sequence;
-    private void OnEnable()
+    
+    void Update()
     {
-        foreach (var ActiveImage in choices[3].ActiveImages)
-        {
-            Tween t = ActiveImage.DOFade(0.3f, 1f)
-                .SetLoops(-1, LoopType.Yoyo)
-                .SetEase(Ease.InOutQuad)
-                .From(1f);
-            activeTweens[ActiveImage] = t;
-        }
+        if (_isAnimating) return;
+        
+        DrumDataType drumDataType = InputManager.Instance.GetInput();
 
-        ArrowData arrowData = choices[3].ArrowData;
-
-        _startDownPos = arrowData.DownArrowRect.anchoredPosition;
-        _startUpPos = arrowData.UpArrowRect.anchoredPosition;
-        ArrowAnimation();
-        _isChanged = false;
+        if (drumDataType == DrumDataType.RightFace)
+            OnScrollUpRequested?.Invoke();
+        else if (drumDataType == DrumDataType.LeftFace)
+            OnScrollDownRequested?.Invoke();
+        else if (drumDataType == DrumDataType.DobletFace)
+            OnChoiceMadeRequested?.Invoke();
     }
 
-    private void ArrowAnimation()
+    public void UpdateChoiceDisplay(List<MusicData> newChoiceData)
     {
-        ArrowData arrowData = choices[3].ArrowData;
+        for (int i = 0; i < choices.Count; i++)
+        {
+            ChoiceData uiSlot = choices[i];
+            MusicData dataForSlot = newChoiceData[i];
+            
+            uiSlot.Text.text = dataForSlot.Title;
+            uiSlot.ChoiceType = dataForSlot.ChoiceType;
+        }
+
+        foreach (var uiCard in choices)
+        {
+            InitAnimations(uiCard);
+            
+            uiCard.ActiveFrame.SetActive(false);
+            uiCard.ArrowData.Arrow.SetActive(false);
+        }
+
+        int activeIndex = 3;
+        ChoiceData activeCardUI = choices[activeIndex];
+        
+        activeCardUI.ActiveFrame.SetActive(true);
+
+        ActiveFrameAnimation(activeCardUI);
+        ArrowAnimation(activeCardUI);
+    }
+
+    public void PlayChoiceAnimation(Action onAnimationComplete)
+    {
+        if (_isAnimating) return;
+        Single.System.AudioManager.PlaySFX(ChooseMusic);
+        
+        Sequence seq = DOTween.Sequence();
+        Image[] ActiveImages = choices[3].ActiveImages;
+        foreach (var ActiveImage in ActiveImages)
+        {
+            seq.Join(ActiveImage.DOFade(1f, 0.1f)
+                .From(0f)
+                .SetLoops(4, LoopType.Yoyo)
+                .SetEase(Ease.InOutQuad));
+        }
+
+        seq.InsertCallback(0f, () =>
+        {
+            _isAnimating = true;
+            _animator.SetBool(HasHIsChoice, true);
+        });
+
+        seq.AppendCallback(() =>
+        {
+            _isAnimating = false;
+        });
+        onAnimationComplete?.Invoke();
+    }
+
+    public void PlayScrollDownAnimation(Action onAnimationComplete)
+    {
+        if (_isAnimating)
+            return;
+
+        StopAllCoroutines();
+        StartCoroutine(ScrollProcess(false, onAnimationComplete));
+    }
+
+    public void PlayScrollUpAnimation(Action onAnimationComplete)
+    {
+        if (_isAnimating)
+            return;
+        StopAllCoroutines();
+        StartCoroutine(ScrollProcess(true, onAnimationComplete));
+    }
+
+    private IEnumerator ScrollProcess(bool isUp, Action onAnimationComplete)
+    {
+        _isAnimating = true;
+        Single.System.AudioManager.PlaySFX(isUp ? UpScrollMusic : DownScrollMusic);
+        
+        Sequence sequence = DOTween.Sequence();
+        int activeIndex = 3;
+        
+        choices[activeIndex].ArrowData.Arrow.SetActive(false);
+        choices[activeIndex].ActiveFrame.SetActive(false);
+        if (isUp)
+        {
+            for (int i = 0; i < choices.Count; i++)
+            {
+                if (i == 4)
+                    ApplyAnimation(sequence, choices[i], _settings.activeCard, 120f);
+                else if (i == 3)
+                    ApplyAnimation(sequence, choices[i], _settings.notActiveCard, 120f);
+                else
+                    sequence.Join(choices[i].CardTrans
+                        .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y + _settings.moveDistance, _settings.moveDuration)
+                        .SetEase(Ease.InOutQuad));
+            }
+        }
+        else
+        {
+            for (int i = 0; i < choices.Count; i++)
+            {
+                
+                if (i == 2)
+                    ApplyAnimation(sequence, choices[i], _settings.activeCard, -120f);
+                else if (i == 3)
+                    ApplyAnimation(sequence, choices[i], _settings.notActiveCard, -120f);
+                else
+                    sequence.Join(choices[i].CardTrans
+                        .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y - _settings.moveDistance, _settings.moveDuration)
+                        .SetEase(Ease.InOutQuad));
+            }
+        }
+
+        bool finished = false;
+        sequence.OnComplete(() => finished = true);
+        yield return new WaitUntil(() => finished);
+
+        choices[4].ActiveFrame.SetActive(false);
+
+        var bottomChoice = GetBottomChoice();
+        var topChoice = GetTopChoice();
+        if (isUp)
+        {
+            topChoice.CardTrans.anchoredPosition = new Vector2(topChoice.CardTrans.anchoredPosition.x, bottomChoice.CardTrans.anchoredPosition.y - _settings.moveDistance);
+            choices.Remove(topChoice);
+            choices.Add(topChoice);
+        }
+        else
+        {
+            bottomChoice.CardTrans.anchoredPosition = new Vector2(bottomChoice.CardTrans.anchoredPosition.x, topChoice.CardTrans.anchoredPosition.y + _settings.moveDistance); 
+            choices.Remove(bottomChoice);
+            choices.Insert(0, bottomChoice);
+        }
+        _isAnimating = false;
+        onAnimationComplete?.Invoke();
+    }
+    
+    private void ArrowAnimation(ChoiceData choice)
+    {
+        ArrowData arrowData = choice.ArrowData;
         activeSequences = DOTween.Sequence();
         activeSequences.Append(arrowData.DownArrow
             .DOFade(0.1f, 2f)
@@ -79,182 +207,7 @@ public class ChoiceView : MonoBehaviour
             .From(_startUpPos));
         activeSequences.SetLoops(-1);
     }
-
-    void Start()
-    {
-        _activeChoice = choices[3];
-    }
-
-    void Update()
-    {
-        _activeChoice = choices[3];
-        DrumDataType drumDataType = InputManager.Instance.GetInput();
-
-        if (drumDataType == DrumDataType.RightFace)
-            ScrollUpAnimation();
-        else if (drumDataType == DrumDataType.LeftFace)
-            ScrollDownAnimation();
-        else if (drumDataType == DrumDataType.DobletFace)
-            DoChoice();
-    }
-
-    private void DoChoice()
-    {
-        _isChanged = true;
-        InitAnimations(_activeChoice);
-        Single.System.AudioManager.PlaySFX(chooseClip);
-        Sequence seq = DOTween.Sequence();
-        Image[] ActiveImages = choices[3].ActiveImages;
-        foreach (var ActiveImage in ActiveImages)
-        {
-            seq.Join(ActiveImage.DOFade(1f, 0.1f)
-                .From(0f)
-                .SetLoops(4, LoopType.Yoyo)
-                .SetEase(Ease.InOutQuad));
-        }
-
-        seq.InsertCallback(0f, () => { _animator.SetBool(HasHIsChoice, true); });
-
-        seq.AppendCallback(() =>
-        {
-            if (_activeChoice.ChoiceType == ChoiceType.Music1)
-                Single.System.SceneManager.LoadScene(SceneDataType.Music1);
-            else if (_activeChoice.ChoiceType == ChoiceType.Music2)
-                Single.System.SceneManager.LoadScene(SceneDataType.Music1);
-            else if (_activeChoice.ChoiceType == ChoiceType.Music3)
-                Single.System.SceneManager.LoadScene(SceneDataType.Music1);
-            else if (_activeChoice.ChoiceType == ChoiceType.BackToMenu)
-                Single.System.SceneManager.LoadScene(SceneDataType.Start);
-            else if (_activeChoice.ChoiceType == ChoiceType.RandomMusic)
-            {
-                int rand = Random.Range(0, 3);
-                if (rand == 0)
-                    Single.System.SceneManager.LoadScene(SceneDataType.Music1);
-                else if (rand == 1)
-                    Single.System.SceneManager.LoadScene(SceneDataType.Music1);
-                else if (rand == 2)
-                    Single.System.SceneManager.LoadScene(SceneDataType.Music1);
-            }
-        });
-    }
-
-    public void ScrollDownAnimation()
-    {
-        if (_isScrolling)
-            return;
-
-        StopAllCoroutines();
-        StartCoroutine(ScrollDownProcess());
-    }
-
-    public void ScrollUpAnimation()
-    {
-        if (_isScrolling)
-            return;
-        StopAllCoroutines();
-        StartCoroutine(ScrollUpProcess());
-    }
-
-    private IEnumerator ScrollUpProcess()
-    {
-        _isScrolling = true;
-        Single.System.AudioManager.PlaySFX(musicUpClip);
-        Sequence sequence = DOTween.Sequence();
-        for (int i = 0; i < choices.Count; i++)
-        {
-            float activeDistance = 120f;
-            if (i == 4)
-                ApplyAnimation(sequence, choices[i], _settings.activeCard, activeDistance);
-            else if (i == 3)
-            {
-                InitAnimations(choices[i]);
-                choices[i].ArrowData.Arrow.SetActive(false);
-                choices[i].ActiveFrame.SetActive(false);
-                ApplyAnimation(sequence, choices[i], _settings.notActiveCard, activeDistance);
-            }
-            else
-            {
-                sequence.Join(choices[i].CardTrans
-                    .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y + _settings.moveDistance, _settings.moveDuration)
-                    .SetEase(Ease.InOutQuad));
-            }
-        }
-
-        bool finished = false;
-        sequence.OnComplete(() => finished = true);
-        yield return new WaitUntil(() => finished);
-
-        // choices[4].ActiveFrame.SetActive(false);
-
-        var bottomChoice = GetBottomChoice();
-        var topChoice = GetTopChoice();
-
-        float bottomChoiceRectY = bottomChoice.CardTrans.anchoredPosition.y - _settings.moveDistance;
-
-        topChoice.CardTrans.anchoredPosition =
-            new Vector2(topChoice.CardTrans.anchoredPosition.x, bottomChoiceRectY);
-
-        choices.Remove(topChoice);
-        choices.Add(topChoice);
-
-        choices[6].Text.text = choices[1].Text.text;
-        choices[6].ChoiceType = choices[1].ChoiceType;
-        choices[3].ActiveFrame.SetActive(true);
-        ActiveFrameAnimation(choices[3]);
-        choices[3].ArrowData.Arrow.SetActive(true);
-        ArrowAnimation();
-        _isScrolling = false;
-    }
     
-    private IEnumerator ScrollDownProcess()
-    {
-        _isScrolling = true;
-        Single.System.AudioManager.PlaySFX(musicDownClip);
-        Sequence sequence = DOTween.Sequence();
-        for (int i = 0; i < choices.Count; i++)
-        {
-            float activeDistance = -120f;
-            if (i == 2)
-            {
-                ApplyAnimation(sequence, choices[i], _settings.activeCard, activeDistance);
-            }
-            else if (i == 3)
-            {
-                InitAnimations(choices[i]);
-                choices[i].ArrowData.Arrow.SetActive(false);
-                choices[i].ActiveFrame.SetActive(false);
-                ApplyAnimation(sequence, choices[i], _settings.notActiveCard, activeDistance);
-            }
-            else
-            {
-                sequence.Join(choices[i].CardTrans
-                    .DOAnchorPosY(choices[i].CardTrans.anchoredPosition.y - _settings.moveDistance, _settings.moveDuration)
-                    .SetEase(Ease.InOutQuad));
-            }
-        }
-        
-        bool finished = false;
-        sequence.OnComplete(() => finished = true);
-        yield return new WaitUntil(() => finished);
-
-
-        var bottomChoice = GetBottomChoice();
-        var topChoice = GetTopChoice();
-        float topChoiceRectY = topChoice.CardTrans.anchoredPosition.y + _settings.moveDistance;
-        bottomChoice.CardTrans.anchoredPosition =
-            new Vector2(bottomChoice.CardTrans.anchoredPosition.x, topChoiceRectY);
-        choices.Remove(bottomChoice);
-        choices.Insert(0, bottomChoice);
-
-        choices[0].Text.text = choices[5].Text.text;
-        choices[0].ChoiceType = choices[5].ChoiceType;
-        choices[3].ActiveFrame.SetActive(true);
-        ActiveFrameAnimation(choices[3]);
-        choices[3].ArrowData.Arrow.SetActive(true);
-        ArrowAnimation();
-        _isScrolling = false;
-    }
-
     private void ActiveFrameAnimation(ChoiceData choice)
     {
         foreach (var ActiveImage in choice.ActiveImages)
@@ -281,7 +234,7 @@ public class ChoiceView : MonoBehaviour
                 ActiveImage.color = color;
             }
         }
-
+    
         activeSequences.Kill();
     }
 
@@ -326,23 +279,23 @@ public class ChoiceView : MonoBehaviour
     {
         ChoiceData top = choices[0];
 
-        foreach (var choice in choices)
-        {
-            if (choice.CardTrans.anchoredPosition.y > top.CardTrans.anchoredPosition.y)
-                top = choice;
-        }
+        // foreach (var choice in choices)
+        // {
+        //     if (choice.CardTrans.anchoredPosition.y > top.CardTrans.anchoredPosition.y)
+        //         top = choice;
+        // }
 
         return top;
     }
 
     private ChoiceData GetBottomChoice()
     {
-        ChoiceData bottom = choices[0];
-        foreach (var choice in choices)
-        {
-            if (choice.CardTrans.anchoredPosition.y < bottom.CardTrans.anchoredPosition.y)
-                bottom = choice;
-        }
+        ChoiceData bottom = choices[^1];
+        // foreach (var choice in choices)
+        // {
+        //     if (choice.CardTrans.anchoredPosition.y < bottom.CardTrans.anchoredPosition.y)
+        //         bottom = choice;
+        // }
 
         return bottom;
     }

@@ -12,7 +12,6 @@ namespace Single
         private List<SceneData> sceneObjects;
 
         [SerializeField] private Image fadeImage;
-        private readonly float duration = 1f;
         
         private Tween fadeTween;
 
@@ -54,7 +53,7 @@ namespace Single
         {
             GameObject previousScene = null;
             GameObject targetScene = null;
-            // Debug.Log(sceneDataType);
+            
             foreach (SceneData sceneData in sceneObjects)
             {
                 if (sceneData.SceneObject.activeSelf)
@@ -70,13 +69,9 @@ namespace Single
                 return;
             }
 
-            if (targetScene != null)
+            if (previousScene == null)
             {
-                Debug.Log("Loading scene " + targetScene.name);
-            }
-            if (previousScene != null)
-            {
-                Debug.Log($"previousScene: {previousScene.name}");
+                Debug.LogError($"Scene data type {sceneDataType} not found");
             }
             if (previousScene != null && previousScene != targetScene)
             {

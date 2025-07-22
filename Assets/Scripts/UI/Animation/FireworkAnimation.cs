@@ -17,7 +17,6 @@ public class FireworkAnimation : MonoBehaviour
     }
     private void HandleComboUpdated(int combo)
     {
-        Debug.Log("Do Combo Trigger");
         if (combo % 10 == 0 && combo != 0)
         {
             DoFireWork();

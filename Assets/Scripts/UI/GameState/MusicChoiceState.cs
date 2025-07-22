@@ -2,18 +2,17 @@ using UnityEngine;
 
 public class MusicChoiceState : IGameState
 {
-    private ChoiceView _choiceView;
+    public ChoicePresenter ChoicePresenter;
+
+    public MusicChoiceState(ChoicePresenter choicePresenter)
+    {
+        ChoicePresenter = choicePresenter;
+    }
     public void Enter()
     {
-        _choiceView = GameObject.FindObjectOfType<ChoiceView>();
+        // Debug.Log("Entering Music Choice");
+        ChoicePresenter.OnMusicChosen += HandleMusicChosen;
         Single.System.SceneManager.LoadScene(SceneDataType.MusicChoice);
-        if (_choiceView != null)
-        {
-            // _choiceScroll.gameObject.SetActive(true);
-            _choiceView.OnScrollUpRequested += HandleViewUp;
-            _choiceView.OnScrollDownRequested += HandleViewDown;
-            _choiceView.OnChoiceMadeRequested += HandleChoiceMade;
-        }
     }
 
     public void Execute()
@@ -22,26 +21,10 @@ public class MusicChoiceState : IGameState
 
     public void Exit()
     {
-        if (_choiceView != null)
-        {
-            _choiceView.OnScrollUpRequested -= HandleViewUp;
-            _choiceView.OnScrollDownRequested -= HandleViewDown;
-            _choiceView.OnChoiceMadeRequested -= HandleChoiceMade;
-            // _choiceScroll.gameObject.SetActive(false);
-        }
+        ChoicePresenter.OnMusicChosen -= HandleMusicChosen;
     }
 
-    private void HandleViewUp()
-    {
-        Debug.Log("Scroll up");
-    }
-
-    private void HandleViewDown()
-    {
-        Debug.Log("Scroll down");
-    }
-
-    private void HandleChoiceMade(ChoiceType choiceType)
+    public void HandleMusicChosen(ChoiceType choiceType)
     {
         switch (choiceType)
         {
@@ -52,7 +35,7 @@ public class MusicChoiceState : IGameState
                 Single.GameStateMachine.instance.ChangeState(new PlayState(choiceType));
                 break;
             case ChoiceType.BackToMenu:
-                Single.GameStateMachine.instance.ChangeState(new StartState());
+                Single.GameStateMachine.instance.ChangeStartState();
                 break;
         }
     }

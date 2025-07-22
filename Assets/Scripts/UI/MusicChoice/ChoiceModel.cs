@@ -5,54 +5,36 @@ using UnityEngine;
 public class ChoiceModel : MonoBehaviour
 {
     // 선택 가능한 음악 목록
-    [SerializeField] private List<ChoiceData> _choices = new();
+    [SerializeField] private List<MusicData> _musicChoices = new();
 
     // 현재 활성화된 인덱스
     private int _activeIndex = 3;
     
-    public ChoiceData ActiveChoice => _choices[_activeIndex];
-    public List<ChoiceData> AllChoices => _choices;
+    public MusicData ActiveChoice => _musicChoices[_activeIndex];
+    public List<MusicData> AllChoices => _musicChoices;
+    public int ActiveIndex => _activeIndex;
 
-    public event Action<ChoiceData> OnActiveChoiceChanged;
-    public event Action<ChoiceType> OnChoiceMade;
+    public event Action<List<MusicData>> OnChoiceUpdated;
+
 
     private void Awake()
     {
-        OnActiveChoiceChanged?.Invoke(ActiveChoice);
+        OnChoiceUpdated?.Invoke(_musicChoices);
     }
 
     public void ScrollUp()
     {
-        _activeIndex = (_activeIndex - 1 + _choices.Count) % _choices.Count;
-        UpdateChoicesOrder(true);
-        OnActiveChoiceChanged?.Invoke(ActiveChoice);
+        MusicData top = _musicChoices[0];
+        _musicChoices.Remove(top);
+        _musicChoices.Add(top);
+        OnChoiceUpdated?.Invoke(_musicChoices);
     }
 
     public void ScrollDown()
     {
-        _activeIndex = (_activeIndex + 1) % _choices.Count;
-        UpdateChoicesOrder(false);
-        OnActiveChoiceChanged?.Invoke(ActiveChoice);
-    }
-
-    public void MakeChoice()
-    {
-        OnChoiceMade?.Invoke(ActiveChoice.ChoiceType);
-    }
-    private void UpdateChoicesOrder(bool scrollUp)
-    {
-        if (scrollUp)
-        {
-            ChoiceData last = _choices[^1];
-            _choices.RemoveAt(_choices.Count - 1);
-            _choices.Insert(0, last);
-        }
-        else
-        {
-            ChoiceData first = _choices[0];
-            _choices.RemoveAt(0);
-            _choices.Add(first);
-        }
-            
+        MusicData bottom = _musicChoices[^1];
+        _musicChoices.Remove(bottom);
+        _musicChoices.Insert(0, bottom);
+        OnChoiceUpdated?.Invoke(_musicChoices);
     }
 }

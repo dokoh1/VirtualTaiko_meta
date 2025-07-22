@@ -6,7 +6,6 @@ public class Note : MonoBehaviour
     public NoteType noteType;
     
     public float notespeed = 300f;
-    private bool _isHit = false;
 
     private void Update()
     {

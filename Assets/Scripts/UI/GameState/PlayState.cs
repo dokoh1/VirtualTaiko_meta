@@ -9,7 +9,7 @@ public class PlayState : IGameState
     }
     public void Enter()
     {
-        Single.System.SceneManager.LoadScene(SceneDataType.Music1);
+        MusicSceneChoice();
         GameEvents.OnGameOver += HandleGameOver;
     }
 
@@ -23,8 +23,23 @@ public class PlayState : IGameState
         GameEvents.OnGameOver -= HandleGameOver;
     }
 
+    private void MusicSceneChoice()
+    {
+        switch (_selectedMusic)
+        {
+            case ChoiceType.Music1:
+                Single.System.SceneManager.LoadScene(SceneDataType.Music1);
+                break;
+            case ChoiceType.Music2:
+                Single.System.SceneManager.LoadScene(SceneDataType.Music2);
+                break;
+            case ChoiceType.Music3:
+                Single.System.SceneManager.LoadScene(SceneDataType.Music3);
+                break;
+        }
+    }
     private void HandleGameOver(ScoreData scoreData)
     {
-        Single.GameStateMachine.instance.ChangeState(new ResultState(scoreData));
+        Single.GameStateMachine.instance.ChanageResultState(scoreData);
     }
 }

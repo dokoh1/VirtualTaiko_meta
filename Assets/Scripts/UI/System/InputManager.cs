@@ -4,7 +4,7 @@ public class InputManager : MonoBehaviour
 {
     public static InputManager Instance { get; private set; }
 
-    public bool isVREnabled = true; // VR 모드를 우선으로 설정
+    public bool isVREnabled = false; // VR 모드를 우선으로 설정
 
     private IInputProvider _inputProvider;
 

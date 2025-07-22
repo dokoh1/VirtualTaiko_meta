@@ -3,18 +3,18 @@ using UnityEngine;
 public class ResultState : IGameState
 {
     private ScoreData _finalScoreData;
-    private ResultController _resultControllerController;
+    private ResultController _resultController;
 
-    public ResultState(ScoreData finalScoreData)
+    public ResultState(ScoreData finalScoreData, ResultController resultController)
     {
         _finalScoreData = finalScoreData;
+        _resultController = resultController;
     }
     public void Enter()
     {
-        _resultControllerController = GameObject.FindObjectOfType<ResultController>();
-        if (_resultControllerController != null)
+        if (_resultController != null)
         {
-            _resultControllerController.gameObject.SetActive(true);
+            _resultController.gameObject.SetActive(true);
         }
         Single.System.SceneManager.LoadScene(SceneDataType.Result);
     }
@@ -24,15 +24,15 @@ public class ResultState : IGameState
         DrumDataType drumDataType = InputManager.Instance.GetInput();
         if (drumDataType != DrumDataType.NotHit)
         {
-            Single.GameStateMachine.instance.ChangeState(new MusicChoiceState());
+            Single.GameStateMachine.instance.ChangeToMusicChoiceState();
         }
     }
 
     public void Exit()
     {
-        if (_resultControllerController != null)
+        if (_resultController != null)
         {
-            _resultControllerController.gameObject.SetActive(false);
+            _resultController.gameObject.SetActive(false);
         }
     }
 }
