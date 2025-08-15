@@ -2,18 +2,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private NoteManager1 noteManager;
     private TimingManager timingManager;
     public DrumEffect drumEffect;
 
     void Start()
     {
         timingManager = FindFirstObjectByType<TimingManager>();
-        noteManager = FindObjectOfType<NoteManager1>();
     }
     void Update()
     {
-        DrumDataType drumDataType = InputManager.Instance.GetInput();
+        DrumDataType drumDataType = Single.System.InputManager.GetInput();
         if (drumDataType != DrumDataType.NotHit)
             drumEffect.DrumEffectInput(drumDataType);
         if (timingManager.BoxNoteList.Count == 0)
