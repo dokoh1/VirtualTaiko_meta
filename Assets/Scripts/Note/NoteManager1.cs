@@ -23,7 +23,6 @@ public class NoteManager1 : MonoBehaviour
     private TimingManager timingManager;
     public int bpm;
     public AudioClip PlayMusic;
-    double currentTime = 0d;
     
     private float startTime;
     public float noteSpawnOffset;
@@ -113,54 +112,52 @@ public class NoteManager1 : MonoBehaviour
         }
     }
 
-    public NoteType noteType;
+    // public NoteType noteType;
 
-    public void CheckHit(KeyCode hitKey)
-    {
-        Debug.Log("CheckHit called with key: " + hitKey);
-        bool isHit = false;
-        switch (noteType)
-        {
-            case NoteType.smallRed:
-                if (hitKey == KeyCode.S || hitKey == KeyCode.K) // 왼쪽 면 타격
-                {
-                    isHit = true;
-                }
-
-                break;
-
-            case NoteType.smallBlue:
-                if (hitKey == KeyCode.L || hitKey == KeyCode.A) // 오른쪽 사이드 타격
-                {
-                    isHit = true;
-                }
-
-                break;
-
-            case NoteType.bigRed:
-                if (hitKey == KeyCode.S && hitKey == KeyCode.K) // 양쪽 안쪽 면 타격
-                {
-                    isHit = true;
-                }
-
-                break;
-
-            case NoteType.bigBlue:
-                if (hitKey == KeyCode.A && hitKey == KeyCode.L) // 양쪽 사이드 타격
-                {
-                    isHit = true;
-                }
-
-                break;
-        }
-
-        if (isHit)
-        {
-            HitResult result = timingManager.CheckTiming();
-        }
-        else
-        {
-            HitResult result = HitResult.Bad;
-        }
-    }
+    // public void CheckHit(KeyCode hitKey)
+    // {
+    //     bool isHit = false;
+    //     switch (noteType)
+    //     {
+    //         case NoteType.smallRed:
+    //             if (hitKey == KeyCode.S || hitKey == KeyCode.K) // 왼쪽 면 타격
+    //             {
+    //                 isHit = true;
+    //             }
+    //
+    //             break;
+    //
+    //         case NoteType.smallBlue:
+    //             if (hitKey == KeyCode.L || hitKey == KeyCode.A) // 오른쪽 사이드 타격
+    //             {
+    //                 isHit = true;
+    //             }
+    //
+    //             break;
+    //
+    //         case NoteType.bigRed:
+    //             if (hitKey == KeyCode.S && hitKey == KeyCode.K) // 양쪽 안쪽 면 타격
+    //             {
+    //                 isHit = true;
+    //             }
+    //
+    //             break;
+    //
+    //         case NoteType.bigBlue:
+    //             if (hitKey == KeyCode.A && hitKey == KeyCode.L) // 양쪽 사이드 타격
+    //             {
+    //                 isHit = true;
+    //             }
+    //
+    //             break;
+    //     }
+    //     // if (isHit)
+    //     // {
+    //     //     HitResult result = timingManager.CheckTiming();
+    //     // }
+    //     // else
+    //     // {
+    //     //     HitResult result = HitResult.Bad;
+    //     // }
+    // }
 }

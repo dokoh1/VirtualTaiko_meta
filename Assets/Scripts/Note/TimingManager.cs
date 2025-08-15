@@ -18,9 +18,9 @@ public class TimingManager : MonoBehaviour
     public Queue<HitResult> HitQueue = new Queue<HitResult>();
     
     [Header("판정 거리 기준 (중심 기준 거리)")]
-    private readonly float _perfectRange = 1f;
-    private readonly float _goodRange = 1.5f;
-    private readonly float _badRange = 2f;
+    private readonly float _perfectRange = 4f;
+    private readonly float _goodRange = 6f;
+    private readonly float _badRange = 8f;
     
     public HitResult CheckTiming()
     {
@@ -68,8 +68,6 @@ public class TimingManager : MonoBehaviour
         HitQueue.Enqueue(result);
         BoxNoteList.Remove(closestNote);
         Destroy(closestNote);
-        Debug.Log(result);
-
         return result;
     }
 
@@ -82,34 +80,6 @@ public class TimingManager : MonoBehaviour
             HitQueue.Enqueue(result);
             BoxNoteList.Remove(note);
             Destroy(note);
-            Debug.Log(result);
         }
-    }
-    public void ProcessResult(HitResult result)
-    {
-        bool isCheck = false;
-        // 예시 처리
-        switch (result)
-        {
-            case HitResult.SmallPerfect:
-                isCheck = true;
-                break;
-            case HitResult.BigPerfect:    
-                isCheck = true;
-                break;
-            case HitResult.BigGood:
-                isCheck = true;
-                break;
-            case HitResult.SmallGood:
-                isCheck = true;
-                break;
-            case HitResult.Bad:
-                isCheck = true;
-                break;
-            case HitResult.None:
-                isCheck = true;
-                break;
-        }
-        Debug.Log(result);
     }
 }
